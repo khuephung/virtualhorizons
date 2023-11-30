@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Clients Review UI </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    color: #170E80;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.description {
+    text-align: center;
+    width: 100%;
+}
+
+.clientImage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.clientImage span {
+    margin-left: 10px;
+}
+
+.clientImage img {
+    width: 40px;  
+    height: 40px;
+    overflow: hidden; /* Ẩn phần nằm ngoài kích thước container */
+    border-radius: 50%; /* Đặt góc cong là 50% để tạo hình tròn */
+}
+
+.reviewSection {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.reviewItem {
+    width: 300px;
+    padding: 10px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all .2s linear;
+    background: -webkit-linear-gradient(
+        90deg,
+        rgba(242, 242, 242, 0.61),
+        rgba(255, 255, 255, 0.64),
+        rgba(200, 198, 228, 1)
+        ); 
+}
+
+.reviewItem:hover {
+    border-color: aqua;
+    transform: scale(1.01);
+    background-color: #090921;
+    box-shadow: 0 0px 5px 0px #cbc0c0;
+}
+
+.top {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top ul {
+    display: flex;
+    list-style: none;
+}
+
+.top ul li {
+    padding-left: 4px;
+}
+
+article p {
+    font-size: 15px;
+    font-weight: 100;
+    margin-bottom: 1rem;
+    font-family: system-ui;
+}
+
+
+@media screen and (max-width:700px) {
+    .container {
+        height: auto;
+    }
+
+    .description {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .reviewSection {
+        padding: 0;
+    }
+
+    .reviewItem {
+        width: 100%;
+    }
+
+    .clientImage {
+        margin-bottom: 0.6rem;
+    }
+
+    .top {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+    </style>
+</head>
+
+<body style= "background-color:red">
+    <!-- Main Container for Clients Review -->
+    <div class="container">
+        <h2 style  ="font-size:36px; color: blue" > Khách hàng nghĩ gì về Virtual Horizons </h2>
+        <p class="description"> Những đánh giá của khách hàng về trải nghiệm dịch vụ AR tại Virtual Horizons</p>
+    
+        <!-- Clients Review Section -->
+        <div class="reviewSection">
+
+        <!-- Clients Review-1 Section Starts from Here  -->
+            <div class="reviewItem">
+                <div class="top">
+                    <div class="clientImage">
+                        <img src="./imagelandingpage/Client/KH1.png" alt="">
+                        <span>Khuê Phùng</span>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                </div>
+                <article>
+                    <p class="review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit beatae ipsa
+                        voluptatibus perferendis quos eaque nemo error tempora harum quas, laudantium tenetur, neque,
+                        facere exercitationem!</p>
+                    <p>Jan 01, 2023</p>
+                </article>
+            </div>
+
+        <!-- Clients Review-2 Section Starts from Here  -->
+            <div class="reviewItem">
+                <div class="top">
+                    <div class="clientImage">
+                        <img src="./imagelandingpage/Client/KH2.jpg" alt="">
+                        <span>Quàng Mink</span>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                </div>
+                <article>
+                    <p class="review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit beatae ipsa
+                        voluptatibus perferendis quos eaque nemo error tempora harum quas, laudantium tenetur, neque,
+                        facere exercitationem!</p>
+                    <p>Jan 01, 2023</p>
+                </article>
+            </div>
+
+        <!-- Clients Review-3 Section Starts from Here  -->
+            <div class="reviewItem">
+                <div class="top">
+                    <div class="clientImage">
+                        <img src="./imagelandingpage/Client/KH3.jpg" alt="">
+                        <span>Hồng Nga Lê</span>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                </div>
+                <article>
+                    <p class="review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit beatae ipsa
+                        voluptatibus perferendis quos eaque nemo error tempora harum quas, laudantium tenetur, neque,
+                        facere exercitationem!</p>
+                    <p>Jan 01, 2023</p>
+                </article>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

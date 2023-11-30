@@ -1,0 +1,77 @@
+#body-header {
+    font-family: Montserrat, sans-serif;
+    margin: 0; /* Loại bỏ margin mặc định của body */
+    background-color: #948bf9;
+  }
+
+  #Minh-header {
+    background-color: transparent; /* Màu nền trong suốt */
+    color: #fff; /* Màu chữ trắng */
+    padding: 15px; /* Khoảng cách giữa lề và nội dung trong header */
+    display: grid; /* Sử dụng mô hình grid layout */
+    grid-template-columns: 1fr 2fr 1fr; /* Chia header thành 3 cột với tỉ lệ 1:2:1 */
+    align-items: center; /* Căn giữa theo chiều dọc */
+  }
+
+  #logo-header {
+    margin-left: 25px; /* Tạo khoảng cách bên trái của logo-Minh */
+  }
+  #logo-header:hover {
+    opacity: 0.8;
+  }
+  nav {
+    display: flex; /* Sắp xếp các liên kết theo chiều ngang */
+    justify-content: center; /* Căn giữa các liên kết theo chiều ngang */
+  }
+
+  nav a {
+    color: #fff; /* Màu chữ trắng */
+    font-size: 14px; /* Kích thước chữ 14px */
+    font-weight: 600; /* Độ đậm của chữ */
+    text-decoration: none; /* Loại bỏ gạch chân ở dưới liên kết */
+    margin: 0 20px; /* Tạo khoảng cách giữa các liên kết */
+  }
+
+  nav a:hover {
+    color: #948bf9; /* Màu chữ thay đổi khi di chuột qua */
+    text-decoration: underline; /* Gạch chân khi di chuột qua */
+  }
+
+  .search-cart-login {
+    display: flex; /* Sắp xếp các phần tử theo chiều ngang */
+    align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+    justify-content: flex-end; /* Căn phải các phần tử theo chiều ngang */
+    margin: 0 15px; /* Tạo khoảng cách giữa phần này và các phần khác */
+  }
+  /*style cho thanh tìm kiếm*/
+  .search-bar {
+    width: 186px;
+    height: fit-content;
+    padding: 14px 18px; /* Kích thước và khoảng cách trong ô tìm kiếm */
+    margin-right: 25px; /* Khoảng cách bên phải của ô tìm kiếm */
+    border: 2px solid inside #fff; /* Đường viền ô tìm kiếm */
+    border-radius: 40px; /* Bo tròn góc của ô tìm kiếm*/
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-flow: row; */
+    flex-direction: row;
+  }
+  /* style cho search text */
+  #header-input-search {
+    margin: 6px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 13px; /* Kích thước chữ trong ô tìm kiếm */
+    color: #898585; /* Màu chữ trong ô tìm kiếm*/
+  }
+  /*style cho icon giỏ hàng và đăng nhập*/
+  .icon-header {
+    margin-right: 20px; /* Khoảng cách bên phải của biểu tượng */
+  }
+  /*Style hover icon*/
+  .icon-header:hover {
+    opacity: 0.5;
+  }

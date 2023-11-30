@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+      }
+
+      .form-container-input /*cái khung xanh*/ {
+        width: 1278px;
+        background-color: #221896;
+        border-radius: 75px;
+        padding: 30px;
+      }
+
+      #h1 {
+        font-weight: bold;
+        text-align: center;
+        font-size: 36px;
+        margin-top: 35px;
+        margin-bottom: 21px;
+        color: #ffffff;
+      }
+
+      #h3 {
+        font-weight: 100;
+        text-align: center;
+        padding-top: 20px;
+        font-size: 24px;
+        margin-top: 25px;
+        margin-bottom: 28px;
+        color: #ffffff;
+      }
+
+      /*STROKE TRANG TRÍ*/
+      .element-with-gradient-border {
+        width: 414px;
+        height: 0px;
+        border: 0.05px solid;
+        border-image: linear-gradient(
+          to right,
+          rgba(52, 48, 69, 1),
+          rgba(192, 183, 232, 1),
+          rgba(129, 118, 175, 1),
+          rgba(52, 48, 69, 1)
+        );
+        border-image-slice: 1;
+        margin: auto;
+      }
+
+      /*PHẦN CHUNG CỦA FORM*/
+
+      .form-container-input input[type] {
+        width: 524px;
+        height: 72px;
+        border: 2px solid #e0e0e0;
+        border-radius: 40px;
+        box-sizing: border-box;
+        margin-bottom: 26px;
+        background-color: #221896;
+        padding-left: 30px;
+        font-size: 14px;
+        color: white;
+      }
+
+      .form-container-input input::placeholder {
+        color: #ffffff;
+        font-weight: lighter;
+        font-size: 14px;
+        left: 30px;
+        display: flex;
+        align-items: center;
+      }
+
+      /***************CÀI ĐẶT RIÊNG PHẦN HỌ VÀ TÊN***************/
+
+      .hovaten,
+      .lienhe {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+      }
+
+      /***************CÀI ĐẶT RIÊNG PHẦN TIÊU ĐỀ VÀ NHẬP LỜI NHẮN ***************/
+      .form-container-input input[name="tieu_de"], /* Chọn input có name là "tieu_de" */
+        input[name="nhap_loi_nhan"] /* Chọn input có name là "nhap_loi_nhan" */ {
+        width: 1058px;
+        border-radius: 25px;
+      }
+
+      /* Căn phần tiêu đề và nhập lời nhắn */
+      .form-container-input form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .form-container-input input[name="nhap_loi_nhan"] {
+        width: 1058px;
+        height: 142px;
+      }
+
+      /***************CÀI ĐẶT RIÊNG NÚT GỬI ***************/
+      .form-container-input input[type="submit"] {
+        width: 126px;
+        height: 46px;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 10px;
+        padding-bottom: 45px;
+        background: linear-gradient(
+          to right,
+          rgba(235, 235, 235, 0.48),
+          rgba(255, 255, 255, 0.8)
+        );
+        color: #221896;
+        border: none;
+        border-radius: 35px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      .form-container-input input[type="submit"]:hover {
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.8),  rgba(219, 24, 24, 0.537),);
+        color: #ffffff;
+        transition-delay: 0.3s;
+      }
+
+      /***************CÀI ĐẶT HIỆU ỨNG ***************/
+      .form-container-input input[type]:focus {
+        background-color: #ffffff;
+        opacity: 90%;
+        color: #221896;
+      }
+    </style>
+  </head>
+
+  <body class="form-container">
+    <main>
+      <div class="form-container-input">
+        <h1 id="h1">BẠN CÓ THẮC MẮC?</h1>
+
+        <div class="element-with-gradient-border"></div>
+
+        <h3 id="h3">Hãy gửi ngay đến Virtual Horizon qua form dưới đây</h3>
+
+        <form action="form.php" class="form" class="active-input">
+          <div class="hovaten">
+            <div class="ten">
+              <input
+                type="text"
+                name="ho"
+                required
+                minlength="2"
+                maxlength="10"
+                placeholder="Họ"
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                name="ten"
+                required
+                minlength="2"
+                maxlength="40"
+                placeholder="Tên"
+              />
+            </div>
+          </div>
+
+          <div class="lienhe">
+            <div class="email">
+              <input type="email" name="email" placeholder="Email" >
+            </div>
+            <div>
+              <input type="tel" name="sdt" placeholder="Số điện thoại" >
+            </div>
+          </div>
+          <input type="text" name="tieu_de" placeholder="Tiêu đề" >
+          <input
+            type="text"
+            name="nhap_loi_nhan"
+            placeholder="Nhập lời nhắn..."
+            maxlength="256"
+          >
+          <input type="submit" value ="GỬI">
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

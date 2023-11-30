@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header</title>
+    <style>
+      #body-header {
+        font-family: Montserrat, sans-serif;
+        margin: 0; /* Loại bỏ margin mặc định của body */
+        background-color: #948bf9;
+      }
+
+      #Minh-header {
+        background-color: transparent; /* Màu nền trong suốt */
+        color: #fff; /* Màu chữ trắng */
+        padding: 15px; /* Khoảng cách giữa lề và nội dung trong header */
+        display: grid; /* Sử dụng mô hình grid layout */
+        grid-template-columns: 1fr 2fr 1fr; /* Chia header thành 3 cột với tỉ lệ 1:2:1 */
+        align-items: center; /* Căn giữa theo chiều dọc */
+      }
+
+      #logo-header {
+        margin-left: 70px; /* Tạo khoảng cách bên trái của logo-Minh */
+      }
+      #logo-header:hover {
+        opacity: 0.8;
+      }
+      nav {
+        display: flex; /* Sắp xếp các liên kết theo chiều ngang */
+        justify-content: center; /* Căn giữa các liên kết theo chiều ngang */
+      }
+
+      nav a {
+        color: #fff; /* Màu chữ trắng */
+        font-size: 14px; /* Kích thước chữ 14px */
+        font-weight: 600; /* Độ đậm của chữ */
+        text-decoration: none; /* Loại bỏ gạch chân ở dưới liên kết */
+        margin: 0 20px; /* Tạo khoảng cách giữa các liên kết */
+      }
+
+      nav a:hover {
+        color: #948bf9; /* Màu chữ thay đổi khi di chuột qua */
+        text-decoration: underline; /* Gạch chân khi di chuột qua */
+      }
+
+      .search-cart-login {
+        display: flex; /* Sắp xếp các phần tử theo chiều ngang */
+        align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+        justify-content: flex-end; /* Căn phải các phần tử theo chiều ngang */
+        margin: 0 15px; /* Tạo khoảng cách giữa phần này và các phần khác */
+      }
+      /*style cho thanh tìm kiếm*/
+      .search-bar {
+        width: 186px;
+        height: fit-content;
+        padding: 14px 18px; /* Kích thước và khoảng cách trong ô tìm kiếm */
+        margin-right: 25px; /* Khoảng cách bên phải của ô tìm kiếm */
+        border: 2px solid inside #fff; /* Đường viền ô tìm kiếm */
+        border-radius: 40px; /* Bo tròn góc của ô tìm kiếm*/
+        background-color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* flex-flow: row; */
+        flex-direction: row;
+      }
+      /* style cho search text */
+      #header-input-search {
+        margin: 6px;
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        font-size: 13px; /* Kích thước chữ trong ô tìm kiếm */
+        color: #898585; /* Màu chữ trong ô tìm kiếm*/
+      }
+      /*style cho icon giỏ hàng và đăng nhập*/
+      .icon-header {
+        margin-right: 20px; /* Khoảng cách bên phải của biểu tượng */
+      }
+      /*Style hover icon*/
+      .icon-header:hover {
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+
+  <body id="body-header">
+    <header id="Minh-header">
+      <div id="logo-header">
+        <a href="./index.html"
+          ><img width="250" src="./imagelandingpage/VIRTUAL HORIZONS-có chữ.svg" alt="Logo"
+        /></a>
+      </div>
+
+      <nav>
+        <a href="#">DỰ ÁN</a>
+        <a href="#">SẢN PHẨM 3D</a>
+        <a href="/Đồ án cuối kỳ/Bảnggiá/Banggia.html">BẢNG GIÁ</a>
+        <a href="#">GIỚI THIỆU</a>
+        <a href="#">LIÊN HỆ</a>
+      </nav>
+
+      <div class="search-cart-login">
+        <!-- Thanh tìm kiếm -->
+        <div class="search-bar">
+          <div class="icon-search">
+            <svg
+              width="21"
+              height="21"
+              viewBox="0 0 21 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.375 18.375L14.4497 14.4428L18.375 18.375ZM16.625 9.1875C16.625 11.16 15.8414 13.0518 14.4466 14.4466C13.0518 15.8414 11.16 16.625 9.1875 16.625C7.21495 16.625 5.3232 15.8414 3.92839 14.4466C2.53359 13.0518 1.75 11.16 1.75 9.1875C1.75 7.21495 2.53359 5.3232 3.92839 3.92839C5.3232 2.53359 7.21495 1.75 9.1875 1.75C11.16 1.75 13.0518 2.53359 14.4466 3.92839C15.8414 5.3232 16.625 7.21495 16.625 9.1875V9.1875Z"
+                stroke="#403B3B"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <input
+            id="header-input-search"
+            type="text"
+            placeholder="Tìm kiếm sản phẩm"
+          />
+        </div>
+        <!--Chữ mặc định trong thanh tìm kiếm là "Tìm kiếm sản phẩm"-->
+        <!--Link nhúng icon giỏ hàng-->
+        <a href="#" class="icon-header">
+          <svg
+            width="30"
+            height="33"
+            viewBox="0 0 30 33"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5.47046 7.70557H26.0198C26.4362 7.70558 26.8479 7.80376 27.2285 7.99375C27.6091 8.18375 27.9501 8.46136 28.2295 8.80868C28.5089 9.156 28.7205 9.56533 28.8506 10.0103C28.9808 10.4552 29.0266 10.9259 28.9852 11.392L28.0911 21.4506C28.0176 22.278 27.6734 23.045 27.1254 23.603C26.5775 24.1609 25.8648 24.4698 25.1257 24.4699H10.8946C10.2054 24.4702 9.53737 24.2017 9.00429 23.7102C8.47121 23.2187 8.10604 22.5345 7.97095 21.7742L5.47046 7.70557Z"
+              stroke="white"
+              stroke-width="2"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M21.8623 31.1758H24.8426M5.47048 7.70572L4.26345 2.26906C4.18273 1.90654 3.99664 1.58475 3.73476 1.35483C3.47287 1.1249 3.1502 1.00001 2.818 1H1L5.47048 7.70572ZM9.94097 31.1758H12.9213H9.94097Z"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+        <!--Link nhúng icon đăng nhập-->
+        <a href="#" class="icon-header">
+          <svg
+            width="33"
+            height="33"
+            viewBox="0 0 33 33"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M9.56417 23.1428C13.9849 22.4762 17.0287 22.5335 21.4553 23.1662C21.7758 23.2141 22.0687 23.3802 22.2799 23.6337C22.4911 23.8873 22.6063 24.2111 22.6042 24.5455C22.6042 24.8655 22.4976 25.1762 22.3052 25.4188C21.9697 25.8419 21.6261 26.258 21.2744 26.6668H22.9801C23.0873 26.5348 23.1951 26.4002 23.3043 26.2635C23.6874 25.7786 23.8963 25.1719 23.8959 24.5462C23.8959 23.1962 22.9413 22.0328 21.6322 21.8462C17.101 21.1988 13.9339 21.1368 9.37752 21.8242C8.05485 22.0235 7.10419 23.2048 7.10419 24.5642C7.10419 25.1675 7.29471 25.7642 7.65573 26.2475C7.76229 26.3902 7.86756 26.5302 7.97219 26.6675H9.6365C9.30934 26.2632 8.99023 25.852 8.67937 25.4342C8.49464 25.184 8.39499 24.878 8.39585 24.5635C8.39585 23.8455 8.89573 23.2435 9.56417 23.1428ZM15.5 16.6668C16.0089 16.6668 16.5128 16.5634 16.9829 16.3623C17.4531 16.1613 17.8802 15.8667 18.2401 15.4953C18.5999 15.1238 18.8853 14.6829 19.0801 14.1976C19.2748 13.7123 19.375 13.1921 19.375 12.6668C19.375 12.1415 19.2748 11.6214 19.0801 11.1361C18.8853 10.6508 18.5999 10.2098 18.2401 9.8384C17.8802 9.46697 17.4531 9.17233 16.9829 8.97131C16.5128 8.77029 16.0089 8.66683 15.5 8.66683C14.4723 8.66683 13.4867 9.08826 12.76 9.8384C12.0333 10.5885 11.625 11.606 11.625 12.6668C11.625 13.7277 12.0333 14.7451 12.76 15.4953C13.4867 16.2454 14.4723 16.6668 15.5 16.6668ZM15.5 18.0002C16.8703 18.0002 18.1845 17.4383 19.1534 16.4381C20.1223 15.4379 20.6667 14.0813 20.6667 12.6668C20.6667 11.2523 20.1223 9.89579 19.1534 8.89559C18.1845 7.8954 16.8703 7.3335 15.5 7.3335C14.1297 7.3335 12.8156 7.8954 11.8466 8.89559C10.8777 9.89579 10.3334 11.2523 10.3334 12.6668C10.3334 14.0813 10.8777 15.4379 11.8466 16.4381C12.8156 17.4383 14.1297 18.0002 15.5 18.0002Z"
+              fill="white"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M15.5 28.0001C21.9202 28.0001 27.125 22.6274 27.125 16.0001C27.125 9.37275 21.9202 4.00008 15.5 4.00008C9.07978 4.00008 3.87501 9.37275 3.87501 16.0001C3.87501 22.6274 9.07978 28.0001 15.5 28.0001ZM15.5 29.3334C22.6339 29.3334 28.4167 23.3641 28.4167 16.0001C28.4167 8.63608 22.6339 2.66675 15.5 2.66675C8.36614 2.66675 2.58334 8.63608 2.58334 16.0001C2.58334 23.3641 8.36614 29.3334 15.5 29.3334Z"
+              fill="white"
+            />
+          </svg>
+        </a>
+      </div>
+    </header>
+  </body>
+</html>

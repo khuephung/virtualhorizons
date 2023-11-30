@@ -1,0 +1,145 @@
+
+
+body {background-image: url("./Group\ 39488.png");
+    background-repeat: repeat-x;
+    background-size: cover;
+        height: max-content;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align:center
+    
+}
+/* Bảng giá */
+  .titlebanggia{
+    margin-top: 30px;
+    font-size: 45px;
+    font-weight: bold;
+  }
+/* Xem thêm */
+  .readmorebanggia-btn{
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 15px;
+    background-image: linear-gradient(to left, #FFFFFF, rgba(213, 212, 236, 0.359));
+    color: #170E80;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 2px;
+    transition: background-color 0.3s ease, background-image 0.3s ease;
+  }
+/* Hover xem thêm */
+  .readmorebanggia-btn:hover{
+    background-color: #2E1CFF;
+    border-style:solid;
+    border-color:#FFFFFF;
+
+  }
+/*Text Chính sách giá của Virtual Horizons */
+  .titlechinhsachgia{
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+/* Layout Chính sách giá  */
+  .pricing-box-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+/*Hộp gói dịch vụ*/
+  .pricing-box {
+      width: 290px;
+      height: 470px;
+      margin: 20px;
+      background-color: white;
+      padding-left: 28px;
+      padding-right: 28px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 24px;
+      box-shadow:2px 2px 9px #00000052;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      transition: background-color 0.3s ease, color 0.3s ease;
+  }
+/*Nội dung gói*/
+  .pricing-box-content{
+      color: #252430;
+      text-align: left;
+      flex-direction: column;
+  }
+/*List nội dung gói*/
+  .pricing-box-content ul {
+      list-style-type: none;
+      padding: 0;
+  }
+/*Khoảng cách giữa các list*/
+  .pricing-box-content li {
+    margin-bottom: 20px; /* Khoảng cách giữa các dòng */
+    position: relative;
+  }
+/*List dấu tick*/
+  .pricing-box-content li::before {
+      content: '\2713'; /* Dấu tick Unicode */
+      margin-right: 5px;
+      color: #2E1CFF;  
+      position: relative;
+      font-weight: bold; /* Đậm hơn */
+  }
+/*List dấu x*/
+  .pricing-box-content li.negative::before {
+      content: '\2717'; /* Dấu X Unicode */
+      color: #00000052; 
+      font-weight: bold; /* Đậm hơn */
+  }
+/*Test chính hộp gói dịch vụ*/
+  .maintextpricing-box{
+      font-size:25px;
+      color: #2E1CFF;
+      font-weight:bold;
+      margin-top:1px;
+  }
+/*Nút mua*/
+  .buy-btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2E1CFF;
+    font-size:18px;
+    font-weight:bold;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+/*Hover hộp gói dịch vụ*/
+  .pricing-box:hover {
+    transform: scale(1.03); /* Phóng to 10% khi hover vào hộp */
+    box-shadow:2px 2px 15px #fff9f980;
+    background-image: linear-gradient(to left, #74c4d437, rgba(22, 14, 255, 0.359))
+  }
+/*Hover nút mua*/
+  .buy-btn:hover{
+  background-color: white;
+    border-style:solid;
+    color: #2E1CFF;
+  }
+/*Animation xuất hiện từ trên xuống*/
+  .animate__animated.animate__backInDown {
+  --animate-duration: 1000ms;
+  --animate-delay: 1.2s
+}
+/*Animation xuất hiện từ dưới lên*/
+  .animate__animated.animate__fadeInUp{
+  --animate-duration: 1500ms;
+  --animate-delay: 1s 
+  }

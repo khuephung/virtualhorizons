@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+    <title>Logo đối tác</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+        /*Chuyển động từ trái sang phải*/
+        @keyframes slide{
+            from{
+                transform: translateX(0);
+            }
+            to{
+                transform: translateX(-100%);
+            }
+        }
+        .logos{
+            display: flex;
+            overflow:hidden;
+            padding:20px 0 0 0; /*Theo thứ tự top right bottom left*/
+            white-space:nowrap;
+        }
+        .logos:after,
+        .logos:before{
+            position: absolute;
+            top: 0;
+            width:250px;
+            height: 100%;
+            content:"";
+            z-index: 2;
+        }
+        .logos:before{
+            right:0;
+            background: linear-gradient (to right, rgb(255,255,255,0),blue);
+        }
+        .logos:after{
+            left:0;
+            background: linear-gradient (to left, rgb(255,255,255,0),blue);
+        }
+        .logos:hover .logos-slide{
+            animation-play-state:paused; /*Dừng lại khi hover*/
+        }
+        .logos-slide{
+            animation: 25s slide infinite linear;
+        }
+        .logos-slide img{
+            height:100px;
+            margin: 30px;
+        }
+    </style>
+    <body>
+        <p style="font-size:36px; text-align:center;"">HƠN <span style="font-size:40px;font-weight:bold;color:blue"> 500+ </span> ĐỐI TÁC CỦA <span style="font-size:40px;font-weight:bold;color:blue">VIRTUAL HORIZONS</span></p>
+        <div class="logos">
+            <div class = "logos-slide"
+                <img src="https://aryel.io/wp-content/uploads/2023/09/logo_xandr-1.png"  alt="Logo Xandr" />
+                <img src="https://aryel.io/wp-content/uploads/2023/09/logo_ttd-1.png" alt="The Trade Desk" />             
+                <img src="https://aryel.io/wp-content/uploads/2023/09/logo_outbrain-1.png" alt="Outbrain" />          
+                <img src="https://aryel.io/wp-content/uploads/2023/09/logo_adform-1.png"  alt="Logo Adform" />
+                <img src="https://aryel.io/wp-content/uploads/2023/09/logo_undertone-1.png" alt="Logo Undertone" />   
+                <img src="https://aryel.io/wp-content/uploads/2023/09/logo_locala-1.png" alt="Logo Locala" /> 
+                <img src="https://aryel.io/wp-content/uploads/2023/09/logo_dv360_1.png"  alt="Logo Display &amp; Video 360" />             
+                <img src="https://aryel.io/wp-content/uploads/2023/02/logo_teads.png" alt="Teads" />         
+                <img src="https://aryel.io/wp-content/uploads/2023/01/logo_linkedin.png" alt="LinkedIn logo" />       
+                <img src="https://aryel.io/wp-content/uploads/2023/02/logo_google_campaigns.png" alt="Google ADV" />     
+                <img src="https://aryel.io/wp-content/uploads/2023/01/logo_facebook.png" alt="Facebook Pixel logo" />    
+                <img src="https://aryel.io/wp-content/uploads/2023/02/logo_magento-1.png"  alt="Magento logo" />              
+                <img src="https://aryel.io/wp-content/uploads/2023/02/logo_wix-1.png" alt="WIX logo" />              
+                <img src="https://aryel.io/wp-content/uploads/2023/02/logo_jot_url-1.png" alt="JotUrl" />        
+                <img src="https://aryel.io/wp-content/uploads/2023/01/logo_zoho.png" alt="Zoho logo" />  
+        </div>
+        <div class = "logos-slide"
+                <img src="https://aryel.io/wp-content/uploads/2023/09/logo_xandr-1.png"  alt="Logo Xandr" />
+                <img src="https://aryel.io/wp-content/uploads/2023/09/logo_ttd-1.png" alt="The Trade Desk" />             
+                <img src="https://aryel.io/wp-content/uploads/2023/09/logo_outbrain-1.png" alt="Outbrain" />          
+                <img src="https://aryel.io/wp-content/uploads/2023/09/logo_adform-1.png"  alt="Logo Adform" />
+                <img src="https://aryel.io/wp-content/uploads/2023/09/logo_undertone-1.png" alt="Logo Undertone" />   
+                <img src="https://aryel.io/wp-content/uploads/2023/09/logo_locala-1.png" alt="Logo Locala" /> 
+                <img src="https://aryel.io/wp-content/uploads/2023/09/logo_dv360_1.png"  alt="Logo Display &amp; Video 360" />             
+                <img src="https://aryel.io/wp-content/uploads/2023/02/logo_teads.png" alt="Teads" />         
+                <img src="https://aryel.io/wp-content/uploads/2023/01/logo_linkedin.png" alt="LinkedIn logo" />       
+                <img src="https://aryel.io/wp-content/uploads/2023/02/logo_google_campaigns.png" alt="Google ADV" />     
+                <img src="https://aryel.io/wp-content/uploads/2023/01/logo_facebook.png" alt="Facebook Pixel logo" />    
+                <img src="https://aryel.io/wp-content/uploads/2023/02/logo_magento-1.png"  alt="Magento logo" />              
+                <img src="https://aryel.io/wp-content/uploads/2023/02/logo_wix-1.png" alt="WIX logo" />              
+                <img src="https://aryel.io/wp-content/uploads/2023/02/logo_jot_url-1.png" alt="JotUrl" />        
+                <img src="https://aryel.io/wp-content/uploads/2023/01/logo_zoho.png" alt="Zoho logo" />  
+        </div>
+        <div class = "logos-slide"
+                <img src="https://aryel.io/wp-content/uploads/2023/09/logo_xandr-1.png"  alt="Logo Xandr" />
+                <img src="https://aryel.io/wp-content/uploads/2023/09/logo_ttd-1.png" alt="The Trade Desk" />             
+                <img src="https://aryel.io/wp-content/uploads/2023/09/logo_outbrain-1.png" alt="Outbrain" />          
+                <img src="https://aryel.io/wp-content/uploads/2023/09/logo_adform-1.png"  alt="Logo Adform" />
+                <img src="https://aryel.io/wp-content/uploads/2023/09/logo_undertone-1.png" alt="Logo Undertone" />   
+                <img src="https://aryel.io/wp-content/uploads/2023/09/logo_locala-1.png" alt="Logo Locala" /> 
+                <img src="https://aryel.io/wp-content/uploads/2023/09/logo_dv360_1.png"  alt="Logo Display &amp; Video 360" />             
+                <img src="https://aryel.io/wp-content/uploads/2023/02/logo_teads.png" alt="Teads" />         
+                <img src="https://aryel.io/wp-content/uploads/2023/01/logo_linkedin.png" alt="LinkedIn logo" />       
+                <img src="https://aryel.io/wp-content/uploads/2023/02/logo_google_campaigns.png" alt="Google ADV" />     
+                <img src="https://aryel.io/wp-content/uploads/2023/01/logo_facebook.png" alt="Facebook Pixel logo" />    
+                <img src="https://aryel.io/wp-content/uploads/2023/02/logo_magento-1.png"  alt="Magento logo" />              
+                <img src="https://aryel.io/wp-content/uploads/2023/02/logo_wix-1.png" alt="WIX logo" />              
+                <img src="https://aryel.io/wp-content/uploads/2023/02/logo_jot_url-1.png" alt="JotUrl" />        
+                <img src="https://aryel.io/wp-content/uploads/2023/01/logo_zoho.png" alt="Zoho logo" />  
+        </div>
+    </div>
+
+    </body>
+</head>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer</title>
+  <style>
+    #body-footer {
+        font-family: Montserrat, sans-serif;
+        margin: 0; /* Loại bỏ margin mặc định của body */
+    }
+    /* Style cho footer */
+    footer {
+      background-color: #170E80;
+      color: white;
+      padding: 20px;
+    }
+    .p-footer{  
+      padding-bottom: 12px;
+    }
+    /* Style cho link */
+    .a-footer {
+        color: #fff; /* Màu chữ trắng */
+        font-size: 14px; /* Kích thước chữ 14px */
+        font-weight: 500; /* Độ đậm của chữ */
+        text-decoration: none; /* Loại bỏ gạch chân ở dưới liên kết */
+        margin-bottom: 0px; /* Tạo khoảng cách giữa các liên kết */
+    }
+    /* Style cho link hover*/
+    .a-footer:hover {
+        color: #948BF9; /* Màu chữ thay đổi khi di chuột qua */
+        text-decoration: underline; /* Gạch chân khi di chuột qua */
+    }
+    /* Style cho grid layout */
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 350px 50px 200px 50px 350px 50px 1fr;
+      margin-bottom: 40px;
+    }
+    .footer-grid > div{
+        padding:0 30px;
+        /*border-left: 1px solid #726da0;*/
+    }
+    /* Style cho logo */
+    .logo-footer {
+        width: 180px;
+        padding-left: 50px;
+        padding-top:15px
+    }
+    .logo-footer:hover{
+      opacity: 0.9;
+    }
+    
+    /* Style cho form liên hệ */
+    .contact-form input{
+        height: 45px;
+        width: 215px;
+        padding: 1px 20px;
+        border-radius: 40px 0 0 40px;
+        border: #170E80;
+    }
+     /* Style cho nút "gửi" form*/
+    .contact-form button {
+        height: 47px;
+        width: 60px;
+        padding: 10px;
+        border: #170E80;
+        border-radius: 0 40px 40px 0;
+        background: #8C87C4;
+        color:#fff
+    }
+    /*style hover cho nút "gửi" form*/
+    .contact-form button:hover{
+        background:#847dcd;
+        color:#ead9d9
+    }
+    /* Style cho thông tin bản quyền */
+    .copyright {
+        text-align: center;
+        padding-top: 15px;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 3px;
+    }
+  </style>
+</head>
+<body id="body-footer">
+  <!-- Bắt đầu footer -->
+  <footer>
+    <div class="footer-grid">
+        <!-- Cột 1: Logo -->
+      <div style="border: 0;">
+        <!-- Thêm ảng logo -->
+        <a href ="./index.html"><img class="logo-footer" src="./imagelandingpage/VIRTUAL HORIZONS-logo.svg" alt="Logo"/></a>
+        <!--Link nhúng icon mạng xã hội-->
+        <svg class="logo-footer" width="188" height="32" viewBox="0 0 188 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M172 18.8C170.5 18.8 169.2 17.6 169.2 16C169.2 14.5 170.4 13.2 172 13.2C173.5 13.2 174.8 14.4 174.8 16C174.8 17.5 173.5 18.8 172 18.8Z" fill="#C0B7E8"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M175.4 9.2H168.6C167.8 9.3 167.4 9.4 167.1 9.5C166.7 9.6 166.4 9.8 166.1 10.1C165.863 10.3374 165.75 10.5748 165.615 10.8617C165.579 10.9373 165.542 11.0166 165.5 11.1C165.485 11.1464 165.467 11.1952 165.448 11.2475C165.343 11.5333 165.2 11.9238 165.2 12.6V19.4C165.3 20.2 165.4 20.6 165.5 20.9C165.6 21.3 165.8 21.6 166.1 21.9C166.337 22.1374 166.575 22.2495 166.862 22.3851C166.937 22.4209 167.017 22.4583 167.1 22.5C167.146 22.5155 167.195 22.5333 167.248 22.5525C167.533 22.6571 167.924 22.8 168.6 22.8H175.4C176.2 22.7 176.6 22.6 176.9 22.5C177.3 22.4 177.6 22.2 177.9 21.9C178.137 21.6626 178.25 21.4252 178.385 21.1383C178.421 21.0626 178.458 20.9835 178.5 20.9C178.515 20.8536 178.533 20.8048 178.552 20.7525C178.657 20.4667 178.8 20.0762 178.8 19.4V12.6C178.7 11.8 178.6 11.4 178.5 11.1C178.4 10.7 178.2 10.4 177.9 10.1C177.663 9.86261 177.425 9.75045 177.138 9.61488C177.063 9.57918 176.983 9.54167 176.9 9.5C176.854 9.48453 176.805 9.46666 176.752 9.44752C176.467 9.3429 176.076 9.2 175.4 9.2ZM172 11.7C169.6 11.7 167.7 13.6 167.7 16C167.7 18.4 169.6 20.3 172 20.3C174.4 20.3 176.3 18.4 176.3 16C176.3 13.6 174.4 11.7 172 11.7ZM177.4 11.6C177.4 12.1523 176.952 12.6 176.4 12.6C175.848 12.6 175.4 12.1523 175.4 11.6C175.4 11.0477 175.848 10.6 176.4 10.6C176.952 10.6 177.4 11.0477 177.4 11.6Z" fill="#C0B7E8"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M156 16C156 7.16344 163.163 0 172 0C180.837 0 188 7.16344 188 16C188 24.8366 180.837 32 172 32C163.163 32 156 24.8366 156 16ZM168.6 7.7H175.4C176.3 7.8 176.9 7.9 177.4 8.1C178 8.4 178.4 8.6 178.9 9.1C179.4 9.6 179.7 10.1 179.9 10.6C180.1 11.1 180.3 11.7 180.3 12.6V19.4C180.2 20.3 180.1 20.9 179.9 21.4C179.6 22 179.4 22.4 178.9 22.9C178.4 23.4 177.9 23.7 177.4 23.9C176.9 24.1 176.3 24.3 175.4 24.3H168.6C167.7 24.2 167.1 24.1 166.6 23.9C166 23.6 165.6 23.4 165.1 22.9C164.6 22.4 164.3 21.9 164.1 21.4C163.9 20.9 163.7 20.3 163.7 19.4V12.6C163.8 11.7 163.9 11.1 164.1 10.6C164.4 10 164.6 9.6 165.1 9.1C165.6 8.6 166.1 8.3 166.6 8.1C167.1 7.9 167.7 7.7 168.6 7.7Z" fill="#C0B7E8"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16ZM16 8C20.4 8 24 11.6 24 16C24 20 21.1 23.4 17.1 24V18.3H19L19.4 16H17.2V14.5C17.2 13.9 17.5 13.3 18.5 13.3H19.5V11.3C19.5 11.3 18.6 11.1 17.7 11.1C15.9 11.1 14.7 12.2 14.7 14.2V16H12.7V18.3H14.7V23.9C10.9 23.3 8 20 8 16C8 11.6 11.6 8 16 8Z" fill="#C0B7E8"/>
+            <path d="M122.6 16L118.4 13.6V18.4L122.6 16Z" fill="#C0B7E8"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M104 16C104 7.16344 111.163 0 120 0C128.837 0 136 7.16344 136 16C136 24.8366 128.837 32 120 32C111.163 32 104 24.8366 104 16ZM126.2 10.7C126.9 10.9 127.4 11.4 127.6 12.1C128 13.4 128 16 128 16C128 16 128 18.6 127.7 19.9C127.5 20.6 127 21.1 126.3 21.3C125 21.6 120 21.6 120 21.6C120 21.6 114.9 21.6 113.7 21.3C113 21.1 112.5 20.6 112.3 19.9C112 18.6 112 16 112 16C112 16 112 13.4 112.2 12.1C112.4 11.4 112.9 10.9 113.6 10.7C114.9 10.4 119.9 10.4 119.9 10.4C119.9 10.4 125 10.4 126.2 10.7Z" fill="#C0B7E8"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M52 16C52 7.16344 59.1634 0 68 0C76.8366 0 84 7.16344 84 16C84 24.8366 76.8366 32 68 32C59.1634 32 52 24.8366 52 16ZM74.1 11.5C74.8 11.4 75.4 11.3 76 11C75.6 11.7 75 12.3 74.3 12.7C74.5 17.4 71.1 22.5 65 22.5C63.2 22.5 61.5 21.9 60 21C61.7 21.2 63.5 20.7 64.7 19.8C63.2 19.8 62 18.8 61.6 17.5C62.1 17.6 62.6 17.5 63.1 17.4C61.6 17 60.5 15.6 60.5 14.1C61 14.3 61.5 14.5 62 14.5C60.6 13.5 60.1 11.6 61 10.1C62.7 12.1 65.1 13.4 67.8 13.5C67.3 11.5 68.9 9.5 71 9.5C71.9 9.5 72.8 9.9 73.4 10.5C74.2 10.3 74.9 10.1 75.5 9.7C75.3 10.5 74.8 11.1 74.1 11.5Z" fill="#C0B7E8"/>
+        </svg>            
+      </div>
+      <!--Link nhúng dường kẻ dọc-->
+      <div style="padding-top: 15px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="228" viewBox="0 0 6 228" fill="none">
+          <path d="M2.99999 228L3 0" stroke="url(#paint0_linear_211_601)" stroke-width="5"/>
+          <defs>
+          <linearGradient id="paint0_linear_211_601" x1="2.99526" y1="1.08162" x2="97.7156" y2="177.82" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#343045"/>
+          <stop stop-color="#343045"/>
+          <stop offset="0.348958" stop-color="#C0B7E8"/>
+          <stop offset="0.6875" stop-color="#8176AF"/>
+          <stop offset="0.994792" stop-color="#343045"/>
+          </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <!-- Cột 2: Menu -->
+      <div>
+        <h3>MENU</h3>
+        <p class="p-footer"><a class = "a-footer" href="#">DỰ ÁN</a></p>
+        <p class="p-footer"><a class = "a-footer" href="#">SẢN PHẨM 3D</a></p> 
+        <p class="p-footer"><a class = "a-footer" href="/Đồ án cuối kỳ/Bảnggiá/Banggia.html">BẢNG GIÁ</a></p> 
+        <p class="p-footer"><a class = "a-footer" href="#">GIỚI THIỆU</a></p>  
+      </div>
+      <!--Link nhúng dường kẻ dọc-->
+      <div style="padding-top: 15px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="228" viewBox="0 0 6 228" fill="none">
+          <path d="M2.99999 228L3 0" stroke="url(#paint0_linear_211_601)" stroke-width="5"/>
+          <defs>
+          <linearGradient id="paint0_linear_211_601" x1="2.99526" y1="1.08162" x2="97.7156" y2="177.82" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#343045"/>
+          <stop stop-color="#343045"/>
+          <stop offset="0.348958" stop-color="#C0B7E8"/>
+          <stop offset="0.6875" stop-color="#8176AF"/>
+          <stop offset="0.994792" stop-color="#343045"/>
+          </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <!-- Cột 3: Thông tin liên hệ -->
+      <div>
+        <h3>LIÊN HỆ</h3>
+        <p class="p-footer">Email: contact@virtualhorizons.com</p>
+        <p class="p-footer">Hotline: +84 123456789</p>
+        <p class="p-footer">Thời gian làm việc: 9:00 – 18:00</p>
+      </div>
+      <!--Link nhúng dường kẻ dọc-->
+      <div style="padding-top: 15px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="228" viewBox="0 0 6 228" fill="none">
+          <path d="M2.99999 228L3 0" stroke="url(#paint0_linear_211_601)" stroke-width="5"/>
+          <defs>
+          <linearGradient id="paint0_linear_211_601" x1="2.99526" y1="1.08162" x2="97.7156" y2="177.82" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#343045"/>
+          <stop stop-color="#343045"/>
+          <stop offset="0.348958" stop-color="#C0B7E8"/>
+          <stop offset="0.6875" stop-color="#8176AF"/>
+          <stop offset="0.994792" stop-color="#343045"/>
+          </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <!-- Cột 4: Form đăng ký MailChimp -->
+      <div style="padding-right:50px ;">
+        <h3>ĐĂNG KÝ NGAY</h3>
+        <p style="padding-right: 50px;">Để lại email để không bỏ lỡ những thông tin mới nhất từ Virtual Horizons nhé!</p>
+        <!--Dùng display:flex để input và button nằm cùng 1 hàng -->
+        <form class="contact-form" action="YOUR_MAILCHIMP_URL" method="post" style="display:flex">
+          <input type="email" placeholder="Email của bạn"> 
+          <button type="submit">Gửi</button>
+        </form>
+      </div>
+    </div>
+    <!--Link nhúng đường kẻ ngang-->
+    <center>
+    <svg class="copyright" width="1269" height="2" viewBox="0 0 1269 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 1H1269" stroke="url(#paint0_linear_211_600)"/>
+        <defs>
+        <linearGradient id="paint0_linear_211_600" x1="1269" y1="1.00238" x2="3.52735e-07" y2="0.980001" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#343045"/>
+        <stop offset="0.348958" stop-color="#C0B7E8"/>
+        <stop offset="0.6875" stop-color="#8176AF"/>
+        <stop offset="1" stop-color="#343045"/>
+        </linearGradient>
+        </defs>
+        </svg> 
+    </center>      
+    <!-- Thông tin bản quyền -->
+    <p class="copyright">2023 © VIRTUALHORIZONS - BY GROUP 12 - ALL RIGHTS RESERVED</p>
+  </footer>
+  <!-- Kết thúc footer -->
+</body>
+</html>

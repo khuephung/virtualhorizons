@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtual Horizons</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      // jQuerry
+      $(function () {
+        $("#header").load("Header.html");
+      });
+      $(function () {
+        $("#footer").load("Footer.html");
+      });
+      $(function () {
+        $("#banner").load("Banner.html");
+      });
+      $(function () {
+        $("#form").load("Form.html");
+      });
+      $(function () {
+        $("#goi").load("BangGoi.html");
+      });
+      $(function () {
+        $("#taoduan").load("TaoDuan.html");
+      });
+      $(function () {
+        $("#logodoitac").load("LogoDoitac.html");
+      });
+    </script>
+    <style>
+      .landing-page {
+        overflow-x: hidden; /*ẩn thanh cuộn ngang*/
+        background-image: url("./imagelandingpage/Frame\ 10.png");
+        background-size: cover;
+        height: max-content;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        scroll-behavior: smooth;
+        font-family: Montserrat, sans-serif;
+     
+      }
+      #header,
+      #banner,
+      #goi,
+      #logodoitac,
+      #taoduan,
+      #form {
+        margin-bottom: 70px;
+      }
+    </style>
+  </head>
+  <body class="landing-page">
+    <div id="header"></div>
+    <div id="banner"></div>
+    <div id="goi"></div>
+    <div id="logodoitac"></div>
+    <div id="taoduan"></div>
+    <div id="form"></div> 
+    <div id="footer"></div>
+  </body>
+</html>
