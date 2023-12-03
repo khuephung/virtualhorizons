@@ -9,7 +9,45 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-* {
+/*Chuyển động từ trái sang phải*/
+
+@keyframes container-slide{
+            /* from{
+                transform: translateX(0);
+            }
+            to{
+                transform: translateX(-100%);
+            } */
+            0%{
+                transform: translateX(100px);
+            }
+            100%{
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes moveBackward{
+            0%{
+                transform: translateX(100%);
+            }
+            100%{
+                transform: translateX(-100%);
+            }
+            /* 0%, 100% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(calc(100vw - 100%));
+            } */
+            /* 0% {
+         transform: translateX(0);
+      }
+      100% {
+        transform: translateX(calc(-200% + 50px)); /* Di chuyển phần tử đến cuối container */
+      } */
+        
+
+.overall{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,15 +58,33 @@
     width: 100%;
     color: #170E80;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    margin-top: 50px;
 
+    /* align-items: center; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* margin: 0 auto; */
+    /* position: relative; */
+
+    /*scroll ani*/
 }
 
-.description {
+.container:hover .container-slide{
+    animation-play-state:paused;
+}
+
+.container-slide{
+    animation: 80s moveBackward infinite linear;
+    display: flex;
+}
+/* .container-slide:hover{
+    animation-play-state:paused;
+} */
+
+.client-description {
     text-align: center;
     width: 100%;
+    font-size:30px;
 }
 
 .clientImage {
@@ -39,17 +95,19 @@
 
 .clientImage span {
     margin-left: 10px;
+    font-size:20px;
+    font-weight: bold;
 }
 
 .clientImage img {
-    width: 40px;  
-    height: 40px;
+    width: 60px;  
+    height: 60px;
     overflow: hidden; /* Ẩn phần nằm ngoài kích thước container */
     border-radius: 50%; /* Đặt góc cong là 50% để tạo hình tròn */
 }
 
 .reviewSection {
-    padding: 1rem;
+    padding: 10px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -57,8 +115,8 @@
 }
 
 .reviewItem {
-    width: 300px;
-    padding: 10px;
+    width: 360px;
+    padding: 30px;
     margin: 20px;
     cursor: pointer;
     border-radius: 20px;
@@ -71,15 +129,16 @@
         ); 
 }
 
-.reviewItem:hover {
+.reviewItem:hover{
     border-color: aqua;
     transform: scale(1.01);
-    background-color: #090921;
+    background-color: #95ffff;
     box-shadow: 0 0px 5px 0px #cbc0c0;
 }
 
+
 .top {
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -96,24 +155,24 @@
 }
 
 article p {
-    font-size: 15px;
-    font-weight: 100;
-    margin-bottom: 1rem;
-    font-family: system-ui;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align:justify;
 }
 
+/*responsive*/
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:768px) {
     .container {
         height: auto;
     }
 
-    .description {
+    .client-description {
         width: 90%;
     }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:320px) {
     .reviewSection {
         padding: 0;
     }
@@ -136,16 +195,18 @@ article p {
     </style>
 </head>
 
-<body style= "background-color:red">
+<body>
     <!-- Main Container for Clients Review -->
-    <div class="container">
-        <h2 style  ="font-size:36px; color: blue" > Khách hàng nghĩ gì về Virtual Horizons </h2>
-        <p class="description"> Những đánh giá của khách hàng về trải nghiệm dịch vụ AR tại Virtual Horizons</p>
-    
+ 
+        <h2 style  ="font-size:36px; color: blue; text-align: center" > KHÁCH HÀNG NGHĨ GÌ VỂ VIRTUAL HORIZONS </h2>
+        <p class="client-description"> Những đánh giá của khách hàng về trải nghiệm dịch vụ AR tại Virtual Horizons</p>
+        
+        <div class="container">
+            <div class ="container-slide">
         <!-- Clients Review Section -->
-        <div class="reviewSection">
+        <!-- <div class="reviewSection"> -->
 
-        <!-- Clients Review-1 Section Starts from Here  -->
+       <!--  Clients Review-1 Section Starts from Here -->
             <div class="reviewItem">
                 <div class="top">
                     <div class="clientImage">
@@ -161,10 +222,8 @@ article p {
                     </ul>
                 </div>
                 <article>
-                    <p class="review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit beatae ipsa
-                        voluptatibus perferendis quos eaque nemo error tempora harum quas, laudantium tenetur, neque,
-                        facere exercitationem!</p>
-                    <p>Jan 01, 2023</p>
+                    <p class="review">Khá bất ngờ với các dịch vụ mà Virtual Horizons cung cấp, mọi việc tạo dự án AR trở nên đơn giản hơn bao giờ hết. Tôi khá thích tính năng của AR Marker, nó thật sự rất hiệu quả trong việc gia tăng tương tác.</p>
+                    <p>01-02-2023</p>
                 </article>
             </div>
 
@@ -184,10 +243,8 @@ article p {
                     </ul>
                 </div>
                 <article>
-                    <p class="review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit beatae ipsa
-                        voluptatibus perferendis quos eaque nemo error tempora harum quas, laudantium tenetur, neque,
-                        facere exercitationem!</p>
-                    <p>Jan 01, 2023</p>
+                    <p class="review">Viryual Horizons cung cấp dịch vụ thực tế ảo tăng cường AR tiện ích, dễ sử dụng và vô cùng hiệu quả. Đội ngũ hỗ trợ cũng vô cùng chuyên nghiệp và nhiệt tình, hầu hết mọi thức mắc và vấn đề được giải quyết</p>
+                    <p>05-06-2023</p>
                 </article>
             </div>
 
@@ -207,14 +264,352 @@ article p {
                     </ul>
                 </div>
                 <article>
-                    <p class="review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit beatae ipsa
-                        voluptatibus perferendis quos eaque nemo error tempora harum quas, laudantium tenetur, neque,
-                        facere exercitationem!</p>
-                    <p>Jan 01, 2023</p>
+                    <p class="review">Một giải pháp thú vị tiện ích, giúp các doanh nghiệp gia tăng tương tác với khách hàng, quảng bá sản phẩm và nâng cao doanh thu. 
+                        Tôi đã ứng dụng giải pháp AR Filter trong cửa hàng mỹ phẩm của tôi và thấy được sự hứng thú của khách hàng </p>
+                    <p>07-08-2023</p>
                 </article>
             </div>
-        </div>
+
+             <!-- Clients Review-4 Section Starts from Here  -->
+             <div class="reviewItem">
+                <div class="top">
+                    <div class="clientImage">
+                        <img src="./imagelandingpage/Client/KH5.jpg" alt="">
+                        <span>Yến Trần</span>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                </div>
+                <article>
+                    <p class="review">Trải nghiệm thú vị khi sử dụng Virtual Horizons. Chưa bao giờ tôi nghĩ bản thân có thể tự tạo dự án AR dễ dàng đến thế!
+                        Đặc biết yêu thích AR Marker giúp mang mô hình 3D của tôi hiện thực ra bên ngoài.
+                    </p>
+                    <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Document</title>
+                    </head>
+                    <body>
+                        
+                    </body>
+                    </html></p>
+                    <p>07-08-2023</p>
+                </article>
+            </div>
+
+            <!-- Clients Review-5 Section Starts from Here  -->
+            <div class="reviewItem">
+                <div class="top">
+                    <div class="clientImage">
+                        <img src="./imagelandingpage/Client/KH4.jpg" alt="">
+                        <span>Thanh</span>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                </div>
+                <article>
+                    <p class="review">Tạo dự án và trải nghiệm AR dễ dàng qua mã QR mà không cần phải tải App trung gian. Hình ảnh hiện lên sắc nét, khả năng nhận diện hình ảnh
+                        không giản khá ổn
+                    </p>
+                    <p>10-10-2023</p>
+                </article>
+            </div>
+
+
+            
+            
+        <!-- </div> -->
     </div>
+
+
+
+
+
+    <div class ="container-slide">
+        <!-- Clients Review Section -->
+        <!-- <div class="reviewSection"> -->
+
+       <!--  Clients Review-1 Section Starts from Here -->
+             <!--  Clients Review-1 Section Starts from Here -->
+             <div class="reviewItem">
+                <div class="top">
+                    <div class="clientImage">
+                        <img src="./imagelandingpage/Client/KH1.png" alt="">
+                        <span>Khuê Phùng</span>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                </div>
+                <article>
+                    <p class="review">Khá bất ngờ với các dịch vụ mà Virtual Horizons cung cấp, mọi việc tạo dự án AR trở nên đơn giản hơn bao giờ hết. Tôi khá thích tính năng của AR Marker, nó thật sự rất hiệu quả trong việc gia tăng tương tác.</p>
+                    <p>01-02-2023</p>
+                </article>
+            </div>
+
+        <!-- Clients Review-2 Section Starts from Here  -->
+            <div class="reviewItem">
+                <div class="top">
+                    <div class="clientImage">
+                        <img src="./imagelandingpage/Client/KH2.jpg" alt="">
+                        <span>Quàng Mink</span>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                </div>
+                <article>
+                    <p class="review">Viryual Horizons cung cấp dịch vụ thực tế ảo tăng cường AR tiện ích, dễ sử dụng và vô cùng hiệu quả. Đội ngũ hỗ trợ cũng vô cùng chuyên nghiệp và nhiệt tình, hầu hết mọi thức mắc và vấn đề được giải quyết</p>
+                    <p>05-06-2023</p>
+                </article>
+            </div>
+
+        <!-- Clients Review-3 Section Starts from Here  -->
+            <div class="reviewItem">
+                <div class="top">
+                    <div class="clientImage">
+                        <img src="./imagelandingpage/Client/KH3.jpg" alt="">
+                        <span>Hồng Nga Lê</span>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                </div>
+                <article>
+                    <p class="review">Một giải pháp thú vị tiện ích, giúp các doanh nghiệp gia tăng tương tác với khách hàng, quảng bá sản phẩm và nâng cao doanh thu. 
+                        Tôi đã ứng dụng giải pháp AR Filter trong cửa hàng mỹ phẩm của tôi và thấy được sự hứng thú của khách hàng </p>
+                    <p>07-08-2023</p>
+                </article>
+            </div>
+
+             <!-- Clients Review-4 Section Starts from Here  -->
+             <div class="reviewItem">
+                <div class="top">
+                    <div class="clientImage">
+                        <img src="./imagelandingpage/Client/KH5.jpg" alt="">
+                        <span>Yến Trần</span>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                </div>
+                <article>
+                    <p class="review">Trải nghiệm thú vị khi sử dụng Virtual Horizons. Chưa bao giờ tôi nghĩ bản thân có thể tự tạo dự án AR dễ dàng đến thế!
+                        Đặc biết yêu thích AR Marker giúp mang mô hình 3D của tôi hiện thực ra bên ngoài.
+                    </p>
+                    <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Document</title>
+                    </head>
+                    <body>
+                        
+                    </body>
+                    </html></p>
+                    <p>07-08-2023</p>
+                </article>
+            </div>
+
+            <!-- Clients Review-5 Section Starts from Here  -->
+            <div class="reviewItem">
+                <div class="top">
+                    <div class="clientImage">
+                        <img src="./imagelandingpage/Client/KH4.jpg" alt="">
+                        <span>Thanh</span>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                </div>
+                <article>
+                    <p class="review">Tạo dự án và trải nghiệm AR dễ dàng qua mã QR mà không cần phải tải App trung gian. Hình ảnh hiện lên sắc nét, khả năng nhận diện hình ảnh
+                        không giản khá ổn
+                    </p>
+                    <p>10-10-2023</p>
+                </article>
+            </div>
+
+
+            
+            
+        <!-- </div> -->
+    </div>
+
+
+    <div class ="container-slide">
+        <!-- Clients Review Section -->
+        <!-- <div class="reviewSection"> -->
+
+       <!--  Clients Review-1 Section Starts from Here -->
+            <div class="reviewItem">
+                <div class="top">
+                    <div class="clientImage">
+                        <img src="./imagelandingpage/Client/KH1.png" alt="">
+                        <span>Khuê Phùng</span>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                </div>
+                <article>
+                    <p class="review">Khá bất ngờ với các dịch vụ mà Virtual Horizons cung cấp, mọi việc tạo dự án AR trở nên đơn giản hơn bao giờ hết. Tôi khá thích tính năng của AR Marker, nó thật sự rất hiệu quả trong việc gia tăng tương tác.</p>
+                    <p>01-02-2023</p>
+                </article>
+            </div>
+
+        <!-- Clients Review-2 Section Starts from Here  -->
+            <div class="reviewItem">
+                <div class="top">
+                    <div class="clientImage">
+                        <img src="./imagelandingpage/Client/KH2.jpg" alt="">
+                        <span>Quàng Mink</span>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                </div>
+                <article>
+                    <p class="review">Viryual Horizons cung cấp dịch vụ thực tế ảo tăng cường AR tiện ích, dễ sử dụng và vô cùng hiệu quả. Đội ngũ hỗ trợ cũng vô cùng chuyên nghiệp và nhiệt tình, hầu hết mọi thức mắc và vấn đề được giải quyết</p>
+                    <p>05-06-2023</p>
+                </article>
+            </div>
+
+        <!-- Clients Review-3 Section Starts from Here  -->
+            <div class="reviewItem">
+                <div class="top">
+                    <div class="clientImage">
+                        <img src="./imagelandingpage/Client/KH3.jpg" alt="">
+                        <span>Hồng Nga Lê</span>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                </div>
+                <article>
+                    <p class="review">Một giải pháp thú vị tiện ích, giúp các doanh nghiệp gia tăng tương tác với khách hàng, quảng bá sản phẩm và nâng cao doanh thu. 
+                        Tôi đã ứng dụng giải pháp AR Filter trong cửa hàng mỹ phẩm của tôi và thấy được sự hứng thú của khách hàng </p>
+                    <p>07-08-2023</p>
+                </article>
+            </div>
+
+             <!-- Clients Review-4 Section Starts from Here  -->
+             <div class="reviewItem">
+                <div class="top">
+                    <div class="clientImage">
+                        <img src="./imagelandingpage/Client/KH5.jpg" alt="">
+                        <span>Yến Trần</span>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                </div>
+                <article>
+                    <p class="review">Trải nghiệm thú vị khi sử dụng Virtual Horizons. Chưa bao giờ tôi nghĩ bản thân có thể tự tạo dự án AR dễ dàng đến thế!
+                        Đặc biết yêu thích AR Marker giúp mang mô hình 3D của tôi hiện thực ra bên ngoài.
+                    </p>
+                    <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Document</title>
+                    </head>
+                    <body>
+                        
+                    </body>
+                    </html></p>
+                    <p>07-08-2023</p>
+                </article>
+            </div>
+
+            <!-- Clients Review-5 Section Starts from Here  -->
+            <div class="reviewItem">
+                <div class="top">
+                    <div class="clientImage">
+                        <img src="./imagelandingpage/Client/KH4.jpg" alt="">
+                        <span>Thanh</span>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                </div>
+                <article>
+                    <p class="review">Tạo dự án và trải nghiệm AR dễ dàng qua mã QR mà không cần phải tải App trung gian. Hình ảnh hiện lên sắc nét, khả năng nhận diện hình ảnh
+                        không giản khá ổn
+                    </p>
+                    <p>10-10-2023</p>
+                </article>
+            </div>
+
+
+            
+            
+        <!-- </div> -->
+    </div>
+
+
+
+
+    </div>
+
+
+    
+
+    <script>
+
+    </script>
+
 </body>
 
 </html>
