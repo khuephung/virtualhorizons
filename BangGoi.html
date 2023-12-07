@@ -131,6 +131,32 @@
         border-radius: 16px; /* Bo góc nút */
       }
   
+      @media screen and (max-width: 320px) {
+        .panel {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .card {
+          width: 95%;
+          height: auto;
+        }
+
+        .card .avatar img {
+          margin-top: 25px;
+        }
+
+        .button-trial {
+          width: 75%;
+          margin: 0 auto;
+        }
+
+        .button-trial button {
+          width: 100%;
+          height: 45px;
+        }
+      }
     </style>
 </head>
 
@@ -143,18 +169,18 @@
   <div class="panel">
         <!-- Card 1 -->
         <div class="card">
-        <!-- Ảnh -->
-        <div class="avatar">
-            <img src="./imagelandingpage/avt1.jpg"/>
-        </div>
-        <!-- Tiêu đề -->
-        <div class="title">Miễn phí</div>
-        <!-- Dòng ngăn cách -->
-        <hr/>
-        <!-- Mô tả -->
-        <div class="description">Những tính năng cơ bản dành cho trải nghiệm</div>
-        <!-- Nút -->
-        <div class="button-trial"><button>Thử ngay</button></div>
+          <!-- Ảnh -->
+          <div class="avatar">
+              <img src="./imagelandingpage/avt1.jpg"/>
+          </div>
+          <!-- Tiêu đề -->
+          <div class="title">Miễn phí</div>
+          <!-- Dòng ngăn cách -->
+          <hr/>
+          <!-- Mô tả -->
+          <div class="description">Những tính năng cơ bản dành cho trải nghiệm</div>
+          <!-- Nút -->
+          <div class="button-trial"><button>Thử ngay</button></div>
         </div>
     
         <!-- Card 2 -->
