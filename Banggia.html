@@ -4,27 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bảng giá</title>
+    <!-- favicon -->
+    <link href="./HeaderFooter/logoimage/VIRTUAL HORIZONS-logo.svg" rel="shortcut icon">
+    <!-- liên kết file css  -->
     <link rel=stylesheet type="text/css" href="./Banggia.css"/>
-
-   
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script>
-    // jQuerry
+    <!-- Thư viện animate.cs  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Thư viện Jquerry -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    // jQuerry //thêm Header và Footer
     $(function () {
       $("#header").load("Header.html");
     });
+  
+    $(function () {
+      $("#footer").load("Footer.html");
+    });
     </script> 
+      <style>
+        /* Footer cách phía trên 70px */
+        #footer{
+          margin-top:70px;
+        }
+      </style>
 </head>
 
 
 <body>
+  <!-- Gắn header -->
   <div id="header"></div>
+    <div class="banggiacolor">
+      <!-- Chữ Bảng giá di chuyển từ trên xuống -->
     <h1 class="titlebanggia animate__animated animate__backInDown">BẢNG GIÁ</h1>
-    <a href="#" class="readmorebanggia-btn animate__animated animate__fadeInDown">XEM THÊM</a>
+      <!-- Chữ Xem thêm di chuyển từ trên xuống -->
+    <button id="scrollButton" class="readmorebanggia-btn animate__animated animate__fadeInDown">XEM THÊM</button>
+      <!-- Chữ di chuyển từ dưới lên -->
     <h1 class="titlechinhsachgia animate__animated animate__fadeInUp">Chính sách giá của<br>VIRTUAL HORIZONS</h1>
+      <!-- Các gói dịch vụ di chuyển từ dưới lên -->
     <div class="pricing-box-container  animate__animated animate__fadeInUp">
     <!--4 Gói dịch vụ -->
         <!-- Gói Miễn phí -->
@@ -100,5 +117,136 @@
         <button class="buy-btn">Liên hệ ngay</button>
       </div>  
     </div>
+  </div>
+
+    <!-- Bảng so sánh -->
+    <table class="table_container">
+      <!-- Tiêu đề đầu bảng -->
+      <thead>
+        <tr>
+          <th>
+            <h2 style="color: #170E80">So sánh dịch vụ</h2>
+            <h4 class="tablesubtitle">Chọn kế hoạch không gian làm việc phù hợp với bạn</h4>
+          </th>
+          <th>
+            <!-- tiêu đề các gói dịch vụ và nút -->
+            <h3 class="tabletitle">Free<span class="tablesubtitle">/trọn đời</span></h3>
+            <button class="buy-btn">Đăng ký miễn phí!</button></th>
+          <th><h3 class="tabletitle">299.000đ<span class ="tablesubtitle">/tháng</span></h3>
+            <button class="buy-btn">Chọn phương án này</button></th>
+          <th><h3 class="tabletitle">2.399.000đ<span class="tablesubtitle">/tháng</span></h3>
+            <button class="buy-btn">Chọn phương án này</button></th>
+          <th><h3 class="tabletitle">Liên hệ</h3>
+            <button class="buy-btn">Chọn phương án này</button></th>
+        </tr>
+      </thead>
+      <tbody>
+      <!-- Hàng 2 -->
+        <tr>
+          <th>Dữ liệu đám mây</th>
+          <td><img class="tickicon" src="./imagelandingpage/Frametick.svg"></td>
+          <td><img class="tickicon" src="./imagelandingpage/Frametick.svg"></td>
+          <td><img class="tickicon" src="./imagelandingpage/Frametick.svg"></td>
+          <td><img class="tickicon" src="./imagelandingpage/Frametick.svg"></td>
+        </tr>
+      <!-- Hàng 3 -->
+        <tr>
+          <th>AR Marker</th>
+          <td><img class="tickicon" src="./imagelandingpage/Frametick.svg"></td>
+          <td><img class="tickicon" src="./imagelandingpage/Frametick.svg"></td>
+          <td><img class="tickicon" src="./imagelandingpage/Frametick.svg"></td>
+          <td><img class="tickicon" src="./imagelandingpage/Frametick.svg"></td>
+        </tr>
+      <!-- Hang 4 -->
+        <tr>
+          <th>AR Markerless</th>
+          <td><img class="tickicon" src="./imagelandingpage/Frametick.svg"></td>
+          <td><img class="tickicon" src="./imagelandingpage/Frametick.svg"></td>
+          <td><img class="tickicon" src="./imagelandingpage/Frametick.svg"></td>
+          <td><img class="tickicon" src="./imagelandingpage/Frametick.svg"></td>
+        </tr>
+      <!-- Hàng 5 -->
+        <tr>
+          <th>AR Filter không tương tác</th>
+          <td></td>
+          <td><img class="tickicon" src="./imagelandingpage/Frametick.svg"></td>
+          <td><img class="tickicon" src="./imagelandingpage/Frametick.svg"></td>
+          <td><img class="tickicon" src="./imagelandingpage/Frametick.svg"></td>
+        </tr>
+      <!-- Hàng 6 -->
+        <tr>
+          <th>AR Filter có tương tác</th>
+          <td></td>
+          <td></td>
+          <td><img class="tickicon" src="./imagelandingpage/Frametick.svg"></td>
+          <td><img class="tickicon" src="./imagelandingpage/Frametick.svg"></td>
+        </tr>
+      <!-- Hàng 7 -->
+
+        <tr>
+          <th>Số lượt truy cập QR/tháng</th>
+          <td>50</td>
+          <td>1000</td>
+          <td>5000</td>
+          <td>7000</td>
+        </tr>
+      <!-- Hàng 8 -->
+        <tr>
+          <th>Âm thanh (cho file 3D)</th>
+          <td></td>
+          <td><img class="tickicon" src="./imagelandingpage/Frametick.svg"></td>
+          <td><img class="tickicon" src="./imagelandingpage/Frametick.svg"></td>
+          <td><img class="tickicon" src="./imagelandingpage/Frametick.svg"></td>
+        </tr>
+      <!-- Hàng 9 -->
+        <tr>
+          <th>Không logo ẩn</th>
+          <td></td>
+          <td></td>
+          <td><img class="tickicon" src="./imagelandingpage/Frametick.svg"></td>
+          <td><img class="tickicon" src="./imagelandingpage/Frametick.svg"></td>
+        </tr>
+      <!-- Hàng 10 -->
+        <tr>
+          <th>Cài đặt mật khẩu cho mã QR</th>
+          <td></td>
+          <td></td>
+          <td><img class="tickicon" src="./imagelandingpage/Frametick.svg"></td>
+          <td><img class="tickicon" src="./imagelandingpage/Frametick.svg"></td>
+        </tr>
+      <!-- Hàng 11 -->
+        <tr>
+          <th>Chia sẻ bản thiết kế</th>
+          <td></td>
+          <td></td>
+          <td><img class="tickicon" src="./imagelandingpage/Frametick.svg"></td>
+          <td><img class="tickicon" src="./imagelandingpage/Frametick.svg"></td>
+        </tr>
+      <!-- Hàng 12 -->
+        <tr>
+          <th>Thời gian hỗ trợ kỹ thuật</th>
+          <td></td>
+          <td>Trong 48 giờ</td>
+          <td>Trong 24 giờ</td>
+          <td>Trong 12 giờ</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Gắn Footer -->
+    <div id="footer"></div>
+    <!-- Hiệu ứng tự động scroll xuống khi nhấn nút Xem thêm đầu trang -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var scrollButton = document.getElementById('scrollButton');  //tìm một phần tử HTML có id là 'scrollButton'.
+
+  scrollButton.addEventListener('click', function () {
+    // Cuộn màn hình xuống dưới 1030px
+    window.scrollBy({
+      top: 1030,
+      behavior: 'smooth',
+    });
+  });
+});
+</script>
 </body>
 </html>

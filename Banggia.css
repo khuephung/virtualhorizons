@@ -1,20 +1,27 @@
 
 
-body {background-image: url("./Bảnggiá/Group\ 39488.png");
+body {background-image: url("./Bảnggiá/Frame\ 3.png");
     background-repeat: repeat-x;
     background-size: cover;
-        height: max-content;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        scroll-behavior: smooth;
     font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    scroll-behavior: smooth; /* Áp dụng hiệu ứng mượt mà cho toàn bộ trang */
+
+       
+}
+  .banggiacolor{
+    height: max-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     margin: 0;
     padding: 0;
-    color: white;
-    text-align:center
-    
-}
+    color: white;    
+  }
 /* Bảng giá */
   .titlebanggia{
     margin-top: 30px;
@@ -32,6 +39,7 @@ body {background-image: url("./Bảnggiá/Group\ 39488.png");
     font-weight: bold;
     text-decoration: none;
     margin-top: 2px;
+    cursor: pointer;
     transition: background-color 0.3s ease, background-image 0.3s ease;
   }
 /* Hover xem thêm */
@@ -142,4 +150,58 @@ body {background-image: url("./Bảnggiá/Group\ 39488.png");
   .animate__animated.animate__fadeInUp{
   --animate-duration: 1500ms;
   --animate-delay: 1s 
+/*Khoảng cách của Bảng so với phần phía trên*/  
+}
+
+  .table_container{
+    margin-top: 70px;
+  }
+  /* Định dạng bảng */
+  table {
+    border-collapse: collapse;
+    width: 80%; /* Đặt chiều rộng của bảng */
+    margin: 20px auto; /* Khoảng trống ở hai bên */
+    table-layout: fixed; /*Đảm bảo độ rộng các cột luôn bằng nhau*/
+    border-radius: 24px; /* Bo góc của bảng */
+    overflow: hidden; /* Đảm bảo không có nội dung nào sẽ tràn ra ngoài bo góc */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.114);
+  }
+
+  /* Định dạng header và ô của bảng */
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 18px;
+    white-space: normal; /* Cho phép nội dung tự động xuống dòng */
+    background-color: white;
+  }
+
+/* Nội dung căng trái cách lề 18px đối với cột đầu tiên */
+  th:first-child, td:first-child {
+    text-align: left;
+    padding-left: 18px;
+  }
+
+  /* Căn giữa nội dung của các cột còn lại */
+  th:not(:first-child), td:not(:first-child) {
+    text-align: center;
+  }
+
+  /* định dạng title bảng */
+  .tabletitle{
+    font-size:25px;
+    color: #0e0c2b;
+    font-weight:bold;
+    margin-top:1px;
+  }
+  /* định dạng phần mô tả trong bảng */
+  .tablesubtitle{
+    font-size:18px;
+    color: #858BA0;
+    font-weight:normal;
+  }
+  /* Nút tick trong bảng */
+  .tickicon{
+    width:30px;
+    height: auto;
   }
