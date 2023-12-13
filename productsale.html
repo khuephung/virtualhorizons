@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Display</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script
+    src="https://kit.fontawesome.com/b696211014.js"
+    crossorigin="anonymous"></script>
+    <style>
+
+
+        .container-wrapper {
+            /* display: flex; */
+            /* overflow-x: scroll; */
+            justify-content: center;
+            white-space: nowrap;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            width:100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        .product-box {
+            border-radius: 5%;
+            width: 300px;
+            height: 430px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            align-items: center;
+            margin: 0 15px 0 15px;
+            transition: -webkit-transform 0.3s
+            cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+          -webkit-transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        .product-box:hover {
+            box-shadow: 0 0 20px rgba(10, 6, 247, 0.274);
+            backdrop-filter: blur (20px);
+            -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+        }
+
+        .product-image {
+            padding:10px;
+            border-radius: 10%;
+            height: 280px;
+            object-fit: cover;
+            position: absolute;
+        }
+        .product-info {
+            padding-left: 20px;
+        }
+
+        .product-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            overflow-wrap: break-word;
+            color: #170E80;
+        }
+
+        .product-category {
+            font-size: 16px;
+            color: #888;
+            margin-bottom: 5px;
+        }
+
+        .product-rating {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            color: #170E80;
+        }
+        .price-wrapper{
+            display: flex;
+            flex-direction: row;
+            /* margin-left: 10px; */
+
+        }
+        .product-price {
+            font-size: 22px;
+            color: blue;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .discount-price {
+            font-size: 22px;
+            color: #888;
+            text-decoration: line-through;
+        }
+
+        .product-box:hover .product-r__action-wrap {
+        opacity: 1;
+        -webkit-transform: translateY(-50%) scale(1);
+        transform: translateY(-50%) scale(1);
+
+        .product-r__action-wrap {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        opacity: 0;
+        z-index: 2;
+        -webkit-transform: translateY(-50%) scale(0.8);
+        transform: translateY(-50%) scale(0.8);
+        transition: all 0.2s ease 0s;
+      }
+      .product-r__action-list {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .aspect {
+        position: relative;
+      }
+      .aspect--bg-grey {
+        background-color: #f5f5f5;
+      }
+      .aspect--square {
+        padding-bottom: 100%;
+      }
+      .u-d-block {
+        display: block;
+      }
+    </style>
+</head>
+<body>
+
+<div class="container-wrapper">
+    <div class="container">
+        <div class="product-box">
+            <a class="class="aspect aspect--bg-grey aspect--square u-d-block"">
+            <img class="product-image" src="/Ludus/images/product/electronic/product13.jpg" alt="Product 1">
+            </a>
+        <div class="product-r__action-wrap">
+            <ul class="product-r__action-list">
+              <li>
+                <a data-modal="modal" data-modal-id="#quick-look"
+                  ><i class="fas fa-search-plus"></i
+                ></a>
+              </li>
+              <li>
+                <a data-modal="modal" data-modal-id="#add-to-cart"
+                  ><i class="fas fa-plus-circle"></i
+                ></a>
+              </li>
+              <li>
+                <a href="signin.html"><i class="fas fa-heart"></i></a>
+              </li>
+              <li>
+                <a href="signin.html"><i class="fas fa-envelope"></i></a>
+              </li>
+            </ul>
+          </div>
+            <div class="product-info">
+                <div class="product-category">Đồ ăn</div>
+                <div class="product-title">Món ăn Nhật Bản</div>
+                <div class="product-rating">
+                    <span class="fa-solid fa-star"></span>
+                    <span class="fa-solid fa-star"></span>
+                    <span class="fa-solid fa-star"></span>
+                    <span class="fa-solid fa-star"></span>
+                    <span class="fa-solid fa-star"></span>  
+                </div>
+                <div class="price-wrapper">
+                    <div class="product-price">30.000 đ</div>
+                    <div class="discount-price">100.000 đ</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-box">
+            <img class="product-image" src="/Ludus/images/product/electronic/product16.jpg" alt="Product 1">
+            <div class="product-info">
+                <div class="product-category">Con người</div>
+                <div class="product-title">Cô gái đội đầu quỷ</div>
+                <div class="product-rating">
+                    <span class="fa-solid fa-star"></span>
+                    <span class="fa-solid fa-star"></span>
+                    <span class="fa-solid fa-star"></span>
+                    <span class="fa-solid fa-star"></span>
+                    <span class="fa-solid fa-star"></span>  
+                </div>
+                <div class="price-wrapper">
+                    <div class="product-price">50.000 đ</div>
+                    <div class="discount-price">120.000 đ</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-box">
+            <img class="product-image" src="/Ludus/images/product/electronic/product28.jpg" alt="Product 1">
+            <div class="product-info">
+                <div class="product-category">Kiến trúc</div>
+                <div class="product-title">Cửa hàng ăn</div>
+                <div class="product-rating">
+                    <span class="fa-solid fa-star"></span>
+                    <span class="fa-solid fa-star"></span>
+                    <span class="fa-solid fa-star"></span>
+                    <span class="fa-solid fa-star"></span>
+                    <span class="fa-solid fa-star"></span>  
+                </div>
+                <div class="price-wrapper">
+                    <div class="product-price">70.000 đ</div>
+                    <div class="discount-price">140.000 đ</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-box">
+            <img class="product-image" src="/Ludus/images/product/electronic/product23.jpg" alt="Product 1">
+            <div class="product-info">
+                <div class="product-category">Phòng khách</div>
+                <div class="product-title">Phòng khách nhỏ</div>
+                <div class="product-rating">
+                    <span class="fa-solid fa-star"></span>
+                    <span class="fa-solid fa-star"></span>
+                    <span class="fa-solid fa-star"></span>
+                    <span class="fa-solid fa-star"></span>
+                    <span class="fa-solid fa-star"></span>  
+                </div>
+                <div class="price-wrapper">
+                    <div class="product-price">50.000 đ</div>
+                    <div class="discount-price">130.000 đ</div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    </body>
+    </html>

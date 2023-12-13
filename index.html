@@ -35,6 +35,12 @@
       $(function () {
         $("#client").load("Client.html");
       });
+      $(function () {
+        $("#countdown").load("Countdown.html");
+      });
+      $(function () {
+        $("#productsale").load("productsale.html");
+      });
     </script>
     <style>
       .landing-page {
@@ -52,15 +58,29 @@
       #header,
       #banner,
       #goi,
+      #countdown,
+      #productsale,
       #logodoitac,
       #taoduan,
       #client,
       #form {
         margin-bottom: 70px;
-        width: 100%;
+        /* width: 100%; */
       }
 
-      #logodoitac, #client {
+      #countdown,
+      #productsale{
+        margin-bottom: 10px;
+      }
+      #productsale,
+      #logodoitac {
+        margin-bottom:70px;
+      }
+
+
+      #logodoitac, 
+      #client,
+      #countdown {
         width: 100%;
         overflow-x: hidden;
       }
@@ -70,6 +90,8 @@
     <div id="header"></div>
     <div id="banner"></div>
     <div id="goi"></div>
+    <div id="countdown"></div>
+    <div id="productsale"></div>
     <div id="logodoitac"></div>
     <div id="taoduan"></div>
     <div id="client"></div>

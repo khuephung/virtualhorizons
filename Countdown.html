@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>countdown</title>
+    <style>
+      .overallcountdown {
+        text-align: center;
+        padding: 0;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+
+      .wrappercountdown {
+        position: float;
+        text-align: center;
+        /* transform: translate(-50%, -50%); */
+        font-size: 20px;
+        /* top: 20%;
+    left: 50%; */
+      }
+
+      .headingflashsale {
+        text-align: center;
+        margin-bottom: 20px;
+        color: blue;
+
+      }
+
+      .countdowncontainer {
+        margin: 10px;
+      }
+
+      .countdown {
+        display: flex;
+        justify-content: center;
+        /* gap: 10px; */
+        width: 100%;
+
+      }
+
+      .boxcountdown {
+        width: 160px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 30px;
+        /* position:relative; */
+      }
+
+      span.num {
+        color: #170E80;
+        backdrop-filter: blur (20px);
+        height: 100%;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        font-weight: 600;
+        font-size: 80px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.114);
+        border-radius: 10px;
+        background:  -webkit-linear-gradient(
+        80deg,
+        rgba(36, 31, 180, 0.61),
+        rgba(53, 63, 208, 0.081),
+        rgba(200, 198, 228, 0.32)
+        ); 
+      }
+
+      span.text {
+        font-size: 24px;
+        background-color: white;
+        color: #170E80;
+        display: block;
+        width: 70%;
+        position: relative;
+        text-align: center;
+        bottom: 20px;
+        padding: 8px 0;
+        font-weight: 600;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.062);
+      }
+    </style>
+  </head>
+  <body class="overallcountdown">
+    <div class="wrappercountdown">
+      <div class="headingflashsale">
+        <h1>ƯU ĐÃI CUỐI NĂM</h1>
+      </div>
+      <div class="countdown">
+        <div class="boxcountdown">
+          <span class="num" id="day-box">00</span>
+          <span class="text">Ngày</span>
+        </div>
+        <div class="boxcountdown">
+          <span class="num" id="hr-box">00</span>
+          <span class="text">Giờ</span>
+        </div>
+        <div class="boxcountdown">
+          <span class="num" id="min-box">00</span>
+          <span class="text">Phút</span>
+        </div>
+        <div class="boxcountdown">
+          <span class="num" id="sec-box">00</span>
+          <span class="text">Giây</span>
+        </div>
+      </div>
+    </div>
+    <script src="countdown.js"></script>
+  </body>
+</html>
