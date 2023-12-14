@@ -17,41 +17,26 @@
         /*Chuyển động từ trái sang phải*/
         @keyframes slide{
             from{
-                transform: translateX(0);
+                transform: translateX(0);/*Ban đầu không di chuyển theo trục x (hoạt động từ vị trí hiện tại).*/
             }
             to{
-                transform: translateX(-100%);
+                transform: translateX(-100%); /*di chuyển sang trái 100% chiều rộng của chính nó (ra khỏi khung nhìn).*/
             }
         }
         .logos{
             display: flex;
-            overflow:hidden;
+            overflow:hidden; /*Ẩn phần nội dung bị tràn ra khỏi phần tử cha*/
             padding:20px 0 0 0; /*Theo thứ tự top right bottom left*/
             white-space:nowrap;
         }
-        .logos:after,
-        .logos:before{
-            position: absolute;
-            top: 0;
-            width:240px;
-            height: 100%;
-            content:"";
-            z-index: 2;
-        }
-        .logos:before{
-            right:0;
-            background: linear-gradient (to right, rgb(255,255,255,0),blue);
-        }
-        .logos:after{
-            left:0;
-            background: linear-gradient (to left, rgb(255,255,255,0),blue);
-        }
         .logos:hover .logos-slide{
             animation-play-state:paused; /*Dừng lại khi hover*/
+        /* hời gian 25 giây, lặp vô hạn, và chuyển động theo dạng tuyến tính. */
         }
         .logos-slide{
             animation: 25s slide infinite linear;
         }
+        /* Định dạng hình ảnh bên trong */
         .logos-slide img{
             height:100px;
             margin: 30px;
@@ -60,6 +45,7 @@
     <body>
         <p style="font-size:36px; text-align:center;"">HƠN <span style="font-size:40px;font-weight:bold;color:blue"> 500+ </span> ĐỐI TÁC CỦA <span style="font-size:40px;font-weight:bold;color:blue">VIRTUAL HORIZONS</span></p>
         <div class="logos">
+            <!-- Logo -->
             <div class = "logos-slide">
                 <img src="./imagelandingpage/logo_xandr-1.png"  alt="Logo Xandr" />
                 <img src="./imagelandingpage/logo_ttd-1.png" alt="The Trade Desk" />             

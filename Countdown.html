@@ -5,52 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>countdown</title>
     <style>
+      /* Toàn bộ countdown */
       .overallcountdown {
         text-align: center;
         padding: 0;
         margin: 0px;
         box-sizing: border-box;
       }
-
+      /* Định dạng phần tử chứa countdown */
       .wrappercountdown {
-        position: float;
+        position: relative;
         text-align: center;
-        /* transform: translate(-50%, -50%); */
         font-size: 20px;
-        /* top: 20%;
-    left: 50%; */
       }
-
+      /* Heading flashsale */
       .headingflashsale {
         text-align: center;
         margin-bottom: 20px;
         color: blue;
 
       }
-
-      .countdowncontainer {
-        margin: 10px;
-      }
-
+     
+      /* Chứa box countdown */
       .countdown {
         display: flex;
         justify-content: center;
-        /* gap: 10px; */
         width: 100%;
 
       }
-
+      /* Chứa box countdown */
       .boxcountdown {
         width: 160px;
         height: 200px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-evenly; /*khoảng trống 2 bên nội dung đều*/
         margin: 30px;
-        /* position:relative; */
       }
-
+      /* ô number */
       span.num {
         color: #170E80;
         backdrop-filter: blur (20px);
@@ -69,7 +62,7 @@
         rgba(200, 198, 228, 0.32)
         ); 
       }
-
+      /* ô text */
       span.text {
         font-size: 24px;
         background-color: white;
@@ -92,24 +85,29 @@
         <h1>ƯU ĐÃI CUỐI NĂM</h1>
       </div>
       <div class="countdown">
+        <!-- Ngày -->
         <div class="boxcountdown">
           <span class="num" id="day-box">00</span>
           <span class="text">Ngày</span>
         </div>
+        <!-- Giờ -->
         <div class="boxcountdown">
           <span class="num" id="hr-box">00</span>
           <span class="text">Giờ</span>
         </div>
+        <!-- Phút -->
         <div class="boxcountdown">
           <span class="num" id="min-box">00</span>
           <span class="text">Phút</span>
         </div>
+        <!-- Giây -->
         <div class="boxcountdown">
           <span class="num" id="sec-box">00</span>
           <span class="text">Giây</span>
         </div>
       </div>
     </div>
+    <!-- Javascript -->
     <script src="countdown.js"></script>
   </body>
 </html>
