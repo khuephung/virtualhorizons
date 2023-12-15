@@ -1,104 +1,103 @@
 #body-header {
-  font-family: Montserrat, sans-serif;
-  margin: 0; /* Loại bỏ margin mặc định của body */
-  background-color: #948bf9;
+    font-family: Montserrat, sans-serif;
+    margin: 0; /* Loại bỏ margin mặc định của body */
+    background-color: #948bf9;
 }
 
 #Minh-header {
-  background-color: transparent; /* Màu nền trong suốt */
-  color: #fff; /* Màu chữ trắng */
-  padding: 15px 25px; /* Khoảng cách giữa lề và nội dung trong header */
-  display: flex;
-  justify-content: space-between;
-  align-items: center; /* Căn giữa theo chiều dọc */
-  width: 100%;
+    background-color: transparent; /* Màu nền trong suốt */
+    color: #fff; /* Màu chữ trắng */
+    padding: 15px 25px; /* Khoảng cách giữa lề và nội dung trong header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    width: 100%;
 }
 
 #logo-header {
-  padding-left: 50px; /*Tạo khoảng cách bên trái của logo-Minh*/
-  width: 15%;
+    padding-left: 50px; /*Tạo khoảng cách bên trái của logo-Minh*/
+    width: 15%;
 }
 #logo-header img {
-  height: 55px;
+    height: 55px;
 }
 #logo-header:hover {
-  opacity: 0.8;
+    opacity: 0.8;
 }
 nav {
-  display: flex; /* Sắp xếp các liên kết theo chiều ngang */
-  justify-content: center; /* Căn giữa các liên kết theo chiều ngang */
-  width: 60%;
+    display: flex; /* Sắp xếp các liên kết theo chiều ngang */
+    justify-content: center; /* Căn giữa các liên kết theo chiều ngang */
+    width: 50%;
 }
 
 nav a {
-  color: #fff; /* Màu chữ trắng */
-  font-size: 14px; /* Kích thước chữ 14px */
-  font-weight: 600; /* Độ đậm của chữ */
-  text-decoration: none; /* Loại bỏ gạch chân ở dưới liên kết */
-  margin: 0 20px; /* Tạo khoảng cách giữa các liên kết */
-  display: block;
+    color: #fff; /* Màu chữ trắng */
+    font-size: 14px; /* Kích thước chữ 14px */
+    font-weight: 600; /* Độ đậm của chữ */
+    text-decoration: none; /* Loại bỏ gạch chân ở dưới liên kết */
+    margin: 0 20px; /* Tạo khoảng cách giữa các liên kết */
+    display: block;
 }
 
 nav a:hover {
-  color: #948bf9; /* Màu chữ thay đổi khi di chuột qua */
-  text-decoration: underline; /* Gạch chân khi di chuột qua */
+    color: #948bf9; /* Màu chữ thay đổi khi di chuột qua */
+    text-decoration: underline; /* Gạch chân khi di chuột qua */
 }
 
 .search-cart-login {
-  display: flex; /* Sắp xếp các phần tử theo chiều ngang */
-  align-items: center; /* Căn giữa các phần tử theo chiều dọc */
-  justify-content: flex-end; /* Căn phải các phần tử theo chiều ngang */
-  padding: 0 15px; /* Tạo khoảng cách giữa phần này và các phần khác */
-  width: 25%;
-  padding-right: 50px;
+    display: flex; /* Sắp xếp các phần tử theo chiều ngang */
+    align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+    justify-content: flex-end; /* Căn phải các phần tử theo chiều ngang */
+    padding: 0 15px; /* Tạo khoảng cách giữa phần này và các phần khác */
+    width: 35%;
+    padding-right: 50px;
+    gap: 20px;
 }
 /*style cho thanh tìm kiếm*/
 .search-bar {
-  width: 186px;
-  height: fit-content;
-  padding: 14px 18px; /* Kích thước và khoảng cách trong ô tìm kiếm */
-  margin-right: 25px; /* Khoảng cách bên phải của ô tìm kiếm */
-  border: 2px solid inside #fff; /* Đường viền ô tìm kiếm */
-  border-radius: 40px; /* Bo tròn góc của ô tìm kiếm*/
-  background-color: #ffffff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /* flex-flow: row; */
-  flex-direction: row;
+    width: 60%;
+    height: fit-content;
+    padding: 14px 18px; /* Kích thước và khoảng cách trong ô tìm kiếm */
+    margin-right: 25px; /* Khoảng cách bên phải của ô tìm kiếm */
+    border: 2px solid inside #fff; /* Đường viền ô tìm kiếm */
+    border-radius: 40px; /* Bo tròn góc của ô tìm kiếm*/
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-flow: row; */
+    flex-direction: row;
+}
+.search-cart-login i {
+    font-size: 25px;
 }
 /* style cho search text */
 #header-input-search {
-  margin: 6px;
-  width: 100%;
-  background-color: transparent;
-  border: none;
-  font-size: 13px; /* Kích thước chữ trong ô tìm kiếm */
-  color: #898585; /* Màu chữ trong ô tìm kiếm*/
-}
-/*style cho icon giỏ hàng và đăng nhập*/
-.icon-header {
-  margin-right: 20px; /* Khoảng cách bên phải của biểu tượng */
+    margin: 6px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 13px; /* Kích thước chữ trong ô tìm kiếm */
+    color: #898585; /* Màu chữ trong ô tìm kiếm*/
 }
 /*Style hover icon*/
 .icon-header:hover {
-  opacity: 0.5;
+    opacity: 0.5;
 }
 
 .menu-mobile {
     position: fixed;
     top: 0;
-    right: 0;
+    right: -200vw;
     left: 0;
     bottom: 0;
-    width: 575px !important;
     background-color: #181059;
     z-index: 300;
     padding: 25px;
-    transform: translateX(200vw);
+    /* transform: translateX(-200vw); */
     visibility: hidden;
     opacity: 0;
-    transition: all ease-in-out 1s;
+    transition: all ease-in 0.5s;
 }
 
 .menu-mobile-header {
@@ -115,6 +114,7 @@ nav a:hover {
 .menu-mobile-header .icon {
     display: flex;
     align-items: center;
+    gap: 25px;
 }
 
 #header-open {
@@ -122,7 +122,7 @@ nav a:hover {
 }
 
 .menu-mobile-main {
-    padding-top: 100px;
+  padding-top: 100px;
 }
 
 .menu-mobile-main a {
@@ -139,15 +139,15 @@ nav a:hover {
 }
 
 .menu-mobile-logo {
-    width: 100%;
-    padding-top: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  padding-top: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu-mobile-logo img {
-    width: 60%;
+  width: 60%;
 }
 
 @media screen and (max-width: 680px) {
@@ -168,7 +168,8 @@ nav a:hover {
   }
 
   .menu-mobile.open {
-    transform: translateX(0);
+    /* transform: translateX(0); */
+    right: 0;
     visibility: visible;
     opacity: 1;
   }

@@ -1,379 +1,133 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Thư viện-->
-   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <!--<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>-->
     <title>Banner</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <style>
-      .top-banner{
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;    
-      }
-      .right-content {
-            margin-left: 130px;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            justify-content: center;
-            align-items: center; 
-      }
-      .banner-title{
-            margin-top: 30px;
-            width: 589px;
-            background: -webkit-linear-gradient(
-                    90deg,
-                    rgba(242, 242, 242, 0.61),
-                    rgba(255, 255, 255, 0.64),
-                    rgba(200, 198, 228, 1)
-                  );
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-size: 48px;
-            font-weight: 700;
-            word-wrap: break-word;
-      }
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./Component/Banner/Banner.css">
+</head>
 
-      .banner-subtitle{
-            padding-top: 21px;
-            width: 495px;
-            color: white;
-            font-size: 20px;
-            font-weight: 400;
-            word-wrap: break-word;
-      }
-      model-viewer {width:500px; height:300px; margin: 0, auto;}
-      * {
-        font-family: "Montserrat", sans-serif;
-        scroll-behavior: smooth;
-      }
-      .contact-box{
-        position: relative;
-            margin-top: 90px;
-            width: 100%;
-            max-width: 1272px;
-            min-width: 500px;
-            background: radial-gradient(
-              circle at 50% 50%,
-              rgba(122, 123, 218, 0.64) 1%,
-              rgba(23, 14, 128, 0.65) 87%
-            );
-            border-radius: 90px;
-            backdrop-filter: blur(15px);
-      }
-      .contact-content-wrap{
-            padding: 24px 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-      }
-      /* Nội dung trong box contact */
-      .contact-text {
-        color: #f5f5f5;
-        height: 59px;
-        flex-direction: column;
-        display: inline-flex;
-        justify-content: flex-end;
-        gap: 10px;
-      }
+<body style="width: 100%">
+    <div style="margin: 0 10%">
+        <!-- Phần banner phía trên -->
+        <div class="top-banner">
+            <!-- Phần nội dung bên trái -->
+            <div class="left-content animate__animated animate__fadeInLeft" style="padding-left: 22px">
+                <!-- Tiêu đề banner -->
+                <div class="banner-title">
+                    GIẢI PHÁP CÔNG NGHỆ<br />THỰC TẾ ẢO AR
+                </div>
 
-      /* Title contact */
-      .contact-title {
-        font-size: 24px;
-        font-weight: 700;
-        word-wrap: break-word;
-      }
+                <!-- Phụ đề banner -->
+                <div class="banner-subtitle">
+                    Mang đến giải pháp công nghệ AR tối ưu hoá trải nghiệm tuyệt vời cho
+                    khách hàng của bạn.
+                </div>
 
-      /* Subtitle contact */
-      .contact-subtitle {
-        font-size: 14px;
-        font-weight: 400;
-        word-wrap: break-word;
-      }
+                <!-- Nút "Khám phá ngay" và mũi tên -->
+                <a href="#goi" style="text-decoration: none;">
+                    <div class="left-content-href" style="">
+                        <!-- Nút "Khám phá ngay" -->
+                        <div class="button-banner" style="margin-top:10px">
+                            <div class="text-button-banner">Khám phá ngay</div>
+                        </div>
 
-      .dia-chi{
-        padding-right: 43px;
-        height: 117px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        flex-direction: row;
-      }
-
-      .icon {
-        padding-right: 5px
-      }
-      .dien-thoai{
-        height: 117px;
-        padding-right: 113px;
-        padding-left: 48px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        flex-direction: row;
-        border-style: solid;
-        border-top: none;
-        border-bottom: none;
-        border-color: rgba(192, 183, 232, 0.33);
-      }
-      .email{
-        height: 117px;
-        padding-left: 48px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        flex-direction: row;
-      }
-
-
-      /* Style cho button */
-      .button-banner {
-        margin-right: 16px;
-        width: fit-content;
-        height: fit-content;
-        background: linear-gradient(
-          90deg,
-          rgba(235, 235, 235, 0.48) 0%,
-          rgba(255, 255, 255, 0.8) 100%
-        );
-        border-radius: 40px;
-      }
-      .text-button-banner {
-        text-decoration:none;
-        padding: 12px 24px;
-        color: #170e80;
-        font-size: 20px;
-        font-weight: 700;
-      }
-      /* Hover cho button */
-      .button-banner:hover,
-      .button-banner:focus {
-        background: none;
-        background-color: #170e80;
-      }
-      .text-button-banner:hover {
-        color: #ffffff;
-      }
-      /* Hover cho mui ten */
-      .mui-ten .mui-ten-stroke:hover {
-        stroke: #170e80;
-      }
-    </style>
-  </head>
-
-  <body style="width: 100%">
-    <div style="margin: 0 85px">
-      <!-- Phần banner phía trên -->
-      <div class="top-banner">
-        <!-- Phần nội dung bên trái -->
-        <div class="left-content animate__animated animate__fadeInLeft" style="padding-left: 22px">
-          <!-- Tiêu đề banner -->
-          <div class="banner-title">
-            GIẢI PHÁP CÔNG NGHỆ<br />THỰC TẾ ẢO AR
-          </div>
-
-          <!-- Phụ đề banner -->
-          <div class="banner-subtitle">
-            Mang đến giải pháp công nghệ AR tối ưu hoá trải nghiệm tuyệt vời cho
-            khách hàng của bạn.
-          </div>
-
-          <!-- Nút "Khám phá ngay" và mũi tên -->
-          <a href="#goi" style="text-decoration: none;"><div style="margin-top: 90px; display: flex; align-items: center">
-            <!-- Nút "Khám phá ngay" -->
-            <div class="button-banner" style="margin-top:10px">
-              <div class="text-button-banner">Khám phá ngay</div>
+                        <!-- Nhúng icon mũi tên -->
+                        <div class="mui-ten" style="margin-top:10px">
+                            <svg width="46" height="38" viewBox="0 0 46 38" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="mui-ten-stroke"
+                                    d="M43.8333 18.9999L2.16666 18.9999M43.8333 18.9999L27.1667 35.6666M43.8333 18.9999L27.1667 2.33325"
+                                    stroke="#F5F5F5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </a>
             </div>
 
-            <!-- Nhúng icon mũi tên -->
-            <div class="mui-ten" style="margin-top:10px" >
-              <svg
-                width="46"
-                height="38"
-                viewBox="0 0 46 38"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  class="mui-ten-stroke"
-                  d="M43.8333 18.9999L2.16666 18.9999M43.8333 18.9999L27.1667 35.6666M43.8333 18.9999L27.1667 2.33325"
-                  stroke="#F5F5F5"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
+            <!-- Phần nội dung bên phải -->
+            <div class="right-content animate__animated animate__fadeInRight">
+                <div class="right-content-element">
+                    <model-viewer 
+                        src="https://dl.dropboxusercontent.com/scl/fi/fxf5fbh33ild09cv2z9zg/cakecode.gltf?rlkey=331wkah6g31npriwz6c567gku&dl=0"
+                        camera-controls auto-rotate>
+                    </model-viewer>
+                </div>
+                <a href="#" style="text-decoration: none;" class="right-content-element">
+                    <div class="right-content-href" style="margin-top: 20px; display: flex; align-items: center"></div>
+                    <div class="button-banner">
+                        <div class="text-button-banner">Xem trong không gian</div>
+                    </div>
+                </a>
             </div>
-          </div>
         </div>
-      </a>
 
-        <!-- Phần nội dung bên phải -->
-        <div class="right-content animate__animated animate__fadeInRight">
-         <!-- <div
-            style="
-              width: 524px;
-              height: 455px;
-              background: rgba(0, 0, 0, 0.13);
-              border-radius: 100px 100px 100px 240px;
-            "
-          ></div> -->
+        <!-- Phần banner phía dưới -->
+        <!-- Hộp liên hệ -->
+        <div class="contact-box animate__animated animate__fadeInUp">
+            <!-- Contact content wrap -->
+            <div class="contact-content-wrap">
+                <!-- Địa chỉ -->
+                <div class="dia-chi">
+                    <!-- Icon -->
+                    <div class="icon" style="padding-right: 5px">
+                        <svg width="70" height="71" viewBox="0 0 70 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M35 6.33325C46.2758 6.33325 55.4166 15.4741 55.4166 26.7499C55.4166 30.1592 54.5834 33.3716 53.1039 36.1983L35 67.5833L17.3154 36.9594C15.575 33.9541 14.5833 30.4692 14.5833 26.7499C14.5833 15.4741 23.7242 6.33325 35 6.33325ZM35 12.1666C26.9458 12.1666 20.4166 18.6958 20.4166 26.7499C20.4166 29.0659 20.9509 31.2881 21.962 33.2942L22.452 34.1892L35 55.9166L47.6366 34.0361C48.9071 31.8422 49.5833 29.3554 49.5833 26.7499C49.5833 18.6958 43.0541 12.1666 35 12.1666ZM35 17.9999C39.8325 17.9999 43.75 21.9174 43.75 26.7499C43.75 31.5824 39.8325 35.4999 35 35.4999C30.1675 35.4999 26.25 31.5824 26.25 26.7499C26.25 21.9174 30.1675 17.9999 35 17.9999ZM35 23.8333C33.3891 23.8333 32.0833 25.1391 32.0833 26.7499C32.0833 28.3607 33.3891 29.6666 35 29.6666C36.6108 29.6666 37.9166 28.3607 37.9166 26.7499C37.9166 25.1391 36.6108 23.8333 35 23.8333Z"
+                                fill="#F5F5F5" />
+                        </svg>
+                    </div>
+                    <!-- Text -->
+                    <div class="contact-text">
+                        <div class="contact-title">Địa chỉ</div>
+                        <div class="contact-subtitle">
+                            279 Nguyễn Tri Phương, P.5, Q.10, Tp.HCM
+                        </div>
+                    </div>
+                </div>
 
-          <!-- Mask group ảnh -->
-          <!--<div class="mask-container" style="position: absolute">
-            <div
-              class="mask"
-              style="
-                width: 490px;
-                height: 426px;
-                left: 0px;
-                top: 0px;
-                background: #a3a3a3;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                border-radius: 100px 100px 100px 240px;
-                overflow: hidden;
-              "
-            >
-              <img
-                style="
-                  width: 100%;
-                  height: 100%;
-                  object-fit: cover;
-                  mask: url('#mask-image');
-                  mask-composite: destination-in;
-                "
-                src="./imagelandingpage/img_208923_augmentedreality.jpg"
-              />-->
-              <!--file 3D-->
-              <div>
-                <model-viewer src="https://dl.dropboxusercontent.com/scl/fi/fxf5fbh33ild09cv2z9zg/cakecode.gltf?rlkey=331wkah6g31npriwz6c567gku&dl=0" camera-controls auto-rotate ></<model-viewer>
-            </div>
-              <a href="#" style="text-decoration: none;"><div style="margin-top: 20px; display: flex; align-items: center"></div>
-            <div class="button-banner">
-              <div class="text-button-banner">Xem trong không gian</div>
-            </div>
-            </div>
-          </a>
+                <!-- Điện thoại -->
+                <div class="dien-thoai">
+                    <!-- Icon -->
+                    <div class="icon">
+                        <svg width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M35.6458 15.9792C37.458 16.3327 39.2569 17.1319 40.5625 18.4375C41.8681 19.7431 42.6673 21.542 43.0208 23.3542M36.875 7.375C40.64 7.79326 44.028 9.61471 46.7083 12.2917C49.3887 14.9686 51.202 18.3605 51.625 22.125M51.6237 40.5051V47.1666C51.634 49.7131 49.3443 51.8395 46.7734 51.6077C24.5835 51.625 7.37515 34.2568 7.39252 12.2159C7.16097 9.65866 9.27686 7.37761 11.8201 7.37522H18.4948C19.5746 7.36461 20.6214 7.74621 21.4401 8.4489C23.7676 10.4467 25.2648 17.2274 24.6887 19.923C24.239 22.0276 22.1175 23.4999 20.6752 24.9394C23.8425 30.4985 28.4545 35.1014 34.0247 38.2624C35.467 36.823 36.9423 34.7057 39.051 34.2568C41.7561 33.6811 48.5805 35.1803 50.5702 37.5241C51.2758 38.3552 51.6507 39.4161 51.6237 40.5051Z"
+                                stroke="#F5F5F5" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <!-- Text -->
+                    <div class="contact-text">
+                        <div class="contact-title">Điện thoại</div>
+                        <div class="contact-subtitle">0256 - 423 - 225</div>
+                    </div>
+                </div>
 
-            <!-- <svg style="display: none">
-              <defs>
-                <mask
-                  id="mask-image"
-                  maskUnits="objectBoundingBox"
-                  maskContentUnits="objectBoundingBox"
-                >
-                  <rect width="1" height="1" fill="#fff" />
-                  <circle cx="0.5" cy="0.5" r="0.4" fill="#000" />
-                </mask>
-              </defs>
-            </svg>
-          </div>
-        </div>-->
-      </div>
-
-      <!-- Phần banner phía dưới -->
-      <!-- Hộp liên hệ -->
-      <div
-        class="contact-box animate__animated animate__fadeInUp">
-        <!-- Contact content wrap -->
-        <div class="contact-content-wrap">
-          <!-- Địa chỉ -->
-          <div class="dia-chi">
-            <!-- Icon -->
-            <div class="icon" style="padding-right: 5px">
-              <svg
-                width="70"
-                height="71"
-                viewBox="0 0 70 71"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M35 6.33325C46.2758 6.33325 55.4166 15.4741 55.4166 26.7499C55.4166 30.1592 54.5834 33.3716 53.1039 36.1983L35 67.5833L17.3154 36.9594C15.575 33.9541 14.5833 30.4692 14.5833 26.7499C14.5833 15.4741 23.7242 6.33325 35 6.33325ZM35 12.1666C26.9458 12.1666 20.4166 18.6958 20.4166 26.7499C20.4166 29.0659 20.9509 31.2881 21.962 33.2942L22.452 34.1892L35 55.9166L47.6366 34.0361C48.9071 31.8422 49.5833 29.3554 49.5833 26.7499C49.5833 18.6958 43.0541 12.1666 35 12.1666ZM35 17.9999C39.8325 17.9999 43.75 21.9174 43.75 26.7499C43.75 31.5824 39.8325 35.4999 35 35.4999C30.1675 35.4999 26.25 31.5824 26.25 26.7499C26.25 21.9174 30.1675 17.9999 35 17.9999ZM35 23.8333C33.3891 23.8333 32.0833 25.1391 32.0833 26.7499C32.0833 28.3607 33.3891 29.6666 35 29.6666C36.6108 29.6666 37.9166 28.3607 37.9166 26.7499C37.9166 25.1391 36.6108 23.8333 35 23.8333Z"
-                  fill="#F5F5F5"
-                />
-              </svg>
+                <!-- Email -->
+                <div class="email">
+                    <!-- Icon -->
+                    <div class="icon">
+                        <svg width="66" height="65" viewBox="0 0 66 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.41825 14.335C9.90836 13.8449 10.5854 13.5417 11.3333 13.5417H54.6667C55.4146 13.5417 56.0916 13.8449 56.5817 14.335M9.41825 14.335C8.92814 14.8251 8.625 15.5022 8.625 16.2501V48.7501C8.625 50.2459 9.83756 51.4584 11.3333 51.4584H54.6667C56.1624 51.4584 57.375 50.2459 57.375 48.7501V16.2501C57.375 15.5022 57.0719 14.8251 56.5817 14.335M9.41825 14.335L29.1698 34.0865C31.2852 36.2018 34.7148 36.2018 36.8302 34.0865L56.5817 14.335"
+                                stroke="#F5F5F5" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <!-- Text email -->
+                    <div class="contact-text">
+                        <div class="contact-title">Email</div>
+                        <div class="contact-subtitle">chamsockh@virtualhorizons.com</div>
+                    </div>
+                </div>
             </div>
-            <!-- Text -->
-            <div class="contact-text">
-              <div class="contact-title">Địa chỉ</div>
-              <div class="contact-subtitle">
-                279 Nguyễn Tri Phương, P.5, Q.10, Tp.HCM
-              </div>
-            </div>
-          </div>
-
-          <!-- Điện thoại -->
-          <div class="dien-thoai">
-            <!-- Icon -->
-            <div class="icon">
-              <svg
-                width="59"
-                height="59"
-                viewBox="0 0 59 59"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M35.6458 15.9792C37.458 16.3327 39.2569 17.1319 40.5625 18.4375C41.8681 19.7431 42.6673 21.542 43.0208 23.3542M36.875 7.375C40.64 7.79326 44.028 9.61471 46.7083 12.2917C49.3887 14.9686 51.202 18.3605 51.625 22.125M51.6237 40.5051V47.1666C51.634 49.7131 49.3443 51.8395 46.7734 51.6077C24.5835 51.625 7.37515 34.2568 7.39252 12.2159C7.16097 9.65866 9.27686 7.37761 11.8201 7.37522H18.4948C19.5746 7.36461 20.6214 7.74621 21.4401 8.4489C23.7676 10.4467 25.2648 17.2274 24.6887 19.923C24.239 22.0276 22.1175 23.4999 20.6752 24.9394C23.8425 30.4985 28.4545 35.1014 34.0247 38.2624C35.467 36.823 36.9423 34.7057 39.051 34.2568C41.7561 33.6811 48.5805 35.1803 50.5702 37.5241C51.2758 38.3552 51.6507 39.4161 51.6237 40.5051Z"
-                  stroke="#F5F5F5"
-                  stroke-width="6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
-            <!-- Text -->
-            <div class="contact-text">
-              <div class="contact-title">Điện thoại</div>
-              <div class="contact-subtitle">0256 - 423 - 225</div>
-            </div>
-          </div>
-
-          <!-- Email -->
-          <div
-            class="email">
-            <!-- Icon -->
-            <div class="icon">
-              <svg
-                width="66"
-                height="65"
-                viewBox="0 0 66 65"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9.41825 14.335C9.90836 13.8449 10.5854 13.5417 11.3333 13.5417H54.6667C55.4146 13.5417 56.0916 13.8449 56.5817 14.335M9.41825 14.335C8.92814 14.8251 8.625 15.5022 8.625 16.2501V48.7501C8.625 50.2459 9.83756 51.4584 11.3333 51.4584H54.6667C56.1624 51.4584 57.375 50.2459 57.375 48.7501V16.2501C57.375 15.5022 57.0719 14.8251 56.5817 14.335M9.41825 14.335L29.1698 34.0865C31.2852 36.2018 34.7148 36.2018 36.8302 34.0865L56.5817 14.335"
-                  stroke="#F5F5F5"
-                  stroke-width="6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
-            <!-- Text email -->
-            <div class="contact-text">
-              <div class="contact-title">Email</div>
-              <div class="contact-subtitle">chamsockh@virtualhorizons.com</div>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-  </body>
+</body>
+
 </html>
