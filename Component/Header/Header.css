@@ -88,13 +88,15 @@ nav a:hover {
 .menu-mobile {
     position: fixed;
     top: 0;
-    right: -200vw;
+    /* right: 0; */
     left: 0;
+    /* width: 100%; */
+    /* left: -200vw; */
     bottom: 0;
     background-color: #181059;
     z-index: 300;
     padding: 25px;
-    /* transform: translateX(-200vw); */
+    transform: translateX(-200vw);
     visibility: hidden;
     opacity: 0;
     transition: all ease-in 0.5s;
@@ -168,8 +170,8 @@ nav a:hover {
   }
 
   .menu-mobile.open {
-    /* transform: translateX(0); */
-    right: 0;
+    transform: translateX(0);
+    /* left: 0; */
     visibility: visible;
     opacity: 1;
   }

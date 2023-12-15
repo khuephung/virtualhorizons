@@ -1,241 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Display</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/b696211014.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./Component/Productsale/productsale.css">
-    <script
-      src="https://kit.fontawesome.com/b696211014.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  
-  <body>
+</head>
+
+<body>
     <div class="container-wrapper col-lg-3 col-md-4 col-sm-6">
-      <div class="container-product">
-        <!--Sản phẩm 1-->
-        <div class="product-box">
-          <!--Img và Action-->
-          <div class="product-image-action">
-            <a class="aspect aspect--bg-grey aspect--square u-d-block" href="">
-              <img
-                class="product-image"
-                src="./imagelandingpage/product13.jpg"
-                alt="Sản phẩm 1"
-              />
-            </a>
-            <div class="product-r__action-wrap">
-              <ul class="product-r__action-list">
-                <li>
-                  <a data-modal="modal" data-modal-id="#quick-look"
-                    ><i class="action-icon fas fa-search-plus"></i
-                  ></a>
-                </li>
-                <li>
-                  <a data-modal="modal" data-modal-id="#add-to-cart"
-                    ><i class="action-icon fas fa-plus-circle"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="signin.html"
-                    ><i class="action-icon fas fa-heart"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="signin.html"
-                    ><i class="action-icon fas fa-envelope"></i
-                  ></a>
-                </li>
-              </ul>
+        <div class="container-product">
+            <!--Sản phẩm 1-->
+            <div class="product-box">
+                <!--Img và Action-->
+                <div class="product-image-action">
+                    <a class="aspect aspect--bg-grey aspect--square u-d-block" href="">
+                        <img class="product-image" src="./imagelandingpage/product13.jpg" alt="Sản phẩm 1" />
+                    </a>
+                    <div class="product-r__action-wrap">
+                        <ul class="product-r__action-list">
+                            <li>
+                                <a data-modal="modal" data-modal-id="#quick-look"><i
+                                        class="action-icon fas fa-search-plus"></i></a>
+                            </li>
+                            <li>
+                                <a data-modal="modal" data-modal-id="#add-to-cart"><i
+                                        class="action-icon fas fa-plus-circle"></i></a>
+                            </li>
+                            <li>
+                                <a href="signin.html"><i class="action-icon fas fa-heart"></i></a>
+                            </li>
+                            <li>
+                                <a href="signin.html"><i class="action-icon fas fa-envelope"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Thông tin-->
+                <div class="product-info">
+                    <div class="product-category">Đồ ăn</div>
+                    <div class="product-title">Món ăn Nhật Bản</div>
+                    <div class="product-rating">
+                        <span class="fa-solid fa-star"></span>
+                        <span class="fa-solid fa-star"></span>
+                        <span class="fa-solid fa-star"></span>
+                        <span class="fa-solid fa-star"></span>
+                        <span class="fa-solid fa-star"></span>
+                    </div>
+                    <div class="price-wrapper">
+                        <div class="product-price">30.000 đ</div>
+                        <div class="discount-price">100.000 đ</div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <!--Thông tin-->
-          <div class="product-info">
-            <div class="product-category">Đồ ăn</div>
-            <div class="product-title">Món ăn Nhật Bản</div>
-            <div class="product-rating">
-              <span class="fa-solid fa-star"></span>
-              <span class="fa-solid fa-star"></span>
-              <span class="fa-solid fa-star"></span>
-              <span class="fa-solid fa-star"></span>
-              <span class="fa-solid fa-star"></span>
-            </div>
-            <div class="price-wrapper">
-              <div class="product-price">30.000 đ</div>
-              <div class="discount-price">100.000 đ</div>
-            </div>
-          </div>
-        </div>
 
-        <!-- Sản phẩm 2 -->
-        <div class="product-box">
-            <!--Img và Action-->
-            <div class="product-image-action">
-              <a class="aspect aspect--bg-grey aspect--square u-d-block" href="">
-                <img
-                  class="product-image"
-                  src="./imagelandingpage/product23.jpg"
-                  alt="Sản phẩm 2"
-                />
-              </a>
-              <div class="product-r__action-wrap">
-                <ul class="product-r__action-list">
-                  <li>
-                    <a data-modal="modal" data-modal-id="#quick-look"
-                      ><i class="action-icon fas fa-search-plus"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a data-modal="modal" data-modal-id="#add-to-cart"
-                      ><i class="action-icon fas fa-plus-circle"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="signin.html"
-                      ><i class="action-icon fas fa-heart"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="signin.html"
-                      ><i class="action-icon fas fa-envelope"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
+            <!-- Sản phẩm 2 -->
+            <div class="product-box">
+                <!--Img và Action-->
+                <div class="product-image-action">
+                    <a class="aspect aspect--bg-grey aspect--square u-d-block" href="">
+                        <img class="product-image" src="./imagelandingpage/product23.jpg" alt="Sản phẩm 2" />
+                    </a>
+                    <div class="product-r__action-wrap">
+                        <ul class="product-r__action-list">
+                            <li>
+                                <a data-modal="modal" data-modal-id="#quick-look"><i
+                                        class="action-icon fas fa-search-plus"></i></a>
+                            </li>
+                            <li>
+                                <a data-modal="modal" data-modal-id="#add-to-cart"><i
+                                        class="action-icon fas fa-plus-circle"></i></a>
+                            </li>
+                            <li>
+                                <a href="signin.html"><i class="action-icon fas fa-heart"></i></a>
+                            </li>
+                            <li>
+                                <a href="signin.html"><i class="action-icon fas fa-envelope"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Thông tin-->
+                <div class="product-info">
+                    <div class="product-category">Nhà</div>
+                    <div class="product-title">Phòng khách mini</div>
+                    <div class="product-rating">
+                        <span class="fa-solid fa-star"></span>
+                        <span class="fa-solid fa-star"></span>
+                        <span class="fa-solid fa-star"></span>
+                        <span class="fa-solid fa-star"></span>
+                        <span class="fa-solid fa-star"></span>
+                    </div>
+                    <div class="price-wrapper">
+                        <div class="product-price">50.000 đ</div>
+                        <div class="discount-price">70.000 đ</div>
+                    </div>
+                </div>
             </div>
-            <!--Thông tin-->
-            <div class="product-info">
-              <div class="product-category">Nhà</div>
-              <div class="product-title">Phòng khách mini</div>
-              <div class="product-rating">
-                <span class="fa-solid fa-star"></span>
-                <span class="fa-solid fa-star"></span>
-                <span class="fa-solid fa-star"></span>
-                <span class="fa-solid fa-star"></span>
-                <span class="fa-solid fa-star"></span>
-              </div>
-              <div class="price-wrapper">
-                <div class="product-price">50.000 đ</div>
-                <div class="discount-price">70.000 đ</div>
-              </div>
-            </div>
-          </div>
 
-          <!-- Sản phẩm 3 -->
-          <div class="product-box">
-            <!--Img và Action-->
-            <div class="product-image-action">
-              <a class="aspect aspect--bg-grey aspect--square u-d-block" href="">
-                <img
-                  class="product-image"
-                  src="./imagelandingpage/product16.jpg"
-                  alt="Sản phẩm 3"
-                />
-              </a>
-              <div class="product-r__action-wrap">
-                <ul class="product-r__action-list">
-                  <li>
-                    <a data-modal="modal" data-modal-id="#quick-look"
-                      ><i class="action-icon fas fa-search-plus"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a data-modal="modal" data-modal-id="#add-to-cart"
-                      ><i class="action-icon fas fa-plus-circle"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="signin.html"
-                      ><i class="action-icon fas fa-heart"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="signin.html"
-                      ><i class="action-icon fas fa-envelope"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
+            <!-- Sản phẩm 3 -->
+            <div class="product-box">
+                <!--Img và Action-->
+                <div class="product-image-action">
+                    <a class="aspect aspect--bg-grey aspect--square u-d-block" href="">
+                        <img class="product-image" src="./imagelandingpage/product16.jpg" alt="Sản phẩm 3" />
+                    </a>
+                    <div class="product-r__action-wrap">
+                        <ul class="product-r__action-list">
+                            <li>
+                                <a data-modal="modal" data-modal-id="#quick-look"><i
+                                        class="action-icon fas fa-search-plus"></i></a>
+                            </li>
+                            <li>
+                                <a data-modal="modal" data-modal-id="#add-to-cart"><i
+                                        class="action-icon fas fa-plus-circle"></i></a>
+                            </li>
+                            <li>
+                                <a href="signin.html"><i class="action-icon fas fa-heart"></i></a>
+                            </li>
+                            <li>
+                                <a href="signin.html"><i class="action-icon fas fa-envelope"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Thông tin-->
+                <div class="product-info">
+                    <div class="product-category">Con người</div>
+                    <div class="product-title">Cô gái đội đầu quỷ</div>
+                    <div class="product-rating">
+                        <span class="fa-solid fa-star"></span>
+                        <span class="fa-solid fa-star"></span>
+                        <span class="fa-solid fa-star"></span>
+                        <span class="fa-solid fa-star"></span>
+                        <span class="fa-solid fa-star"></span>
+                    </div>
+                    <div class="price-wrapper">
+                        <div class="product-price">45.000 đ</div>
+                        <div class="discount-price">120.000 đ</div>
+                    </div>
+                </div>
             </div>
-            <!--Thông tin-->
-            <div class="product-info">
-              <div class="product-category">Con người</div>
-              <div class="product-title">Cô gái đội đầu quỷ</div>
-              <div class="product-rating">
-                <span class="fa-solid fa-star"></span>
-                <span class="fa-solid fa-star"></span>
-                <span class="fa-solid fa-star"></span>
-                <span class="fa-solid fa-star"></span>
-                <span class="fa-solid fa-star"></span>
-              </div>
-              <div class="price-wrapper">
-                <div class="product-price">45.000 đ</div>
-                <div class="discount-price">120.000 đ</div>
-              </div>
-            </div>
-        </div>
             <!-- Sản phẩm 4 -->
-          <div class="product-box">
-            <!--Img và Action-->
-            <div class="product-image-action">
-              <a class="aspect aspect--bg-grey aspect--square u-d-block" href="">
-                <img
-                  class="product-image"
-                  src="./imagelandingpage/product28.jpg"
-                  alt="Sản phẩm 4"
-                />
-              </a>
-              <div class="product-r__action-wrap">
-                <ul class="product-r__action-list">
-                  <li>
-                    <a data-modal="modal" data-modal-id="#quick-look"
-                      ><i class="action-icon fas fa-search-plus"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a data-modal="modal" data-modal-id="#add-to-cart"
-                      ><i class="action-icon fas fa-plus-circle"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="signin.html"
-                      ><i class="action-icon fas fa-heart"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="signin.html"
-                      ><i class="action-icon fas fa-envelope"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
+            <div class="product-box">
+                <!--Img và Action-->
+                <div class="product-image-action">
+                    <a class="aspect aspect--bg-grey aspect--square u-d-block" href="">
+                        <img class="product-image" src="./imagelandingpage/product28.jpg" alt="Sản phẩm 4" />
+                    </a>
+                    <div class="product-r__action-wrap">
+                        <ul class="product-r__action-list">
+                            <li>
+                                <a data-modal="modal" data-modal-id="#quick-look"><i
+                                        class="action-icon fas fa-search-plus"></i></a>
+                            </li>
+                            <li>
+                                <a data-modal="modal" data-modal-id="#add-to-cart"><i
+                                        class="action-icon fas fa-plus-circle"></i></a>
+                            </li>
+                            <li>
+                                <a href="signin.html"><i class="action-icon fas fa-heart"></i></a>
+                            </li>
+                            <li>
+                                <a href="signin.html"><i class="action-icon fas fa-envelope"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Thông tin-->
+                <div class="product-info">
+                    <div class="product-category">Kiến trúc</div>
+                    <div class="product-title">Nhà hàng Nhật Bản</div>
+                    <div class="product-rating">
+                        <span class="fa-solid fa-star"></span>
+                        <span class="fa-solid fa-star"></span>
+                        <span class="fa-solid fa-star"></span>
+                        <span class="fa-solid fa-star"></span>
+                        <span class="fa-solid fa-star"></span>
+                    </div>
+                    <div class="price-wrapper">
+                        <div class="product-price">40.000 đ</div>
+                        <div class="discount-price">80.000 đ</div>
+                    </div>
+                </div>
             </div>
-            <!--Thông tin-->
-            <div class="product-info">
-              <div class="product-category">Kiến trúc</div>
-              <div class="product-title">Nhà hàng Nhật Bản</div>
-              <div class="product-rating">
-                <span class="fa-solid fa-star"></span>
-                <span class="fa-solid fa-star"></span>
-                <span class="fa-solid fa-star"></span>
-                <span class="fa-solid fa-star"></span>
-                <span class="fa-solid fa-star"></span>
-              </div>
-              <div class="price-wrapper">
-                <div class="product-price">40.000 đ</div>
-                <div class="discount-price">80.000 đ</div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-  </body>
+    </div>
+</body>
+
 </html>
