@@ -1,94 +1,102 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Virtual Horizons</title>
     <link href="./HeaderFooter/logoimage/VIRTUAL HORIZONS-logo.svg" rel="shortcut icon">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="Header.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-      // jQuerry
-      $(function () {
-        $("#header").load("Header.html");
-      });
-      $(function () {
-        $("#footer").load("Footer.html");
-      });
-      $(function () {
-        $("#banner").load("Banner.html");
-      });
-      $(function () {
-        $("#form").load("Form.html");
-      });
-      $(function () {
-        $("#goi").load("BangGoi.html");
-      });
-      $(function () {
-        $("#taoduan").load("TaoDuan.html");
-      });
-      $(function () {
-        $("#logodoitac").load("LogoDoitac.html");
-      });
-      $(function () {
-        $("#client").load("Client.html");
-      });
-      $(function () {
-        $("#countdown").load("Countdown.html");
-      });
-      $(function () {
-        $("#productsale").load("productsale.html");
-      });
+        // jQuerry
+        $(function () {
+          $("#header").load("Header.html");
+        });
+        $(function () {
+            $("#footer").load("Footer.html");
+        });
+        $(function () {
+            $("#banner").load("Banner.html");
+        });
+        $(function () {
+            $("#form").load("Form.html");
+        });
+        $(function () {
+            $("#goi").load("BangGoi.html");
+        });
+        $(function () {
+            $("#taoduan").load("TaoDuan.html");
+        });
+        $(function () {
+            $("#logodoitac").load("LogoDoitac.html");
+        });
+        $(function () {
+            $("#client").load("Client.html");
+        });
+        $(function () {
+            $("#countdown").load("Countdown.html");
+        });
+        $(function () {
+            $("#productsale").load("productsale.html");
+        });
     </script>
     <style>
-      .landing-page {
-        overflow-x: hidden; /*ẩn thanh cuộn ngang*/
-        background-image: url("./imagelandingpage/Frame\ 10.png");
-        background-size: cover;
-        height: max-content;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        scroll-behavior: smooth;
-        font-family: Montserrat, sans-serif;
-     
-      }
-      #header,
-      #banner,
-      #goi,
-      #countdown,
-      #productsale,
-      #logodoitac,
-      #taoduan,
-      #client,
-      #form {
-        margin-bottom: 70px;
-        /* width: 100%; */
-      }
+        * {
+            box-sizing: border-box;
+        }
+        .landing-page {
+            overflow-x: hidden;
+            /*ẩn thanh cuộn ngang*/
+            background-image: url("./imagelandingpage/Frame\ 10.png");
+            background-size: cover;
+            height: max-content;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            scroll-behavior: smooth;
+            font-family: Montserrat, sans-serif;
+            min-width: 575px;
+        }
 
-      #countdown,
-      #productsale{
-        margin-bottom: 10px;
-      }
-      #productsale,
-      #logodoitac {
-        margin-bottom:70px;
-      }
+        #header,
+        #banner,
+        #goi,
+        #countdown,
+        #productsale,
+        #logodoitac,
+        #taoduan,
+        #client,
+        #form {
+            margin-bottom: 70px;
+            width: 100%;
+        }
+
+        #countdown,
+        #productsale {
+            margin-bottom: 10px;
+        }
+
+        #productsale,
+        #logodoitac {
+            margin-bottom: 70px;
+        }
 
 
-      #logodoitac, 
-      #client,
-      #countdown {
-        width: 100%;
-        overflow-x: hidden;
-      }
+        #logodoitac,
+        #client,
+        #countdown {
+            width: 100%;
+            overflow-x: hidden;
+        }
     </style>
-  </head>
-  <body class="landing-page">
-    <div id="header"></div>
+</head>
+
+<body class="landing-page">
+    <div id="header">
+        
+    </div>
     <div id="banner"></div>
     <div id="goi"></div>
     <div id="countdown"></div>
@@ -96,7 +104,18 @@
     <div id="logodoitac"></div>
     <div id="taoduan"></div>
     <div id="client"></div>
-    <div id="form"></div> 
+    <div id="form"></div>
     <div id="footer"></div>
-  </body>
+
+     
+
+
+
+
+    <script src="https://example.com/fontawesome/v6.5.1/js/fontawesome.js" data-auto-replace-svg="nest"></script>
+    <script src="https://example.com/fontawesome/v6.5.1/js/solid.js"></script>
+    <script src="https://example.com/fontawesome/v6.5.1/js/brands.js"></script>
+    <script src="Header.js" type="module"></script>
+</body>
+
 </html>
