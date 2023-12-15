@@ -1,6 +1,7 @@
-body {
+.formbody {
   display: flex;
   justify-content: center;
+  width: 100%
 }
 
 .form-container-input /*cái khung xanh*/ {
