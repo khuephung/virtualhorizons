@@ -1,0 +1,183 @@
+    /* CSS bắt đầu từ đây */
+    /* Thiết lập font chữ cho body là 'Montserrat' */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+/* Phần tiêu đề của trang */
+.page_title {
+    padding-top: 10px;
+    /* Khoảng cách từ đỉnh trang đến phần title */
+    margin-bottom: 50px;
+    /* Khoảng cách phía dưới phần title */
+    width: 100%;
+    /* Chiều rộng 100% */
+    text-align: center;
+    /* Canh giữa nội dung */
+    font-weight: bold;
+    /* Chữ đậm */
+    text-transform: uppercase;
+    /* Chữ in hoa */
+    font-size: 36px;
+    /* Cỡ chữ */
+    color: blue;
+    /* Màu chữ */
+}
+/* Panel chứa các card */
+.panel {
+    width: 100%;
+    /* Chiều rộng 100% */
+    display: flex;
+    /* Sử dụng Flexbox */
+    flex-wrap: wrap;
+    /* Cho phép wrap các card khi không vừa */
+    justify-content: center;
+    /* Căn giữa các card */
+    align-items: center;
+    /* Căn giữa các card */
+}
+/* Các card */
+.card {
+    background: hsla(0, 0%, 84%, 1);
+    /* Màu nền của card */
+    background: radial-gradient(ellipse, hsla(0, 0%, 50%, 1) 0%, rgba(16, 14, 139, 0.925) 70%);
+    /* Gradient nền cho card */
+    text-align: center;
+    /* Canh giữa nội dung */
+    color: white;
+    /* Màu chữ */
+    width: 290px;
+    /* Chiều rộng card */
+    height: 470px;
+    /* Chiều cao card */
+    border-radius: 24px;
+    /* Bo góc của card */
+    margin: 10px;
+    /* Khoảng cách giữa các card */
+    object-fit: cover;
+    /* Đảm bảo ảnh không bị méo khi resize */
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* Khoảng cách từ viền đến nội dung trong card */
+    border: 2px solid rgba(16, 14, 139, 0.925);
+    /* Đường viền của card */
+}
+/* Hover effect cho card */
+.card:hover {
+    background: white;
+    /* Màu nền thay đổi khi hover */
+    color: #08087f
+}
+/* Hover effect cho nút trong card */
+.button-trial button:hover {
+    transform: scale(1.2);
+    /* Hiệu ứng phóng to khi hover */
+    background-color: #2E1CFF;
+    color: white;
+}
+.card:hover .avatar img {
+    border: 14px solid #170e8046;
+}
+/* Hình ảnh trong card */
+.avatar img {
+    margin-top: 40px;
+    /* Khoảng cách từ trên xuống */
+    width: 60%;
+    /* Kích thước ảnh */
+    border-radius: 50%;
+    /* Bo góc ảnh để tạo hình tròn */
+    border: 14px solid rgba(42, 67, 192, 0.5);
+    /* Đường viền của ảnh */
+    object-fit: cover;
+    /* Đảm bảo ảnh không bị méo khi resize */
+    overflow: hidden;
+    /* Ẩn phần ảnh vượt ra ngoài khung */
+}
+/* Tiêu đề của card */
+.title {
+    margin-top: 20px;
+    /* Khoảng cách từ trên xuống */
+    margin-bottom: 10px;
+    /* Khoảng cách từ dưới lên */
+    text-transform: uppercase;
+    /* Chữ in hoa */
+    font-weight: bold;
+    /* Chữ đậm */
+    font-size: 25px;
+}
+/* Dòng ngăn cách trong card */
+.card hr {
+    width: 100px;
+    /* Chiều rộng của dòng ngăn cách */
+    border-color: #cfcfcf;
+    /* Màu của dòng ngăn cách */
+}
+/* Mô tả trong card */
+.description {
+    margin-top: 10px;
+    /* Khoảng cách từ trên xuống */
+    margin-bottom: 10px;
+    /* Khoảng cách từ dưới lên */
+    font-size: 18px;
+    /* Cỡ chữ */
+}
+/* Nút trong card */
+.button-trial {
+    margin-top: 25px;
+    /* Khoảng cách từ trên xuống */
+}
+.button-trial button {
+    text-transform: uppercase;
+    /* Chữ in hoa */
+    background-color: #f7f7f794;
+    /* Màu nền của nút */
+    border: solid;
+    /* Không viền */
+    color: #08087f;
+    /* Màu chữ */
+    padding: 6px 20px;
+    /* Kích thước nút */
+    font-weight: bold;
+    /* Chữ đậm */
+    font-family: 'Montserrat', sans-serif;
+    /* Font chữ */
+    text-align: center;
+    /* Canh giữa nội dung */
+    text-decoration: none;
+    /* Không gạch chân */
+    font-size: 16px;
+    display: inline-block;
+    /* Hiển thị kiểu block */
+    margin: 6px 2px;
+    /* Khoảng cách */
+    cursor: pointer;
+    /* Con trỏ khi hover */
+    border-radius: 16px;
+    /* Bo góc nút */
+}
+@media screen and (max-width: 375px) {
+    .panel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 75%;
+        margin: 0 auto;
+    }
+    .card {
+        width: 95%;
+        height: auto;
+        padding: 50px 0;
+    }
+    .card .avatar img {
+        margin-top: 25px;
+        width: 45%;
+    }
+    .button-trial {
+        width: 75%;
+        margin: 0 auto;
+    }
+    .button-trial button {
+        width: 100%;
+        height: 45px;
+    }
+}
