@@ -16,19 +16,69 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <style>
+      .top-banner{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;    
+      }
       .right-content {
             margin-left: 130px;
             display: flex;
             flex-direction: column;
             text-align: center;
             justify-content: center;
-            align-items: center;
-       
+            align-items: center; 
+      }
+      .banner-title{
+            margin-top: 30px;
+            width: 589px;
+            background: -webkit-linear-gradient(
+                    90deg,
+                    rgba(242, 242, 242, 0.61),
+                    rgba(255, 255, 255, 0.64),
+                    rgba(200, 198, 228, 1)
+                  );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 48px;
+            font-weight: 700;
+            word-wrap: break-word;
+      }
+
+      .banner-subtitle{
+            padding-top: 21px;
+            width: 495px;
+            color: white;
+            font-size: 20px;
+            font-weight: 400;
+            word-wrap: break-word;
       }
       model-viewer {width:500px; height:300px; margin: 0, auto;}
       * {
         font-family: "Montserrat", sans-serif;
         scroll-behavior: smooth;
+      }
+      .contact-box{
+        position: relative;
+            margin-top: 90px;
+            width: 100%;
+            max-width: 1272px;
+            min-width: 500px;
+            background: radial-gradient(
+              circle at 50% 50%,
+              rgba(122, 123, 218, 0.64) 1%,
+              rgba(23, 14, 128, 0.65) 87%
+            );
+            border-radius: 90px;
+            backdrop-filter: blur(15px);
+      }
+      .contact-content-wrap{
+            padding: 24px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
       }
       /* Nội dung trong box contact */
       .contact-text {
@@ -53,6 +103,42 @@
         font-weight: 400;
         word-wrap: break-word;
       }
+
+      .dia-chi{
+        padding-right: 43px;
+        height: 117px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+      }
+
+      .icon {
+        padding-right: 5px
+      }
+      .dien-thoai{
+        height: 117px;
+        padding-right: 113px;
+        padding-left: 48px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        border-style: solid;
+        border-top: none;
+        border-bottom: none;
+        border-color: rgba(192, 183, 232, 0.33);
+      }
+      .email{
+        height: 117px;
+        padding-left: 48px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+      }
+
+
       /* Style cho button */
       .button-banner {
         margin-right: 16px;
@@ -91,51 +177,16 @@
   <body style="width: 100%">
     <div style="margin: 0 85px">
       <!-- Phần banner phía trên -->
-      <div
-        class="top-banner"
-        style="
-          width: 100%;
-          display: flex;
-        justify-content: center;
-          align-items: center;       
-        "
-      >
+      <div class="top-banner">
         <!-- Phần nội dung bên trái -->
         <div class="left-content animate__animated animate__fadeInLeft" style="padding-left: 22px">
           <!-- Tiêu đề banner -->
-          <div
-            class="banner-title"
-            style="
-              margin-top: 30px;
-              width: 589px;
-              background: -webkit-linear-gradient(
-                90deg,
-                rgba(242, 242, 242, 0.61),
-                rgba(255, 255, 255, 0.64),
-                rgba(200, 198, 228, 1)
-              );
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-              font-size: 48px;
-              font-weight: 700;
-              word-wrap: break-word;
-            "
-          >
+          <div class="banner-title">
             GIẢI PHÁP CÔNG NGHỆ<br />THỰC TẾ ẢO AR
           </div>
 
           <!-- Phụ đề banner -->
-          <div
-            class="banner-subtitle"
-            style="
-              padding-top: 21px;
-              width: 495px;
-              color: white;
-              font-size: 20px;
-              font-weight: 400;
-              word-wrap: break-word;
-            "
-          >
+          <div class="banner-subtitle">
             Mang đến giải pháp công nghệ AR tối ưu hoá trải nghiệm tuyệt vời cho
             khách hàng của bạn.
           </div>
@@ -171,10 +222,7 @@
       </a>
 
         <!-- Phần nội dung bên phải -->
-        <div
-          class="right-content animate__animated animate__fadeInRight"
-         
-        >
+        <div class="right-content animate__animated animate__fadeInRight">
          <!-- <div
             style="
               width: 524px;
@@ -239,45 +287,11 @@
       <!-- Phần banner phía dưới -->
       <!-- Hộp liên hệ -->
       <div
-        class="contact-box animate__animated animate__fadeInUp"
-        style="
-          position: relative;
-          margin-top: 90px;
-          width: 100%;
-          max-width: 1272px;
-          min-width: 500px;
-          background: radial-gradient(
-            circle at 50% 50%,
-            rgba(122, 123, 218, 0.64) 1%,
-            rgba(23, 14, 128, 0.65) 87%
-          );
-          border-radius: 90px;
-          backdrop-filter: blur(15px);
-        "
-      >
+        class="contact-box animate__animated animate__fadeInUp">
         <!-- Contact content wrap -->
-        <div
-          class="contact-content-wrap"
-          style="
-            padding: 24px 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-          "
-        >
+        <div class="contact-content-wrap">
           <!-- Địa chỉ -->
-          <div
-            class="dia-chi"
-            style="
-              padding-right: 43px;
-              height: 117px;
-              display: flex;
-              justify-content: flex-start;
-              align-items: center;
-              flex-direction: row;
-            "
-          >
+          <div class="dia-chi">
             <!-- Icon -->
             <div class="icon" style="padding-right: 5px">
               <svg
@@ -305,24 +319,9 @@
           </div>
 
           <!-- Điện thoại -->
-          <div
-            class="dien-thoai"
-            style="
-              height: 117px;
-              padding-right: 113px;
-              padding-left: 48px;
-              display: flex;
-              justify-content: flex-start;
-              align-items: center;
-              flex-direction: row;
-              border-style: solid;
-              border-top: none;
-              border-bottom: none;
-              border-color: rgba(192, 183, 232, 0.33);
-            "
-          >
+          <div class="dien-thoai">
             <!-- Icon -->
-            <div class="icon" style="padding-right: 20px">
+            <div class="icon">
               <svg
                 width="59"
                 height="59"
@@ -348,18 +347,9 @@
 
           <!-- Email -->
           <div
-            class="email"
-            style="
-              height: 117px;
-              padding-left: 48px;
-              display: flex;
-              justify-content: flex-start;
-              align-items: center;
-              flex-direction: row;
-            "
-          >
+            class="email">
             <!-- Icon -->
-            <div class="icon" style="padding-right: 20px">
+            <div class="icon">
               <svg
                 width="66"
                 height="65"
