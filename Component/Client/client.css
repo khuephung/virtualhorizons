@@ -1,0 +1,165 @@
+@keyframes container-slide{
+    
+    0%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveBackward{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+    /* 0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(calc(100vw - 100%));
+    } */
+    /* 0% {
+ transform: translateX(0);
+}
+100% {
+transform: translateX(calc(-200% + 50px)); /* Di chuyển phần tử đến cuối container */
+} */
+
+
+.overall{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+
+.container {
+width: 100%;
+color: #170E80;
+display: flex;
+margin-top: 50px;
+}
+
+.container:hover .container-slide{
+animation-play-state:paused;
+}
+
+.container-slide{
+animation: 40s moveBackward infinite linear;
+display: flex;
+}
+
+
+.client-description {
+text-align: center;
+width: 100%;
+font-size:30px;
+}
+
+.clientImage {
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+
+.clientImage span {
+margin-left: 10px;
+font-size: 18px;
+font-weight: bold;
+}
+
+.clientImage img {
+width: 60px;  
+height: 60px;
+overflow: hidden; /* Ẩn phần nằm ngoài kích thước container */
+border-radius: 50%; /* Đặt góc cong là 50% để tạo hình tròn */
+}
+
+.reviewSection {
+padding: 10px;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-around;
+}
+
+.reviewItem {
+width: 360px;
+padding: 30px;
+margin: 20px;
+cursor: pointer;
+border-radius: 20px;
+transition: all .2s linear;
+background: -webkit-linear-gradient(
+90deg,
+rgba(242, 242, 242, 0.61),
+rgba(255, 255, 255, 0.64),
+rgba(200, 198, 228, 1)
+); 
+}
+
+.reviewItem:hover{
+border-color: aqua;
+transform: scale(1.01);
+background-color: #95ffff;
+box-shadow: 0 0px 5px 0px #cbc0c0;
+}
+
+
+.top {
+margin-bottom: 10px;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+}
+
+.top ul {
+display: flex;
+list-style: none;
+}
+
+.top ul li {
+padding-left: 4px;
+}
+
+article p {
+font-size: 18px;
+margin-bottom: 20px;
+text-align:justify;
+}
+
+/*responsive*/
+
+@media screen and (max-width:768px) {
+.container {
+height: auto;
+}
+
+.client-description {
+width: 90%;
+}
+}
+
+@media screen and (max-width:320px) {
+.reviewSection {
+padding: 0;
+}
+
+.reviewItem {
+width: 100%;
+}
+
+.clientImage {
+margin-bottom: 0.6rem;
+}
+
+.top {
+align-items: center;
+flex-direction: column;
+justify-content: center;
+}
+}

@@ -1,0 +1,27 @@
+ /*Chuyển động từ trái sang phải*/
+ @keyframes slide{
+    from{
+        transform: translateX(0);/*Ban đầu không di chuyển theo trục x (hoạt động từ vị trí hiện tại).*/
+    }
+    to{
+        transform: translateX(-100%); /*di chuyển sang trái 100% chiều rộng của chính nó (ra khỏi khung nhìn).*/
+    }
+}
+.logos{
+    display: flex;
+    overflow:hidden; /*Ẩn phần nội dung bị tràn ra khỏi phần tử cha*/
+    padding:20px 0 0 0; /*Theo thứ tự top right bottom left*/
+    white-space:nowrap;
+}
+.logos:hover .logos-slide{
+    animation-play-state:paused; /*Dừng lại khi hover*/
+/* hời gian 25 giây, lặp vô hạn, và chuyển động theo dạng tuyến tính. */
+}
+.logos-slide{
+    animation: 25s slide infinite linear;
+}
+/* Định dạng hình ảnh bên trong */
+.logos-slide img{
+    height:100px;
+    margin: 30px;
+}

@@ -1,0 +1,57 @@
+.duancontainer {
+    display: flex;
+    flex-wrap: wrap; /* Để các cột xuống dòng khi không đủ không gian */
+    margin-left: 280px; /* Khoảng lề trái cho cả trang */
+    margin-right: 280px; /* Khoảng lề phải cho cả trang */
+}
+
+.left-column,
+.right-column {
+    flex: 1;
+    padding: 20px;
+}
+
+.left-column{
+
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+}
+.left-columntext{
+    margin-top: 15px;
+    font-size: 36px;
+    line-height: 1.5;
+}
+
+.right-column {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    text-align: Justify;
+}
+.right-columntext{
+    font-size: 24px;
+
+}
+.bottom-image {
+    margin-top:30px;
+    width: 100%; /* Ảnh chiếm toàn bộ chiều rộng của cột */
+    max-width: 100%;
+    height: auto; /* Đảm bảo tỷ lệ khung hình của ảnh được giữ */
+    margin-bottom:20px;
+}
+
+@media screen and (max-width: 800px) {
+    .duancontainer {
+        flex-direction: column; /* Hiển thị cột chồng lên nhau trên màn hình nhỏ */
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .left-column,
+    .right-column {
+        flex: 1; /* Cả hai cột chiếm toàn bộ chiều rộng của màn hình */
+        margin: 20px;
+    }
+}
