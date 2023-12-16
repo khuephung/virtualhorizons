@@ -3,6 +3,7 @@
     flex-wrap: wrap; /* Để các cột xuống dòng khi không đủ không gian */
     margin-left: 280px; /* Khoảng lề trái cho cả trang */
     margin-right: 280px; /* Khoảng lề phải cho cả trang */
+    width: 100%;
 }
 
 .left-column,

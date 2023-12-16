@@ -1,4 +1,7 @@
  /*Chuyển động từ trái sang phải*/
+ .logobody{
+    width:100%
+ }
  @keyframes slide{
     from{
         transform: translateX(0);/*Ban đầu không di chuyển theo trục x (hoạt động từ vị trí hiện tại).*/
