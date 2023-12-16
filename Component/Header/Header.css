@@ -15,7 +15,6 @@
 }
 
 #logo-header {
-    padding-left: 50px; /*Tạo khoảng cách bên trái của logo-Minh*/
     width: 15%;
 }
 #logo-header img {
@@ -50,7 +49,6 @@ nav a:hover {
     justify-content: flex-end; /* Căn phải các phần tử theo chiều ngang */
     padding: 0 15px; /* Tạo khoảng cách giữa phần này và các phần khác */
     width: 35%;
-    padding-right: 50px;
     gap: 20px;
 }
 /*style cho thanh tìm kiếm*/

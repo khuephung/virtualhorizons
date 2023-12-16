@@ -43,7 +43,7 @@
     margin-bottom:20px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 375px) {
     .duancontainer {
         flex-direction: column; /* Hiển thị cột chồng lên nhau trên màn hình nhỏ */
         margin-left: 0;

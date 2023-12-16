@@ -1,9 +1,13 @@
 
 
-body {background-image: url("./Bảnggiá/Frame\ 3.png");
+*{ box-sizing: border-box;} /* kích thước phần tử sẽ gồm cả kích thước của phần viền (border) và độ dày của đường viền (padding)*/
+body{
+    background-image: url("./Bảnggiá/Frame\ 3.png");
     background-repeat: repeat-x;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
+}
+.banggiabody {
     justify-content: center;
     height: max-content;
     display: flex;
@@ -64,8 +68,8 @@ body {background-image: url("./Bảnggiá/Frame\ 3.png");
   }
 /*Hộp gói dịch vụ*/
   .pricing-box {
-      width: 290px;
-      height: 470px;
+      width: 345px;
+      height: 480px;
       margin: 20px;
       background-color: white;
       padding-left: 28px;
@@ -128,6 +132,7 @@ body {background-image: url("./Bảnggiá/Frame\ 3.png");
     color: white;
     cursor: pointer;
     transition: all 0.3s ease;
+
   }
 /*Hover hộp gói dịch vụ*/
   .pricing-box:hover {
