@@ -563,7 +563,20 @@
   padding: 0 0 16px;
   font-size: 48px;
 }
-
+.gioi-thieu {
+  position: relative;
+  width: 100%;
+  height: 4608px;
+  overflow-y: auto;
+  background-image: url(./gioi-thieu@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: left;
+  font-size: var(--font-size-21xl);
+  color: var(--background-1);
+  font-family: var(--font-montserrat);
+}
 #footer{
   position: absolute; 
   bottom:0px;

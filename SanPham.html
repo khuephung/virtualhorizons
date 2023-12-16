@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!--[if IE]>
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+				<![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="images/favicon.png" rel="shortcut icon">
+    <title>Trang Sản Phẩm - Virtual Horizons</title>
+    <!--====== Google Font ======-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+    <!--====== Vendor Css ======-->
+    <link rel="stylesheet" href="./Component/Sanpham/vendor.css">
+    <!--====== Utility-Spacing ======-->
+    <link rel="stylesheet" href="./Component/Sanpham/utility.css">
+    <!--====== App ======-->
+    <link rel="stylesheet" href="./Component/Sanpham/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      // jQuerry
+      $(function() {
+        $("#header").load("Header.html");
+      });
+      $(function() {
+        $("#footer").load("Footer.html");
+      });
+    </script>
+  </head>
+  <body class="config">
+    <div id="header"></div>
+    <h1 style="color: white; text-align: center; margin-top: 30px; margin-bottom: 15px; font-size: 45px;">SẢN PHẨM 3D</h1>
+    <!-- Main App -->
+    <div id="app">
+      <!-- Nội dung chính của ứng dụng -->
+      <div class="app-content">
+        <!-- Section 1: Phần này chứa bộ lọc sản phẩm -->
+        <div class="u-s-p-y-90">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-12">
+                <div class="shop-w-master">
+                  <!-- Tiêu đề và biểu tượng "BỘ LỌC" -->
+                  <h1 class="shop-w-master__heading u-s-m-b-30">
+                    <i class="fas fa-filter u-s-m-r-8"></i>
+                    <span>BỘ LỌC</span>
+                  </h1>
+                  <div class="shop-w-master__sidebar">
+                    <div class="u-s-m-b-30">
+                      <div class="shop-w shop-w--style">
+                        <!-- Tiêu đề và biểu tượng "collapse" cho phần ƯU ĐÃI -->
+                        <div class="shop-w__intro-wrap">
+                          <h1 class="shop-w__h">ƯU ĐÃI</h1>
+                          <span class="fas fa-minus collapsed shop-w__toggle" data-target="#s-size" data-toggle="collapse"></span>
+                        </div>
+                        <!-- Danh sách các loại giảm giá có thể chọn -->
+                        <div class="shop-w__wrap collapse" id="s-size">
+                          <ul class="shop-w__list gl-scroll">
+                            <!-- Mỗi mục có checkbox và số lượng tương ứng -->
+                            <li>
+                              <!-- Checkbox và label cho mục Miễn Phí -->
+                              <div class="check-box">
+                                <input type="checkbox" id="xs">
+                                <div class="check-box__state check-box__state--primary">
+                                  <label class="check-box__label" for="xs">Miễn Phí</label>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <!-- Checkbox và label cho mục Đang Giảm Giá-->
+                              <div class="check-box">
+                                <input type="checkbox" id="small">
+                                <div class="check-box__state check-box__state--primary">
+                                  <label class="check-box__label" for="small">Đang Giảm Giá</label>
+                                </div>
+                              </div>
+                              <!--====== End - Check Box ======-->
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="u-s-m-b-30">
+                      <div class="shop-w shop-w--style">
+                        <!-- Tiêu đề "DANH MỤC" và biểu tượng "collapse" -->
+                        <div class="shop-w__intro-wrap">
+                          <h1 class="shop-w__h">DANH MỤC</h1>
+                          <span class="fas fa-minus shop-w__toggle" data-target="#s-category" data-toggle="collapse"></span>
+                        </div>
+                        <!-- Danh sách danh mục và các mục con -->
+                        <div class="shop-w__wrap collapse show" id="s-category">
+                          <ul class="shop-w__category-list gl-scroll">
+                            <!-- Mục danh mục và mục con của Kiến Trúc-->
+                            <li class="has-list">
+                              <a href="#">Kiến Trúc</a>
+                              <span class="category-list__text u-s-m-l-6">(23)</span>
+                              <span class="js-shop-category-span is-expanded fas fa-plus u-s-m-l-6"></span>
+                              <ul style="display:block">
+                                <li class="has-list">
+                                  <a href="#">Nhà</a>
+                                  <span class="js-shop-category-span fas fa-plus u-s-m-l-6"></span>
+                                  <ul>
+                                    <li>
+                                      <a href="#">Phòng Ngủ</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">Phòng Bếp</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">Phòng Tắm</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">Phòng Khách</a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li class="has-list">
+                                  <a href="#">Tòa Nhà</a>
+                                </li>
+                                <li class="has-list">
+                                  <a href="#">Cửa Hàng</a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="has-list">
+                              <!-- Mục danh mục Y khoa-->
+                              <a href="#">Y Khoa</a>
+                              <span class="category-list__text u-s-m-l-6">(5)</span>
+                            </li>
+                            <li class="has-list">
+                              <!-- Mục danh mục Động Vật-->
+                              <a href="#">Động Vật</a>
+                              <span class="category-list__text u-s-m-l-6">(5)</span>
+                            </li>
+                            <li>
+                              <!-- Mục danh mục Sân Khấu-->
+                              <a href="#">Sân Khấu</a>
+                              <span class="category-list__text u-s-m-l-6">(8)</span>
+                            </li>
+                            <li>
+                              <!-- Mục danh mục Con Người-->
+                              <a href="#">Con Người</a>
+                              <span class="category-list__text u-s-m-l-6">(4)</span>
+                            </li>
+                            <li>
+                              <!-- Mục danh mục Viễn Tưởng-->
+                              <a href="#">Viễn Tưởng</a>
+                              <span class="category-list__text u-s-m-l-6">(12)</span>
+                            </li>
+                            <li>
+                              <!-- Mục danh mục Nội Thất-->
+                              <a href="#">Nội Thất</a>
+                              <span class="category-list__text u-s-m-l-6">(3)</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Phần Bộ Lọc Đánh Giá -->
+                    <div class="u-s-m-b-30">
+                      <div class="shop-w shop-w--style">
+                        <!-- Tiêu đề và biểu tượng "collapse" cho phần Đánh Giá -->
+                        <div class="shop-w__intro-wrap">
+                          <h1 class="shop-w__h">ĐÁNH GIÁ</h1>
+                          <span class="fas fa-minus shop-w__toggle" data-target="#s-rating" data-toggle="collapse"></span>
+                        </div>
+                        <!-- Phần hiển thị danh sách Đánh Giá có thể chọn -->
+                        <div class="shop-w__wrap collapse show" id="s-rating">
+                          <ul class="shop-w__list gl-scroll">
+                            <!-- Các mức đánh giá và số lượng tương ứng -->
+                            <!--fas fa-star: Sao có màu-->
+                            <!--far fa-star: Sao không có màu-->
+                            <li>
+                              <div class="rating__check">
+                                <input type="checkbox">
+                                <div class="rating__check-star-wrap">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                </div>
+                              </div>
+                              <span class="shop-w__total-text">(255)</span>
+                            </li>
+                            <li>
+                              <div class="rating__check">
+                                <input type="checkbox">
+                                <div class="rating__check-star-wrap">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="far fa-star"></i>
+                                </div>
+                              </div>
+                              <span class="shop-w__total-text">(90)</span>
+                            </li>
+                            <li>
+                              <div class="rating__check">
+                                <input type="checkbox">
+                                <div class="rating__check-star-wrap">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="far fa-star"></i>
+                                  <i class="far fa-star"></i>
+                                </div>
+                              </div>
+                              <span class="shop-w__total-text">(10)</span>
+                            </li>
+                            <li>
+                              <div class="rating__check">
+                                <input type="checkbox">
+                                <div class="rating__check-star-wrap">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="far fa-star"></i>
+                                  <i class="far fa-star"></i>
+                                  <i class="far fa-star"></i>
+                                </div>
+                              </div>
+                              <span class="shop-w__total-text">(2)</span>
+                            </li>
+                            <li>
+                              <div class="rating__check">
+                                <input type="checkbox">
+                                <div class="rating__check-star-wrap">
+                                  <i class="fas fa-star"></i>
+                                  <i class="far fa-star"></i>
+                                  <i class="far fa-star"></i>
+                                  <i class="far fa-star"></i>
+                                  <i class="far fa-star"></i>
+                                </div>
+                              </div>
+                              <span class="shop-w__total-text">(1)</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Phần Bộ Lọc Giá -->
+                    <div class="u-s-m-b-30">
+                      <div class="shop-w shop-w--style">
+                        <!-- Tiêu đề và biểu tượng "collapse" cho phần Giá -->
+                        <div class="shop-w__intro-wrap">
+                          <h1 class="shop-w__h">GIÁ SẢN PHẨM</h1>
+                          <span class="fas fa-minus shop-w__toggle" data-target="#s-price" data-toggle="collapse"></span>
+                        </div>
+                        <!-- Phần hiển thị form để lọc theo giá -->
+                        <div class="shop-w__wrap collapse show" id="s-price">
+                          <form class="shop-w__form-p">
+                            <div class="shop-w__form-p-wrap">
+                              <!-- Ô nhập giá tối thiểu -->
+                              <div>
+                                <label for="price-min"></label>
+                                <input class="input-text input-text--primary-style" type="text" id="price-min" placeholder="Min">
+                              </div>
+                              <!-- Ô nhập giá tối đa -->
+                              <div>
+                                <label for="price-max"></label>
+                                <input class="input-text input-text--primary-style" type="text" id="price-max" placeholder="Max">
+                              </div>
+                              <!-- Nút để xác nhận và áp dụng bộ lọc giá -->
+                              <div>
+                                <button class="btn btn--icon fas fa-angle-right btn--e-transparent-platinum-b-2" type="submit"></button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Phần Bộ Lọc File -->
+                    <div class="u-s-m-b-30">
+                      <div class="shop-w shop-w--style">
+                        <!-- Tiêu đề và biểu tượng "collapse" cho phần File -->
+                        <div class="shop-w__intro-wrap">
+                          <h1 class="shop-w__h">LOẠI FILE 3D</h1>
+                          <span class="fas fa-minus collapsed shop-w__toggle" data-target="#s-size" data-toggle="collapse"></span>
+                        </div>
+                        <!-- Danh sách loại File có thể chọn -->
+                        <div class="shop-w__wrap collapse" id="s-size">
+                          <ul class="shop-w__list gl-scroll">
+                            <!-- Mỗi mục có checkbox và số lượng tương ứng -->
+                            <li>
+                              <!-- Checkbox và label cho mục 3DS -->
+                              <div class="check-box">
+                                <input type="checkbox" id="xs">
+                                <div class="check-box__state check-box__state--primary">
+                                  <label class="check-box__label" for="xs">3DS</label>
+                                </div>
+                              </div>
+                              <span class="shop-w__total-text">(2)</span>
+                            </li>
+                            <li>
+                              <!-- Checkbox và label cho mục GLTF-->
+                              <div class="check-box">
+                                <input type="checkbox" id="small">
+                                <div class="check-box__state check-box__state--primary">
+                                  <label class="check-box__label" for="small">GLTF</label>
+                                </div>
+                              </div>
+                              <!--====== End - Check Box ======-->
+                              <span class="shop-w__total-text">(4)</span>
+                            </li>
+                            <li>
+                              <!-- Checkbox và label cho mục STL -->
+                              <div class="check-box">
+                                <input type="checkbox" id="medium">
+                                <div class="check-box__state check-box__state--primary">
+                                  <label class="check-box__label" for="medium">STL</label>
+                                </div>
+                              </div>
+                              <!--====== End - Check Box ======-->
+                              <span class="shop-w__total-text">(6)</span>
+                            </li>
+                            <li>
+                              <!-- Checkbox và label cho mục OBJ -->
+                              <div class="check-box">
+                                <input type="checkbox" id="large">
+                                <div class="check-box__state check-box__state--primary">
+                                  <label class="check-box__label" for="large">OBJ</label>
+                                </div>
+                              </div>
+                              <!--====== End - Check Box ======-->
+                              <span class="shop-w__total-text">(8)</span>
+                            </li>
+                            <li>
+                              <!-- Checkbox và label cho mục FBX-->
+                              <div class="check-box">
+                                <input type="checkbox" id="xl">
+                                <div class="check-box__state check-box__state--primary">
+                                  <label class="check-box__label" for="xl">FBX</label>
+                                </div>
+                              </div>
+                              <!--====== End - Check Box ======-->
+                              <span class="shop-w__total-text">(10)</span>
+                            </li>
+                            <li>
+                              <!-- Checkbox và label cho mục Blend -->
+                              <div class="check-box">
+                                <input type="checkbox" id="xxl">
+                                <div class="check-box__state check-box__state--primary">
+                                  <label class="check-box__label" for="xxl">BLEND</label>
+                                </div>
+                              </div>
+                              <!--====== End - Check Box ======-->
+                              <span class="shop-w__total-text">(12)</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Phần danh sách sản phẩm -->
+              <div class="col-lg-9 col-md-12">
+                <div class="shop-p">
+                  <!-- Thanh công cụ điều hướng và lọc sản phẩm -->
+                  <div class="shop-p__toolbar u-s-m-b-30">
+                    <div class="shop-p__meta-wrap u-s-m-b-60">
+                      <div class="shop-p__tool-style">
+                        <!-- Công cụ chuyển đổi giữa chế độ Grid và List -->
+                        <div class="tool-style__group u-s-m-b-8">
+                          <span class="js-shop-grid-target is-active">Grid</span>
+                          <span class="js-shop-list-target">List</span>
+                        </div>
+                        <!-- Form chọn số lượng hiển thị và sắp xếp sản phẩm -->
+                        <form>
+                          <div class="tool-style__form-wrap">
+                            <div class="u-s-m-b-8">
+                              <!-- Dropdown chọn số lượng hiển thị -->
+                              <select class="select-box select-box--transparent-b-2">
+                                <option selected>Hiện: 9</option>
+                                <option>Hiện: 12</option>
+                                <option>Hiện: 15</option>
+                                <option>Hiện: 21</option>
+                              </select>
+                            </div>
+                            <div class="u-s-m-b-8">
+                              <!-- Dropdown chọn cách sắp xếp sản phẩm -->
+                              <select class="select-box select-box--transparent-b-2">
+                                <option>Xếp theo: Sản phẩm mới nhất</option>
+                                <option>Xếp theo: Sản phẩm cũ nhất</option>
+                                <option>Xếp theo: Sản phẩm phổ biến nhất</option>
+                                <option selected>Xếp theo: Đánh giá tốt nhất</option>
+                                <option>Thứ tự theo giá: thấp đến cao</option>
+                                <option>Thứ tự theo giá: cao xuống thấp</option>
+                              </select>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <!-- Thông tin về số lượng sản phẩm hiển thị -->
+                    <div class="shop-p__collection">
+                      <div class="row is-grid-active">
+                        <!-- Mỗi sản phẩm trong danh sách -->
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                          <div class="product-m">
+                            <!-- Hình ảnh sản phẩm -->
+                            <div class="product-m__thumb">
+                              <!-- Hình ảnh sản phẩm và các nút thêm vào giỏ hàng, xem nhanh -->
+                              <a class="aspect aspect--bg-grey aspect--square u-d-block" href="ChiTietSanPham.html">
+                                <img class="aspect__img" src="images/product/Kiến Trúc/product23.jpg" alt="">
+                              </a>
+                              <div class="product-m__quick-look">
+                                <a class="fas fa-search" data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Xem Nhanh"></a>
+                              </div>
+                              <div class="product-m__add-cart">
+                                <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm vào giỏ hàng</a>
+                              </div>
+                            </div>
+                            <!-- Thông tin chi tiết sản phẩm -->
+                            <div class="product-m__content">
+                              <!-- Danh mục sản phẩm -->
+                              <div class="product-m__category">
+                                <a href="SanPham.html">Kiến Trúc</a>
+                                <span class="pd-detail__file ">3DS</span>
+                                <span class="pd-detail__file ">STL</span>
+                              </div>
+                              <!-- Tên sản phẩm -->
+                              <div class="product-m__name">
+                                <a href="ChiTietSanPham.html">Phòng Khách 3D</a>
+                              </div>
+                              <!-- Đánh giá và số lượng đánh giá -->
+                              <div class="product-m__rating gl-rating-style">
+                                <!-- Số sao và số đánh giá -->
+                                <!--fas fa-star-half-alt: Nửa sao-->
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                              </div>
+                              <!-- Giá sản phẩm -->
+                              <!--product-m__discount: giá ban đầu của sản phẩm-->
+                              <div class="product-m__price">450.000 đ <span class="product-m__discount">600.000 đ</span>
+                              </div>
+                              <div class="product-m__hover">
+                                <!--Mô tả sản phẩm-->
+                                <div class="product-m__preview-description">
+                                  <span>Mẫu thiết kế phòng khách hiện đại phù hợp với căn nhà.</span>
+                                </div>
+                                <!-- Nút xem trước và thêm vào yêu thích -->
+                                <div class="product-m__wishlist">
+                                  <a class="far fa-heart" href="#" data-tooltip="tooltip" data-placement="top" title="Thêm vào Wishlist"></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                          <div class="product-m">
+                            <div class="product-m__thumb">
+                              <a class="aspect aspect--bg-grey aspect--square u-d-block" href="ChiTietSanPham.html">
+                                <img class="aspect__img" src="images/product/Kiến Trúc/product28.jpg" alt="">
+                              </a>
+                              <div class="product-m__quick-look">
+                                <a class="fas fa-search" data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Xem Nhanh"></a>
+                              </div>
+                              <div class="product-m__add-cart">
+                                <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm vào giỏ hàng</a>
+                              </div>
+                            </div>
+                            <div class="product-m__content">
+                              <div class="product-m__category">
+                                <a href="SanPham.html">Kiến Trúc</a>
+                                <span class="pd-detail__file ">3DS</span>
+                                <span class="pd-detail__file ">BLEND</span>
+                              </div>
+                              <div class="product-m__name">
+                                <a href="ChiTietSanPham.html">Cửa Hàng 3D</a>
+                              </div>
+                              <div class="product-m__rating gl-rating-style">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                              </div>
+                              <div class="product-m__price">545.000 đ <span class="product-m__discount">655.000 đ</span>
+                              </div>
+                              <div class="product-m__hover">
+                                <div class="product-m__preview-description">
+                                  <span>Cửa hàng 3D cực nét, siêu đẹp, siêu hiện đại phù hợp cho mọi nhu cầu.</span>
+                                </div>
+                                <div class="product-m__wishlist">
+                                  <a class="far fa-heart" href="#" data-tooltip="tooltip" data-placement="top" title="Thêm vào Wishlist"></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                          <div class="product-m">
+                            <div class="product-m__thumb">
+                              <a class="aspect aspect--bg-grey aspect--square u-d-block" href="ChiTietSanPham.html">
+                                <img class="aspect__img" src="images/product/Động Vật/product10.jpg" alt="">
+                              </a>
+                              <div class="product-m__quick-look">
+                                <a class="fas fa-search" data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Xem Nhanh"></a>
+                              </div>
+                              <div class="product-m__add-cart">
+                                <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm vào giỏ hàng</a>
+                              </div>
+                            </div>
+                            <div class="product-m__content">
+                              <div class="product-m__category">
+                                <a href="SanPham.html">Viễn Tưởng</a>
+                                <span class="pd-detail__file ">FBX</span>
+                                <span class="pd-detail__file ">GLTF</span>
+                              </div>
+                              <div class="product-m__name">
+                                <a href="ChiTietSanPham.html">Người Cá Xinh Đẹp 3D</a>
+                              </div>
+                              <div class="product-m__rating gl-rating-style">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                              </div>
+                              <div class="product-m__price">435.000 đ</div>
+                              <div class="product-m__hover">
+                                <div class="product-m__preview-description">
+                                  <span>Người cá dùng cho các sản phẩm dự án viễn tưởng rất thích hợp cho các nhà sáng tạo dự án.</span>
+                                </div>
+                                <div class="product-m__wishlist">
+                                  <a class="far fa-heart" href="#" data-tooltip="tooltip" data-placement="top" title="Thêm vào Wishlist"></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                          <div class="product-m">
+                            <div class="product-m__thumb">
+                              <a class="aspect aspect--bg-grey aspect--square u-d-block" href="ChiTietSanPham.html">
+                                <img class="aspect__img" src="images/product/Động Vật/product27.jpg" alt="">
+                              </a>
+                              <div class="product-m__quick-look">
+                                <a class="fas fa-search" data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Xem Nhanh"></a>
+                              </div>
+                              <div class="product-m__add-cart">
+                                <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm vào giỏ hàng</a>
+                              </div>
+                            </div>
+                            <div class="product-m__content">
+                              <div class="product-m__category">
+                                <a href="SanPham.html">Động Vật</a>
+                                <span class="pd-detail__file ">3DS</span>
+                                <span class="pd-detail__file ">BLEND</span>
+                              </div>
+                              <div class="product-m__name">
+                                <a href="ChiTietSanPham.html">Con Hồ Ly Ranh Mãnh 3D</a>
+                              </div>
+                              <div class="product-m__rating gl-rating-style">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                              </div>
+                              <div class="product-m__price">80.000 đ</div>
+                              <div class="product-m__hover">
+                                <div class="product-m__preview-description">
+                                  <span>Phù hợp cho những dự án về cáo ma ranh mãnh hãm hại gia đình nông dân. </span>
+                                </div>
+                                <div class="product-m__wishlist">
+                                  <a class="far fa-heart" href="#" data-tooltip="tooltip" data-placement="top" title="Thêm vào Wishlist"></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                          <div class="product-m">
+                            <div class="product-m__thumb">
+                              <a class="aspect aspect--bg-grey aspect--square u-d-block" href="ChiTietSanPham.html">
+                                <img class="aspect__img" src="images/product/Kiến Trúc/product16.jpg" alt="">
+                              </a>
+                              <div class="product-m__quick-look">
+                                <a class="fas fa-search" data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Xem Nhanh"></a>
+                              </div>
+                              <div class="product-m__add-cart">
+                                <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm vào giỏ hàng</a>
+                              </div>
+                            </div>
+                            <div class="product-m__content">
+                              <div class="product-m__category">
+                                <a href="SanPham.html">Viễn Tưởng</a>
+                                <span class="pd-detail__file ">3DS</span>
+                              </div>
+                              <div class="product-m__name">
+                                <a href="ChiTietSanPham.html">Thổ Dân Kinh Dị 3D</a>
+                              </div>
+                              <div class="product-m__rating gl-rating-style">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                              </div>
+                              <div class="product-m__price">839.000 đ <span class="product-m__discount">1.125.000 đ</span>
+                              </div>
+                              <div class="product-m__hover">
+                                <div class="product-m__preview-description">
+                                  <span>Phụ nữ thổ dân xinh đẹp nhưng mang trong mình mầm mống quỷ dữ, phù hợp với các dự án kinh dị.</span>
+                                </div>
+                                <div class="product-m__wishlist">
+                                  <a class="far fa-heart" href="#" data-tooltip="tooltip" data-placement="top" title="Thêm vào Wishlist"></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                          <div class="product-m">
+                            <div class="product-m__thumb">
+                              <a class="aspect aspect--bg-grey aspect--square u-d-block" href="ChiTietSanPham.html">
+                                <img class="aspect__img" src="images/product/Kiến Trúc/product20.jpg" alt="">
+                              </a>
+                              <div class="product-m__quick-look">
+                                <a class="fas fa-search" data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Xem Nhanh"></a>
+                              </div>
+                              <div class="product-m__add-cart">
+                                <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm vào giỏ hàng</a>
+                              </div>
+                            </div>
+                            <div class="product-m__content">
+                              <div class="product-m__category">
+                                <a href="SanPham.html">Con Người</a>
+                                <span class="pd-detail__file ">3DS</span>
+                                <span class="pd-detail__file ">GLTF</span>
+                              </div>
+                              <div class="product-m__name">
+                                <a href="ChiTietSanPham.html">Cô Gái Châu Á Tóc Dài 3D</a>
+                              </div>
+                              <div class="product-m__rating gl-rating-style">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                              </div>
+                              <div class="product-m__price">589.000 đ <span class="product-m__discount">725.000 đ</span>
+                              </div>
+                              <div class="product-m__hover">
+                                <div class="product-m__preview-description">
+                                  <span>Cô gái đặc trưng cho phụ nữ châu Á, tóc dài, xinh đẹp tuyệt vời.</span>
+                                </div>
+                                <div class="product-m__wishlist">
+                                  <a class="far fa-heart" href="#" data-tooltip="tooltip" data-placement="top" title="Thêm vào Wishlist"></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                          <div class="product-m">
+                            <div class="product-m__thumb">
+                              <a class="aspect aspect--bg-grey aspect--square u-d-block" href="ChiTietSanPham.html">
+                                <img class="aspect__img" src="images/product/Y Khoa/product15.jpg" alt="">
+                              </a>
+                              <div class="product-m__quick-look">
+                                <a class="fas fa-search" data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Xem Nhanh"></a>
+                              </div>
+                              <div class="product-m__add-cart">
+                                <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm vào giỏ hàng</a>
+                              </div>
+                            </div>
+                            <div class="product-m__content">
+                              <div class="product-m__category">
+                                <a href="SanPham.html">Y Khoa</a>
+                                <span class="pd-detail__file ">STL</span>
+                                <span class="pd-detail__file ">BLEND</span>
+                              </div>
+                              <div class="product-m__name">
+                                <a href="ChiTietSanPham.html">Nội Tạng Người 3D</a>
+                              </div>
+                              <div class="product-m__rating gl-rating-style">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                              </div>
+                              <div class="product-m__price">459.000 đ <span class="product-m__discount">690.000 đ</span>
+                              </div>
+                              <div class="product-m__hover">
+                                <div class="product-m__preview-description">
+                                  <span>Đầy đủ cơ quan nội tạng cơ thể người, ứng dụng trong y học phẫu thuật chẩn đoán.</span>
+                                </div>
+                                <div class="product-m__wishlist">
+                                  <a class="far fa-heart" href="#" data-tooltip="tooltip" data-placement="top" title="Thêm vào Wishlist"></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                          <div class="product-m">
+                            <div class="product-m__thumb">
+                              <a class="aspect aspect--bg-grey aspect--square u-d-block" href="ChiTietSanPham.html">
+                                <img class="aspect__img" src="images/product/Y Khoa/product5.jpg" alt="">
+                              </a>
+                              <div class="product-m__quick-look">
+                                <a class="fas fa-search" data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Xem Nhanh"></a>
+                              </div>
+                              <div class="product-m__add-cart">
+                                <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm vào giỏ hàng</a>
+                              </div>
+                            </div>
+                            <div class="product-m__content">
+                              <div class="product-m__category">
+                                <a href="SanPham.html">Y Khoa, Con Người</a>
+                                <span class="pd-detail__file ">OBJ</span>
+                              </div>
+                              <div class="product-m__name">
+                                <a href="ChiTietSanPham.html">Cấu Trúc Tai Người 3D</a>
+                              </div>
+                              <div class="product-m__rating gl-rating-style">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                              </div>
+                              <div class="product-m__price">Miễn Phí</div>
+                              <div class="product-m__hover">
+                                <div class="product-m__preview-description">
+                                  <span>Lỗ tai quyến rũ với đầy đủ cấu trúc đa chiều, thách thức mọi y khoa.</span>
+                                </div>
+                                <div class="product-m__wishlist">
+                                  <a class="far fa-heart" href="#" data-tooltip="tooltip" data-placement="top" title="Thêm vào Wishlist"></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                          <div class="product-m">
+                            <div class="product-m__thumb">
+                              <a class="aspect aspect--bg-grey aspect--square u-d-block" href="ChiTietSanPham.html">
+                                <img class="aspect__img" src="images/product/Sân Khấu/product2.jpg" alt="">
+                              </a>
+                              <div class="product-m__quick-look">
+                                <a class="fas fa-search" data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Xem Nhanh"></a>
+                              </div>
+                              <div class="product-m__add-cart">
+                                <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm vào giỏ hàng</a>
+                              </div>
+                            </div>
+                            <div class="product-m__content">
+                              <div class="product-m__category">
+                                <a href="SanPham.html">Sân Khấu</a>
+                                <span class="pd-detail__file ">3DS</span>
+                              </div>
+                              <div class="product-m__name">
+                                <a href="ChiTietSanPham.html">Sân Khấu Thiết Kế 3D</a>
+                              </div>
+                              <div class="product-m__rating gl-rating-style">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                              </div>
+                              <div class="product-m__price">Liên Hệ</div>
+                              <div class="product-m__hover">
+                                <div class="product-m__preview-description">
+                                  <span>Sân khấu ảo ma thách thức ánh nhìn của mọi người. Liên hệ để có thêm thông tin.</span>
+                                </div>
+                                <div class="product-m__wishlist">
+                                  <a class="far fa-heart" href="#" data-tooltip="tooltip" data-placement="top" title="Thêm vào Wishlist"></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="u-s-p-y-60">
+                      <!-- Phân trang sản phẩm -->
+                      <ul class="shop-p__pagination">
+                        <!-- Trang hiện tại (đang được chọn) -->
+                        <li class="is-active">
+                          <a href="SanPham.html">1</a>
+                        </li>
+                        <!-- Các trang có thể chọn -->
+                        <li>
+                          <a href="SanPham-2.html">2</a>
+                        </li>
+                        <li>
+                          <a href="SanPham.html">3</a>
+                        </li>
+                        <li>
+                          <a href="SanPham-2.html">4</a>
+                        </li>
+                        <!-- Nút chuyển đến trang tiếp theo -->
+                        <li>
+                          <a class="fas fa-angle-right" href="SanPham.html"></a>
+                        </li>
+                      </ul>
+                      <!-- Kết thúc - Phân trang sản phẩm -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--====== End - Section 1 ======-->
+        </div>
+        <!--====== End - App Content ======-->
+        <!--Footer-->
+        <!--====== Modal Section ======-->
+        <!-- Cửa sổ modal hiển thị nhanh thông tin sản phẩm -->
+        <div class="modal fade" id="quick-look">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal--shadow">
+              <!-- Nút đóng modal -->
+              <button class="btn dismiss-button fas fa-times" type="button" data-dismiss="modal"></button>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-lg-5">
+                    <!-- Breadcrumbs hiển thị đường dẫn sản phẩm -->
+                    <div class="pd-breadcrumb u-s-m-b-30">
+                      <ul class="pd-breadcrumb__list">
+                        <li class="has-separator">
+                          <a href="index.html">Trang Chủ</a>
+                        </li>
+                        <li class="has-separator">
+                          <a href="SanPham.html">Sản Phẩm</a>
+                        </li>
+                        <li class="is-marked">
+                          <a href="SanPham.html">Động Vật </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- Kết thúc - Breadcrumbs đường dẫn sản phẩm -->
+                    <!-- Chi tiết sản phẩm -->
+                    <div class="pd u-s-m-b-30">
+                      <div class="pd-wrap">
+                        <!-- Hình ảnh chi tiết sản phẩm -->
+                        <div id="js-product-detail-modal">
+                          <div>
+                            <img class="u-img-fluid" src="images/product/product-d-1.jpg" alt="">
+                          </div>
+                          <div>
+                            <img class="u-img-fluid" src="images/product/product-d-2.jpg" alt="">
+                          </div>
+                          <div>
+                            <img class="u-img-fluid" src="images/product/product-d-3.jpg" alt="">
+                          </div>
+                          <div>
+                            <img class="u-img-fluid" src="images/product/product-d-4.jpg" alt="">
+                          </div>
+                          <div>
+                            <img class="u-img-fluid" src="images/product/product-d-5.jpg" alt="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="u-s-m-t-15">
+                        <!-- Hình ảnh nhỏ sản phẩm (thumbnail) -->
+                        <div id="js-product-detail-modal-thumbnail">
+                          <div>
+                            <img class="u-img-fluid" src="images/product/product-d-1.jpg" alt="">
+                          </div>
+                          <div>
+                            <img class="u-img-fluid" src="images/product/product-d-2.jpg" alt="">
+                          </div>
+                          <div>
+                            <img class="u-img-fluid" src="images/product/product-d-3.jpg" alt="">
+                          </div>
+                          <div>
+                            <img class="u-img-fluid" src="images/product/product-d-4.jpg" alt="">
+                          </div>
+                          <div>
+                            <img class="u-img-fluid" src="images/product/product-d-5.jpg" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Kết thúc - Chi tiết sản phẩm -->
+                  </div>
+                  <!-- Phần chi tiết bên phải của sản phẩm -->
+                  <div class="col-lg-7">
+                    <!-- Chi tiết sản phẩm -->
+                    <div class="pd-detail">
+                      <!-- Tên sản phẩm -->
+                      <div>
+                        <span class="pd-detail__name">Mèo Béo Cute Phô Mai Que 3D</span>
+                      </div>
+                      <!-- Giá và giảm giá -->
+                      <div>
+                        <div class="pd-detail__inline">
+                          <span class="pd-detail__price">1.250.000 đ</span>
+                          <span class="pd-detail__discount">(-50%)</span>
+                          <del class="pd-detail__del">2.500.000 đ</del>
+                        </div>
+                      </div>
+                      <!-- Đánh giá và số lượng đánh giá -->
+                      <div class="u-s-m-b-15">
+                        <div class="pd-detail__rating gl-rating-style">
+                          <!-- Đánh giá sao -->
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                          <!-- Kết thúc - Đánh giá sao -->
+                          <span class="pd-detail__review u-s-m-l-4">
+                            <!-- Số lượng đánh giá -->
+                            <a href="ChiTietSanPham.html">168 Đánh Giá</a>
+                          </span>
+                        </div>
+                      </div>
+                      <!-- Danh sách các phiên bản sản phẩm -->
+                      <div class="u-s-m-b-15">
+                        <div class="pd-detail__inline">
+                          <!-- Tên phiên bản sản phẩm -->
+                          <span class="pd-detail__file ">3DS</span>
+                          <span class="pd-detail__file ">OBJ</span>
+                        </div>
+                      </div>
+                      <!-- Mô tả sản phẩm -->
+                      <div class="u-s-m-b-15">
+                        <span class="pd-detail__preview-desc">Mèo vàng mập, dễ thương thích phiêu lưu, nấu ăn và chơi xích đu. Phù hợp với mọi dự án cho mọi nhu cầu của người dùng.</span>
+                      </div>
+                      <!-- Thêm vào Wishlist và Đăng ký nhận thông tin giảm giá -->
+                      <div class="u-s-m-b-15">
+                        <!-- Thêm vào Wishlist -->
+                        <div class="pd-detail__inline">
+                          <span class="pd-detail__click-wrap">
+                            <i class="far fa-heart u-s-m-r-6"></i>
+                            <a href="signin.html">Thêm vào Wishlist</a>
+                            <span class="pd-detail__click-count">(438)</span>
+                          </span>
+                        </div>
+                        <!-- Đăng ký nhận thông tin giảm giá -->
+                        <div class="pd-detail__inline">
+                          <span class="pd-detail__click-wrap">
+                            <i class="far fa-envelope u-s-m-r-6"></i>
+                            <a href="signin.html">Đăng ký để nhận thông tin giảm giá sớm nhất!</a>
+                            <span class="pd-detail__click-count">(20)</span>
+                          </span>
+                        </div>
+                      </div>
+                      <!-- Chia sẻ trên mạng xã hội -->
+                      <div class="u-s-m-b-15">
+                        <ul class="pd-social-list">
+                          <li>
+                            <a class="s-fb--color-hover" href="#">
+                              <i class="fab fa-facebook-f"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="s-tw--color-hover" href="#">
+                              <i class="fab fa-twitter"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="s-insta--color-hover" href="#">
+                              <i class="fab fa-instagram"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="s-wa--color-hover" href="#">
+                              <i class="fab fa-whatsapp"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="s-gplus--color-hover" href="#">
+                              <i class="fab fa-google-plus-g"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- Form thêm vào giỏ hàng -->
+                      <div class="u-s-m-b-15">
+                        <form class="pd-detail__form">
+                          <div class="pd-detail-inline-2">
+                            <div class="u-s-m-b-15">
+                              <!-- Đếm số lượng -->
+                              <div class="input-counter">
+                                <span class="input-counter__minus fas fa-minus"></span>
+                                <input class="input-counter__text input-counter--text-primary-style" type="text" value="1" data-min="1" data-max="50">
+                                <span class="input-counter__plus fas fa-plus"></span>
+                              </div>
+                              <!-- Kết thúc - Đếm số lượng -->
+                            </div>
+                            <div class="u-s-m-b-15">
+                              <!-- Nút thêm vào giỏ hàng -->
+                              <button class="btn btn--e-brand-b-2" type="submit">Thêm vào giỏ hàng</button>
+                              <!-- Kết thúc - Nút thêm vào giỏ hàng -->
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <!-- Chính sách sản phẩm -->
+                      <div class="u-s-m-b-15">
+                        <span class="pd-detail__label u-s-m-b-8">Các chính sách</span>
+                        <ul class="pd-detail__policy-list">
+                          <!-- Các chính sách -->
+                          <li>
+                            <i class="fas fa-check-circle u-s-m-r-8"></i>
+                            <span>Bảo mật thông tin khách hàng.</span>
+                          </li>
+                          <li>
+                            <i class="fas fa-check-circle u-s-m-r-8"></i>
+                            <span>Sản phẩm không thể đổi trả.</span>
+                          </li>
+                          <li>
+                            <i class="fas fa-check-circle u-s-m-r-8"></i>
+                            <span>Được hoàn tiền 100% nếu sản phẩm bị lỗi.</span>
+                          </li>
+                          <!-- Kết thúc - Các chính sách -->
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- Kết thúc - Chi tiết sản phẩm -->
+                  </div>
+                  <!-- Kết thúc - Phần chi tiết bên phải của sản phẩm -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--====== End - Quick Look Modal ======-->
+        <!-- Modal thêm vào giỏ hàng -->
+        <div class="modal fade" id="add-to-cart">
+          <!-- Căn giữa theo chiều dọc và chiều ngang -->
+          <div class="modal-dialog modal-dialog-centered">
+            <!-- Nội dung của modal -->
+            <div class="modal-content modal-radius modal-shadow">
+              <!-- Nút đóng modal -->
+              <button class="btn dismiss-button fas fa-times" type="button" data-dismiss="modal"></button>
+              <!-- Phần thân modal -->
+              <div class="modal-body">
+                <!-- Dòng chia làm 2 cột -->
+                <div class="row">
+                  <!-- Cột trái -->
+                  <div class="col-lg-6 col-md-12">
+                    <!-- Phần hiển thị thông báo thành công -->
+                    <div class="success u-s-m-b-30">
+                      <!-- Phần văn bản thành công -->
+                      <div class="success__text-wrap">
+                        <i class="fas fa-check"></i>
+                        <span>Đã thêm sản phẩm!</span>
+                      </div>
+                      <!-- Hình ảnh sản phẩm -->
+                      <div class="success__img-wrap">
+                        <img class="u-img-fluid" src="images/product/Y Khoa/product15.jpg" alt="">
+                      </div>
+                      <!-- Thông tin chi tiết sản phẩm đã thêm vào giỏ hàng -->
+                      <div class="success__info-wrap">
+                        <span class="success__name">Nội Tạng Người 3D</span>
+                        <span class="success__quantity">Số lượng: 1</span>
+                        <span class="success__price">459.000 đ</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Kết thúc - Cột trái -->
+                  <!-- Cột phải -->
+                  <div class="col-lg-6 col-md-12">
+                    <!-- Phần hiển thị tùy chọn sau khi thêm vào giỏ hàng -->
+                    <div class="s-option">
+                      <!-- Thông báo số lượng sản phẩm trong giỏ hàng -->
+                      <span class="s-option__text">Có 1 sản phẩm trong giỏ hàng</span>
+                      <!-- Các nút tùy chọn -->
+                      <div class="s-option__link-box">
+                        <a class="s-option__link btn--e-white-brand-shadow" data-dismiss="modal">TIẾP TỤC MUA SẮM</a>
+                        <a class="s-option__link btn--e-white-brand-shadow" href="cart.html">XEM GIỎ HÀNG</a>
+                        <a class="s-option__link btn--e-brand-shadow" href="checkout.html">THANH TOÁN</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Kết thúc - Cột phải -->
+                </div>
+                <!-- Kết thúc - Dòng chia làm 2 cột -->
+              </div>
+              <!-- Kết thúc - Phần thân modal -->
+            </div>
+            <!-- Kết thúc - Nội dung của modal -->
+          </div>
+          <!-- Kết thúc - Căn giữa theo chiều dọc và chiều ngang -->
+        </div>
+        <!-- Kết thúc - Modal thêm vào giỏ hàng -->
+        <!--====== End - Modal Section ======-->
+      </div>
+      <!--====== End - Main App ======-->
+      <!--====== Vendor Js ======-->
+      <script src="js/vendor.js"></script>
+      <!--====== jQuery Shopnav plugin ======-->
+      <script src="js/jquery.shopnav.js"></script>
+      <!--====== App ======-->
+      <script src="js/app.js"></script>
+      <script src="https://example.com/fontawesome/v6.5.1/js/fontawesome.js" data-auto-replace-svg="nest"></script>
+      <script src="https://example.com/fontawesome/v6.5.1/js/solid.js"></script>
+      <script src="https://example.com/fontawesome/v6.5.1/js/brands.js"></script>
+      <script src="Header.js" type="module"></script>
+      <script src="https://kit.fontawesome.com/b696211014.js" crossorigin="anonymous"></script>
+  </body>
+</html>
