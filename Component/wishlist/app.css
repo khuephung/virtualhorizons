@@ -119,7 +119,7 @@ body {
 }
 
 .u-c-secondary {
-  color: #170E80 !important; /* Đặt màu chữ là màu xám đậm và sử dụng !important để ghi đè các quy tắc CSS khác */
+  color: #0000ff !important; /* Đặt màu chữ là màu xám đậm và sử dụng !important để ghi đè các quy tắc CSS khác */
 }
 
 .u-c-white {
@@ -522,7 +522,7 @@ body {
   margin-top: 50px;
   font-weight: 600;
   letter-spacing: -.02rem;
-  font-size: 35px;
+  font-size: 45px;
   position: relative; 
   margin-bottom: 5px;
 }
