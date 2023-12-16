@@ -5,7 +5,7 @@
 }
 
 #Minh-header {
-    background-color: transparent; /* Màu nền trong suốt */
+    background-color: #170E80; /* Màu nền trong suốt */
     color: #fff; /* Màu chữ trắng */
     padding: 15px 25px; /* Khoảng cách giữa lề và nội dung trong header */
     display: flex;
@@ -175,7 +175,7 @@ nav a:hover {
   }
 }
 .wishlistlink{
-color: white;
+color: #948bf9;
 
 }
 .wishlistlink:hover{

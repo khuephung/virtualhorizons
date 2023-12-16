@@ -1,0 +1,705 @@
+/*
+Theme Name: Ludus
+Author: ahfront
+Description: Ludus - is complete multipurpose polish eCommerce template built with
+best practices. It will be perfect solution for your current or future shop, customizable
+into any store contains responsiveness & great UI. Well tested on compatible browsers.
+The template contains 40+ HTML files, 3 Homepages, 3 Header Styles, 12 Dashboard Pages,
+3 Product Pages, 7 Shop Pages, 5 Blog Pages, Box mode and generated 10 Color variations but could
+create unlimited colors.
+Version: 1.0.0
+Tags: one-column, two-columns, three-columns, four-columns, right-sidebar,
+custom-colors, box-mode, custom-header, custom-menu, custom-logo, featured-images
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Base Styles* nếu xóa đi chữ sẽ bị gạch chân
+2.0 Typography*
+
+4.0 Layout Utility Styles
+5.0 Components*
+
+8.0 Index-Pages* 1 class để căn giữa tiêu đề MỤC YÊU THÍCH
+
+11.0 Cart-Wishlist-Pages
+20.0 Vendor Extension Pages
+  20.1 Bootstrap
+  
+  20.4 jquery.scrollUp
+  
+
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+1.0 Base Styles
+--------------------------------------------------------------*/
+/**
+ * Thiết lập box-sizing
+ */
+html {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent; /* Loại bỏ highlight khi tap trên thiết bị di động */
+}
+html.boxed {
+  background-color: #eee; /* Đặt màu nền cho trang khi có class "boxed" trên phần tử html */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /* Kế thừa box-sizing từ phần tử cha */
+}
+
+/**
+ * Thiết lập màu nền và chiều cao cho phần root và body
+ */
+body {
+  line-height: 1.5; /* Khoảng cách giữa các dòng trong văn bản */
+  font-size: 1rem; /* Kích thước font chính */
+  -webkit-font-smoothing: antialiased; /* Làm mịn chữ trên các trình duyệt */
+}
+
+.config {
+  overflow: hidden; /* Ẩn đi phần thừa của nội dung nằm ngoài kích thước xác định */
+}
+
+/**
+ * Các kiểu cơ bản cho các liên kết
+ */
+a, a:hover, a:focus {
+  outline: none; /* Loại bỏ đường viền khi link được focus */
+  text-decoration: none; /* Loại bỏ gạch chân dưới link */
+  cursor: pointer; /* Biểu tượng con trỏ khi di chuột vào link */
+}
+
+/**
+ * Kiểu cơ bản cho phần tử hình ảnh
+ */
+img {
+  border: 0; /* Loại bỏ đường viền xung quanh hình ảnh */
+}
+img:focus {
+  outline: none; /* Loại bỏ đường viền khi hình ảnh được focus */
+}
+
+/**
+ * Kiểu cơ bản cho phần tử iframe
+ */
+iframe {
+  border: none; /* Loại bỏ đường viền của iframe */
+  overflow: hidden; /* Ẩn phần thừa của iframe */
+}
+
+iframe[src*="soundcloud"] {
+  width: 100%; /* Đặt chiều rộng của iframe chứa đường link từ SoundCloud là 100% */
+}
+
+
+/*--------------------------------------------------------------
+2.0 Typography
+--------------------------------------------------------------*/
+/**
+ * Định dạng kiểu chữ cho copy text
+ */
+body {
+  color: #7f7f7f;
+  font-family: "Montserrat", sans-serif; }
+
+
+/*--------------------------------------------------------------
+4.0 Layout Utility Styles
+--------------------------------------------------------------*/
+/**
+ * Các lớp tiện ích cho màu sắc:
+ * Truyền đạt ý nghĩa thông qua màu sắc với một số lớp tiện ích màu sắc.
+ * Bao gồm hỗ trợ cho việc tạo kiểu cho các liên kết.
+ */
+.u-c-brand {
+  color: blue !important; /* Đặt màu chữ là màu xanh lam và sử dụng !important để ghi đè các quy tắc CSS khác */
+}
+
+.u-c-secondary {
+  color: #170E80 !important; /* Đặt màu chữ là màu xám đậm và sử dụng !important để ghi đè các quy tắc CSS khác */
+}
+
+.u-c-white {
+  color: #ffffff !important; /* Đặt màu chữ là màu trắng và sử dụng !important để ghi đè các quy tắc CSS khác */
+}
+
+.u-c-black {
+  color: #000000 !important; /* Đặt màu chữ là màu đen và sử dụng !important để ghi đè các quy tắc CSS khác */
+}
+
+.u-c-grey {
+  color: #7f7f7f !important; /* Đặt màu chữ là màu xám và sử dụng !important để ghi đè các quy tắc CSS khác */
+}
+
+.u-c-silver {
+  color: #a0a0a0 !important; /* Đặt màu chữ là màu bạc và sử dụng !important để ghi đè các quy tắc CSS khác */
+}
+
+/*
+  * Công cụ hiển thị
+ */
+.u-d-block {
+  display: block; /* Thiết lập hiển thị là block */
+}
+
+/*
+  * Kích thước
+  * Dễ dàng làm cho một phần tử rộng hoặc cao (tương đối với phần tử cha) với các tiện ích width và height của chúng tôi.
+ */
+.u-w-100 {
+  width: 100%; /* Thiết lập chiều rộng là 100% */
+}
+
+.u-h-100 {
+  height: 100%; /* Thiết lập chiều cao là 100% */
+}
+
+/**
+  * Các lớp tiện ích Responsive cho hình ảnh
+ */
+.u-img-fluid {
+  width: 100%; /* Thiết lập chiều rộng là 100% */
+  max-width: 100%; /* Thiết lập chiều rộng tối đa là 100% */
+  height: auto; /* Chiều cao tự động để duy trì tỷ lệ khung hình */
+}
+
+/*--------------------------------------------------------------
+5.0 Components
+--------------------------------------------------------------*/
+
+/* 
+  Button Component 
+  Thiết lập các nút
+*/
+.btn {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  font-size: 14px; }
+  .btn:focus {
+    outline: none; }
+
+.btn--icon {
+  border: none;
+  background-color: transparent;
+  padding: 0; }
+
+.btn--e-brand {
+  color: #ffffff;
+  border: 1px solid transparent;
+  background-color: blue;
+  transition: background-color .5s ease-in; }
+  .btn--e-brand:hover {
+    background-color: #948bf9; }
+
+.btn--e-brand-b-2 {
+  color: #ffffff;
+  background-color: blue;
+  border: 2px solid blue;
+  transition: background-color 0.5s ease-in, border-color 0.5s ease-in; }
+  .btn--e-brand-b-2:hover {
+    background-color: #948bf9;
+    border-color: #948bf9; }
+
+.btn--e-grey-b-2 {
+  color: #333333;
+  background-color: #f5f5f5;
+  border: 2px solid #f5f5f5;
+  transition: background-color 0.5s ease-in, border-color 0.5s ease-in; }
+  .btn--e-grey-b-2:hover {
+    background-color: #f2f2f2;
+    border-color: #f2f2f2; }
+
+.btn--e-secondary {
+  color: #ffffff;
+  border: 1px solid transparent;
+  background-color: #333333;
+  transition: background-color .5s ease-in; }
+  .btn--e-secondary:hover {
+    background-color: #303030; }
+
+.btn--e-white-brand {
+  border: 1px solid transparent;
+  color: #333333;
+  background-color: #ffffff;
+  transition: background-color .3s linear, color .3s linear; }
+  .btn--e-white-brand:hover {
+    background-color: blue;
+    color: #ffffff; }
+
+.btn--e-transparent-brand-b-2 {
+  color: blue;
+  border: 2px solid blue;
+  background-color: transparent;
+  transition: border-color .5s ease-in; }
+  .btn--e-transparent-brand-b-2:hover {
+    border-color: #948bf9; }
+
+.btn--e-transparent-hover-brand-b-2 {
+  color: blue;
+  border: 2px solid blue;
+  background-color: transparent;
+  transition: background-color .1s ease-in,border-color .1s ease-in; }
+  .btn--e-transparent-hover-brand-b-2:hover {
+    background-color: blue;
+    color: #ffffff; }
+
+.btn--e-transparent-secondary-b-2 {
+  color: #333333;
+  border: 2px solid #333333;
+  background-color: transparent;
+  transition: border-color .5s ease-in; }
+  .btn--e-transparent-secondary-b-2:hover {
+    border-color: #303030; }
+
+.btn--e-transparent-platinum-b-2 {
+  color: #333333;
+  border: 2px solid #e5e5e5;
+  background-color: transparent;
+  transition: border-color 0.5s linear; }
+  .btn--e-transparent-platinum-b-2:hover {
+    border-color: blue; }
+
+.btn--e-white-brand-shadow {
+  border: 1px solid #eee;
+  box-shadow: 1px 2px 8px 0 rgba(36, 37, 38, 0.08);
+  background-color: #ffffff;
+  color: #333333;
+  transition: background-color .3s linear, border-color .3s linear,color .3s linear; }
+  .btn--e-white-brand-shadow:hover {
+    border-color: blue;
+    background-color: blue;
+    color: #ffffff; }
+
+.btn--e-brand-shadow {
+  border: 1px solid blue;
+  box-shadow: 1px 2px 8px 0 rgba(36, 37, 38, 0.08);
+  background-color: blue;
+  color: #ffffff;
+  transition: background-color .3s linear, border-color .3s linear; }
+  .btn--e-brand-shadow:hover {
+    border-color: #948bf9;
+    background-color: #948bf9; }
+
+
+
+
+/* Modal Component khi thêm sản phẩm vào giỏ hàng*/
+.dismiss-button {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: -50px;
+  background-color: transparent;
+  padding: 8px;
+  font-size: 24px;
+  border: 0;
+  color: #ffffff;
+  cursor: pointer;
+  transition: color 110ms ease-in-out; }
+  .dismiss-button:hover {
+    color: blue; }
+
+#dash-newsletter .modal-dialog {
+  width: 100%;
+  max-width: 450px; }
+
+#dash-newsletter .modal-body {
+  padding: 1.875rem; }
+
+.d-modal__form {
+  width: 100%; }
+  .d-modal__form .btn {
+    padding: 14px 46px;
+    font-size: 12px;
+    font-weight: 600; }
+  .d-modal__form a {
+    font-size: 15px;
+    font-weight: 600;
+    color: blue;
+    transition: color 110ms ease-in-out; }
+    .d-modal__form a:hover {
+      color: #7f7f7f; }
+
+#edit-ship-address .modal-dialog, #add-ship-address .modal-dialog {
+  width: 100%;
+  max-width: 750px; }
+
+#edit-ship-address .modal-body, #add-ship-address .modal-body {
+  padding: 1.875rem; }
+
+.checkout-modal1__form, .checkout-modal2__form {
+  width: 100%; }
+  .checkout-modal1__form .btn, .checkout-modal1__form .input-text, .checkout-modal1__form .select-box, .checkout-modal2__form .btn, .checkout-modal2__form .input-text, .checkout-modal2__form .select-box {
+    border-radius: 6px; }
+  .checkout-modal1__form .input-text, .checkout-modal1__form .select-box, .checkout-modal2__form .input-text, .checkout-modal2__form .select-box {
+    width: 100%; }
+  .checkout-modal1__form .btn, .checkout-modal2__form .btn {
+    font-weight: 600;
+    padding: 16px 46px; }
+
+#add-to-cart .modal-dialog {
+  width: 100%;
+  max-width: 550px; }
+
+#add-to-cart .row {
+  -ms-flex-align: center;
+      align-items: center; }
+
+.success {
+  text-align: center; }
+  .success__text-wrap {
+    margin-bottom: 18px; }
+    .success__text-wrap i {
+      margin-right: 8px;
+      font-size: 16px;
+      color: blue; }
+    .success__text-wrap span {
+      font-weight: 700;
+      font-size: 14px;
+      color: #333333; }
+  .success__img-wrap {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #f5f5f5;
+    width: 120px;
+    height: 120px; }
+    .success__img-wrap img {
+      min-width: 120px; }
+  .success__name {
+    display: block;
+    margin: 4px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333333; }
+  .success__quantity {
+    margin-bottom: 4px;
+    display: block;
+    font-size: 12px;
+    color: #a0a0a0; }
+  .success__price {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    color: blue; }
+
+.s-option {
+  text-align: center; }
+  .s-option__text {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: #a0a0a0; }
+  .s-option__link-box {
+    width: 85%;
+    margin: 0 auto; }
+  .s-option__link {
+    margin-bottom: 20px;
+    display: block;
+    padding: 12px 8px;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 13px; }
+
+#quick-look .modal-dialog {
+  width: 100%;
+  max-width: 991px; }
+
+#quick-look .modal-body {
+  padding: 1.875rem; }
+
+.new-l--center {
+  text-align: center; }
+
+#newsletter-modal .modal-dialog {
+  width: 100%;
+  max-width: 800px; }
+
+#newsletter-modal .modal-body {
+  padding: 0; }
+
+#newsletter-modal .new-l__dismiss {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  background-color: transparent;
+  padding: 8px;
+  font-size: 16px;
+  border: 0;
+  color: #515151;
+  cursor: pointer; }
+
+#newsletter-modal .row {
+  -ms-flex-align: center;
+      align-items: center; }
+
+.new-l__img-wrap {
+  background-color: #f5f5f5;
+  position: relative; }
+  .new-l__img-wrap:before {
+    transition: all 0.6s linear;
+    content: '';
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.4); }
+
+.new-l__img-wrap:hover:before {
+  opacity: 1; }
+
+.new-l__h3 {
+  font-size: 26px;
+  line-height: 1.2;
+  color: #333333; }
+
+.new-l__p1 {
+  font-size: 14px;
+  line-height: 21px; }
+
+.new-l__p2 {
+  font-size: 12px;
+  color: #a0a0a0; }
+
+.new-l__link {
+  font-size: 13px;
+  color: #7f7f7f;
+  transition: all .3s; }
+  .new-l__link:hover {
+    color: blue;
+    text-decoration: underline; }
+
+.new-l__form {
+  width: 100%; }
+  .new-l__form .btn {
+    width: 100%; }
+  .new-l__form .btn {
+    padding: 13px 30px;
+    font-size: 14px;
+    font-weight: 600; }
+
+.news-l__input {
+  width: 100%;
+  font-size: 12px;
+  padding: 0 18px;
+  height: 40px;
+  color: #333333;
+  transition: all 0.6s linear;
+  border: 2px solid rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  background-color: #ffffff; }
+  .news-l__input:focus {
+    border-color: blue; }
+  .news-l__input:focus {
+    outline: 0; }
+  .news-l__input::-ms-clear {
+    display: none; }
+
+@media (max-width: 991px) {
+  .new-l__col-1 {
+    display: none; } }
+
+
+
+/*--------------------------------------------------------------
+8.0 Index-Pages:
+--------------------------------------------------------------*/
+.section__text-wrap {
+  text-align: center; }
+
+
+.section__heading {
+  margin-top: 50px;
+  font-weight: 600;
+  letter-spacing: -.02rem;
+  font-size: 35px;
+  position: relative; 
+  margin-bottom: 5px;
+}
+
+
+
+/*--------------------------------------------------------------
+11.0 Cart-Wishlist-Pages
+--------------------------------------------------------------*/
+
+/* Thiết lập wrap chứa các thông tin về sản phẩm */
+
+.w-r {
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  box-shadow: 1px 1px 6px 0 rgba(0, 0, 0, 0.07); }
+  .w-r__container {
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+  .w-r__wrap-1, .w-r__wrap-2 {
+    -ms-flex: 0 1 auto; }
+  .w-r__wrap-1 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: start;
+        justify-content: flex-start; }
+  .w-r__img-wrap {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #f5f5f5;
+    width: 120px;
+    height: 120px; }
+    .w-r__img-wrap img {
+      display: block;
+      min-width: 120px; }
+  .w-r__info {
+    margin-left: 18px; }
+  .w-r__name {
+    display: block; }
+    .w-r__name > a {
+      color: #333333;
+      font-size: 14px;
+      font-weight: 600;
+      transition: color 0.5s; }
+      .w-r__name > a:hover {
+        color: blue; }
+  .w-r__category {
+    display: block;
+    margin-bottom: 2px; }
+    .w-r__category > a {
+      color: #a0a0a0;
+      transition: color 0.5s;
+      font-size: 12px; }
+      .w-r__category > a:hover {
+        color: blue; }
+  .w-r__price {
+    display: block;
+    color: blue;
+    font-size: 14px;
+    font-weight: 600; }
+  .w-r__discount {
+    font-weight: 600;
+    margin-left: 12px;
+    color: #333333;
+    font-size: 14px;
+    text-decoration: line-through; }
+  .w-r__link {
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 0 0 10px 10px;
+    padding: 12px 30px; }
+
+/* Liên kết điều hướng */
+
+.route-box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #f1f1f1;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .route-box__g {
+    -ms-flex: 0 1 auto; }
+  .route-box__link {
+    color: #333333;
+    font-size: 13px;
+    text-align: center;
+    padding: 17px;
+    font-weight: 600;
+    display: inline-block;
+    transition: color 0.5s; }
+    .route-box__link:hover {
+      color: blue; }
+  .route-box i {
+    margin-right: 2px; }
+
+/* Thay đổi bố cục phù hợp với kích thước */
+
+@media (max-width: 991px) {
+  .w-r__wrap-2 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-align: end;
+        align-items: flex-end; } }
+
+@media (max-width: 767px) {
+  .table-p td {
+    min-width: 200px; }
+  .w-r__container {
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  .w-r__wrap-1 {
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  .w-r__info {
+    text-align: center;
+    margin: 15px 0 15px; }
+  .w-r__wrap-2 {
+    -ms-flex-align: center;
+        align-items: center; } }
+
+
+/*--------------------------------------------------------------
+20.0 Vendor Extension Pages
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+20.1 Bootstrap
+--------------------------------------------------------------*/
+/* Modal styles */
+.modal {
+  z-index: 999999; }
+
+.modal-content {
+  display: block !important;
+  border: none;
+  border-radius: 0; }
+
+.modal--radius {
+  border-radius: 8px; }
+
+.modal--shadow {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.45); }
+
+
+
+/*--------------------------------------------------------------
+20.4 jquery.scrollUp
+--------------------------------------------------------------*/
+/* ScrollUp Custom */
+#topScroll {
+  right: 24px;
+  bottom: 60px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  box-shadow: 2px 2px 4px 4px rgba(36, 37, 38, 0.08);
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 18px;
+  text-align: center; }

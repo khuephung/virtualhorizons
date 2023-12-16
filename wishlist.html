@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="images/favicon.png" rel="shortcut icon">
+    <title>Wishlist</title>
+    <!-- Thư viện animate.cs  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--====== Google Font ======-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--====== Vendor Css ======-->
+    <link rel="stylesheet" href="./Component/wishlist/vendor.css">
+
+    <!--====== Utility-Spacing ======-->
+    <link rel="stylesheet" href="./Component/wishlist/utility.css">
+
+    <!--====== App ======-->
+    <link rel="stylesheet" href="./Component/wishlist/app.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/b696211014.js" crossorigin="anonymous"></script>
+    <script>
+    // jQuerry
+    $(function () {
+        $("#headerblue").load("headerblue.html");
+      });
+      $(function () {
+        $("#footer").load("Footer.html");
+      });
+    </script>
+    <style>
+        /*Animation xuất hiện từ dưới lên*/
+        .animate__animated.animate__fadeInUp{
+        --animate-duration: 1500ms;
+        --animate-delay: 1s 
+    </style>
+</head>
+<body class="config">
+    
+    <!--====== Main App ======-->
+    <div id="app">
+
+<!-- ===========HEADER============== -->
+        <div id="headerblue"></div>
+
+        <!--====== Section 2 ======-->
+        <div class="u-s-p-b-60">
+
+            <!--====== Section Intro ======-->
+            <div class="section__intro u-s-m-b-60">
+                <!-- Phần tử div với các lớp section__intro và u-s-m-b-60 -->
+                <div class="container">
+                    <!-- Một khối chứa cố định để giữ nội dung -->
+                    <div class="row">
+                        <!-- Một hàng dùng để bố trí nội dung theo chiều ngang -->
+                        <div class="col-lg-12">
+                            <!-- Một cột chiếm toàn bộ chiều rộng trên màn hình lớn -->
+                            <div class="section__text-wrap">
+                                <!-- Một khối chứa văn bản hoặc nội dung văn bản -->
+                                <h1 class="section__heading u-c-secondary animate__animated animate__backInDown">MỤC YÊU THÍCH</h1>
+                                <!-- Tiêu đề với các lớp section__heading và u-c-secondary -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--====== End - Section Intro ======-->
+
+
+            <!--====== Section Content ======-->
+            <div class="section__content animate__animated animate__fadeInUp">
+                <!-- Một phần tử div định nghĩa phần nội dung của trang -->
+                <div class="container">
+                    <!-- Một khối chứa cố định để giữ nội dung -->
+                    <div class="row">
+                        <!-- Một hàng để bố trí nội dung theo chiều ngang -->
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <!-- Một cột chiếm toàn bộ chiều rộng trên mọi loại màn hình -->
+                            <!-- (lớn, trung bình và nhỏ) -->                
+
+
+                            <!--====== Wishlist Product ======-->
+
+                            <div class="w-r u-s-m-b-30">
+                                <!-- Một phần tử div định nghĩa một sản phẩm trong danh sách yêu thích -->
+                                <div class="w-r__container">
+                                    <!-- Một khối chứa sản phẩm -->
+                            
+                                    <!-- Phần bao gồm hình ảnh sản phẩm -->
+                                    <div class="w-r__wrap-1">
+                                        <div class="w-r__img-wrap">
+                                            <img class="u-img-fluid" src="images/ÁO KHOÁC.jpg" alt="">
+                                            <!-- Hình ảnh sản phẩm -->
+                                        </div>
+                            
+                                        <!-- Phần thông tin về sản phẩm -->
+                                        <div class="w-r__info">
+                                            <!-- Tên sản phẩm -->
+                                            <span class="w-r__name">
+                                                <a href="product-detail.html">Áo Khoác</a>
+                                            </span>
+                            
+                                            <!-- Danh mục sản phẩm -->
+                                            <span class="w-r__category">
+                                                <a href="shop-side-version-2.html">Viễn Tưởng</a>
+                                            </span>
+                            
+                                            <!-- Giá sản phẩm và giá khuyến mãi (nếu có) -->
+                                            <span class="w-r__price">750.000đ
+                                                <span class="w-r__discount">900.000đ</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                            
+                                    <!-- Phần chứa các liên kết hành động -->
+                                    <div class="w-r__wrap-2">
+                                        <!-- Liên kết thêm sản phẩm vào giỏ hàng -->
+                                        <a class="w-r__link btn--e-brand-b-2" data-modal="modal" data-modal-id="#add-to-cart">THÊM VÀO GIỎ HÀNG</a>
+                            
+                                        <!-- Liên kết để xem chi tiết sản phẩm -->
+                                        <a class="w-r__link btn--e-transparent-platinum-b-2" href="product-detail.html">XEM</a>
+                            
+                                        <!-- Liên kết để xóa sản phẩm khỏi danh sách yêu thích -->
+                                        <a class="w-r__link btn--e-transparent-platinum-b-2" href="#">XÓA</a>
+                                    </div>
+                                </div>
+                            </div>                        
+                            <!--====== End - Wishlist Product ======-->
+
+
+                            <!--====== Wishlist Product ======-->
+                            <div class="w-r u-s-m-b-30">
+                                <div class="w-r__container">
+                                    <div class="w-r__wrap-1">
+                                        <div class="w-r__img-wrap">
+
+                                            <img class="u-img-fluid" src="images/BÀN TAY.jpg" alt=""></div>
+                                        <div class="w-r__info">
+
+                                            <span class="w-r__name">
+
+                                                <a href="product-detail.html">Bàn Tay</a></span>
+
+                                            <span class="w-r__category">
+
+                                                <a href="shop-side-version-2.html">Viễn tưởng</a></span>
+
+                                            <span class="w-r__price">230.000đ
+
+                                                <span class="w-r__discount">360.000đ</span></span></div>
+                                    </div>
+                                    <div class="w-r__wrap-2">
+
+                                        <a class="w-r__link btn--e-brand-b-2" data-modal="modal" data-modal-id="#add-to-cart">THÊM VÀO GIỎ HÀNG</a>
+
+                                        <a class="w-r__link btn--e-transparent-platinum-b-2" href="product-detail.html">XEM</a>
+
+                                        <a class="w-r__link btn--e-transparent-platinum-b-2" href="#">XÓA</a></div>
+                                </div>
+                            </div>
+                            <!--====== End - Wishlist Product ======-->
+
+
+                            <!--====== Wishlist Product ======-->
+                            <div class="w-r u-s-m-b-30">
+                                <div class="w-r__container">
+                                    <div class="w-r__wrap-1">
+                                        <div class="w-r__img-wrap">
+
+                                            <img class="u-img-fluid" src="images/PHÒNG NGỦ.jpg" alt=""></div>
+                                        <div class="w-r__info">
+
+                                            <span class="w-r__name">
+
+                                                <a href="product-detail.html">Phòng Ngủ</a></span>
+
+                                            <span class="w-r__category">
+
+                                                <a href="shop-side-version-2.html">Nội thất</a></span>
+
+                                            <span class="w-r__price">500.000đ
+
+                                                <span class="w-r__discount">750.000đ</span></span></div>
+                                    </div>
+                                    <div class="w-r__wrap-2">
+
+                                        <a class="w-r__link btn--e-brand-b-2" data-modal="modal" data-modal-id="#add-to-cart">THÊM VÀO GIỎ HÀNG</a>
+
+                                        <a class="w-r__link btn--e-transparent-platinum-b-2" href="product-detail.html">XEM</a>
+
+                                        <a class="w-r__link btn--e-transparent-platinum-b-2" href="#">XÓA</a></div>
+                                </div>
+                            </div>
+                            <!--====== End - Wishlist Product ======-->
+                        </div>
+
+                        <div class="col-lg-12">
+                            <!-- Một cột chiếm toàn bộ chiều rộng trên màn hình lớn -->
+                        
+                            <!-- Box chứa các liên kết điều hướng -->
+                            <div class="route-box">
+                                <!-- Phần tử route-box -->
+                        
+                                <!-- Nhóm liên kết điều hướng thứ nhất -->
+                                <div class="route-box__g">
+                                    <!-- Box chứa một nhóm liên kết điều hướng -->
+                        
+                                    <!-- Liên kết để quay lại trang mua sắm trước đó -->
+                                    <a class="route-box__link" href="shop-side-version-2.html">
+                                        <!-- Icon mũi tên trỏ về phía trước -->
+                                        <i class="fas fa-long-arrow-alt-left"></i>
+                                        <!-- Chữ tiếp tục mua sắm -->
+                                        <span>TIẾP TỤC MUA SẮM</span>
+                                    </a>
+                                </div>
+                        
+                                <!-- Nhóm liên kết điều hướng thứ hai -->
+                                <div class="route-box__g">
+                                    <!-- Box chứa một nhóm liên kết điều hướng -->
+                        
+                                    <!-- Liên kết để xóa tất cả mục trong danh sách yêu thích -->
+                                    <a class="route-box__link" href="wishlist.html">
+                                        <!-- Icon thùng rác -->
+                                        <i class="fas fa-trash"></i>
+                                        <!-- Chữ làm trống mục yêu thích -->
+                                        <span>LÀM TRỐNG MỤC YÊU THÍCH</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!--====== End - Section Content ======-->
+        </div>
+        <!--====== End - Section 2 ======-->
+    </div>
+    <!--====== End - App Content ======-->
+
+    
+    
+<!-- =============FOOTER==================== -->
+    <div id="footer"></div>
+
+        <!--====== Modal Section ======-->
+        <!--====== Add to Cart Modal ======-->
+
+        <div class="modal fade" id="add-to-cart">
+            <!-- Một modal sẽ hiển thị khi thêm sản phẩm vào giỏ hàng -->
+            <div class="modal-dialog modal-dialog-centered">
+                <!-- Định dạng để hiển thị modal ở giữa trang -->
+                <div class="modal-content modal-radius modal-shadow">
+                    <!-- Nội dung của modal với đường viền cong và hiệu ứng bóng -->
+
+                    <!-- Nút đóng modal -->
+                    <button class="btn dismiss-button fas fa-times" type="button" data-dismiss="modal"></button>
+
+                    <!-- Phần thân của modal -->
+                    <div class="modal-body">
+                        <!-- Dòng chứa các phần tử -->
+                        <div class="row">
+                            <!-- Cột trái -->
+                            <div class="col-lg-6 col-md-12">
+                                <!-- Phần hiển thị thông báo thành công -->
+                                <div class="success u-s-m-b-30">
+                                    <!-- Phần thông tin thành công -->
+                                    <div class="success__text-wrap"><i class="fas fa-check"></i>
+                                        <!-- Icon check để chỉ thị thành công -->
+                                        <span>Thêm vào giỏ hàng thành công!</span>
+                                        <!-- Thông điệp hiển thị khi thêm vào giỏ hàng thành công -->
+                                    </div>
+                                    <!-- Hiển thị hình ảnh sản phẩm thành công -->
+                                    <div class="success__img-wrap">
+                                        <img class="u-img-fluid" src="images/ÁO KHOÁC.jpg" alt="">
+                                        <!-- Hình ảnh sản phẩm thành công -->
+                                    </div>
+                                    <!-- Hiển thị thông tin chi tiết sản phẩm thành công -->
+                                    <div class="success__info-wrap">
+                                        <span class="success__name">Áo Khoác</span>
+                                        <!-- Tên sản phẩm -->
+                                        <span class="success__quantity">Số lượng: 1</span>
+                                        <!-- Số lượng -->
+                                        <span class="success__price">230.000đ</span>
+                                        <!-- Giá -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Cột phải -->
+                            <div class="col-lg-6 col-md-12">
+                                <!-- Phần tùy chọn -->
+                                <div class="s-option">
+                                    <!-- Hiển thị số lượng sản phẩm trong giỏ hàng -->
+                                    <span class="s-option__text">1 sản phẩm trong giỏ</span>
+                                    <!-- Hộp chứa các liên kết -->
+                                    <div class="s-option__link-box">
+                                        <!-- Liên kết tiếp tục mua sắm -->
+                                        <a class="s-option__link btn--e-white-brand-shadow" data-dismiss="modal">TIẾP TỤC MUA HÀNG</a>
+                                        <!-- Liên kết xem giỏ hàng -->
+                                        <a class="s-option__link btn--e-white-brand-shadow" href="cart.html">XEM GIỎ HÀNG</a>
+                                        <!-- Liên kết thanh toán -->
+                                        <a class="s-option__link btn--e-brand-shadow" href="checkout.html">TIẾN HÀNH THANH TOÁN</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--====== End - Add to Cart Modal ======-->
+        <!--====== End - Modal Section ======-->
+
+    </div>
+
+    <!--====== End - Main App ======-->
+
+    <!--====== Vendor Js ======-->
+    <script src="js/vendor.js"></script>
+
+    <!--====== jQuery Shopnav plugin ======-->
+    <script src="js/jquery.shopnav.js"></script>
+
+    <!--====== App ======-->
+    <script src="js/app.js"></script>
+
+</body>
+</html>
