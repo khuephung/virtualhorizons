@@ -50,7 +50,7 @@ custom-colors, box-mode, custom-header, custom-menu, custom-logo, featured-image
 /**
  * Setup box-sizing
  */
-html {
+ html {
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent; }
   html.boxed {
@@ -229,12 +229,6 @@ Box Module
   html.boxed footer .container {
     padding-left: 40px;
     padding-right: 40px; } }
-
-@media (max-width: 575px){
-  .section__content {
-    flex-wrap: wrap;
-    position: relative; }
-}
 
 /*--------------------------------------------------------------
 2.0 Typography
@@ -1704,8 +1698,7 @@ input::-ms-clear {
   height: 100%;
   font-size: 12px;
   font-weight: 600;
-  resize: vertical;
-  padding:20px  }
+  resize: vertical; }
   .text-area--border-radius {
     border-radius: 25px; }
   .text-area--primary-style {
@@ -2365,9 +2358,7 @@ input::-ms-clear {
   text-align: center; }
 
 .section__content {
-  position: relative;
-  flex-wrap: nowrap;
- }
+  position: relative; }
 
 .section__heading {
   font-weight: 600;
@@ -6450,10 +6441,6 @@ justify-content: space-between;}
   color:#000000;
   opacity: 50%;
   font-weight: 200;
-}
-
-#order-note{
-  width: 540px;
 }
 
 .scroll-container {

@@ -18,6 +18,10 @@
     <link rel="stylesheet" href="./Component/Sanpham/utility.css">
     <!--====== App ======-->
     <link rel="stylesheet" href="./Component/Sanpham/app.css">
+
+     <!-- Thư viện animate.cs  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
@@ -38,12 +42,25 @@
           font-size: 1rem; /* Đặt kích thước chữ cơ bản */
           -webkit-font-smoothing: antialiased; /* Hiệu ứng trơn mịn trên các trình duyệt Webkit */
   }
+
+
+    /*Animation xuất hiện từ dưới lên*/
+       .animate__animated.animate__fadeInUp{
+          --animate-duration: 1000ms;
+          --animate-delay: 1s }
+        .producttitle{
+          color: white; 
+          text-align: center; 
+          margin-top: 30px; 
+          margin-bottom: 15px; 
+          font-size: 45px;
+        }
       </style>
   </head>
   <div class="productbg">
   <body class="config">
     <div id="header"></div>
-    <h1 style="color: white; text-align: center; margin-top: 30px; margin-bottom: 15px; font-size: 45px;">SẢN PHẨM 3D</h1>
+    <h1 class="producttitle animate__animated animate__backInDown">SẢN PHẨM 3D</h1>
     <!-- Main App -->
     <div id="app">
       <!-- Nội dung chính của ứng dụng -->
@@ -53,7 +70,7 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-3 col-md-12">
-                <div class="shop-w-master">
+                <div class="shop-w-master animate__animated animate__fadeInLeft">
                   <!-- Tiêu đề và biểu tượng "BỘ LỌC" -->
                   <h1 class="shop-w-master__heading u-s-m-b-30">
                     <i class="fas fa-filter u-s-m-r-8"></i>
@@ -408,7 +425,7 @@
                       </div>
                     </div>
                     <!-- Thông tin về số lượng sản phẩm hiển thị -->
-                    <div class="shop-p__collection">
+                    <div class="shop-p__collection  animate__animated animate__fadeInUp">
                       <div class="row is-grid-active">
                         <!-- Mỗi sản phẩm trong danh sách -->
                         <div class="col-lg-4 col-md-6 col-sm-6">
@@ -802,25 +819,25 @@
                       <!-- Phân trang sản phẩm -->
                       <ul class="shop-p__pagination">
                         <li>
-                          <a class="fas fa-angle-left" href="SanPham.html"></a>
+                          <a class="fas fa-angle-left" href="./SanPham.html"></a>
                         </li>
                         <!-- Trang hiện tại (đang được chọn) -->
                         <li>
-                          <a href="SanPham.html">1</a>
+                          <a href="./SanPham.html">1</a>
                         </li>
                         <!-- Các trang có thể chọn -->
                         <li class="is-active">
-                          <a href="SanPham=2.html">2</a>
+                          <a href="./SanPham-2.html">2</a>
                         </li>
                         <li>
-                          <a href="SanPham.html">3</a>
+                          <a href="./SanPham.html">3</a>
                         </li>
                         <li>
-                          <a href="SanPham-2.html">4</a>
+                          <a href="./SanPham-2.html">4</a>
                         </li>
                         <!-- Nút chuyển đến trang tiếp theo -->
                         <li>
-                          <a class="fas fa-angle-right" href="SanPham-2.html"></a>
+                          <a class="fas fa-angle-right" href="./SanPham-2.html"></a>
                         </li>
                       </ul>
                       <!-- Kết thúc - Phân trang sản phẩm -->
