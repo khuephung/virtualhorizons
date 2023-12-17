@@ -455,8 +455,8 @@
           var ELEVATE_ZOOM_OBJ = {
               borderSize: 1,
               autoWidth:true,
-              zoomWindowWidth: 540,
-              zoomWindowHeight: 540,
+              zoomWindowWidth: 200,
+              zoomWindowHeight: 200,
               zoomWindowOffetx: 10,
               borderColour: '#e9e9e9',
               cursor: 'pointer'

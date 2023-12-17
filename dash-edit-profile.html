@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="images/favicon.png" rel="shortcut icon">
+    <title>Thông tin khách hàng - Sửa hồ sơ</title>
+
+    <!-- ĐIỀU CHỈNH PHONG CÁCH CHO TRANG -->
+    <!--====== Google Font ======-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+
+    <!--====== Vendor Css ======-->
+    <link rel="stylesheet" href="./Component/quanlytaikhoan/vendor-profile.css">
+
+    <!--====== Utility-Spacing ======-->
+    <link rel="stylesheet" href="./Component/quanlytaikhoan/utility-profile.css">
+
+    <!--====== App ======-->
+    <link rel="stylesheet" href="./Component/quanlytaikhoan/app-profile.css">
+
+    <!-- Thư viện animate.cs  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!--===== Icon ===== -->
+    <script src="https://kit.fontawesome.com/b696211014.js" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      // jQuerry
+      $(function() {
+        $("#headerblue").load("headerblue.html");
+      });
+      $(function() {
+        $("#footer").load("Footer.html");
+      });
+    </script> 
+    <style>
+        /*Animation xuất hiện từ dưới lên*/
+        .animate__animated.animate__fadeInUp{
+        --animate-duration: 1500ms;
+        --animate-delay: 1s 
+    </style>
+
+</head>
+<body class="config">
+    <div id="headerblue"></div>
+    <div class="preloader is-active">
+        <div class="preloader__wrap">
+
+            <img class="preloader__img" src="images/preloader.png" alt=""></div>
+    </div>
+
+    <!--====== TRANG TÀI KHOẢN CỦA TÔI (SỬA HỒ SƠ) ======-->
+    <div id="app">
+
+        <!--====== NỘI DUNG TRANG TÀI KHOẢN CỦA TÔI (SỬA HỒ SƠ) ======-->
+        <div class="app-content">
+
+            <!--====== PHẦN 1 ======-->
+            <div class="u-s-p-y-60">
+
+                <!--====== PHẦN NỘI DUNG 1 ======-->
+                <div class="section__content">
+                    <div class="container">
+                        <div class="breadcrumb">
+                            <div class="breadcrumb__wrap">
+                                <ul class="breadcrumb__list">
+                                    <li class="has-separator">
+
+                                        <a href="./index.html">Trang chủ</a></li>
+                                    <li class="is-marked">
+
+                                        <a href="./dashboard.html">Quản lý tài khoản của tôi</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--====== Kết thúc - PHẦN 1 ======-->
+
+            <!--====== PHẦN 2 ======-->
+            <div class="u-s-p-b-60">
+
+                <!--====== PHẦN NỘI DUNG 2 ======-->
+                <div class="section__content">
+                    <div class="dash">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-12">
+
+                                    <!-- KHUNG THỨ 2: KHUNG HIỆN SỐ LIỆU TỪNG LOẠI ĐƠN: ĐƠN ĐÃ ĐẶT, HUỶ,... -->
+                                    <div class="dash__box dash__box--bg-white dash__box--shadow dash__box--w">
+                                        <div class="dash__pad-1">
+                                            <ul class="dash__w-list">
+                                                <li>
+                                                    <div class="dash__w-wrap">
+
+                                                        <span class="dash__w-icon dash__w-icon-style-1"><i class="fa-solid fa-cube"></i></span>
+
+                                                        <span class="dash__w-text">16</span>
+
+                                                        <span class="dash__w-name">Sản phẩm đã xem</span></div>
+                                                </li>
+                                                <li>
+                                                    <div class="dash__w-wrap">
+
+                                                        <span class="dash__w-icon dash__w-icon-style-4"><i class="fa-solid fa-hourglass-start"></i></span>
+
+                                                        <span class="dash__w-text">1</span>
+
+                                                        <span class="dash__w-name">Đơn chờ thanh toán</span></div>
+                                                </li>
+                                                <li>
+                                                    <div class="dash__w-wrap">
+
+                                                        <span class="dash__w-icon dash__w-icon-style-2"><i class="fas fa-cart-arrow-down"></i></span>
+
+                                                        <span class="dash__w-text">7</span>
+
+                                                        <span class="dash__w-name">Đơn đã đặt</span></div>
+                                                </li>
+                                                <li>
+                                                    <div class="dash__w-wrap">
+
+                                                        <span class="dash__w-icon dash__w-icon-style-3"><i class="fas fa-times"></i></span>
+
+                                                        <span class="dash__w-text">2</span>
+
+                                                        <span class="dash__w-name">Đơn huỷ</span></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--====== Kết thúc - BẢNG TÍNH NĂNG TRONG TRANG THÔNG TIN  ======-->
+                                </div>
+
+                                <!-- BẢNG ĐIỀU CHỈNH HỒ SƠ (BÊN PHẢI) -->                                
+                                <div class="col-lg-9 col-md-12">
+                                    <div class="dash__box dash__box--shadow dash__box--radius dash__box--bg-white">
+                                        <div class="dash__pad-2">
+                                            <h1 class="dash__h1 u-s-m-b-14">Sửa hồ sơ</h1>
+
+                                            <span class="dash__text u-s-m-b-30">Có vẻ như bạn chưa từng cập nhật hồ sơ.</span>
+                                            <div class="dash__link dash__link--secondary u-s-m-b-30">
+
+                                                <a data-modal="modal" data-modal-id="#dash-newsletter">Đăng ký nhận tin tức</a></div>
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <form class="dash-edit-p">
+                                                        <div class="gl-inline">
+                                                            <div class="u-s-m-b-30">
+
+                                                                <label class="gl-label" for="reg-fname">TÊN *</label>
+
+                                                                <input class="input-text input-text--primary-style" type="text" id="reg-fname" placeholder="Nhóm"></div>
+                                                            <div class="u-s-m-b-30">
+
+                                                                <label class="gl-label" for="reg-lname">HỌ *</label>
+
+                                                                <input class="input-text input-text--primary-style" type="text" id="reg-lname" placeholder="12"></div>
+                                                        </div>
+                                                        <div class="gl-inline">
+                                                            <div class="u-s-m-b-30">
+
+                                                                <!-- HỘP LỰA CHỌN NGÀY SINH -->
+                                                                <span class="gl-label">NGÀY SINH</span>
+                                                                <div class="gl-dob"><select class="select-box select-box--primary-style">
+                                                                        <option selected>Tháng</option>
+                                                                        <option value="male">Tháng 1</option>
+                                                                        <option value="male">Tháng 2</option>
+                                                                        <option value="male">Tháng 3</option>
+                                                                        <option value="male">Tháng 4</option>
+                                                                    </select><select class="select-box select-box--primary-style">
+                                                                        <option selected>Ngày</option>
+                                                                        <option value="01">01</option>
+                                                                        <option value="02">02</option>
+                                                                        <option value="03">03</option>
+                                                                        <option value="04">04</option>
+                                                                    </select><select class="select-box select-box--primary-style">
+                                                                        <option selected>Năm</option>
+                                                                        <option value="1991">1991</option>
+                                                                        <option value="1992">1992</option>
+                                                                        <option value="1993">1993</option>
+                                                                        <option value="1994">1994</option>
+                                                                    </select></div>
+                                                                <!-- Kết thúc - HỘP LỰA CHỌN NGÀY SINH -->
+                                                            </div>
+                                                           
+                                                            <!-- HỘP LỰA CHỌN GIỚI TÍNH -->
+                                                            <div class="u-s-m-b-30">
+
+                                                                <label class="gl-label" for="gender">GIỚI TÍNH</label><select class="select-box select-box--primary-style u-w-100" id="gender">
+                                                                    <option selected>Chọn</option>
+                                                                    <option value="male">Nam</option>
+                                                                    <option value="male">Nữ</option>
+                                                                </select></div>
+                                                            <!-- Kết thúc - HỘP LỰA CHỌN GIỚI TÍNH -->
+
+                                                        </div>
+
+                                                        <!-- THÔNG TIN EMAIL -->
+                                                        <div class="gl-inline">
+                                                            <div class="u-s-m-b-30">
+                                                                <h2 class="dash__h2 u-s-m-b-8">E-mail</h2>
+
+                                                                <span class="dash__text">nhom12@gmail.com</span>
+                                                                <div class="dash__link dash__link--secondary">
+
+                                                                    <a href="#">Thay đổi</a></div>
+                                                            </div>
+
+                                                        <!-- THÔNG TIN SỐ ĐIỆN THOẠI -->
+                                                            <div class="u-s-m-b-30">
+                                                                <h2 class="dash__h2 u-s-m-b-8">Số điện thoại</h2>
+
+                                                                <span class="dash__text">Vui lòng nhập số điện thoại của bạn</span> <!-- ĐỀ XUẤT: THÊM FORM DẠNG TEXT ĐỂ ĐIỀN -->
+                                                                <div class="dash__link dash__link--secondary">
+
+                                                                    <a href="#">Thêm</a></div>
+                                                            </div>
+                                                        </div>
+
+                                                        <button class="btn btn--e-brand-b-2" type="submit">LƯU</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--====== Kết thúc - PHẦN NỘI DUNG 2 ======-->
+            </div>
+            <!--====== Kết thúc - PHẦN 2 ======-->
+        </div>
+
+        <!--====== ĐĂNG KÝ/HUỶ ĐĂNG KÝ NHẬN TIN TỨC ======-->
+        <div class="modal fade" id="dash-newsletter">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content modal--shadow">
+                    <div class="modal-body">
+                        <form class="d-modal__form">
+                            <div class="u-s-m-b-15">
+                                <h1 class="gl-modal-h1">Đăng ký tin tức</h1>
+
+                                <span class="gl-modal-text">Tôi đã đọc và hiểu</span>
+
+                                <a class="d_modal__link" href="./dash-edit-profile.html">Chính sách của Virtual Horizons</a>
+                            </div>
+                            <div class="gl-modal-btn-group">
+
+                                <button class="btn btn--e-brand-b-2" type="submit">ĐĂNG KÝ</button>
+
+                                <button class="btn btn--e-grey-b-2" type="button" data-dismiss="modal">HUỶ</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== Kết thúc - ĐĂNG KÝ/HUỶ ĐĂNG KÝ NHẬN TIN TỨC ======-->
+    </div>
+    
+        <!--====== Kết thúc - TRANG TÀI KHOẢN CỦA TÔI (SỬA HỒ SƠ) ======-->
+
+    <!-- THIẾT LẬP CÔNG CỤ THEO DÕI GOOGLE ANALYTICS -->
+    <!-- ===== Google Analytics: đổi UA-XXXXX-Y thành ID của trang web bạn --->
+    <script>
+        window.ga = function() { // Thiết lập một hàm toàn cục ga (Google Analytics) có thể được sử dụng để đưa các lệnh theo dõi vào hàng đợi.
+            ga.q.push(arguments)
+        };
+        ga.q = []; //Mảng để lưu trữ các đối số được chuyển vào hàm 'ga'
+        ga.l = +new Date; // Lưu trữ timestamp hiện tại
+        ga('create', 'UA-XXXXX-Y', 'auto'); // Tạo bộ theo dõi mới với ID theo dõi cụ thể và chế độ 'auto'
+        ga('send', 'pageview') // Gửi hit xem trang đến Google Analytics
+    </script>
+    
+    <!-- Bao gồm thư viện Google Analytics và tải nó không đồng bộ -->
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+    <!-- Bao gồm các tệp JavaScript khác cần thiết -->
+    <!--====== Vendor Js ======-->
+    <script src="./js/vendor.js"></script>
+
+    <!--====== jQuery Shopnav plugin ======-->
+    <script src="./js/jquery.shopnav.js"></script>
+
+    <!--====== App ======-->
+    <script src="./js/app.js"></script>
+
+    <!-- Nếu JavaScript bị tắt trong trình duyệt của người dùng phần này sẽ hiển thị -->
+    <!--====== Noscript ======-->
+    <noscript>
+        <div class="app-setting">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="app-setting__wrap">
+                            <h1 class="app-setting__h1">JavaScript đã bị tắt trên trình duyệt của bạn.</h1>
+
+                            <span class="app-setting__text">Vui lòng bật JavaScript trên trình duyệt của bạn hoặc nâng cấp lên trình duyệt có khả năng bật JavaScript.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </noscript>
+    <script src="https://example.com/fontawesome/v6.5.1/js/fontawesome.js" data-auto-replace-svg="nest"></script>
+    <script src="https://example.com/fontawesome/v6.5.1/js/solid.js"></script>
+    <script src="https://example.com/fontawesome/v6.5.1/js/brands.js"></script>
+    <script src="https://kit.fontawesome.com/b696211014.js" crossorigin="anonymous"></script>
+    <div id="footer"></div>
+</body>
+</html>
