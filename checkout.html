@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="images/favicon.png" rel="shortcut icon">
+    <title>Thanh toán</title>
+
+    <!--====== Google Font ======-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+
+    <!--====== Vendor Css ======-->
+    <link rel="stylesheet" href="./Component/Checkout/vendor.css">
+
+    <!--====== Utility-Spacing ======-->
+    <link rel="stylesheet" href="./Component/Checkout/utility.css">
+
+    <!--====== App ======-->
+    <link rel="stylesheet" href="./Component/Checkout/app.css">
+
+    <!-- Thư viện animate.cs  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!--====== Font Awsome ======-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      // jQuerry
+      $(function() {
+        $("#headerblue").load("headerblue.html");
+      });
+      $(function() {
+        $("#footer").load("Footer.html");
+      });
+    </script>
+    <style>
+       * {
+            box-sizing: border-box;
+        }  
+        .titlecheckout{
+            color: blue; 
+            text-align: center; 
+            margin-top: 40px; 
+            margin-bottom: -10px; 
+            font-size: 45px;
+        }
+        /*Animation xuất hiện từ dưới lên*/
+        .animate__animated.animate__fadeInUp{
+        --animate-duration: 1500ms;
+        --animate-delay: 1s 
+    </style>
+</head>
+<body class="config">
+    <div id="headerblue"></div>
+    <h1 class="titlecheckout animate__animated animate__backInDown">THANH TOÁN</h1>
+    <div class="preloader is-active">
+        <div class="preloader__wrap">
+
+            <img class="preloader__img" src="images/preloader.png" alt=""></div>
+    </div>
+
+    <!--====== Main App ======-->
+    <div id="app">
+
+        <!--====== App Content ======-->
+        <div class="app-content">
+
+            <!--====== Mục 1 (Điều hướng) ======-->
+            <div class="u-s-p-y-60">
+
+                <!--====== Nội dung mục 1 (Điều hướng) ======-->
+                <div class="section__content">
+                    <div class="container">
+                        <div class="breadcrumb">
+                            <div class="breadcrumb__wrap">
+                                <ul class="breadcrumb__list">
+                                    <li class="has-separator">
+
+                                        <a href="index.html">Trang chủ</a></li>
+                                    <li class="is-marked">
+
+                                        <a href="checkout.html">Thanh toán</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--====== Kết thúc - Phần 1 ======-->
+
+
+            <!--====== Phần 2 ======-->
+            <div class="u-s-p-b-60">
+
+                <!--====== Phần nội dung 2 ======-->
+                <div class="section__content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div id="checkout-msg-group">
+                                    <div class="msg u-s-m-b-30">
+
+                                        <span class="msg__text">Đã có tài khoản?
+
+                                            <a class="gl-link" href="#return-customer" data-toggle="collapse">Nhấn vào đây để đăng nhập</a></span>
+                                        <div class="collapse" id="return-customer" data-parent="#checkout-msg-group">
+                                            <div class="l-f u-s-m-b-16">
+
+                                                <span class="gl-text u-s-m-b-16">Nếu đã có tài khoản, vui lòng đăng nhập
+                                                <form class="l-f__form">
+                                                    <div class="gl-inline">
+                                                        <div class="u-s-m-b-15">
+
+                                                            <label class="gl-label" for="login-email">E-MAIL *</label>
+
+                                                            <input class="input-text input-text--primary-style" type="text" id="login-email" placeholder="Nhập E-mail"></div>
+                                                        <div class="u-s-m-b-15">
+
+                                                            <label class="gl-label" for="login-password">MẬT KHẨU *</label>
+
+                                                            <input class="input-text input-text--primary-style" type="text" id="login-password" placeholder="Nhập mật khẩu"></div>
+                                                    </div>
+                                                    <div class="gl-inline">
+                                                        <div class="u-s-m-b-15">
+
+                                                            <button class="btn btn--e-transparent-brand-b-2" type="submit">ĐĂNG NHẬP</button></div>
+                                                        <div class="u-s-m-b-15">
+
+                                                            <a class="gl-link" href="lost-password.html">Quên mật khẩu?</a></div>
+                                                    </div>
+
+                                                    <!--====== Check Box Ghi nhớ mật khẩu vào lần sau ======-->
+                                                    <div class="check-box">
+
+                                                        <input type="checkbox" id="remember-me">
+                                                        <div class="check-box__state check-box__state--primary">
+
+                                                            <label class="check-box__label" for="remember-me">Ghi nhớ vào lần sau</label></div>
+                                                    </div>
+                                                    <!--====== End - Check Box Ghi nhớ mật khẩu vào lần sau ======-->
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- KHUNG NHẬP COUPON (PHIẾU MUA HÀNG) -->
+                                    <div class="msg">
+                                        <span class="msg__text">Coupon <!-- ĐỀ XUẤT: ĐỔI THÀNH "COUPON" VÀ THÊM PHẦN HIỂN THỊ COUPON CHO KHÁCH HÀNG-->
+
+                                            <a class="gl-link" href="#have-coupon" data-toggle="collapse">Nhấp vào đây để hiện các coupon</a></span>
+                                       
+                                            <div class="collapse" id="have-coupon" data-parent="#checkout-msg-group">
+                                                    <div class="c-f.u-s-m-b-16">
+                                                    <div class="c-f u-s-m-b-16">
+                                                    <div style="width: 50%;">
+                                                        <span>Coupon</span>
+                                                        <span class="gl-text u-s-m-b-16">Nhập mã coupon của bạn (Nếu có)</span>
+                                                    </div>
+                                                    <form class="c-f__form">
+                                                            <div class="u-s-m-b-16">
+                                                                <label for="coupon"></label>
+                                                                <input class="input-text input-text--primary-style" type="text" id="coupon" placeholder="Mã Coupon">
+                                                            </div>
+                                                    
+                                                    <div class="c-f__form">
+                                                    <button class="btn btn--e-transparent-brand-b-2" type="submit">THÊM</button> </div>
+                                                    </form>
+                                                </div>
+                                                </div>
+                                                <div>
+                                                    <span> Coupon sẵn có </span>
+                                                    <div class="scroll-container ">
+                                                        <!-- Nội dung có thể cuộn ngang sẽ được đặt trong đây -->
+                                                        <div class="scroll-content chon-coupon">
+                                                            <img class="img-coupon" src="img-checkout/Group 1.png" alt="">
+                                                            <div class="radio-box">
+
+                                                                <input type="radio" id="coupon-selection" name="coupon">
+                                                                <div class="radio-box__state radio-box__state--primary">
+                                                                    <label class="radio-box__label" for="coupon-selection">Chọn</label></div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="scroll-content chon-coupon">
+                                                            <img class="img-coupon" src="img-checkout/Group 2.png" alt="">
+                                                            <div class="radio-box">
+
+                                                                <input type="radio" id="coupon-selection" name="coupon">
+                                                                <div class="radio-box__state radio-box__state--primary">
+                                                                    <label class="radio-box__label" for="coupon-selection">Chọn</label></div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="scroll-content chon-coupon">
+                                                            <img class="img-coupon" src="img-checkout/Group 1.png" alt="">
+                                                            <div class="radio-box">
+
+                                                                <input type="radio" id="coupon-selection" name="coupon">
+                                                                <div class="radio-box__state radio-box__state--primary">
+                                                                    <label class="radio-box__label" for="coupon-selection">Chọn</label></div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="scroll-content chon-coupon">
+                                                            <img class="img-coupon" src="img-checkout/Group 2.png" alt="">
+                                                            <div class="radio-box">
+
+                                                                <input type="radio" id="coupon-selection" name="coupon">
+                                                                <div class="radio-box__state radio-box__state--primary">
+                                                                    <label class="radio-box__label" for="coupon-selection">Chọn</label></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <!-- KẾT THÚC - KHUNG NHẬP COUPON -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <!--====== Kết thúc - Phần nội dung 2 ======-->
+            </div>
+            <!--====== Kết thúc - Phần 2 ======-->
+
+
+            <!--====== Phần 3 ======-->
+            <div class="u-s-p-b-60">
+
+                <!--====== Phần nội dung 3 ======-->
+                <div class="section__content">
+                    <div class="container">
+                        <div class="checkout-f">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h1 class="checkout-f__h1">THÔNG TIN KHÁCH HÀNG </h1> <!-- SỬA THÀNH THÔNG TIN KHÁCH HÀNG -->
+                                    <form class="checkout-f__delivery">
+                                        <div class="u-s-m-b-30">
+                                            <div class="u-s-m-b-15">
+
+                                                <!--====== Hộp kiểm ======-->
+                                                <div class="check-box">
+
+                                                    <input type="checkbox" id="get-address">
+                                                    <div class="check-box__state check-box__state--primary">
+
+                                                        <label class="check-box__label" for="get-address">Sử dụng thông tin mặc định</label></div>
+                                                </div>
+                                                <!--====== Kết thúc - Hộp kiểm ======-->
+                                            </div>
+
+                                            <!--====== Họ tên ======-->
+                                            <div class="gl-inline">
+                                                <div class="u-s-m-b-15">
+
+                                                    <label class="gl-label" for="billing-fname">HỌ TÊN *</label>
+
+                                                    <input class="input-text input-text--primary-style" type="text" id="billing-fname" data-bill=""></div>
+                                            </div>
+                                                    <!--====== Kết thúc - Họ tên ======-->
+
+
+                                            <!--====== E-MAIL ======-->
+                                            <div class="u-s-m-b-15">
+
+                                                <label class="gl-label" for="billing-email">E-MAIL *</label>
+
+                                                <input class="input-text input-text--primary-style" type="text" id="billing-email" data-bill=""></div>
+                                            <!--====== Kết thúc - E-MAIL ======-->
+
+
+                                            <!--====== Số điện thoại ======-->
+                                            <div class="u-s-m-b-15">
+
+                                                <label class="gl-label" for="billing-phone">SỐ ĐIỆN THOẠI *</label>
+
+                                                <input class="input-text input-text--primary-style" type="text" id="billing-phone" data-bill=""></div>
+                                            <!--====== Kết thúc - Số điện thoại ======-->
+
+                                            <div class="u-s-m-b-15">                                            
+                                            <label for="show-additional-info"></label>
+                                            <input type="checkbox" id="show-additional-info" onchange="toggleAdditionalInfo()"> Tôi cần hoá đơn điện tử
+                                            
+                                            <!-- THÊM 1 PHẦN NẾU KHÁCH HÀNG MUỐN XUẤT HOÁ ĐƠN -->
+                                            <div class="u-s-m-b-15 additional-info " id="additional-info">
+                                                <label class="gl-label" for="additional-field-tdv">TÊN ĐƠN VỊ *</label>
+                                                <input class="input-text input-text--primary-style" type="text" id="additional-field-tdv" data-bill="">
+                                            
+                                                <label class="gl-label" for="additional-field-mst">MÃ SỐ THUẾ *</label>
+                                                <input class="input-text input-text--primary-style" type="text" id="additional-field-mst" data-bill="">
+                                                                                        
+                                                <label class="gl-label" for="additional-field-dc">ĐỊA CHỈ*</label>
+                                                <input class="input-text input-text--primary-style" type="text" id="additional-field-dc" data-bill="">
+                                            </div>
+                                            </div>
+                                            
+                                            <!--====== Hộp kiểm ======-->
+                                            <div class="check-box">
+
+                                                    <input type="checkbox" id="make-default-address" data-bill="">
+                                                    <div class="check-box__state check-box__state--primary">
+
+                                                        <label class="check-box__label" for="make-default-address">Đặt thành địa chỉ giao hàng và hoá đơn mặc định</label></div>
+                                            </div>
+                                            <!--====== Kết thúc - Hộp kiểm ======-->
+                                            
+                                            <div class="u-s-m-b-10">
+
+                                                <a class="gl-link" href="#create-account" data-toggle="collapse">Đăng ký tài khoản mới?</a></div>
+                                            
+                                            <!-- KHUNG ĐĂNG KÝ TÀI KHOẢN MỚI -->
+                                            <div class="collapse u-s-m-b-15" id="create-account">
+
+                                            <span class="gl-text u-s-m-b-15">Đăng ký tài khoản mới bằng việc nhập thông tin bên dưới. Nếu bạn đã có tài khoản, vui lòng đăng nhập ở đầu trang.</span>
+                                            <div>
+
+                                                <label class="gl-label" for="reg-password">Mật khẩu *</label>
+
+                                                <input class="input-text input-text--primary-style" type="text" data-bill id="reg-password"></div>
+                                            </div>
+                                            <!-- Kết thúc - KHUNG ĐĂNG KÝ TÀI KHOẢN MỚI -->
+
+                                            <!-- KHUNG GHI CHÚ ĐƠN HÀNG -->
+                                            <div class="u-s-m-b-10">
+
+                                                <label class="gl-label" for="order-note">GHI CHÚ ĐƠN HÀNG</label>
+                                                <textarea class="text-area text-area--primary-style" id="order-note"></textarea></div>
+                                            <!-- Kết thúc - KHUNG GHI CHÚ ĐƠN HÀNG -->
+                                            
+                                            <!-- NÚT LƯU THÔNG TIN-->
+                                            <div>
+
+                                                <button class="btn btn--e-transparent-brand-b-2" type="submit">LƯU</button></div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- Kết thúc - THÔNG TIN GIAO HÀNG -->
+
+                                <div class="col-lg-6">
+                                    <h1 class="checkout-f__h1">TÓM TẮT ĐƠN HÀNG</h1>
+
+                                    <!--====== Tóm tắt đơn hàng ======--> <!-- MỤC NÀY ĐỔI LẠI PHÙ HỢP VỚI LOẠI SẢN PHẨM HƠN -->
+                                    <div class="o-summary">
+                                        <div class="o-summary__section u-s-m-b-30">
+                                            <div class="o-summary__item-wrap gl-scroll">
+                                                
+                                                <div class="o-card product-item" data-price="299000">
+                                                    <div class="o-card__flex">
+                                                        <div class="o-card__img-wrap">
+                                                            <img class="u-img-fluid" src="img-checkout/goicoban.jpg" alt="">
+                                                        </div>
+                                                        <div class="o-card__info-wrap">
+                                                            <span class="o-card__name">
+                                                                <a href="#">Gói Cơ bản</a>
+                                                            </span>
+                                                            <div class="luongvadonvitinh">
+                                                            <input type="number" class="o-card__quantity input-text input-text--primary-style soluong" value="1" min="1">
+                                                            <div class="thang"> tháng </div>
+                                                            </div>
+                                                            <span class="o-card__price">299.000</span>
+                                                        </div>
+                                                    </div>
+                                                    <a class="o-card__del far fa-trash-alt"></a>
+                                                </div>
+                                                
+                                                <div class="o-card id="product1">
+                                                    <div class="o-card__flex">
+                                                        <div class="o-card__img-wrap">
+                                                            <img class="u-img-fluid" src="img-checkout/nhahangnhatban.jpg" alt="">
+                                                        </div>
+                                                        <div class="o-card__info-wrap">
+                                                            <span class="o-card__name">
+                                                                <a href="#">Cửa hàng 3D</a></span>
+                                                            <span class="o-card__quantity">Số lượng x 1</span>
+                                                            <span class="o-card__price">545.000</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <a class="o-card__del far fa-trash-alt"></a>
+                                                </div>
+                                               
+                                                <div class="o-card">
+                                                    <div class="o-card__flex">
+                                                        <div class="o-card__img-wrap">
+
+                                                            <img class="u-img-fluid" src="img-checkout/conholỷanhmang.jpg" alt=""></div>
+                                                        <div class="o-card__info-wrap">
+
+                                                            <span class="o-card__name">
+
+                                                                <a href="product-detail.html">Con Hồ Ly Ranh Mãnh 3D</a></span>
+
+                                                            <span class="o-card__quantity">Số lượng x 1</span>
+
+                                                            <span class="o-card__price">80.000</span></div>
+                                                    </div>
+
+                                                    <a class="o-card__del far fa-trash-alt"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    <!-- PHẦN TỔNG CỘNG -->
+                                    <h1 class="checkout-f__h1">TỔNG CỘNG</h1>
+
+                                    <div class="o-summary__section u-s-m-b-30">
+                                        <div class="o-summary__box">
+                                            <table class="o-summary__table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>TỔNG CỘNG</td>
+                                                        <td id="totalAmount"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>THUẾ <span class="bosungthue">(5% Tổng giá trị đơn hàng)</span></td>
+                                                        <td id="taxAmount">
+                                                    </tr>
+                                                    <tr>
+                                                        <td>THÀNH TIỀN</td>
+                                                        <td id="finalAmount"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                        <!-- PHẦN THÔNG TIN THANH TOÁN -->
+                                        <div class="o-summary__section u-s-m-b-30">
+                                            <div class="o-summary__box">
+                                                <h1 class="checkout-f__h1">THÔNG TIN THANH TOÁN</h1>
+                                                <form class="checkout-f__payment">
+                                                    <div class="u-s-m-b-10">
+                                                        
+                                                    
+                                                    <div class="u-s-m-b-10">
+
+                                                        <!--====== Nút chọn ======-->
+                                                        <div class="radio-box">
+
+                                                            <input type="radio" id="direct-bank-transfer" name="payment">
+                                                            <div class="radio-box__state radio-box__state--primary">
+
+                                                                <label class="radio-box__label" for="direct-bank-transfer">Chuyển khoản ngân hàng</label></div>
+                                                        </div>
+                                                        <!--====== Kết thúc - Nút chọn ======-->
+
+                                                        <span class="gl-text u-s-m-t-6">Vui lòng viết ID đơn hàng của bạn vào mục nội dung chuyển khoản. Đơn hàng sẽ không được xác nhận cho đến khi chúng tôi xác nhận đã nhận được thanh toán.</span>
+                                                    </div>
+                                                    <div class="u-s-m-b-10">
+
+                                                        <!--====== Nút chọn ======-->
+                                                        <div class="radio-box">
+
+                                                            <input type="radio" id="pay-with-card" name="payment">
+                                                            <div class="radio-box__state radio-box__state--primary">
+
+                                                                <label class="radio-box__label" for="pay-with-card">Thanh toán bằng Thẻ tín dụng/Thẻ ghi nợ</label></div>
+                                                        </div>
+                                                        <!--====== Kết thúc - Nút chọn ======-->
+
+                                                        <span class="gl-text u-s-m-t-6">Chấp nhận thẻ nội địa và thẻ quốc tế.</span>
+                                                    </div>
+                                                    <div class="u-s-m-b-10">
+
+                                                        <!--====== Nút chọn ======-->
+                                                        <div class="radio-box">
+
+                                                            <input type="radio" id="pay-pal" name="payment">
+                                                            <div class="radio-box__state radio-box__state--primary">
+
+                                                                <label class="radio-box__label" for="pay-pal">Thanh toán qua Ví MoMo</label></div>
+                                                        </div>
+                                                        <!--====== Kết thúc - Nút chọn ======-->
+
+                                                        <span class="gl-text u-s-m-t-6">Khi bạn nhấp vào nút "Đặt hàng" bên dưới, chúng tôi sẽ đưa bạn đến trang chứa mã QR để bạn hoàn thành thanh toán.</span>
+                                                    </div>
+                                                    <div class="u-s-m-b-15">
+
+                                                        <!--====== Hộp kiểm ======-->
+                                                        <div class="check-box">
+
+                                                            <input type="checkbox" id="term-and-condition">
+                                                            <div class="check-box__state check-box__state--primary">
+
+                                                                <label class="check-box__label" for="term-and-condition">Tôi đồng ý với</label></div>
+                                                        </div>
+                                                        <!--====== Kết thúc - Hộp kiểm ======-->
+
+                                                        <a class="gl-link">Điều khoản Dịch vụ của Virtual Horizons.</a>
+                                                    </div>
+                                                    <div>
+
+                                                        <button class="btn btn--e-brand-b-2" type="submit">ĐẶT HÀNG</button></div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--====== Kết thúc - Tóm tắt đơn hàng ======-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--====== Kết thúc -  Phần nội dung 3 ======-->
+            </div>
+            <!--====== Kết thúc - Phần 3 ======-->
+        </div>
+        <!--====== Kết thúc - Nội dung trang ======-->
+    </div>
+    <!--====== Kết thúc - Trang chính ======-->
+
+
+    <!-- PHẦN CHỈNH SỬA JAVASCRIPT ĐỂ BỔ SUNG HIỆU ỨNG VÀ TÍNH TOÁN TỔNG ĐƠN HÀNG -->
+
+    <!-- TICK VÀO CHECKBOX "TÔI CẦN HOÁ ĐƠN ĐIỆN TỬ" SẼ HIỆN RA PHẦN THÔNG TIN CÔNG TY -->
+    <script>
+        // Kiểm tra trạng thái của checkbox khi trang được tải
+        document.addEventListener("DOMContentLoaded", function() {
+            toggleAdditionalInfo();
+        });
+    
+        // Hàm kiểm tra trạng thái của checkbox và ẩn/mo phần additional-info
+        function toggleAdditionalInfo() {
+            var checkbox = document.getElementById("show-additional-info");
+            var additionalInfo = document.getElementById("additional-info");
+    
+            if (checkbox.checked) {
+                additionalInfo.style.display = "block"; // Hiển thị khi checkbox được chọn
+            } else {
+                additionalInfo.style.display = "none"; // Ẩn khi checkbox không được chọn
+            }
+        }
+    </script>
+
+    <!-- TÍNH TOÁN TỔNG ĐƠN HÀNG KHI THAY ĐỔI SỐ LƯỢNG SẢN PHẨM -->
+    <script>
+        // Lấy tất cả các sản phẩm trong giỏ hàng
+        const productItems = document.querySelectorAll('.product-item');
+
+        // Lắng nghe sự kiện thay đổi giá trị input số lượng
+        productItems.forEach(function (product) {
+            product.addEventListener('input', function (event) {
+                if (event.target.classList.contains('soluong')) {
+                    updateTotalPrice();
+                }
+            });
+        });
+
+        // Hàm cập nhật tổng cộng, thuế, và thành tiền
+        function updateTotalPrice() {
+            let totalAmount = 0;
+
+            // Lặp qua từng sản phẩm để tính tổng giá tiền
+            productItems.forEach(function (product) {
+                const quantity = parseInt(product.querySelector('.soluong').value, 10);
+                const pricePerItem = parseInt(product.dataset.price, 10);
+                totalAmount += quantity * pricePerItem + 545000 + 80000;
+            });
+
+            // Tính thuế (5% tổng cộng)
+            const taxAmount = 0.05 * totalAmount;
+
+            // Tính thành tiền
+            const finalAmount = totalAmount + taxAmount;
+
+            // Cập nhật giá trị vào phần tử HTML
+            document.getElementById('totalAmount').innerText = totalAmount.toLocaleString() + 'đ';
+            document.getElementById('taxAmount').innerText = taxAmount.toLocaleString() + 'đ';
+            document.getElementById('finalAmount').innerText = finalAmount.toLocaleString() + 'đ';
+        }
+
+        // Gọi hàm cập nhật tổng cộng khi trang tải
+        updateTotalPrice();
+    </script>
+
+    <!-- THIẾT LẬP CÔNG CỤ THEO DÕI GOOGLE ANALYTICS -->
+    <!--====== Google Analytics: change UA-XXXXX-Y to be your site's ID ======-->
+    <script>
+        window.ga = function() { // Dòng 206, 207 thiết lập một hàm toàn cục ga (Google Analytics) có thể được sử dụng để đưa các lệnh theo dõi vào hàng đợi.
+        ga.q.push(arguments)
+        };
+        ga.q = []; //Mảng để lưu trữ các đối số được chuyển vào hàm 'ga'
+        ga.l = +new Date; // Lưu trữ timestamp hiện tại
+        ga('create', 'UA-XXXXX-Y', 'auto'); // Tạo bộ theo dõi mới với ID theo dõi cụ thể và chế độ 'auto'
+        ga('send', 'pageview') // Gửi hit xem trang đến Google Analytics
+    </script>
+    
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+    <!--====== Vendor Js ======-->
+    <script src="./js/vendor.js"></script>
+
+    <!--====== jQuery Shopnav plugin ======-->
+    <script src="./js/jquery.shopnav.js"></script>
+
+    <!--====== App ======-->
+    <script src="./js/app.js"></script>
+
+    <!--====== Noscript ======-->
+    <noscript>
+        <div class="app-setting">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="app-setting__wrap">
+                            <h1 class="app-setting__h1">JavaScript đã bị tắt trên trình duyệt của bạn.</h1>
+
+                            <span class="app-setting__text">Vui lòng bật JavaScript trên trình duyệt của bạn hoặc nâng cấp lên trình duyệt có khả năng bật JavaScript.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </noscript>
+    <script src="https://example.com/fontawesome/v6.5.1/js/fontawesome.js" data-auto-replace-svg="nest"></script>
+    <script src="https://example.com/fontawesome/v6.5.1/js/solid.js"></script>
+    <script src="https://example.com/fontawesome/v6.5.1/js/brands.js"></script>
+    <script src="https://kit.fontawesome.com/b696211014.js" crossorigin="anonymous"></script>
+    <div id="footer"></div>
+</body>
+</html>
