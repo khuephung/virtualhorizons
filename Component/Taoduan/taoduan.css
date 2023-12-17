@@ -1,8 +1,8 @@
 .duancontainer {
     display: flex;
     flex-wrap: wrap; /* Để các cột xuống dòng khi không đủ không gian */
-    margin-left: 280px; /* Khoảng lề trái cho cả trang */
-    margin-right: 280px; /* Khoảng lề phải cho cả trang */
+    margin-left: 280px; 
+    /* margin-right: 280px;  */
     width: 100%;
 }
 
@@ -43,7 +43,7 @@
     margin-bottom:20px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 575px) {
     .duancontainer {
         flex-direction: column; /* Hiển thị cột chồng lên nhau trên màn hình nhỏ */
         margin-left: 0;
