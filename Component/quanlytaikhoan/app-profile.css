@@ -3423,6 +3423,11 @@ input::-ms-clear {
   .dash__w-icon-style-3 > i {
     color: #3185FC; }
 
+.dash__w-icon-style-4 {
+  background-color: rgba(249, 252, 49, 0.14); }
+  .dash__w-icon-style-4 > i {
+    color: #ffc04a; }
+
 .dash__w-text {
   display: block;
   font-weight: 700;
@@ -3463,7 +3468,7 @@ input::-ms-clear {
   transition: color 0.5s linear; }
 
 .dash__link--brand > a {
-  color: #ff4500; }
+  color: blue; }
   .dash__link--brand > a:hover {
     color: #fa4400; }
 
