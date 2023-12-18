@@ -149,8 +149,8 @@ nav a:hover {
 .menu-mobile-logo img {
   width: 100%;
 }
-
-@media screen and (max-width: 680px) {
+/*680*/
+@media screen and (max-width: 575px) {
   nav {
     display: none !important;
   }
