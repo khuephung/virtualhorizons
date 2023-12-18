@@ -238,7 +238,7 @@ Box Module
  */
 body {
   color: #7f7f7f;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  font-family: Montserrat }
 
 /*--------------------------------------------------------------
 3.0 Pre-configured styles
@@ -3231,7 +3231,7 @@ input::-ms-clear {
     color: #333333;
     transition: color 0.5s; }
     .o-card__del:hover {
-      color: #ff4500; }
+      color: #3a2cff; }
 
 .ship-b__text {
   display: block;
@@ -6425,13 +6425,11 @@ input::-ms-clear {
   opacity: .8; }
 
 /* NHỮNG CLASS BỔ SUNG */
-.soluong{
-  height: 30px;
-}
 
 .luongvadonvitinh{
 display: flex;
-justify-content: space-between;}
+justify-content: left;
+align-items: center;}
 
 .thang{
   padding-left: 10px;
@@ -6458,11 +6456,97 @@ justify-content: space-between;}
   padding-right: 50px;
 }
 
-.img-coupon{
+.cp-container{
   width: 300px;
-}
-
-.chon-coupon{
+  height: 80px;
+  background-color: #ffffff;
+  border: 2px solid;
+  border-color: #dfdfdf;
+  border-radius: 5px;
   display: flex;
   align-items: center;
+  margin-right: 30px;
+  padding-right: 10px;
+  margin-bottom: 15px;
 }
+
+.img-coupon{
+  width: 80px;
+}
+
+.cp-frame{
+    width: 144px;
+    height: 37px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    white-space: normal;
+}
+
+.cp-text{
+  margin: 0;
+  font-size: 13px;
+  color: #000000;}
+
+.candeu{
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 45px;
+}
+
+.gl-text-cp {
+  display: block;
+  color: #a0a0a0;
+  font-size: 9px;
+  padding-top: 8px ; }
+
+.gl-link-cp {
+  font-size: 9px;
+  font-weight: 600;
+  color: #3a2cff;
+  transition: color 0.5s linear;}
+  .gl-link:hover {
+    color: #3a2cff; }
+
+.cp-dk{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.pic-text{
+  display: flex;
+  justify-content: flex-start;}
+
+.soluong{
+  max-width: 50px;
+  font-size: 13px;
+  margin-bottom: 2px;
+  display: block;
+  font-size: 12px;
+  background-clip: padding-box;
+  padding: 0 10px;
+  height: 40px;
+  color: #333333;
+  transition: all 0.6s linear;
+  border: 2px solid transparent;
+  background-color: #f1f1f1;
+  box-sizing: border-box;  }
+
+  .o-card__name-tensp {
+    display: block;
+    overflow: hidden;
+  }
+    .o-card__name-tensp > a {
+      color: #333333;
+      font-size: 13px;
+      font-weight: 600;
+      transition: color 0.5s; }
+      .o-card__name-tensp > a:hover {
+        color: #ff4500; }
+
+.additional-info{
+  margin-top: 10px;
+  padding-top: 10px;}

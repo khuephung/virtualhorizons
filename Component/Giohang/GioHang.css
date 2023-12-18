@@ -291,6 +291,13 @@
         background-color: #ffffff;
         color: #221896;
       }
+      .textbuttonthanhtoan{
+        color: #ffffff;
+        text-decoration:none;
+      }
+      .textbuttonthanhtoan:hover{
+        color: #221896;
+      }
 
       /* Phong cách cho Button màu xám */
       /* .nut--chu-xam-b-2 {

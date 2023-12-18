@@ -218,11 +218,14 @@ model-viewer {
 
     .top-banner .right-content .button-banner {
         margin: 0 auto;
+        margin-bottom: 20px;
     }
 
     .contact-box {
         width: 100%;
         margin: 0 auto;
+        width: 250px;
+        height:400px;
     }
 
     .contact-box .contact-content-wrap {
@@ -230,6 +233,7 @@ model-viewer {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        
         padding: 30px;
     }
 
