@@ -31,11 +31,12 @@
       });
     </script>
     <style>
+  
       .gioi-thieu {
-          position: relative;
+          /* position: relative; */
           width: 100%;
-          height: 4608px;
-          overflow-y: auto;
+          /* height: 4608px; */
+          overflow-y: auto; 
           background-image: url(./media/gioi-thieu@3x.png);
           background-size: cover;
           background-repeat: no-repeat;
@@ -49,10 +50,11 @@
   </head>
 
   <body>
-    
+  
+
     <div class="gioi-thieu">
+
       <div id="header"></div>
-      
 
         <!-- Về chúng tôi -->
       <div class="ve-chung-toi">
@@ -262,15 +264,16 @@
       <!-- End Bộ phận chăm sóc -->         
       <div id="footer"></div> 
 
-    </div>   
+    </div>  
+    
     <script>
       document.addEventListener('DOMContentLoaded', function () {
         var scrollButton = document.getElementById('scrollButton');  //tìm một phần tử HTML có id là 'scrollButton'.
       
         scrollButton.addEventListener('click', function () {
-          // Cuộn màn hình xuống dưới 1030px
+          // Cuộn màn hình xuống dưới 
           window.scrollBy({
-            top: 900,
+            top: 970,
             behavior: 'smooth',
           });
         });
