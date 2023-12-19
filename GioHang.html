@@ -93,7 +93,7 @@
                           <div class="bang-p__img-wrap">
                             <img
                               class="u-img-fluid"
-                              src="./Giỏ hàng IMG/product2.jpg"
+                              src="Giỏ hàng IMG/product2.jpg"
                               alt=""
                             />
                           </div>
@@ -107,7 +107,7 @@
                             >
                             <!-- Danh mục sản phẩm với liên kết -->
                             <span class="bang-p__phan-loai"
-                              ><a href="./SanPham.html"
+                              ><a href="./SanPham-2.html"
                                 >Động vật</a
                               ></span
                             >
@@ -122,7 +122,7 @@
                       <!-- Cột giá sản phẩm -->
                       <td>
                         <!-- Hiển thị giá sản phẩm -->
-                        <span class="bang-p__gia">75.000 đ</span>
+                        <span class="bang-p__gia" id="gia-1"></span>
                       </td>
 
                       <!-- Cột nhập số lượng -->
@@ -136,6 +136,7 @@
                             ></span>
                             <!-- Đầu vào số lượng -->
                             <input
+                              id="qlt-1"
                               class="dem-nhap-lieu__text dem-nhap-lieu--text-style-co-ban"
                               type="text"
                               value="1"
@@ -157,7 +158,7 @@
                         <div class="bang-p__del-wrap">
                           <a
                             class="far fa-trash-alt bang-p__delete-link"
-                            href="./GioHang.html"
+                            href="#"
                           ></a>
                         </div>
                       </td>
@@ -173,7 +174,7 @@
                           <div class="bang-p__img-wrap">
                             <img
                               class="u-img-fluid"
-                              src="./Giỏ hàng IMG/product1.jpg"
+                              src="\Giỏ hàng IMG\product1.jpg"
                               alt=""
                             />
                           </div>
@@ -202,7 +203,7 @@
                       <!-- Cột giá sản phẩm -->
                       <td>
                         <!-- Hiển thị giá sản phẩm -->
-                        <span class="bang-p__gia">99.000 đ</span>
+                        <span class="bang-p__gia" id="gia-2"></span>
                       </td>
                       <!-- Cột nhập số lượng -->
                       <td>
@@ -215,6 +216,7 @@
                             ></span>
                             <!-- Đầu vào số lượng -->
                             <input
+                              id="qlt-2"
                               class="dem-nhap-lieu__text dem-nhap-lieu--text-style-co-ban"
                               type="text"
                               value="1"
@@ -235,7 +237,7 @@
                         <div class="bang-p__del-wrap">
                           <a
                             class="far fa-trash-alt bang-p__delete-link"
-                            href="./GioHang.html"
+                            href="#"
                           ></a>
                         </div>
                       </td>
@@ -252,7 +254,7 @@
                           <div class="bang-p__img-wrap">
                             <img
                               class="u-img-fluid"
-                              src="./images/ÁO KHOÁC.jpg"
+                              src="./images/product/Động Vật/product27.jpg"
                               alt=""
                             />
                           </div>
@@ -261,13 +263,13 @@
                             <!-- Tên sản phẩm với liên kết đến trang chi tiết -->
                             <span class="bang-p__ten-san-pham"
                               ><a href="./ChiTietSanPham.html"
-                                >Áo Khoác 3D</a
+                                >Con Hồ Ly Ranh Mãnh 3D</a
                               ></span
                             >
                             <!-- Danh mục sản phẩm với liên kết -->
                             <span class="bang-p__phan-loai"
                               ><a href="./SanPham.html"
-                                >Sân khấu</a
+                                >Động Vật</a
                               ></span
                             >
                             <!-- Chi tiết biến thể như kích thước và màu sắc -->
@@ -281,7 +283,7 @@
                       <!-- Cột giá sản phẩm -->
                       <td>
                         <!-- Hiển thị giá sản phẩm -->
-                        <span class="bang-p__gia">Miễn Phí</span>
+                        <span class="bang-p__gia" id="gia-3"></span>
                       </td>
                       <!-- Cột nhập số lượng -->
                       <td>
@@ -294,6 +296,7 @@
                             ></span>
                             <!-- Đầu vào số lượng -->
                             <input
+                              id="qlt-3"
                               class="dem-nhap-lieu__text dem-nhap-lieu--text-style-co-ban"
                               type="text"
                               value="1"
@@ -314,7 +317,7 @@
                         <div class="bang-p__del-wrap">
                           <a
                             class="far fa-trash-alt bang-p__delete-link"
-                            href="./GioHang.html"
+                            href="#"
                           ></a>
                         </div>
                       </td>
@@ -344,7 +347,7 @@
                     ><i class="fas fa-trash"></i><span>XÓA GIỎ HÀNG</span></a
                   >
                   <!-- Nút cập nhật giỏ hàng -->
-                  <a class="hop-dieu-huong__link" href="./GioHang.html"
+                  <a class="hop-dieu-huong__link" onclick="updatePrice()"
                     ><i class="fas fa-sync"></i
                     ><span>CẬP NHẬT GIỎ HÀNG</span></a
                   >
@@ -466,26 +469,26 @@
                           <tbody>
                             <tr>
                               <td>PHÍ SHIP</td>
-                              <td>0 đ</td>
+                              <td id="phi-ship">0 ₫</td>
                             </tr>
                             <tr>
                               <td>THUẾ (VAT)</td>
-                              <td>10.000 đ</td>
+                              <td id="thue">0 ₫</td>
                             </tr>
                             <tr>
                               <td>TẠM TÍNH</td>
-                              <td>100.000 đ</td>
+                              <td id="tam-tinh">0 ₫</td>
                             </tr>
                             <tr>
                               <td>TỔNG CỘNG</td>
-                              <td>110.000 đ</td>
+                              <td id="tong-cong">0 ₫</td>
                             </tr>
                           </tbody>
                         </table>
                       </div>
                       <div>
                         <button class="nut nut--chu-trang-b-2" type="submit">
-                          <a class="textbuttonthanhtoan" href ="./checkout.html" >TIẾN HÀNH THANH TOÁN</a>
+                         <a class="textbuttonthanhtoan" href="./checkout.html"> TIẾN HÀNH THANH TOÁN </a>
                         </button>
                       </div>
                     </div>
@@ -498,59 +501,9 @@
       </div>
     </main>
 
+
     <footer id="footer"></footer>
-
-    <script>
-      var RESHOP = {};
-      var $collectionInputCounter = $(".input-counter");
-
-      // Bộ Đếm Đầu Vào
-      RESHOP.initInputCounter = function () {
-        // Kiểm tra xem có Bộ Đếm Đầu Vào trên trang không
-        if ($collectionInputCounter.length) {
-          // Gắn sự kiện Click cho nút cộng
-          $collectionInputCounter
-            .find(".dem-nhap-lieu__tang")
-            .on("click", function () {
-              var $input = $(this).parent().find("input");
-              var count = parseInt($input.val()) + 1; // Số + Số
-              $input.val(count).change();
-            });
-
-          // Gắn sự kiện Click cho nút trừ
-          $collectionInputCounter
-            .find(".dem-nhap-lieu__giam")
-            .on("click", function () {
-              var $input = $(this).parent().find("input");
-              var count = parseInt($input.val()) - 1; // Số - Số
-              $input.val(count).change();
-            });
-
-          // Khi giá trị của phần tử thay đổi
-          $collectionInputCounter.find("input").change(function () {
-            var $this = $(this);
-            var min = $this.data("min");
-            var max = $this.data("max");
-            var val = parseInt($this.val()); // Giá trị hiện tại
-
-            // Kiểm tra ràng buộc
-            if (!val) {
-              val = 1;
-            }
-
-            // Phương thức min() trả về số có giá trị thấp nhất
-            val = Math.min(val, max);
-
-            // Phương thức max() trả về số có giá trị cao nhất
-            val = Math.max(val, min);
-
-            // Thiết lập Giá trị
-            $this.val(val);
-          });
-        }
-      };
-
-      RESHOP.initInputCounter();
+    <script type="text/javascript" src="./GioHang.js"></script>
     </script>
   </body>
 </html>

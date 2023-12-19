@@ -672,6 +672,7 @@
       }
 
       .f-cart__ship-link {
+        text-decoration:none;
         font-size: 13px;
         text-align: center;
         padding: 17px;
