@@ -820,3 +820,54 @@
       .dem-nhap-lieu__tang {
         right: 0;
       }
+  
+/* Breadcrum */
+.section__content {
+  position: relative; }
+
+.breadcrumb__wrapgiohang {
+  width:100%;
+  background-color: #fbfbfb;
+  padding: 1.125rem;
+  border-radius: 0.1875rem; }
+  
+.breadcrumb__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  word-wrap: break-word; }
+.breadcrumb__list > li {
+  display: inline-block; }
+.breadcrumb__list > li > a {
+  color: #a0a0a0;
+  font-size: 13px;
+  font-weight: 700;
+  transition: color 0.5s; }
+.breadcrumb__list > li > a:hover {
+  color: #333333; }
+.breadcrumb__list > li.is-marked > a {
+  color: #333333; }
+.breadcrumb__list > li.has-separator:after {
+  content: '/';
+  margin: 0 16px; }
+.pd-breadcrumb__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  word-wrap: break-word; }
+.pd-breadcrumb__list > li {
+    display: inline-block; }
+.pd-breadcrumb__list > li > a {
+      color: #a0a0a0;
+      font-size: 12px;
+      transition: color 0.5s; }
+      .pd-breadcrumb__list > li > a:hover {
+        color: #333333; }
+.pd-breadcrumb__list > li.is-marked > a {
+      color: #333333;
+      font-weight: 700; }
+.pd-breadcrumb__list > li.has-separator:after {
+      content: '-';
+      margin: 0 6px; }
+
+  
