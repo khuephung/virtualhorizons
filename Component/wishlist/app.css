@@ -115,7 +115,7 @@ body {
  * Bao gồm hỗ trợ cho việc tạo kiểu cho các liên kết.
  */
 .u-c-brand {
-  color: blue !important; /* Đặt màu chữ là màu xanh lam và sử dụng !important để ghi đè các quy tắc CSS khác */
+  color: #170E80 !important; /* Đặt màu chữ là màu xanh lam và sử dụng !important để ghi đè các quy tắc CSS khác */
 }
 
 .u-c-secondary {
@@ -192,15 +192,15 @@ body {
 .btn--e-brand {
   color: #ffffff;
   border: 1px solid transparent;
-  background-color: blue;
+  background-color: #170E80;
   transition: background-color .5s ease-in; }
   .btn--e-brand:hover {
     background-color: #948bf9; }
 
 .btn--e-brand-b-2 {
   color: #ffffff;
-  background-color: blue;
-  border: 2px solid blue;
+  background-color: #170E80;
+  border: 2px solid #170E80;
   transition: background-color 0.5s ease-in, border-color 0.5s ease-in; }
   .btn--e-brand-b-2:hover {
     background-color: #948bf9;
@@ -229,24 +229,24 @@ body {
   background-color: #ffffff;
   transition: background-color .3s linear, color .3s linear; }
   .btn--e-white-brand:hover {
-    background-color: blue;
+    background-color: #170E80;
     color: #ffffff; }
 
 .btn--e-transparent-brand-b-2 {
-  color: blue;
-  border: 2px solid blue;
+  color: #170E80;
+  border: 2px solid #170E80;
   background-color: transparent;
   transition: border-color .5s ease-in; }
   .btn--e-transparent-brand-b-2:hover {
     border-color: #948bf9; }
 
 .btn--e-transparent-hover-brand-b-2 {
-  color: blue;
-  border: 2px solid blue;
+  color: #170E80;
+  border: 2px solid #170E80;
   background-color: transparent;
   transition: background-color .1s ease-in,border-color .1s ease-in; }
   .btn--e-transparent-hover-brand-b-2:hover {
-    background-color: blue;
+    background-color: #170E80;
     color: #ffffff; }
 
 .btn--e-transparent-secondary-b-2 {
@@ -263,7 +263,7 @@ body {
   background-color: transparent;
   transition: border-color 0.5s linear; }
   .btn--e-transparent-platinum-b-2:hover {
-    border-color: blue; }
+    border-color: #170E80; }
 
 .btn--e-white-brand-shadow {
   border: 1px solid #eee;
@@ -272,14 +272,14 @@ body {
   color: #333333;
   transition: background-color .3s linear, border-color .3s linear,color .3s linear; }
   .btn--e-white-brand-shadow:hover {
-    border-color: blue;
-    background-color: blue;
+    border-color: #170E80;
+    background-color: #170E80;
     color: #ffffff; }
 
 .btn--e-brand-shadow {
-  border: 1px solid blue;
+  border: 1px solid #170E80;
   box-shadow: 1px 2px 8px 0 rgba(36, 37, 38, 0.08);
-  background-color: blue;
+  background-color: #170E80;
   color: #ffffff;
   transition: background-color .3s linear, border-color .3s linear; }
   .btn--e-brand-shadow:hover {
@@ -303,7 +303,7 @@ body {
   cursor: pointer;
   transition: color 110ms ease-in-out; }
   .dismiss-button:hover {
-    color: blue; }
+    color: #170E80; }
 
 #dash-newsletter .modal-dialog {
   width: 100%;
@@ -321,7 +321,7 @@ body {
   .d-modal__form a {
     font-size: 15px;
     font-weight: 600;
-    color: blue;
+    color: #170E80;
     transition: color 110ms ease-in-out; }
     .d-modal__form a:hover {
       color: #7f7f7f; }
@@ -358,7 +358,7 @@ body {
     .success__text-wrap i {
       margin-right: 8px;
       font-size: 16px;
-      color: blue; }
+      color: #170E80; }
     .success__text-wrap span {
       font-weight: 700;
       font-size: 14px;
@@ -386,7 +386,7 @@ body {
     display: block;
     font-weight: 700;
     font-size: 14px;
-    color: blue; }
+    color: #170E80; }
 
 .s-option {
   text-align: center; }
@@ -476,7 +476,7 @@ body {
   color: #7f7f7f;
   transition: all .3s; }
   .new-l__link:hover {
-    color: blue;
+    color: #170E80;
     text-decoration: underline; }
 
 .new-l__form {
@@ -499,7 +499,7 @@ body {
   border-radius: 4px;
   background-color: #ffffff; }
   .news-l__input:focus {
-    border-color: blue; }
+    border-color: #170E80; }
   .news-l__input:focus {
     outline: 0; }
   .news-l__input::-ms-clear {
@@ -581,7 +581,7 @@ body {
       font-weight: 600;
       transition: color 0.5s; }
       .w-r__name > a:hover {
-        color: blue; }
+        color: #170E80; }
   .w-r__category {
     display: block;
     margin-bottom: 2px; }
@@ -590,10 +590,10 @@ body {
       transition: color 0.5s;
       font-size: 12px; }
       .w-r__category > a:hover {
-        color: blue; }
+        color: #170E80; }
   .w-r__price {
     display: block;
-    color: blue;
+    color: #170E80;
     font-size: 14px;
     font-weight: 600; }
   .w-r__discount {
@@ -633,7 +633,7 @@ body {
     display: inline-block;
     transition: color 0.5s; }
     .route-box__link:hover {
-      color: blue; }
+      color: #170E80; }
   .route-box i {
     margin-right: 2px; }
 
