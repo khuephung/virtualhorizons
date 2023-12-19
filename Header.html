@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
     <title>Header</title>
     <link rel="stylesheet" href="./Component/Header/Header.css">
 </head>
@@ -27,6 +28,7 @@
             <input class="search-bar" type="text" placeholder="Tìm kiếm sản phẩm" />
             <!--Chữ mặc định trong thanh tìm kiếm là "Tìm kiếm sản phẩm"-->
             <!--Link nhúng icon giỏ hàng-->
+            <div class="carticon">
             <a href="./GioHang.html" class="icon-header">
                 <svg width="30" height="33" viewBox="0 0 30 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -37,6 +39,7 @@
                         stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
             </a>
+            </div>
             <a class="wishlistlink" href="./wishlist.html"><i class="fa-regular fa-heart"></i></a>
             <!--Link nhúng icon đăng nhập-->
             <a href="./dashboard.html" class="icon-header">

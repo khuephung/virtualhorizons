@@ -83,6 +83,9 @@ nav a:hover {
     opacity: 0.5;
 }
 
+.carticon{
+    display: inline-block
+}
 .menu-mobile {
     position: fixed;
     top: 0;
@@ -163,6 +166,10 @@ nav a:hover {
     display: none !important;
   }
 
+  .carticon{
+    display:none !important;
+  }
+  
   i {
     font-size: 25px;
   }
