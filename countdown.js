@@ -5,7 +5,7 @@ let minBox = document.getElementById("min-box");
 let secBox = document.getElementById("sec-box");
 
 // Thiết lập ngày và giờ kết thúc đợt ưu đãi
-let endDate = new Date(2023, 11, 24, 00, 00); //0h00 ngày 19/12 Năm-Tháng-Ngày-Giờ-Phút
+let endDate = new Date(2024, 03, 25, 00, 00); //0h00 ngày 19/12 Năm-Tháng-Ngày-Giờ-Phút
 let endTime = endDate.getTime(); //Chuyển đổi thành định dạng thời gian
 
 // Hàm đếm ngược

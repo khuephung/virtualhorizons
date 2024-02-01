@@ -242,7 +242,7 @@ Box Module
  */
 body {
   color: #7f7f7f;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  font-family: Montserrat, sans-serif;}
 
 /*--------------------------------------------------------------
 3.0 Pre-configured styles
@@ -3322,7 +3322,7 @@ input::-ms-clear {
 
 .faq__question:before {
   content: "\F107";
-  font-family: 'Font Awesome 5 Free';
+  font-family: Montserrat, sans-serif;
   font-weight: 900;
   position: absolute;
   top: 8px;
@@ -5472,7 +5472,7 @@ input::-ms-clear {
 
 /* Tootip styles */
 .tooltip {
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 12px;
   font-weight: 600; }
 
@@ -5620,7 +5620,7 @@ input::-ms-clear {
     transition: all .3s;
     cursor: pointer; }
     .js-menu-toggle:after {
-      font-family: 'Font Awesome 5 Free';
+      font-family: Montserrat, sans-serif;
       content: "\F067";
       position: absolute;
       top: 50%;
