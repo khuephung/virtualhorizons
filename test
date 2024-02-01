@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Viewer</title>
+</head>
+<body>
+    
+  <button id="imageButton1" onclick="switchImage('img-profile/goi.jpg')">Show Image 1</button>
+  <button id="imageButton2" onclick="switchImage('img-profile/hamster.jpg')">Show Image 2</button>
+
+  <script>
+    function switchImage(imagePath) {
+      const imageElement = document.getElementById('myImage');
+      imageElement.src = imagePath;
+    }
+  </script>
+
+  <script>
+    // Hàm khởi tạo để đặt nguồn hình ảnh mặc định khi trang web được tải lên
+    window.onload = function () {
+      switchImage('img-profile/default.jpg');
+    };
+
+    function switchImage(imagePath) {
+      const imageElement = document.getElementById('myImage');
+      imageElement.src = imagePath;
+    }
+  </script>
+</body>
+</html>
+
+</body>
+</html>
+

@@ -1324,6 +1324,19 @@
     <!-- Kết thúc - Modal thêm vào giỏ hàng -->
     <!--====== End - Modal Section ======-->
     </div>
+
+    <script>
+      // Hàm khởi tạo để đặt nguồn hình ảnh mặc định khi trang web được tải lên
+      window.onload = function () {
+        switchImage('img-profile/hand.jpg');
+      };
+  
+      function switchImage(imagePath) {
+        const imageElement = document.getElementById('myImage');
+        imageElement.src = imagePath;
+      }
+    </script>
+
     <script>
       // Lấy tất cả các phần tử có class 'fas'
       var stars = document.getElementsByClassName('fas');
