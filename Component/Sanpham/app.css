@@ -1,3 +1,32 @@
+/* ==================Thiết lập wrap cho các badge======================= */
+/* Bỏ cmt để dùng*/
+/* .product-badge {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px;
+  z-index: 1;
+  top: 0px;
+}
+
+.badge {
+  border-radius: 5px;
+  color: #fff;
+  padding: 8px 10px 8px 10px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.new {
+  background-color: #170e80;
+}
+
+.sale {
+  background-color: red;
+} */
+
+
 /*****************ĐÁNH GIÁ********************/
 /* Thiết lập độ bóng và các thuộc tính khác cho phần điểm đánh giá */
 .diem-danh-gia {
