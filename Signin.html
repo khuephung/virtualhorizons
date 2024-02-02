@@ -34,16 +34,18 @@
 				<img src="./Component/Signinsignup/images/imgform3.png" alt="form">
 			</div>
 			<div class="form-right">
+			
 				<div class="tab">
 					<div class="tab-inner">
-						<button class="tablinks" onclick="openCity(event, 'sign-up')" id="defaultOpen">Đăng nhập</button>
+						<button class="tablinks" onclick="openCity(event, 'sign-in')" id="defaultOpen">Đăng nhập</button>
 					</div>
 					<div class="tab-inner">
-						<button class="tablinks" onclick="openCity(event, 'sign-in')">Đăng ký</button>
+						<button class="tablinks" onclick="openCity(event, 'sign-up')">Đăng ký</button>
 					</div>
+					
 				</div>
 				<form class="form-detail" action="#" method="post">
-					<div class="tabcontent" id="sign-up">
+					<div class="tabcontent" id="sign-in">
 						<div class="form-row">
 							<label class="form-row-inner">
 								<input type="text" name="full_name" id="full_name" class="input-text" required>
@@ -71,15 +73,9 @@
 									<input type="checkbox">
 									<span class="checkmark"></span>
 								  </label>
-							  
-							  <div class="forgot-password" onclick="forgotPassword()" >Quên mật khẩu?</div>
+								  <a class="forgot-password" onclick="openCity(event, 'forgot-password')">Quên mật khẩu?</a>
 						</div>
-						<script>
-							function forgotPassword() {
-							  alert("Bạn đã nhấn vào Quên mật khẩu");
-							  // Thêm xử lý khi người dùng nhấn vào "Quên mật khẩu" ở đây
-							}
-						  </script>
+						
 					
 						<div class="form-row-last">
 							<input type="submit" name="register" class="register" value="Đăng nhập">
@@ -90,11 +86,11 @@
 							<img src="https://storage.googleapis.com/support-kms-prod/ZAl1gIwyUsvfwxoW9ns47iJFioHXODBbIkrK" alt="Google Logo" class="google-logo">
 							Đăng nhập bằng tài khoản Google
 						</button></div>
-						<p class="register-link-container">Chưa có tài khoản?<a class="tablinks register-link" onclick="openCity(event, 'sign-in')">Đăng ký ngay</a></p>
+						<p class="register-link-container">Chưa có tài khoản?<a class="tablinks register-link" onclick="openCity(event, 'sign-up')">Đăng ký ngay</a></p>
 					</div>
 				</form>
 				<form class="form-detail" action="#" method="post">
-					<div class="tabcontent" id="sign-in">
+					<div class="tabcontent" id="sign-up">
 						<div class="form-row">
 							<label class="form-row-inner">
 								<input type="text" name="full_name_1" id="full_name_1" class="input-text" required>
@@ -206,6 +202,24 @@
 						</div>
 					</div>
 				</form>
+
+				<form class="form-detail" action="#" method="post">
+					<div class="tabcontent" id="forgot-password">   
+					<h1 class="forgot-password-maintext">ĐẶT LẠI MẬT KHẨU</h1>
+				    <p>Hãy nhập địa chỉ email để khôi phục lại mật khẩu</p>
+					<div class="form-row forgot-password-email-container">
+						<label class="form-row-inner">
+							<input type="text" name="your_email_1" id="your_email_1" class="input-text" required>
+							<span class="label">E-Mail</span>
+							  <span class="border"></span>
+						</label>
+					</div>
+					<div class="form-row-last">
+						<input type="submit" name="confirm" class="register" value="Xác nhận">
+					</div>
+					<p class="register-link-container">Chưa có tài khoản?<a class="tablinks register-link" onclick="openCity(event, 'sign-up')">Đăng ký ngay</a></p>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
@@ -219,11 +233,13 @@
 		    tablinks = document.getElementsByClassName("tablinks");
 		    for (i = 0; i < tablinks.length; i++) {
 		        tablinks[i].className = tablinks[i].className.replace(" active", "");
-		    }
+
+            }
 		    document.getElementById(cityName).style.display = "block";
 		    evt.currentTarget.className += " active";
 		}
 
+		
 		// Get the element with id="defaultOpen" and click on it
 		document.getElementById("defaultOpen").click();
 	
