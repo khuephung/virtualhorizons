@@ -10,15 +10,15 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <link href="images/favicon.png" rel="shortcut icon">
-  <title>Trang Sản Phẩm - Virtual Horizons</title>
+  <title>Dự án</title>
   <!--====== Google Font ======-->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
   <!--====== Vendor Css ======-->
-  <link rel="stylesheet" href="./Component/Sanpham/vendor.css">
+  <link rel="stylesheet" href="./Component/myproject/vendor.css">
   <!--====== Utility-Spacing ======-->
-  <link rel="stylesheet" href="./Component/Sanpham/utility.css">
+  <link rel="stylesheet" href="./Component/myproject/utility.css">
   <!--====== App ======-->
-  <link rel="stylesheet" href="./Component/Sanpham/app.css">
+  <link rel="stylesheet" href="./Component/myproject/app.css">
 
   <!-- Thư viện animate.cs  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -69,7 +69,7 @@
 
   <body class="config">
     <div id="header"></div>
-    <h1 class="producttitle animate__animated animate__backInDown">SẢN PHẨM 3D</h1>
+    <!-- <h1 class="producttitle animate__animated animate__backInDown">SẢN PHẨM 3D</h1> -->
     <!-- Main App -->
     <div id="app">
       <!-- Nội dung chính của ứng dụng -->
@@ -90,12 +90,12 @@
                       <div class="shop-w shop-w--style">
                         <!-- Tiêu đề và biểu tượng "collapse" cho phần ƯU ĐÃI -->
                         <div class="shop-w__intro-wrap">
-                          <h1 class="shop-w__h">DANH MỤC</h1>
-                          <span class="fas fa-minus collapsed shop-w__toggle" data-target="#s-size"
+                          <h1 class="shop-w__h">Danh mục</h1>
+                          <span class="fas fa-minus collapsed shop-w__toggle" data-target="#s-catagory"
                             data-toggle="collapse"></span>
                         </div>
                         <!-- Danh sách các loại giảm giá có thể chọn -->
-                        <div class="shop-w__wrap collapse" id="s-size">
+                        <div class="shop-w__wrap collapse" id="s-catagory">
                           <ul class="shop-w__list gl-scroll">
                             <!-- Mỗi mục có checkbox và số lượng tương ứng -->
                             <li>
@@ -130,284 +130,79 @@
                         </div>
                       </div>
                     </div>
+
                     <div class="u-s-m-b-30">
                       <div class="shop-w shop-w--style">
-                        <!-- Tiêu đề "DANH MỤC" và biểu tượng "collapse" -->
+                        <!-- Tiêu đề và biểu tượng "collapse" cho phần ƯU ĐÃI -->
                         <div class="shop-w__intro-wrap">
-                          <h1 class="shop-w__h">DANH MỤC</h1>
-                          <span class="fas fa-minus shop-w__toggle" data-target="#s-category"
+                          <h1 class="shop-w__h">Sắp xếp theo thứ tự</h1>
+                          <span class="fas fa-minus collapsed shop-w__toggle" data-target="#s-order"
                             data-toggle="collapse"></span>
                         </div>
-                        <!-- Danh sách danh mục và các mục con -->
-                        <div class="shop-w__wrap collapse show" id="s-category">
-                          <ul class="shop-w__category-list gl-scroll">
-                            <!-- Mục danh mục và mục con của Kiến Trúc-->
-                            <li class="has-list">
-                              <a href="#">Kiến Trúc</a>
-                              <span class="category-list__text u-s-m-l-6">(23)</span>
-                              <span class="js-shop-category-span is-expanded fas fa-plus u-s-m-l-6"></span>
-                              <ul style="display:block">
-                                <li class="has-list">
-                                  <a href="#">Nhà</a>
-                                  <span class="js-shop-category-span fas fa-plus u-s-m-l-6"></span>
-                                  <ul>
-                                    <li>
-                                      <a href="#">Phòng Ngủ</a>
-                                    </li>
-                                    <li>
-                                      <a href="#">Phòng Bếp</a>
-                                    </li>
-                                    <li>
-                                      <a href="#">Phòng Tắm</a>
-                                    </li>
-                                    <li>
-                                      <a href="#">Phòng Khách</a>
-                                    </li>
-                                  </ul>
-                                </li>
-                                <li class="has-list">
-                                  <a href="#">Tòa Nhà</a>
-                                </li>
-                                <li class="has-list">
-                                  <a href="#">Cửa Hàng</a>
-                                </li>
-                              </ul>
-                            </li>
-                            <li class="has-list">
-                              <!-- Mục danh mục Y khoa-->
-                              <a href="#">Y Khoa</a>
-                              <span class="category-list__text u-s-m-l-6">(5)</span>
-                            </li>
-                            <li class="has-list">
-                              <!-- Mục danh mục Động Vật-->
-                              <a href="#">Động Vật</a>
-                              <span class="category-list__text u-s-m-l-6">(5)</span>
-                            </li>
-                            <li>
-                              <!-- Mục danh mục Sân Khấu-->
-                              <a href="#">Sân Khấu</a>
-                              <span class="category-list__text u-s-m-l-6">(8)</span>
-                            </li>
-                            <li>
-                              <!-- Mục danh mục Con Người-->
-                              <a href="#">Con Người</a>
-                              <span class="category-list__text u-s-m-l-6">(4)</span>
-                            </li>
-                            <li>
-                              <!-- Mục danh mục Viễn Tưởng-->
-                              <a href="#">Viễn Tưởng</a>
-                              <span class="category-list__text u-s-m-l-6">(12)</span>
-                            </li>
-                            <li>
-                              <!-- Mục danh mục Nội Thất-->
-                              <a href="#">Nội Thất</a>
-                              <span class="category-list__text u-s-m-l-6">(3)</span>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Phần Bộ Lọc Đánh Giá -->
-                    <div class="u-s-m-b-30">
-                      <div class="shop-w shop-w--style">
-                        <!-- Tiêu đề và biểu tượng "collapse" cho phần Đánh Giá -->
-                        <div class="shop-w__intro-wrap">
-                          <h1 class="shop-w__h">ĐÁNH GIÁ</h1>
-                          <span class="fas fa-minus shop-w__toggle" data-target="#s-rating"
-                            data-toggle="collapse"></span>
-                        </div>
-                        <!-- Phần hiển thị danh sách Đánh Giá có thể chọn -->
-                        <div class="shop-w__wrap collapse show" id="s-rating">
+                        <!-- Danh sách có thể chọn -->
+                        <div class="shop-w__wrap collapse" id="s-order">
                           <ul class="shop-w__list gl-scroll">
-                            <!-- Các mức đánh giá và số lượng tương ứng -->
-                            <!--fas fa-star: Sao có màu-->
-                            <!--far fa-star: Sao không có màu-->
+                            <!-- Mỗi mục có checkbox và số lượng tương ứng -->
                             <li>
-                              <div class="rating__check">
-                                <input type="checkbox">
-                                <div class="rating__check-star-wrap">
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                </div>
-                              </div>
-                              <span class="shop-w__total-text">(255)</span>
-                            </li>
-                            <li>
-                              <div class="rating__check">
-                                <input type="checkbox">
-                                <div class="rating__check-star-wrap">
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="far fa-star"></i>
-                                </div>
-                              </div>
-                              <span class="shop-w__total-text">(90)</span>
-                            </li>
-                            <li>
-                              <div class="rating__check">
-                                <input type="checkbox">
-                                <div class="rating__check-star-wrap">
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="far fa-star"></i>
-                                  <i class="far fa-star"></i>
-                                </div>
-                              </div>
-                              <span class="shop-w__total-text">(10)</span>
-                            </li>
-                            <li>
-                              <div class="rating__check">
-                                <input type="checkbox">
-                                <div class="rating__check-star-wrap">
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="far fa-star"></i>
-                                  <i class="far fa-star"></i>
-                                  <i class="far fa-star"></i>
-                                </div>
-                              </div>
-                              <span class="shop-w__total-text">(2)</span>
-                            </li>
-                            <li>
-                              <div class="rating__check">
-                                <input type="checkbox">
-                                <div class="rating__check-star-wrap">
-                                  <i class="fas fa-star"></i>
-                                  <i class="far fa-star"></i>
-                                  <i class="far fa-star"></i>
-                                  <i class="far fa-star"></i>
-                                  <i class="far fa-star"></i>
-                                </div>
-                              </div>
-                              <span class="shop-w__total-text">(1)</span>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Phần Bộ Lọc Giá -->
-                    <div class="u-s-m-b-30">
-                      <div class="shop-w shop-w--style">
-                        <!-- Tiêu đề và biểu tượng "collapse" cho phần Giá -->
-                        <div class="shop-w__intro-wrap">
-                          <h1 class="shop-w__h">GIÁ SẢN PHẨM</h1>
-                          <span class="fas fa-minus shop-w__toggle" data-target="#s-price"
-                            data-toggle="collapse"></span>
-                        </div>
-                        <!-- Phần hiển thị form để lọc theo giá -->
-                        <div class="shop-w__wrap collapse show" id="s-price">
-                          <form class="shop-w__form-p">
-                            <div class="shop-w__form-p-wrap">
-                              <!-- Ô nhập giá tối thiểu -->
-                              <div>
-                                <label for="price-min"></label>
-                                <input class="input-text input-text--primary-style" type="text" id="price-min"
-                                  placeholder="Min">
-                              </div>
-                              <!-- Ô nhập giá tối đa -->
-                              <div>
-                                <label for="price-max"></label>
-                                <input class="input-text input-text--primary-style" type="text" id="price-max"
-                                  placeholder="Max">
-                              </div>
-                              <!-- Nút để xác nhận và áp dụng bộ lọc giá -->
-                              <div>
-                                <button class="btn btn--icon fas fa-angle-right btn--e-transparent-platinum-b-2"
-                                  type="submit"></button>
-                              </div>
-                            </div>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Phần Bộ Lọc File -->
-                    <div class="u-s-m-b-30">
-                      <div class="shop-w shop-w--style">
-                        <!-- Tiêu đề và biểu tượng "collapse" cho phần File -->
-                        <div class="shop-w__intro-wrap">
-                          <h1 class="shop-w__h">LOẠI FILE 3D</h1>
-                          <span class="fas fa-minus collapsed shop-w__toggle" data-target="#s-size"
-                            data-toggle="collapse"></span>
-                        </div>
-                        <!-- Danh sách loại File có thể chọn -->
-                        <div class="shop-w__wrap collapse" id="s-size">
-                          <ul class="shop-w__list gl-scroll">
-                            <!-- Mỗi mục có checkbox và số lượng tương ứng --
-                            <li>
-                              <!-- Checkbox và label cho mục 3DS -->
+                              <!-- Checkbox và label cho mục Tên -->
                               <div class="check-box">
                                 <input type="checkbox" id="xs">
                                 <div class="check-box__state check-box__state--primary">
-                                  <label class="check-box__label" for="xs">3DS</label>
+                                  <label class="check-box__label" for="xs">Tên</label>
                                 </div>
                               </div>
-                              <span class="shop-w__total-text">(2)</span>
                             </li>
                             <li>
-                              <!-- Checkbox và label cho mục GLTF-->
+                              <!-- Checkbox và label cho mục Ngày tạo dự án-->
                               <div class="check-box">
                                 <input type="checkbox" id="small">
                                 <div class="check-box__state check-box__state--primary">
-                                  <label class="check-box__label" for="small">GLTF</label>
+                                  <label class="check-box__label" for="small">Ngày tạo dự án</label>
                                 </div>
                               </div>
-                              <!--====== End - Check Box ======-->          
-                              <span class="shop-w__total-text">(4)</span>
                             </li>
                             <li>
-                              <!-- Checkbox và label cho mục STL -->
-                              <div class="check-box">
-                                <input type="checkbox" id="medium">
-                                <div class="check-box__state check-box__state--primary">
-                                  <label class="check-box__label" for="medium">STL</label>
+                                <!-- Checkbox và label cho mục Lượt truy cập-->
+                                <div class="check-box">
+                                  <input type="checkbox" id="small">
+                                  <div class="check-box__state check-box__state--primary">
+                                    <label class="check-box__label" for="small">Lượt truy cập</label>
+                                  </div>
                                 </div>
-                              </div>
-                              <!--====== End - Check Box ======-->
-                              <span class="shop-w__total-text">(6)</span>
-                            </li>
-                            <li>
-                              <!-- Checkbox và label cho mục OBJ -->
-                              <div class="check-box">
-                                <input type="checkbox" id="large">
-                                <div class="check-box__state check-box__state--primary">
-                                  <label class="check-box__label" for="large">OBJ</label>
+                              </li>
+                              <li>
+                                <!-- Checkbox và label cho mục Dung lượng-->
+                                <div class="check-box">
+                                  <input type="checkbox" id="small">
+                                  <div class="check-box__state check-box__state--primary">
+                                    <label class="check-box__label" for="small">Dung lượng</label>
+                                  </div>
                                 </div>
-                              </div>
-                              <!--====== End - Check Box ======-->
-                              <span class="shop-w__total-text">(8)</span>
-                            </li>
-                            <li>
-                              <!-- Checkbox và label cho mục FBX-->
-                              <div class="check-box">
-                                <input type="checkbox" id="xl">
-                                <div class="check-box__state check-box__state--primary">
-                                  <label class="check-box__label" for="xl">FBX</label>
-                                </div>
-                              </div>
-                              <!--====== End - Check Box ======-->
-                              <span class="shop-w__total-text">(10)</span>
-                            </li>
-                            <li>
-                              <!-- Checkbox và label cho mục Blend -->
-                              <div class="check-box">
-                                <input type="checkbox" id="xxl">
-                                <div class="check-box__state check-box__state--primary">
-                                  <label class="check-box__label" for="xxl">BLEND</label>
-                                </div>
-                              </div>
-                              <!--====== End - Check Box ======-->
-                              <span class="shop-w__total-text">(12)</span>
-                            </li>
+                                <!--====== End - Check Box ======-->
+                              </li>
+                              <!-- <div class="shop-w__intro-wrap"> -->
+                                
+                                <!-- <span class="fas fa-minus collapsed shop-w__toggle" data-target="#s-size"
+                                  data-toggle="collapse"></span> -->
+                                  <div class="shop-w-h-2">
+                                    <div class="shop-icon-container">
+                                      <div class="shop-icon-container-inner">
+                                    <i class="fa-solid fa-plus"></i>
+                                      </div>
+                                      <div class="shop-icon-container-inner">
+                                    <i class="fa-solid fa-minus"></i>
+                                      </div>
+                                  </div>
+                              <!-- </div> -->
                           </ul>
                         </div>
                       </div>
                     </div>
+
+
+
+                 
+                  
                   </div>
                 </div>
               </div>
@@ -420,44 +215,225 @@
                       <div class="shop-p__tool-style">
                         <!-- Công cụ chuyển đổi giữa chế độ Grid và List -->
                         <div class="tool-style__group u-s-m-b-8">
-                          <span class="js-shop-grid-target is-active">Grid</span>
-                          <span class="js-shop-list-target">List</span>
+                          <span class="js-shop-grid-target is-active">
+                            <div class="icon-project-container">
+                            <i class="fa-solid fa-folder"></i></div>
+                            Dự án của tôi</span>
+                          <span class="js-shop-list-target">
+                            <div class="icon-project-container">
+                            <i class="fa-solid fa-share"></i></div>
+                            Được chia sẻ</span>
                         </div>
-                        <!-- Form chọn số lượng hiển thị và sắp xếp sản phẩm -->
-                        <form>
-                          <div class="tool-style__form-wrap">
-                            <div class="u-s-m-b-8">
-                              <!-- Dropdown chọn số lượng hiển thị -->
-                              <select class="select-box select-box--transparent-b-2">
-                                <option selected>Hiện: 9</option>
-                                <option>Hiện: 12</option>
-                                <option>Hiện: 15</option>
-                                <option>Hiện: 21</option>
-                              </select>
-                            </div>
-                            <div class="u-s-m-b-8">
-                              <!-- Dropdown chọn cách sắp xếp sản phẩm -->
-                              <select class="select-box select-box--transparent-b-2">
-                                <option>Xếp theo: Sản phẩm mới nhất</option>
-                                <option>Xếp theo: Sản phẩm cũ nhất</option>
-                                <option>Xếp theo: Sản phẩm phổ biến nhất</option>
-                                <option selected>Xếp theo: Đánh giá tốt nhất</option>
-                                <option>Thứ tự theo giá: thấp đến cao</option>
-                                <option>Thứ tự theo giá: cao xuống thấp</option>
-                              </select>
-                            </div>
-                          </div>
-                        </form>
+                        
                       </div>
                     </div>
+
+                    <!-- Dashboard Dự án -->
+                    <div class="shop-p__meta-wrap-2 u-s-m-b-60 animate__animated animate__fadeInRight">
+                      <div class="myproject-header-container">
+                        <input class="search-bar-project" type="text" placeholder="Tìm kiếm dự án" />
+                        <div class="storage-remain-container">
+                          <div >Dung lượng</div>
+                        <div id="progress-container">
+                          <progress id="my-progress" value="75" max="100"></progress>
+                        </div> 
+                      </div>
+                      <div class="storage-remain-number"> <span>75/100MB</span>
+                        <div class="form-row-last">
+                          <input type="submit" name="upgrate" class="register" value="Nâng cấp">
+                        </div>
+                      </div>
+                      <div class="project-remain-container">
+                        <div>Đã tạo</div>
+                        <div class="project-remain-number">xx/05</div>
+                      </div>
+                      <div class="create-project-button-container">
+                         
+                          <!-- <button class="create-project-button">
+                            <a class="create-project-text" href="#" name="create-project">
+                            <i class="fa-solid fa-folder-plus "></i>Tạo dự án</a>
+                          </button> -->
+                          <a href="#" style="text-decoration: none;">
+                            <!-- <div class="create-project-button"></div> -->
+                            <div class="create-project-button">
+                                <i class="fa-solid fa-folder-plus "></i>
+                                <div class="text-button-banner">Tạo dự án</div>
+                            </div>
+                          </a>
+                      </div>
+                    </div>
+                
+                          <div
+                            class="tm-bg-primary-dark tm-block tm-block-taller tm-block-scroll"
+                          >
+                       
+              
+                            <!-- Bảng hiển thị dữ liệu -->
+                            <table class="table-project">
+                              <!-- Đầu bảng với các cột -->
+                              <thead>
+                                <tr>
+                                  <th>STT</th>
+                           
+                                  <th>Tên dự án</th>
+                    
+                                  <th>Thời gian chỉnh sửa</th>
+                                  <th>Lượt truy cập/ ngày</th>
+                                  <th>Thao tác</th>
+                                </tr>
+                              </thead>
+              
+                              <!-- Dữ liệu chi tiết cho từng dự án -->
+                              <tbody>
+                                <!-- Dự án 1 -->
+                                <tr>
+                                  <td><b>1</b></td>
+                                  <td><b>AR marker hoa quả</b></td>
+                                  <td>16:00, 12 THG 12, 2023</td>
+                                  <td>xx/50</td>
+                                  <td>
+                                    <div class="icon-tool-project-container">
+                                    <a href="#" class="icon-tool-project">
+                                      <i class="fa-solid fa-pen-to-square"></i></a>
+                                
+                                    <a href="#" class="icon-tool-project">
+                                    <i class="fa-solid fa-trash"></i></a>
+                                   </div>
+                                  </td>
+                                </tr>
+              
+                                <!-- Dự án 2 -->
+                                <tr>
+                                  <td><b>2</b></td>
+                                  <td><b>Con khủng long</b></td>
+                                  <td>16:00, 12 THG 12, 2023</td>
+                                  <td>xx/50</td>
+                                  <td>
+                                    <div class="icon-tool-project-container">
+                                    <a href="#" class="icon-tool-project">
+                                      <i class="fa-solid fa-pen-to-square"></i></a>
+                                
+                                    <a href="#" class="icon-tool-project">
+                                    <i class="fa-solid fa-trash"></i></a>
+                                   </div>
+                                  </td>
+                                </tr>
+              
+                                  <!-- Dự án 1 -->
+                                  <tr>
+                                    <td><b>2</b></td>
+                                    <td><b>AR marker hoa quả</b></td>
+                                    <td>16:00, 12 THG 12, 2023</td>
+                                    <td>xx/50</td>
+                                    <td>
+                                      <div class="icon-tool-project-container">
+                                      <a href="#" class="icon-tool-project">
+                                        <i class="fa-solid fa-pen-to-square"></i></a>
+                                  
+                                      <a href="#" class="icon-tool-project">
+                                      <i class="fa-solid fa-trash"></i></a>
+                                     </div>
+                                    </td>
+                                  </tr>
+                
+                                  <!-- Dự án 2 -->
+                                  <tr>
+                                    <td><b>3</b></td>
+                                    <td><b>Con khủng long</b></td>
+                                    <td>16:00, 12 THG 12, 2023</td>
+                                    <td>xx/50</td>
+                                    <td>
+                                      <div class="icon-tool-project-container">
+                                      <a href="#" class="icon-tool-project">
+                                        <i class="fa-solid fa-pen-to-square"></i></a>
+                                  
+                                      <a href="#" class="icon-tool-project">
+                                      <i class="fa-solid fa-trash"></i></a>
+                                     </div>
+                                    </td>
+                                  </tr>
+
+                                    <!-- Dự án 1 -->
+                                    <tr>
+                                      <td><b>4</b></td>
+                                      <td><b>AR marker hoa quả</b></td>
+                                      <td>16:00, 12 THG 12, 2023</td>
+                                      <td>xx/50</td>
+                                      <td>
+                                        <div class="icon-tool-project-container">
+                                        <a href="#" class="icon-tool-project">
+                                          <i class="fa-solid fa-pen-to-square"></i></a>
+                                    
+                                        <a href="#" class="icon-tool-project">
+                                        <i class="fa-solid fa-trash"></i></a>
+                                       </div>
+                                      </td>
+                                    </tr>
+                  
+                                    <!-- Dự án 2 -->
+                                    <tr>
+                                      <td><b>5</b></td>
+                                      <td><b>Con khủng long</b></td>
+                                      <td>16:00, 12 THG 12, 2023</td>
+                                      <td>xx/50</td>
+                                      <td>
+                                        <div class="icon-tool-project-container">
+                                        <a href="#" class="icon-tool-project">
+                                          <i class="fa-solid fa-pen-to-square"></i></a>
+                                    
+                                        <a href="#" class="icon-tool-project">
+                                        <i class="fa-solid fa-trash"></i></a>
+                                       </div>
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td><b>6</b></td>
+                                      <td><b>AR marker hoa quả</b></td>
+                                      <td>16:00, 12 THG 12, 2023</td>
+                                      <td>xx/50</td>
+                                      <td>
+                                        <div class="icon-tool-project-container">
+                                        <a href="#" class="icon-tool-project">
+                                          <i class="fa-solid fa-pen-to-square"></i></a>
+                                    
+                                        <a href="#" class="icon-tool-project">
+                                        <i class="fa-solid fa-trash"></i></a>
+                                       </div>
+                                      </td>
+                                    </tr>
+                  
+                                    <!-- Dự án 2 -->
+                                    <tr>
+                                      <td><b>7</b></td>
+                                      <td><b>Con khủng long</b></td>
+                                      <td>16:00, 12 THG 12, 2023</td>
+                                      <td>xx/50</td>
+                                      <td>
+                                        <div class="icon-tool-project-container">
+                                        <a href="#" class="icon-tool-project">
+                                          <i class="fa-solid fa-pen-to-square"></i></a>
+                                    
+                                        <a href="#" class="icon-tool-project">
+                                        <i class="fa-solid fa-trash"></i></a>
+                                       </div>
+                                      </td>
+                                    </tr>
+
+                                <!-- Các dự án khác -->
+                                <!-- (Tương tự như các dự án trước) -->
+                              </tbody>
+                            </table>
+                          </div>
+                    </div>
+
+
                     <!-- Thông tin về số lượng sản phẩm hiển thị -->
                     <div class="shop-p__collection  animate__animated animate__fadeInUp">
                       <div class="row is-grid-active">
                         <!-- Mỗi sản phẩm trong danh sách -->
                         <div class="col-lg-4 col-md-6 col-sm-6">
                           <div class="product-m">
-
-
 
                             <!-- Hình ảnh sản phẩm -->
                             <div class="product-m__thumb">

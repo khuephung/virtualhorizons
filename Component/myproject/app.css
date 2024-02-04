@@ -2303,29 +2303,30 @@ body {
 }
 .shop-p__meta-wrap-2 {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-  padding: 10px 20px 10px 20px;
+  padding: 10px 20px 20px 20px;
   border-radius: 0.625rem;
-  background: rgba(254, 254, 254, 0.786);
+  background: rgb(254, 254, 254);
 }
 
 
 .myproject-header-container{
   font-size: 15px;
   padding:  5px; 
+  padding-bottom:10px;
+  margin-bottom:10px;
   border-bottom: 1px solid #afadad;
   color: #170E80;
   font-weight: 700;
   line-height: 20px;
   display: flex;
-  margin-right:20px;
-  /* justify-content: center; */
+  justify-content: center; 
 }
 
 .search-bar-project {
-  width: 22%;
+  width: 25%;
   padding: 14px 20px; /* Kích thước và khoảng cách trong ô tìm kiếm */
-  margin-left: 8px; /* Khoảng cách bên phải của ô tìm kiếm */
-  margin-right: 10px;
+  /* margin-left: 8px; */
+  margin-right: 20px;
   border: 2px solid inside #fff; /* Đường viền ô tìm kiếm */
   border-radius: 15px; /* Bo tròn góc của ô tìm kiếm*/
   background-color: #ffffff;
@@ -2336,8 +2337,10 @@ body {
   flex-direction: row;}
   
 .storage-remain-container .project-remain-container{
-  width: 40%;
+  width: 40px;
+   /* 40%; */
   display: flex;
+  margin-right:30px;
   flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
   
 }
@@ -2388,9 +2391,14 @@ box-shadow: 0 0 10px rgba(45, 11, 211, 0.2);
 .create-project-button-container{
 	display: flex;
 	justify-content: center;
+  margin-left:15px;
 }
-
+.fa-folder-plus{
+margin-right:5px;
+font-size: 20px;
+}
 .create-project-button{
+  color: #fff;
   background: linear-gradient(60deg,
           rgba(148, 139, 249, 0.975) 30%,
           rgb(76, 49, 250) 100%);
@@ -2400,16 +2408,19 @@ border-radius: 20px;
 -ms-border-radius: 20px;
 -moz-border-radius: 20px;
 -webkit-border-radius: 20px;
-width: 100px;
+width: 130px;
+padding: 12px 10px;
 border: none;
 cursor: pointer;
 font-family: Montserrat, sans-serif;
 color: #fff;
 font-weight: 700;
-font-size: 15px;
+font-size: 16px;
 transition: box-shadow 0.3s ease; 
 margin-left:10px;
-
+text-decoration:none;
+display: flex;
+justify-content:center;
 }
 .create-project-button:hover {
 background:linear-gradient(60deg,
@@ -2420,8 +2431,9 @@ box-shadow: 0 0 10px rgba(45, 11, 211, 0.2);
 /* border: 2px solid #2E1CFF; */
 }
 
+
 .project-remain-number{
-  margin-top:10%;
+  margin-top:16%;
   font-weight:normal;
 }
 
@@ -2435,16 +2447,89 @@ box-shadow: 0 0 10px rgba(45, 11, 211, 0.2);
 
 #my-progress {
   width: 100%;
-  height: 30px;
-  /* border: 1px solid #ccc;
+  height: 15px;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: #f5f5f5; */
+  background-color: #f5f5f5;
 }
 
 #my-progress::-webkit-progress-value {
   background: linear-gradient(60deg,
   rgba(46, 28, 255, 0.975) 30%,
   rgba(24, 16, 89, 1) 100%);
+}
+
+/* Table DỰ ÁN */
+/* .tm-bg-primary-dark {
+  background:
+          linear-gradient(230deg, rgba(117, 119, 216, 1) 10%, rgba(16, 14, 139, 0.925) 80%);
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+} */
+/* Thiết lập chung cho mọi khối trong trang */
+.tm-block {
+  /* padding: 0px; */
+  width:100%;
+  min-height: 350px;
+  height: 100%;
+  max-height: 4500px;
+}
+/* Tạo giới hạn chiều cao cho các khối có chiều cao lớn */
+.tm-block-taller {
+  max-height: 230px;
+}
+/* Thiết lập thanh cuộn cho các khối */
+.tm-block-scroll {
+  overflow-y: scroll;
+}
+
+.table-project {
+  background-color: #f3f3f956;
+  width:100%;
+  -webkit-font-smoothing: antialiased; 
+  box-shadow: #464A53;
+  color: #442ad8;
+  font-size: 14px;
+  margin-bottom: 10px;
+  border-width: 0;
+  
+}
+
+/* Thiết lập padding cho cột nội dung */
+.tm-col {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 50px;
+}
+
+.table-project th,td{
+  /* border-bottom: 1px solid #e5e0fbc6;  */
+  padding: 10px;
+  text-align: center;
+  background-color:#e5e0fb36 ;
+  color: #170E80;
+}
+.table-project td:nth-child(2){
+  text-align: left;
+}
+
+.table-project th{ 
+  background-color: #ffffff;
+  color: #A39999;
+  position: sticky;
+  font-size: 15px;
+  top: 0;
+}
+.fa-pen-to-square{
+  margin-right:5px;
+}
+.icon-tool-project{
+  font-size: 20px;
+  color:#170E80;
+
+}
+.icon-tool-project:hover{
+  color:#2E1CFF;
 }
 
 /* Định dạng tiêu đề thông tin sản phẩm */
@@ -2500,15 +2585,15 @@ box-shadow: 0 0 10px rgba(45, 11, 211, 0.2);
 
 /* Hiệu ứng khi di chuột qua công cụ */
 .tool-style__group span:hover {
-  color: #e5e5e5;
-  border-color: #e5e5e5;
+  color: #ffffff;
+  border-color: #ffffff;
   z-index: 2;
 }
 
 /* Khi công cụ được chọn */
 .tool-style__group span.is-active {
-  color: #e5e5e5;
-  border-color: #e5e5e5;
+  color: #ffffff;
+  border-color: #ffffff;
   z-index: 2;
 }
 
