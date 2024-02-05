@@ -2597,6 +2597,12 @@ box-shadow: 0 0 10px rgba(45, 11, 211, 0.2);
   z-index: 2;
 }
 
+.tool-style__group span.is-hide {
+  color: #170E80;
+  border-color: #170E80;
+  z-index: 2;
+}
+
     /* Định dạng cho sản phẩm khi chế độ xem là lưới (grid) */
 .is-grid-active .product-m {
   position: relative;

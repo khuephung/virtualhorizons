@@ -269,10 +269,10 @@ body {
   
   /* Style the checkmark/indicator dot circle */
   .container-checkbox .checkmark:after {
-	top: 5.4px;
-	left: 6.5px;
-	width: 8px;
-	height: 8px;
+	top: 5px;
+	left: 5px;
+	width: 10px;
+	height: 10px;
 	border-radius: 50%;
 	background: white;
   }
@@ -436,6 +436,16 @@ body {
 	margin-bottom:-80px;
 	padding: 10px;
 
+}
+.forgot-password-maintext{
+	text-align: center;
+	font-size: 25px;
+	color: #2E1CFF;
+
+}
+.forgot-password-email-container{
+	margin-top: 20%;
+	margin-bottom: -50px;
 }
 /* Responsive */
 @media screen and (max-width: 991px) {
