@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo dự án</title>
+    <!-- favicon -->
+    <link href="./HeaderFooter/logoimage/VIRTUAL HORIZONS-logo.svg" rel="shortcut icon">
+    <!-- liên kết file css  -->
+    <link rel=stylesheet type="text/css" href="./Component/createproject/createproject.css"/>
+    <!-- Thư viện animate.cs  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Thư viện Jquerry -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/b696211014.js" crossorigin="anonymous"></script>
+     <!-- Swiper CSS -->
+     <link rel="stylesheet" href="./Component/createproject/swiper-bundle.min.css">
+
+     <!-- CSS -->
+     <link rel="stylesheet" href="./Component/createproject/style.css">
+                                     
+    
+    <script>
+    // jQuerry //thêm Header và Footer
+    $(function () {
+      $("#headerproject").load("Headerproject.html");
+    });
+  
+    $(function () {
+      $("#footer").load("Footer.html");
+    });
+    </script> 
+
+      <style>
+        /* Footer cách phía trên 70px */
+        #footer{
+          margin-top:70px;
+        }
+      </style>
+</head>
+<body>
+<div id="headerproject"></div>
+<div class="createproject-body">
+
+    <div class="banggiacolor">
+      <!-- Chữ Bảng giá di chuyển từ trên xuống -->
+     
+    <!-- <h1 class="titleproject animate__animated animate__backInDown"> -->
+    <div class="backicon-container">  
+        <a href="./myproject.html" class="backicon">
+      
+          <i class="fa-solid fa-arrow-left"></i> </a> </div>
+        
+      <h1 class="titleproject animate__animated animate__backInDown">DỰ ÁN MỚI</h1>
+    
+          <!-- Chữ Xem thêm di chuyển từ trên xuống -->
+      <div class="createproject-title-box">
+    <!-- <div class="createproject-title-container"> -->
+        <!-- <div class="createproject-title-box"> -->
+            <p class="createproject-sub-text">Bạn muốn dự án của mình thể hiện như thế nào?</p>
+        
+            <div class="slide-container swiper">
+              <div class="slide-content">
+                  <div class="card-wrapper swiper-wrapper">
+
+                    <!-- AR MARKER -->
+                      <div class="card-ArMarker swiper-slide">
+                          <div class="image-content">
+                              <span class="overlay">
+                                <h3 class="maintextar-box"> Quét hình ảnh</h3>
+                              </span>
+                          </div>
+  
+                          <div class="card-content">
+                            <div class="pricing-box-content">
+      
+                              <h3 class="arbox-maintitle"> AR MARKER</h3>
+                              <p class="arbox-subtitle">Thích hợp cho tranh ảnh tại sự kiện truyền thông, giáo dục…<p>
+                              <!--Chi tiết gói -->
+                              <ul>
+                                <li>Dễ dàng sử dụng</li>
+                                <li>Tiết kiệm thời gian</li>
+                                <li>Tạo sự tò mò</li></ul>
+                      
+                            </div>
+                              <button name="create" class="create">Tạo ngay</button>
+                          </div>
+                      </div>
+
+                      <!-- AR MARKERLESS -->
+                      <div class="card-ArMarkerless swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay">
+                              <h3 class="maintextar-box"> Quét mặt phẳng</h3>
+                            </span>
+                        </div>
+
+                        <div class="card-content">
+                          <div class="pricing-box-content">
+    
+                            <h3 class="arbox-maintitle"> AR MARKERLESS</h3>
+                              <p class="arbox-subtitle">Phù hợp nhất với bất động sản kiến trúc, y học.<p>
+                                  <ul>
+                                    <li>Dễ dàng sử dụng</li>
+                                    <li>Tiện lợi, di động</li>
+                                    <li>Tương tác với AR</li>
+                    
+                          </div>
+                            <button name="create" class="create">Tạo ngay</button>
+                        </div>
+                    </div>
+
+                    <!-- AR FILTER -->
+                    <div class="card-ArFilter swiper-slide">
+                      <div class="image-content">
+                          <span class="overlay">
+                            <h3 class="maintextar-box"> Filter tương tác AR</h3>
+                          </span>
+                      </div>
+
+                      <div class="card-content">
+                        <div class="pricing-box-content">
+  
+                          <h3 class="arbox-maintitle"> AR FILTER</h3>
+                          <p class="arbox-subtitle">Hoàn hảo cho kế hoạch truyền thông và giải trí.<p>
+                            <!--Chi tiết gói -->
+                            <ul>
+                              <li>Xu hướng nổi bật</li>
+                              <li>Đa dạng loại hình</li>
+                              <li>Tính tương tác cao</li>
+                  
+                        </div>
+                          <button name="create" class="create">Tạo ngay</button>
+                      </div>
+                  </div>
+
+                 <!-- AI CHAT-->
+                 <div class="card-ArChat swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay">
+                        <h3 class="maintextar-box"> Tạo trợ lý AI</h3>
+                      </span>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="pricing-box-content">
+
+                      <h3 class="arbox-maintitle"> AI CHAT</h3>
+                      <p class="arbox-subtitle">Tùy chỉnh trợ lý AI, hỗ trợ tích cực cho công việc.<p>
+                        <!--Chi tiết gói -->
+                        <ul>
+                          <li>Nhắn tin với AI</li>
+                          <li>Sử dụng LLM</li>
+                          <li>Tính tùy chỉnh cao</li>
+              
+                    </div>
+                      <button name="create" class="create">Tạo ngay</button>
+                  </div>
+              </div>
+
+               
+                  </div>
+              </div>
+  
+              <div class="swiper-button-next swiper-navBtn"></div>
+              <div class="swiper-button-prev swiper-navBtn"></div>
+              <div class="swiper-pagination"></div>
+          </div>
+         
+  </div>
+
+
+
+  </div>
+</div>
+ 
+ 
+    <!-- Gắn Footer -->
+    <div id="footer"></div>
+    <!-- Hiệu ứng tự động scroll xuống khi nhấn nút Xem thêm đầu trang -->
+
+</body>
+   <!-- Swiper JS -->
+   <script src="./Component/createproject/swiper-bundle.min.js"></script>
+
+   <!-- JavaScript -->
+   <script src="./Component/createproject/script.js"></script>
+</html>

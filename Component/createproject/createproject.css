@@ -1,0 +1,364 @@
+
+
+*{ box-sizing: border-box;} /* kích thước phần tử sẽ gồm cả kích thước của phần viền (border) và độ dày của đường viền (padding)*/
+body{
+	background-image: url(/images/Frame\ 13.png);
+    background-repeat: repeat-x;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+.createproject-body {
+    justify-content: center;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    scroll-behavior: smooth; /* Áp dụng hiệu ứng mượt mà cho toàn bộ trang */
+}
+  .banggiacolor{
+    height: max-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    color: white;    
+  }
+/* Bảng giá */
+  .titleproject{
+    margin-top: 30px;
+    margin-bottom:60px;
+    font-size: 45px;
+    font-weight: bold;
+    text-align:center;
+  }
+.backicon{
+    align-items:left;
+    font-size:30px;
+    color:#FFFFFF
+}
+.backicon:hover {
+    color:  #948bf9;
+}
+
+.backicon-container{
+    margin-bottom: -80px;
+    width:100%;
+    display: inline-block;
+  
+}
+  .createproject-sub-text{
+    margin-top:30px;
+    margin-right: 36px;
+    margin-left: 36px;
+    background: rgb(255, 255, 255);
+    width:93%;
+    text-align:center;
+    -webkit-font-smoothing: antialiased; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    color: #170E80;
+    font-size: 18px;
+    font-weight:bold;
+    margin-bottom: 10px;
+    border-width: 0;
+    padding: 10px 30px 10px 30px;
+    border-radius: 0.625rem;
+  }
+ 
+/* Xem thêm */
+  .readmorebanggia-btn{
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 15px;
+    background-image: linear-gradient(to left, #FFFFFF, rgba(213, 212, 236, 0.359));
+    color: #170E80;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, background-image 0.3s ease;
+  }
+/* Hover xem thêm */
+  .readmorebanggia-btn:hover{
+    background-color: #2E1CFF;
+    border-style:solid;
+    border-color:#FFFFFF;
+
+  }
+/*Text Chính sách giá của Virtual Horizons */
+  .titlechinhsachgia{
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .createproject-title-container{
+    display:flex;
+    justify-content:center;
+  }
+  .createproject-title-box{
+    background: rgba(255, 255, 255, 0.66);
+    width:100%;
+    -webkit-font-smoothing: antialiased; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    /* color: #170E80;
+    font-size: 16px;
+    font-weight:bold; */
+    margin-bottom: 10px;
+    border-width: 0;
+    padding: 10px 30px 30px 30px;
+    border-radius: 0.625rem;
+    text-align: center;
+    justify-content:center;
+  }
+/* Layout Chính sách giá  */
+  .arproject-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+/*Hộp gói dịch vụ*/
+  .armarker-box {
+     background-image: url(/images/ARMarker.png);
+     background-size: cover;
+     background-position: center;
+     width: 340px;
+     height: 530px;
+      margin: 15px;
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 24px;
+     
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      transition: background-color 0.3s ease, color 0.3s ease;
+
+  }
+
+  .armarkerless-box {
+    background-image: url(/images/ARMarkless.png);
+    background-size: cover;
+    background-position: center;
+    width: 340px;
+    height: 530px;
+     margin: 15px;
+     padding-left: 25px;
+     padding-right: 25px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     border-radius: 24px;
+    
+     overflow: hidden;
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     transition: background-color 0.3s ease, color 0.3s ease;
+
+ }
+
+ .arfilter-box {
+    background-image: url(/images/ARFilter.png);
+    background-size: cover;
+    background-position: center;
+     width: 340px;
+     height: 530px;
+     margin: 15px;
+     padding-left: 25px;
+     padding-right: 25px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     border-radius: 24px;
+    
+     overflow: hidden;
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     transition: background-color 0.3s ease, color 0.3s ease;
+
+ }
+/*Nội dung gói*/
+  .pricing-box-content{
+      color: #252430;
+      text-align: left;
+      flex-direction: column;
+
+  }
+  .arbox-subtitle{
+    margin-top: -10px;
+    color:#170E80;
+    font-size:18px;
+    font-weight:600;
+  }
+/*List nội dung gói*/
+  .pricing-box-content ul {
+    margin-top: 15px;
+    margin-bottom:190px;
+    list-style-type: none;
+    padding-left: 25px;
+  }
+/*Khoảng cách giữa các list*/
+  .pricing-box-content li {
+    margin-bottom: 15px; /* Khoảng cách giữa các dòng */
+    position: relative;
+  }
+/*List dấu tick*/
+  .pricing-box-content li::before {
+      content: '\2713'; /* Dấu tick Unicode */
+      margin-right: 5px;
+      color: #2E1CFF;  
+      position: relative;
+      font-weight: bold; /* Đậm hơn */
+  }
+/*List dấu x*/
+  .pricing-box-content li.negative::before {
+      content: '\2717'; /* Dấu X Unicode */
+      color: #00000052; 
+      font-weight: bold; /* Đậm hơn */
+  }
+/*Test chính hộp gói dịch vụ*/
+  .maintextar-box{
+      text-align:center;
+      font-size:26px;
+      color: #fff;
+      font-weight:bold;
+      margin-top:9px;
+  }
+  .arbox-maintitle{
+    margin-top: 5px;
+    color:#2E1CFF;
+    text-align: center;
+    font-size: 27px;
+
+  }
+/*Nút mua*/
+  .buy-btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2E1CFF;
+    font-size:18px;
+    font-weight:bold;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+  }
+/*Hover hộp gói dịch vụ*/
+  .pricing-box:hover {
+    transform: scale(1.03); /* Phóng to 10% khi hover vào hộp */
+    box-shadow:2px 2px 15px #fff9f980;
+    background-image: linear-gradient(to left, #74c4d437, rgba(22, 14, 255, 0.359))
+  }
+/*Hover nút mua*/
+  .buy-btn:hover{
+  background-color: white;
+    border-style:solid;
+    color: #2E1CFF;
+  }
+/*Animation xuất hiện từ trên xuống*/
+  .animate__animated.animate__backInDown {
+  --animate-duration: 1000ms;
+  --animate-delay: 1.2s
+}
+/*Animation xuất hiện từ dưới lên*/
+  .animate__animated.animate__fadeInUp{
+  --animate-duration: 1500ms;
+  --animate-delay: 1s 
+/*Khoảng cách của Bảng so với phần phía trên*/  
+}
+
+  .table_container{
+    margin-top: 70px;
+  }
+  /* Định dạng bảng */
+  table {
+    border-collapse: collapse;
+    width: 80%; /* Đặt chiều rộng của bảng */
+    margin: 20px auto; /* Khoảng trống ở hai bên */
+    table-layout: fixed; /*Đảm bảo độ rộng các cột luôn bằng nhau*/
+    border-radius: 24px; /* Bo góc của bảng */
+    overflow: hidden; /* Đảm bảo không có nội dung nào sẽ tràn ra ngoài bo góc */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.114);
+  }
+
+  /* Định dạng header và ô của bảng */
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 18px;
+    white-space: normal; /* Cho phép nội dung tự động xuống dòng */
+    background-color: white;
+  }
+
+/* Nội dung căng trái cách lề 18px đối với cột đầu tiên */
+  th:first-child, td:first-child {
+    text-align: left;
+    padding-left: 18px;
+  }
+
+  /* Căn giữa nội dung của các cột còn lại */
+  th:not(:first-child), td:not(:first-child) {
+    text-align: center;
+  }
+
+  /* định dạng title bảng */
+  .tabletitle{
+    font-size:25px;
+    color: #0e0c2b;
+    font-weight:bold;
+    margin-top:1px;
+  }
+  /* định dạng phần mô tả trong bảng */
+  .tablesubtitle{
+    font-size:18px;
+    color: #858BA0;
+    font-weight:normal;
+  }
+  /* Nút tick trong bảng */
+  .tickicon{
+    width:30px;
+    height: auto;
+  }
+
+
+.form-row-last{
+	margin-top:30px;
+	display: flex;
+	justify-content: center;
+}
+.create {
+    background: linear-gradient(60deg,
+            rgba(46, 28, 255, 0.975) 30%,
+            rgba(24, 16, 89, 1) 100%);
+
+	border-radius: 20px;
+	-o-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	width: 100%;
+	border: none;
+    padding: 8px 4px;
+   
+	/* margin: 20px 0 50px 0px; */
+	cursor: pointer;
+	font-family: Montserrat, sans-serif;
+	color: #fff;
+	font-weight: 700;
+	font-size: 25px;
+	transition: box-shadow 0.3s ease; 
+	
+}
+.create:hover {
+	background:linear-gradient(60deg,
+	rgba(255, 255, 255, 0.975) 30%,
+	rgb(196, 234, 255) 100%);
+	color: #2E1CFF;
+	box-shadow: 0 0 10px rgba(45, 11, 211, 0.2);
+	/* border: 2px solid #2E1CFF; */
+}

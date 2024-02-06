@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <title>Header</title>
+    <link rel="stylesheet" href="./Component/Header/Headerproject.css">
+
+</head>
+
+<body id="body-header">
+    <header id="Minh-header">
+        <div id="logo-header">
+            <a href="./index.html"><img src="./imagelandingpage/VIRTUAL HORIZONS-có chữ.svg" alt="Logo" /></a>
+        </div>
+
+       
+        <div class="search-cart-login">
+           
+            <!--Link nhúng icon đăng nhập-->
+            <!-- <div class="iconuser-header"> -->
+              <div class="user-info">
+                <div class="user-info-details">
+                    <p class="user-name">User Name</p>
+                    <div class="status-box">Gói miễn phí</div>
+                </div>
+                <div class="useravatar">
+                        <img src="./img-profile/hamster.jpg" alt="Avatar">
+                    
+                <ul class="dropdown">
+                    <li><i class="fa-solid fa-gear"></i><a href="./dashboard.html">Tài khoản</a></li>
+                    <li><i class="fa-solid fa-right-to-bracket"></i><a href="./Signin.html">Đăng nhập</a></li>
+                    <li><i class="fa-solid fa-right-from-bracket"></i><a href="#">Đăng xuất</a></li>
+                  </ul>            
+                </div>
+            </div>
+            <i id="header-open" class="fa-solid fa-bars"></i>
+        </div>
+        <div class="menu-mobile">
+            <div class="menu-mobile-header">
+                <div class="search-bar">
+                    <div class="icon-search">
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18.375 18.375L14.4497 14.4428L18.375 18.375ZM16.625 9.1875C16.625 11.16 15.8414 13.0518 14.4466 14.4466C13.0518 15.8414 11.16 16.625 9.1875 16.625C7.21495 16.625 5.3232 15.8414 3.92839 14.4466C2.53359 13.0518 1.75 11.16 1.75 9.1875C1.75 7.21495 2.53359 5.3232 3.92839 3.92839C5.3232 2.53359 7.21495 1.75 9.1875 1.75C11.16 1.75 13.0518 2.53359 14.4466 3.92839C15.8414 5.3232 16.625 7.21495 16.625 9.1875V9.1875Z"
+                                stroke="#403B3B" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <input id="header-input-search" type="text" placeholder="Tìm kiếm sản phẩm" />
+                </div>
+                <div class="icon">
+                    <a href="./GioHang.html" class="icon-header">
+                       
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                    <i id="header-close" class="fa-regular fa-rectangle-xmark"></i>
+                </div>
+            </div>
+            <div class="menu-mobile-main">
+                <a href="./myproject.html">DỰ ÁN</a>
+                <a href="./SanPham.html">SẢN PHẨM 3D</a>
+                <a href="./Banggia.html">BẢNG GIÁ</a>
+                <a href="./about.html">GIỚI THIỆU</a>
+                <a href="#">LIÊN HỆ</a>
+
+
+            </div>
+            <div class="menu-mobile-logo">
+                <a href="index.html" style="width: 175px; height:175px"><img src="./imagelandingpage/VIRTUAL HORIZONS-logo.svg"></a>
+            </div>
+        </div>
+    </header>
+    <script src="./Component/Header/Header.js" type="module"></script>
+</body>
+
+</html>
