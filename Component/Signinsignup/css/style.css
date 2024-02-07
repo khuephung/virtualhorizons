@@ -2,13 +2,18 @@ body {
 	margin:  0;
 	
 }
+.form-v8{
+	font-family: Montserrat, sans-serif;
 
+}
 .page-content {
 	width: 100%;
 	margin:  0 auto;
 	background-image: linear-gradient(to top, rgba(255,0,0,0),rgba(19, 21, 167, 0.746), rgba(23,14,128,1));
-	position:relative;
-	height: max-content;
+	/* position:relative;
+	height: max-content; */
+	display: flex;
+	display: -webkit-flex;
 	scroll-behavior: smooth;
 	overflow-x: hidden;
 	font-family: Montserrat, sans-serif;
@@ -49,7 +54,7 @@ body {
 	font-family: Montserrat, sans-serif;
 	color: #170E80;
 	position: relative;
-	/* display: flex; */
+	display: flex; /*Chỉnh cái này*/
 	display: -webkit-flex;
 }
 .form-v8-content .form-left {
@@ -113,7 +118,7 @@ body {
     position: relative;
 }
 .form-v8-content .form-row .form-row-inner {
-	/* position: relative; */
+	position: relative;
 	width: 100%;
 }
 .form-v8-content .form-row .form-row-inner .label {
