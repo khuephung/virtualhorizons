@@ -339,7 +339,7 @@ body {
 	-webkit-border-radius: 20px;
 	width: 200px;
 	border: none;
-	margin: 20px 0 50px 0px;
+	margin: 5px 0 50px 0px;
 	cursor: pointer;
 	font-family: Montserrat, sans-serif;
 	color: #fff;
@@ -361,10 +361,15 @@ body {
 	align-items: center;
 }
 .form-row-last{
-	margin-top:30px;
+	margin-top:50px;
 	display: flex;
 	justify-content: center;
 }
+.form-row-last-checkrobot{
+	display: flex;
+	justify-content: center;
+}
+
 .button-banner {
     margin-right: 16px;
     width: fit-content;
@@ -376,9 +381,12 @@ body {
 }
 .eye-container{
 	margin-top: -70px;
-	padding-left: 400px;
+	padding-left: 420px;
 	padding-right:5px;
 }
+
+
+
 .comfirm-password{
 	padding-left: 430px;
 }
@@ -393,7 +401,7 @@ body {
 
 .gl-inline div {
 	flex: 1;
-	margin-right: 10px; 
+	margin-right: 3px; 
 	
 }
 
@@ -437,9 +445,13 @@ body {
 	margin-right: 0;
 	}
 .rigister-button-container{
-	margin-top:-45px;
-	margin-bottom:-80px;
+	padding: 11px;
+	margin-top:14px;
+	margin-bottom:-100px;
 	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 }
 .forgot-password-maintext{
@@ -455,15 +467,22 @@ body {
 /* Responsive */
 @media screen and (max-width: 991px) {
 	.form-v8-content {
-		margin: 180px 20px;
+		margin: 170px 20px;
 		flex-direction:  column;
 		-o-flex-direction:  column;
 		-ms-flex-direction:  column;
 		-moz-flex-direction:  column;
 		-webkit-flex-direction:  column;
 	}
+	
+	.tab{
+		margin: 5px 0 48px;	}
+	.fa-eye{
+		font-size:15px;
+	}
 	.form-v8-content .form-left {
 		width: 100%;
+	
 	}
 	.form-v8-content .form-left img {
 		width: 100%;
@@ -472,15 +491,18 @@ body {
 	}
 	.form-v8-content .form-right {
 		width: auto;
-		border-top-right-radius: 0;
+		border-top-right-radius: 0px;
 		border-bottom-left-radius: 15px;
 	}
 	.form-v8-content .tab {
 		margin-top: 45px;
 	}
-	.form-v8-content .form-detail .register {
+	.form-v8-content .form-detail {
 		margin-bottom: 30px;
 	}
+	/* .form-left{
+		display:none
+	} */
 }
 
 @media screen and (max-width: 325px) {
