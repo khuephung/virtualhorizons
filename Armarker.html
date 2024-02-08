@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Marker</title>
+    <!-- favicon -->
+    <link href="./HeaderFooter/logoimage/VIRTUAL HORIZONS-logo.svg" rel="shortcut icon">
+    <!-- liên kết file css  -->
+    <link rel=stylesheet type="text/css" href="./Component/Armarker/Armarker.css"/>
+    <!-- Thư viện animate.cs  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Thư viện Jquerry -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/b696211014.js" crossorigin="anonymous"></script>
+      <!--====== Vendor Css ======-->
+    <link rel="stylesheet" href="./Component/Sanpham/vendor.css">
+  <!--====== Utility-Spacing ======-->
+    <link rel="stylesheet" href="./Component/Sanpham/utility.css">
+  <!--====== App ======-->
+    <link rel="stylesheet" href="./Component/Sanpham/app.css">
+                                     
+    
+    <script>
+    // jQuerry //thêm Header và Footer
+    $(function () {
+      $("#headerproject").load("Headerproject.html");
+    });
+  
+    $(function () {
+      $("#footer").load("Footer.html");
+    });
+    </script> 
+
+      <style>
+        /* Footer cách phía trên 70px */
+        #footer{
+          margin-top:70px;
+        }
+      </style>
+</head>
+<body>
+<div id="headerproject"></div>
+<div class="createproject-body">
+
+    <div class="banggiacolor">
+      <!-- Chữ Bảng giá di chuyển từ trên xuống -->
+     
+    <!-- <h1 class="titleproject animate__animated animate__backInDown"> -->
+    <div class="backicon-container">  
+        <a href="./createproject.html" class="backicon">
+      
+          <i class="fa-solid fa-arrow-left"></i> </a> </div>
+        
+      <h1 class="titleproject animate__animated animate__backInDown">AR MARKER</h1>
+    
+
+          <!-- Chữ Xem thêm di chuyển từ trên xuống -->
+      <div class="createproject-title-box animate__animated animate__fadeInUp">
+    <!-- <div class="createproject-title-container"> -->
+        <!-- <div class="createproject-title-box"> -->
+           
+            <div class="pjname">Tên dự án:</div>  
+            <div class="createproject-sub-text">
+
+                <div class="form-row-inner">
+                    <input type="text" id="project-name" name="project-name" placeholder="Nhập tên dự án">
+                   
+                </div>
+            </div>
+        
+            <div class="pjname">Mô tả:</div>  
+            <div class="createproject-sub-text">
+
+                <div class="form-row-inner">
+                    <textarea id="project-description" name="project-description" rows="5" maxlength="128" placeholder="Nhập mô tả dự án (tối đa 128 ký tự)"></textarea>
+                   
+                </div>
+            </div>
+        
+            <div class="pjname">Link truy cập:</div>  
+            <div class="createproject-sub-text">
+
+                <div class="link-project-container">
+                      <div class="pjlink"><a href="">Link dự án</a></div>
+                      <div class="icon-copy-container"> <i class="fa-solid fa-copy"></i></div>
+                </div>
+            </div>
+
+            <div class="pjname">Hình nhận diện:</div>  
+            <div class="createproject-sub-text">
+                <div class="upload-body" id="drop-file-1">
+                    <div class="container" >
+                        <div class="wrapper" id="image-1">
+                            <div class="image">
+                              <img src="" alt="" id="img1">
+                           </div>
+                           <div class="content">
+                              <div class="icon">
+                                 <i class="fas fa-cloud-upload-alt"></i>
+                              </div>
+                              <div class="text-title">
+                                Nhấn hoặc kéo thả file vào đây để upload 
+                              </div>
+                              <div class="text-subtitle">
+                                Định dạng .png, .jpg hoặc .jpeg                               
+                            </div>
+                           </div>
+                           <div class="cancel-btn" id="cancel-btn-1">
+                              <i class="fas fa-times"></i>
+                           </div>
+                           <div class="file-name" id="file-name-1">
+                              File name here
+                           </div>
+                        </div>
+                        <button onclick="OpenImageInLocal()" class="custom-btn" id="custom-btn-1">Chọn hình nhận diện</button>
+                        
+                      </div>
+                    </div>
+                   
+            </div>
+      
+            <div class="text-description">
+                HÌNH NHẬN DIỆN SẼ ĐƯỢC NHẬN DIỆN BẰNG THIẾT BỊ CÓ CAMERA VÀ KÍCH HOẠT NỘI DUNG  ẢO. DUNG LƯỢNG TỐI ĐA 1MB.                              
+            </div>
+
+            <div class="pjname">Nội dung hiển thị:</div>  
+            <div class="createproject-sub-text">
+                <div class="upload-body" id="drop-file-2">
+                    <div class="container" >
+                        <div class="wrapper" id="image-2">
+                            <div class="image-3d-file" >
+                              <img src="" alt=""id="img2">
+                           </div>
+                           <div class="content">
+                              <div class="icon">
+                                 <i class="fas fa-cloud-upload-alt"></i>
+                              </div>
+                              <div class="text-title">
+                                Nhấn hoặc kéo thả file vào đây để upload 
+                              </div>
+                              <div class="text-subtitle">
+                                Định dạng .png, jpeg, gif, obj, fbx, glb, gltf                            </div>
+                           </div>
+                           <div class="cancel-btn" id="cancel-btn-2">
+                              <i class="fas fa-times"></i>
+                           </div>
+                           <div class="file-name" id="file-name-2">
+                              File name here
+                           </div>
+                        </div>
+                        <button onclick="OpenFile3DInLocal()" class="custom-btn" id="custom-btn-2">Chọn file hiển thị</button>
+                        <div class="pjname" style="margin-top:10px">
+                            Hiển thị video?      </div>
+                            <div class="form-row-inner">
+                                <input type="text" id="project-name" name="project-name" placeholder="Dán link Youtube">
+                               
+                            </div>
+                       </div>
+                    </div>
+
+                    </div>
+                    <div class="text-description">
+                        NỘI DUNG MÀ BẠN MUỐN HIỂN THỊ KHI QUÉT HÌNH NHẬN DIỆN. DUNG LƯỢNG TỐI ĐA 10MB.                   
+                    </div>
+                    <div class="form-row-last">
+                        <input type="submit" name="continue" class="register" value="Tiếp theo">
+                    
+                    </div>
+            </div>
+            
+    
+<!-- END UPLOAD -->
+         
+  </div>
+
+
+
+  </div>
+</div>
+ 
+ 
+    <!-- Gắn Footer -->
+  
+    <div id="footer"></div>
+</body>
+   <!-- JS -->
+   <script src="./Component/Armarker/Armarker.js"></script>
+
+  
+</html>

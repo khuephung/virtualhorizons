@@ -1,11 +1,13 @@
 
 
-*{ box-sizing: border-box;} /* kích thước phần tử sẽ gồm cả kích thước của phần viền (border) và độ dày của đường viền (padding)*/
+*{ box-sizing: border-box;} 
+/* kích thước phần tử sẽ gồm cả kích thước của phần viền (border) và độ dày của đường viền (padding)*/
 body{
 	background-image: url(/images/Frame\ 13.png);
     background-repeat: repeat-x;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
+    margin:  0 auto;
 }
 .createproject-body {
     justify-content: center;
@@ -16,6 +18,7 @@ body{
     scroll-behavior: smooth; /* Áp dụng hiệu ứng mượt mà cho toàn bộ trang */
 }
   .banggiacolor{
+    width:50%;
     height: max-content;
     display: flex;
     align-items: center;
@@ -26,7 +29,7 @@ body{
   }
 /* Bảng giá */
   .titleproject{
-    margin-top: 30px;
+    margin-top: 100px;
     margin-bottom:60px;
     font-size: 45px;
     font-weight: bold;
@@ -42,29 +45,30 @@ body{
 }
 
 .backicon-container{
-    margin-bottom: -80px;
+    margin-bottom: -150px;
     width:100%;
     display: inline-block;
   
 }
   .createproject-sub-text{
-    margin-top:30px;
-    margin-right: 36px;
-    margin-left: 36px;
+    margin-top:5px;
+    /* margin-right: 36px;
+    margin-left: 36px; */
     background: rgb(255, 255, 255);
-    width:93%;
+    width:100%;
     text-align:center;
     -webkit-font-smoothing: antialiased; 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
     color: #170E80;
     font-size: 18px;
     font-weight:bold;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     border-width: 0;
-    padding: 10px 30px 10px 30px;
+    padding: 10px 10px 10px 10px;
     border-radius: 0.625rem;
   }
  
+
 /* Xem thêm */
   .readmorebanggia-btn{
     display: inline-block;
@@ -101,14 +105,14 @@ body{
     width:100%;
     -webkit-font-smoothing: antialiased; 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-    /* color: #170E80;
+    color: #170E80;
     font-size: 16px;
-    font-weight:bold; */
-    margin-bottom: 10px;
+    font-weight:bold;
+    /* margin-bottom: 10px; */
     border-width: 0;
-    padding: 10px 30px 30px 30px;
+    padding: 30px;
     border-radius: 0.625rem;
-    text-align: center;
+    text-align: left;
     justify-content:center;
   }
 /* Layout Chính sách giá  */
@@ -235,31 +239,7 @@ body{
     font-size: 27px;
 
   }
-/*Nút mua*/
-  .buy-btn {
-    padding: 12px 30px;
-    border: none;
-    border-radius: 8px;
-    background-color: #2E1CFF;
-    font-size:18px;
-    font-weight:bold;
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s ease;
 
-  }
-/*Hover hộp gói dịch vụ*/
-  .pricing-box:hover {
-    transform: scale(1.03); /* Phóng to 10% khi hover vào hộp */
-    box-shadow:2px 2px 15px #fff9f980;
-    background-image: linear-gradient(to left, #74c4d437, rgba(22, 14, 255, 0.359))
-  }
-/*Hover nút mua*/
-  .buy-btn:hover{
-  background-color: white;
-    border-style:solid;
-    color: #2E1CFF;
-  }
 /*Animation xuất hiện từ trên xuống*/
   .animate__animated.animate__backInDown {
   --animate-duration: 1000ms;
@@ -275,63 +255,13 @@ body{
   .table_container{
     margin-top: 70px;
   }
-  /* Định dạng bảng */
-  table {
-    border-collapse: collapse;
-    width: 80%; /* Đặt chiều rộng của bảng */
-    margin: 20px auto; /* Khoảng trống ở hai bên */
-    table-layout: fixed; /*Đảm bảo độ rộng các cột luôn bằng nhau*/
-    border-radius: 24px; /* Bo góc của bảng */
-    overflow: hidden; /* Đảm bảo không có nội dung nào sẽ tràn ra ngoài bo góc */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.114);
-  }
-
-  /* Định dạng header và ô của bảng */
-  th, td {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 18px;
-    white-space: normal; /* Cho phép nội dung tự động xuống dòng */
-    background-color: white;
-  }
-
-/* Nội dung căng trái cách lề 18px đối với cột đầu tiên */
-  th:first-child, td:first-child {
-    text-align: left;
-    padding-left: 18px;
-  }
-
-  /* Căn giữa nội dung của các cột còn lại */
-  th:not(:first-child), td:not(:first-child) {
-    text-align: center;
-  }
-
-  /* định dạng title bảng */
-  .tabletitle{
-    font-size:25px;
-    color: #0e0c2b;
-    font-weight:bold;
-    margin-top:1px;
-  }
-  /* định dạng phần mô tả trong bảng */
-  .tablesubtitle{
-    font-size:18px;
-    color: #858BA0;
-    font-weight:normal;
-  }
-  /* Nút tick trong bảng */
-  .tickicon{
-    width:30px;
-    height: auto;
-  }
-
+ 
 
 .form-row-last{
 	margin-top:30px;
 	display: flex;
 	justify-content: center;
 }
-
 .create {
     background: linear-gradient(60deg,
             rgba(46, 28, 255, 0.975) 30%,
@@ -362,4 +292,272 @@ body{
 	color: #2E1CFF;
 	box-shadow: 0 0 10px rgba(45, 11, 211, 0.2);
 	/* border: 2px solid #2E1CFF; */
+}
+/* Form style */
+.form-row-inner input[type=text] {
+    width: 100%;
+    padding: 8px;
+    /* margin: 2px 0; */
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-family: 'Montserrat', sans-serif;
+    font-size:18px;
+  }
+.form-row-inner input[type=text]:focus {
+    width: 100%;
+    padding: 8px;
+    /* margin: 2px 0; */
+    display: inline-block;
+    outline: none;
+    border-bottom: 1px solid #2E1CFF;
+	background: transparent;
+    box-sizing: border-box;
+    color:#170E80
+  }
+.form-row-inner textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size:18px;
+}
+.form-row-inner textarea:focus {
+    outline: none;
+    border: 1px solid #2E1CFF;
+
+}
+
+.link-project-container {
+    /* position: relative; */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.icon-copy-container{
+    font-size: 30px;
+    margin-right: 10px;
+    color: #170E80;
+    cursor:pointer;
+    background-color:#fff
+  
+}
+.icon-copy-container:hover{
+    color: #948bf9;
+
+}
+.pjlink{
+    font-weight: normal;
+    margin-left:10px;
+    margin-top: 8px;
+    color:#2E1CFF;
+    font-style: italic;
+    
+  }
+  /* input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049; 
+  
+ }
+  /* div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  } */
+
+
+
+/* UPLOAD FILE */
+.upload-body{
+    margin-top:10px;
+    margin-bottom:10px;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    height: 100%;
+    place-items: center;
+    text-align: center;
+  }
+  .container{
+    /* height: 350px;
+    width: 500px; */
+    position: relative;
+  }
+  .container .wrapper{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    background: #fff;
+    border: none;
+    /* border: 2px dashed #c2cdda; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .wrapper.active{
+    border: none;
+  }
+  .wrapper .image{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrapper .image-3d-file{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrapper img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .wrapper .icon{
+    font-size: 100px;
+    color: #2E1CFF;
+  }
+  .text-title{
+    font-size: 20px;
+    font-weight: 700;
+    color: #170E80;
+  }
+  .text-subtitle{
+    margin-top:5px;
+    font-size: 18px;
+    font-weight: normal;
+    color: #170E80;
+  }
+
+  .text-description{
+    font-weight:normal;
+    font-style: italic;
+    font-size: 16px;
+    margin-bottom: 20px;
+
+  }
+  .wrapper .cancel-btn i{
+    position: absolute;
+    font-size: 20px;
+    right: 15px;
+    top: 15px;
+    color: #9658fe;
+    cursor: pointer;
+    display: none;
+  }
+  .wrapper.active:hover .cancel-btn i{
+    display: block;
+  }
+  .wrapper .cancel-btn i:hover{
+    color: #e74c3c;
+  }
+  .wrapper .file-name{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 8px 0;
+    font-size: 18px;
+    color: #fff;
+    display: none;
+    background: linear-gradient(135deg,#3a8ffe 0%,#9658fe 100%);
+  }
+  .wrapper.active:hover .file-name{
+    display: block;
+  }
+  .container .custom-btn{
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    /* text-transform: uppercase; */
+    cursor: pointer;
+    background: linear-gradient(135deg,#3a8ffe 0%,#9658fe 100%);
+  }
+
+.form-row-last{
+	margin-top:20px;
+	display: flex;
+	justify-content: center;
+    padding: 11px;
+	align-items: center;
+}
+.register {
+    background: linear-gradient(60deg,
+            rgba(46, 28, 255, 0.975) 30%,
+            rgba(24, 16, 89, 1) 100%);
+
+	border-radius: 20px;
+	-o-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	width: 200px;
+	border: none;
+	padding: 8px 16px;
+	cursor: pointer;
+	font-family: Montserrat, sans-serif;
+	color: #fff;
+	font-weight: 700;
+	font-size: 25px;
+	transition: box-shadow 0.3s ease; 
+	
+}
+.register:hover {
+	background:linear-gradient(60deg,
+	rgba(255, 255, 255, 0.975) 30%,
+	rgb(196, 234, 255) 100%);
+	color: #2E1CFF;
+	box-shadow: 0 0 10px rgba(45, 11, 211, 0.2);
+	/* border: 2px solid #2E1CFF; */
+}
+
+@media screen and (max-width: 991px) {
+	.banggiacolor{
+        width:80%;
+}
+}
+@media screen and (max-width: 575px) {
+	.banggiacolor{
+        width:90%;
+	}
+    .upload-body{
+        
+        height: 80%;
+       
+      }
+      .createproject-sub-text{
+        padding: 20px 20px 20px 20px;
+      }
+      .icon{
+        font-size: 50px;
+        color: #2E1CFF;
+}
 }
