@@ -1,12 +1,7 @@
 
 
 *{ box-sizing: border-box;} /* kích thước phần tử sẽ gồm cả kích thước của phần viền (border) và độ dày của đường viền (padding)*/
-body{
-	background-image: url(/images/Frame\ 13.png);
-    background-repeat: repeat-x;
-    background-size: cover;
-    font-family: 'Montserrat', sans-serif;
-}
+
 .createproject-body {
     justify-content: center;
     height: max-content;
@@ -120,7 +115,7 @@ body{
   }
 /*Hộp gói dịch vụ*/
   .armarker-box {
-     background-image: url(/images/ARMarker.png);
+     background-image: url(./imgar/ARMarker2.png);
      background-size: cover;
      background-position: center;
      width: 340px;

@@ -25,7 +25,7 @@
 .card-ArMarker{
   border-radius: 25px;
   background-color:#FFF;
-  background-image: url(/images/ARMarker2.png);
+  background-image: url(./imgar/ARMarker2.png);
   background-size: cover;
   background-position: center;
  
@@ -42,7 +42,7 @@
 .card-ArMarkerless{
   border-radius: 25px;
   background-color:#FFF;
-  background-image: url(/images/ARMarkless2.png);
+  background-image: url(./imgar/ARMarkless2.png);
   background-size: cover;
   background-position: center;
  
@@ -59,7 +59,7 @@
 .card-ArFilter{
   border-radius: 25px;
   background-color:#FFF;
-  background-image: url(/images/ARFilter2.png);
+  background-image: url(./imgar/ARFilter2.png);
   background-size: cover;
   background-position: center;
  
@@ -76,7 +76,7 @@
 .card-ArChat{
   border-radius: 25px;
   background-color:#FFF;
-  background-image: url(/images/ARChat.png);
+  background-image: url(./imgar/ARChat.png);
   background-size: cover;
   background-position: center;
  

@@ -200,6 +200,35 @@ ul, li {
   width: 100%;
 }
 /*680*/
+@media screen and (max-width: 1200px) {
+  nav {
+    display: none !important;
+  }
+
+  #header-open {
+    display: block;
+  }
+
+  .search-cart-login .search-bar {
+    display: none !important;
+  }
+
+  .carticon{
+    display:none !important;
+  }
+  
+
+  i {
+    font-size: 25px;
+  }
+
+  .menu-mobile.open {
+    transform: translateX(0);
+    /* left: 0; */
+    visibility: visible;
+    opacity: 1;
+  }
+}
 @media screen and (max-width: 575px) {
   nav {
     display: none !important;

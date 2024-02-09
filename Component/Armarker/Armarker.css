@@ -2,13 +2,7 @@
 
 *{ box-sizing: border-box;} 
 /* kích thước phần tử sẽ gồm cả kích thước của phần viền (border) và độ dày của đường viền (padding)*/
-body{
-	background-image: url(/images/Frame\ 13.png);
-    background-repeat: repeat-x;
-    background-size: cover;
-    font-family: 'Montserrat', sans-serif;
-    margin:  0 auto;
-}
+
 .createproject-body {
     justify-content: center;
     height: max-content;
@@ -395,11 +389,13 @@ body{
     /* height: 350px;
     width: 500px; */
     position: relative;
+    width:70%;
+  
   }
   .container .wrapper{
     position: relative;
     height: 300px;
-    width: 100%;
+    width: auto;
     border-radius: 10px;
     background: #fff;
     border: none;
@@ -415,7 +411,7 @@ body{
   .wrapper .image{
     position: absolute;
     height: 100%;
-    width: 100%;
+    width:100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -538,26 +534,124 @@ body{
 	box-shadow: 0 0 10px rgba(45, 11, 211, 0.2);
 	/* border: 2px solid #2E1CFF; */
 }
+@media screen and (max-width: 1200px) {
+	.banggiacolor{
+        width:75%;
+}
+}
 
 @media screen and (max-width: 991px) {
 	.banggiacolor{
         width:80%;
 }
 }
+@media screen and (max-width: 768px) {
+	.banggiacolor{
+        width:85%;
+}
+}
 @media screen and (max-width: 575px) {
 	.banggiacolor{
         width:90%;
 	}
-    .upload-body{
+  .upload-body{
         
-        height: 80%;
+        height: 100%;
        
       }
-      .createproject-sub-text{
+      /* .createproject-sub-text{
         padding: 20px 20px 20px 20px;
+      } */
+  .fa-cloud-upload-alt{
+        font-size: 60px;
+        color: #2E1CFF;}
+  .text-title{
+        font-size: 16px;
+        font-weight: 700;
+        color: #170E80;
+        }
+  .text-subtitle{
+        margin-top:5px;
+        font-size: 12px;
+        font-weight: normal;
+        color: #170E80;
+        }
+      
+  .text-description{
+        font-size: 13px;
+        margin-bottom: 20px;
+        }
+  .container .custom-btn{
+          margin-top: 10px;
+          display: block;
+          width: 100%;
+          height: 50px;
+          border: none;
+          outline: none;
+          border-radius: 25px;
+          color: #fff;
+          font-size: 14px;
+          font-weight: 700;
+          letter-spacing: 1px;
+          font-family: 'Montserrat', sans-serif;
+          /* text-transform: uppercase; */
+          cursor: pointer;
+          background: linear-gradient(135deg,#3a8ffe 0%,#9658fe 100%);
+        }
+  .container .wrapper{
+          position: relative;
+          height: 200px;
+          width: auto;
+          border-radius: 10px;
+          background: #fff;
+          border: none;
+          /* border: 2px dashed #c2cdda; */
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+        }
+  .register {
+          background: linear-gradient(60deg,
+                  rgba(46, 28, 255, 0.975) 30%,
+                  rgba(24, 16, 89, 1) 100%);
+      
+        border-radius: 20px;
+        -o-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -webkit-border-radius: 20px;
+        width: 200px;
+        border: none;
+        padding: 8px 16px;
+        cursor: pointer;
+        font-family: Montserrat, sans-serif;
+        color: #fff;
+        font-weight: 700;
+        font-size: 20px;
+        transition: box-shadow 0.3s ease; 
+        
       }
-      .icon{
-        font-size: 50px;
-        color: #2E1CFF;
-}
+    .titleproject{
+        margin-top: 130px;
+        margin-bottom:30px;
+        font-size: 35px;
+        font-weight: bold;
+        text-align:center;
+      }
+    .backicon{
+        align-items:left;
+        font-size:30px;
+        color:#FFFFFF
+    }
+    .backicon:hover {
+        color:  #948bf9;
+    }
+    
+    .backicon-container{
+        margin-bottom: -160px;
+        /* width:100%; */
+        display: inline-block;
+      
+    }
 }

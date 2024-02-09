@@ -574,6 +574,145 @@ body {
 	}
 }
 
+@media screen and (max-width: 830px) {
+	.eye-container{
+		margin-top: -70px;
+		padding-left: 660px;
+		padding-right:5px;
+	}
+
+}
+
+
+@media screen and (max-width: 768px) {
+.eye-container{
+		margin-top: -70px;
+		padding-left: 620px;
+		padding-right:5px;
+	}
+
+}
+@media screen and (max-width: 575px) {
+	.form-v8-content {
+		margin: 180px 20px;
+		flex-direction:  column;
+		-o-flex-direction:  column;
+		-ms-flex-direction:  column;
+		-moz-flex-direction:  column;
+		-webkit-flex-direction:  column;
+	}
+	
+	.tab{
+		margin: 5px 0 48px;	}
+	.fa-eye{
+		font-size:15px;
+
+	}
+	.eye-container{
+		margin-top: -70px;
+		padding-left: 260px;
+		padding-right:5px;
+	}
+	.google-login-container{
+		margin-top: -20px;
+		display: flex;
+		justify-content: center;
+	  }
+	.google-login-button {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 10px 50px 10px 50px;
+		background: linear-gradient(90deg,
+		rgba(235, 235, 235, 0.698) 0%,
+		rgba(213, 210, 225, 0.8) 100%);
+		color: #170E80;
+		border: none;
+		border-radius: 10px;
+		cursor: pointer;
+		font-size:14px;
+		font-family: Montserrat, sans-serif;
+	
+	
+	}
+	
+	.google-logo {
+		width: 20px;
+		height: 20px;
+		margin-right: 10px;
+	}
+
+	.form-v8-content .form-left {
+		width: 100%;
+	
+	}
+	.form-v8-content .form-left img {
+		width: 100%;
+		border-bottom-left-radius: 0px;
+	    border-top-right-radius: 15px;
+	}
+	.form-v8-content .form-right {
+		width: auto;
+		border-top-right-radius: 0px;
+		border-bottom-left-radius: 15px;
+	}
+	.form-v8-content .tab {
+		margin-top: 45px;
+	}
+	.form-v8-content .form-detail {
+		margin-bottom: 30px;
+	}
+	/* .form-left{
+		display:none
+	} */
+	.gl-inline {
+
+		margin-bottom: 5px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		font-family: Montserrat, sans-serif; 
+	}
+	
+	.gl-inline{
+		flex: 1;
+		margin-right: 4px; 
+		margin-bottom: 20px;
+		
+	}
+	
+	.u-s-m-b-30 {
+		margin-bottom: 1.875rem; }
+	.gl-label {
+		margin-bottom: 8px;
+		display: block;
+		color: #170E80;
+		font-size: 14px;
+		margin-left: 10px;
+		 }
+	.gl-dob {
+		display: flex; 
+	}
+	.gl-dob .select-box {
+		width: 100%;
+		margin-bottom: 8px;
+		margin-right: 9px; 
+		width: auto;
+	}
+	.select-box--primary-style {
+		color: #170E80;
+		border: 2px solid transparent;
+		background-color: #f1f1f1; 
+		border-radius: 5px;
+		padding: 5px;
+		font-family: Montserrat, sans-serif; 
+		font-size: 14px;
+	
+		}
+}
+	
+
+
 @media screen and (max-width: 325px) {
 	.form-v8-content .tab {
 		flex-direction: column;

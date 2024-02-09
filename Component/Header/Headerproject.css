@@ -47,11 +47,11 @@
 }
 
 .status-box {
-    margin-top:5px;
+    margin-top:2px;
     background: linear-gradient(60deg,
     rgba(206, 202, 247, 0.975) 30%,
     rgb(145, 111, 237) 100%);
-padding:5px 8px;
+padding:4px 7px;
 border-radius: 20px;
 -o-border-radius: 20px;
 -ms-border-radius: 20px;
@@ -63,7 +63,7 @@ border: 2px  rgb(145, 111, 237) ;
 cursor: pointer;
 font-family: Montserrat, sans-serif;
 color: #181059;
-font-size: 12px;
+font-size: 10px;
 transition: box-shadow 0.3s ease; 
 text-align:center;
 }
@@ -261,7 +261,9 @@ ul, li {
   nav {
     display: none !important;
   }
-
+  #logo-header img {
+    display: none !important;
+}
   #header-open {
     display: block;
   }
