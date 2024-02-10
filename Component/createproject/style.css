@@ -79,7 +79,6 @@
   background-image: url(./imgar/ARChat.png);
   background-size: cover;
   background-position: center;
- 
   width: 350px;
   height: 530px;
   overflow: hidden;
@@ -196,5 +195,23 @@
   }
   .swiper-navBtn{
     display: none;
+  }
+}
+@media screen and (max-width: 575px) {
+  .card-ArMarker{
+    border-radius: 25px;
+    background-color:#FFF;
+    background-image: url(./imgar/ARMarker2.png);
+    background-size: cover;
+    background-position: center;
+   
+    width: 350px;
+    height: 530px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  
   }
 }

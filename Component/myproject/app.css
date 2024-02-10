@@ -107,8 +107,57 @@
   .side, .middle {
     width: 100%; /* Đặt chiều rộng của cả .side và .middle là 100% */
   }
+  .storage-remain-container {
+    display: none !important;
+  }
+  .storage-remain-number{
+    display: none !important;
+  }
+
+  .search-bar-project {
+    width:25;
+    padding: 14px 20px; /* Kích thước và khoảng cách trong ô tìm kiếm */
+    margin-left: 0px;
+    margin-right: 2px;
+    border: 2px solid inside #fff; /* Đường viền ô tìm kiếm */
+    border-radius: 15px; /* Bo tròn góc của ô tìm kiếm*/
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-flow: row; */
+    flex-direction: row;
+  }
+  .myproject-header-container{
+    font-size: 15px;
+    padding:  2px; 
+    padding-bottom:10px;
+    margin-bottom:10px;
+    border-bottom: 1px solid #afadad;
+    color: #170E80;
+    font-weight: 700;
+    line-height: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
-@media (max-width:575px) {
+@media (max-width: 575px) {
+  .icon-tool-project{
+    font-size: 10px;
+    color:#170E80;
+  }
+  .search-bar-project {
+    display: none !important;
+  }
+
+  .table-project th:nth-child(3),
+  .table-project td:nth-child(3),
+  .table-project th:nth-child(4),
+  .table-project td:nth-child(4){
+    display: none !important;
+  }
+  
+ 
   .side, .middle {
     width: 100%; /* Đặt chiều rộng của cả .side và .middle là 100% */
   }
@@ -116,6 +165,7 @@
   .right {
     display: none; /* Ẩn cột bên phải */
   }
+
 }
 
 /*****************BÌNH LUẬN********************/
@@ -1148,9 +1198,9 @@ body {
   .check-box__label {
     position: initial;
     display: inline-block;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 13px;
-    color: #333333;
+    color: #170E80;
     margin-left: 24px;
     white-space: normal; /* Định dạng label của checkbox */
   }
@@ -1986,7 +2036,7 @@ body {
 .shop-w--style {
   box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  background: rgba(224, 218, 250, 0.2);
+  background: rgb(248, 248, 249);
    /* Định dạng biểu đồ và màu nền cho phần cửa hàng */
 }
 
@@ -1998,7 +2048,7 @@ body {
   font-size: 14px;
   padding: 14px 18px;
   border-bottom: 1px solid #afadad;
-  color: black;
+  color: #170e80;
   font-weight: 700;
   line-height: 20px; /* Định dạng tiêu đề của phần cửa hàng */
 }
@@ -2299,7 +2349,8 @@ body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   padding: 10px 20px 10px 20px;
   border-radius: 0.625rem;
-  background: rgba(224, 218, 250, 0.339);
+  background: rgb(247, 247, 247);
+  justify-content: center;
 }
 .shop-p__meta-wrap-2 {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
@@ -2331,7 +2382,7 @@ body {
   border-radius: 15px; /* Bo tròn góc của ô tìm kiếm*/
   background-color: #ffffff;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   /* flex-flow: row; */
   flex-direction: row;}
@@ -2506,7 +2557,7 @@ box-shadow: 0 0 10px rgba(45, 11, 211, 0.2);
   /* border-bottom: 1px solid #e5e0fbc6;  */
   padding: 10px;
   text-align: center;
-  background-color:#e5e0fb36 ;
+  background-color:#e5e0fb29 ;
   color: #170E80;
 }
 .table-project td:nth-child(2){
@@ -2558,15 +2609,17 @@ box-shadow: 0 0 10px rgba(45, 11, 211, 0.2);
 /* Định dạng các công cụ phía dưới sản phẩm */
 .tool-style__group {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  flex-wrap: nowrap;
   padding: 10px 12px;
+
 }
 
 /* Định dạng từng công cụ trong group */
 .tool-style__group span {
-  /* position: relative;
-  display: inline-block; */
-  /* height: 40px; */
+  /* position: relative; */
+  /* display: inline-block; 
+   height: 40px; */
   cursor: pointer;
   border: 2px solid #170E80;
   font-size: 16px;
@@ -2585,21 +2638,21 @@ box-shadow: 0 0 10px rgba(45, 11, 211, 0.2);
 
 /* Hiệu ứng khi di chuột qua công cụ */
 .tool-style__group span:hover {
-  color: #ffffff;
-  border-color: #ffffff;
+  color: #948bf9;
+  border-color: #948bf9;
   z-index: 2;
 }
 
 /* Khi công cụ được chọn */
 .tool-style__group span.is-active {
-  color: #ffffff;
-  border-color: #ffffff;
+  color: #170E80;
+  border-color: #170E80;
   z-index: 2;
 }
 
 .tool-style__group span.is-hide {
-  color: #170E80;
-  border-color: #170E80;
+  color: #948bf9;
+  border-color: #948bf9;
   z-index: 2;
 }
 
@@ -2988,9 +3041,9 @@ box-shadow: 0 0 10px rgba(45, 11, 211, 0.2);
     position: static; /* Đặt vị trí của nút Wishlist là static */
     text-align: right; /* Căn phải */
   }
-
+ /* Hiển thị là block */
   .shop-p__tool-style {
-    display: block; /* Hiển thị là block */
+    display: block;
   }
 
   .tool-style__form-wrap {
@@ -2999,6 +3052,33 @@ box-shadow: 0 0 10px rgba(45, 11, 211, 0.2);
 
   .tool-style__form-wrap div + div {
     margin-left: 0; /* Không có khoảng cách giữa các thành phần div */
+  }
+  .tool-style__group span {
+
+    font-size: 14px;
+    padding: 4px 7px  ;
+    font-weight: 500;
+    color: #170E80;
+    border-radius: 10px;
+    margin-right:2px;
+    display:flex;
+    /* justify-content: center; */
+  }
+  .fa-folder{
+    font-size: 16px;
+  }
+  .fa-share{
+    font-size: 16px;
+  }
+  .icon-project-container{
+    margin-right:5px;
+  }
+  .shop-p__meta-wrap {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    padding: 5px 5px 5px 5px;
+    border-radius: 0.625rem;
+    background: rgb(247, 247, 247);
+    justify-content: center;
   }
 }
 
@@ -3051,11 +3131,84 @@ box-shadow: 0 0 10px rgba(45, 11, 211, 0.2);
   background-color: #f5f5f5;
   border-radius: 2px;
 }
-
+@media (max-width: 1200px){
+  .storage-remain-container {
+    display: none !important;
+  }
+  .storage-remain-number{
+    height:100%;
+    margin-left:5px;
+    /* margin-top: ; */
+    margin-right: 10px;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+  
+  .table-project th{ 
+      background-color: #ffffff;
+      color: #A39999;
+      position: sticky;
+      font-size: 13px;
+      top: 0;
+    }
+  .table-project {
+      background-color: #f3f3f956;
+      width:100%;
+      -webkit-font-smoothing: antialiased; 
+      box-shadow: #464A53;
+      color: #442ad8;
+      font-size: 12px;
+      margin-bottom: 10px;
+      border-width: 0;
+      
+    }
+    .icon-tool-project{
+      font-size: 14px;
+      color:#170E80;
+    
+    }
+}
 /* Ẩn Tooltip khi màn hình có kích thước nhỏ hơn 991px */
 @media (max-width: 991px) {
   .tooltip.show {
     opacity: 0;
+  }
+.storage-remain-container {
+  display: none !important;
+}
+.storage-remain-number{
+  height:100%;
+  margin-left:5px;
+  /* margin-top: ; */
+  margin-right: 10px;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;}
+
+.table-project th{ 
+    background-color: #ffffff;
+    color: #A39999;
+    position: sticky;
+    font-size: 13px;
+    top: 0;
+  }
+.table-project {
+    background-color: #f3f3f956;
+    width:100%;
+    -webkit-font-smoothing: antialiased; 
+    box-shadow: #464A53;
+    color: #442ad8;
+    font-size: 12px;
+    margin-bottom: 10px;
+    border-width: 0;
+    
+  }
+  .icon-tool-project{
+    font-size: 14px;
+    color:#170E80;
+  
   }
 }
 

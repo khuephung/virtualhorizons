@@ -36,10 +36,14 @@
   </script>
   <style>
     .productbg {
-      background-image: url(./images/Frame\ 13.png);
+     
+      background: rgb(245,245,245);
+      background: linear-gradient(0deg, rgba(245,245,245,0.6) 30%, rgba(112,105,192,0.8603816526610644) 67%, rgba(26,14,158,1) 100%);
+      /* background-image: linear-gradient(to top, rgba(255, 255, 255, 0.974),rgba(19, 22, 167, 0.576), rgba(23,14,128,1)); */
       /* Đặt hình nền của trang */
       background-repeat: no-repeat;
       /* Không lặp lại hình nền */
+      
       background-size: 100%;
       /* Kích thước hình nền là 100% của trang */
       line-height: 1.5;
@@ -63,6 +67,7 @@
       margin-bottom: 15px;
       font-size: 45px;
     }
+
   </style>
 </head>
 <div class="productbg">
@@ -220,7 +225,7 @@
                         
                         
                         <div class="tool-style__group u-s-m-b-8">
-                          <span class="is-active" onclick="openCity(event, 'my-project')" id="defaultOpen">
+                          <span class="tool-style__group span" onclick="openCity(event, 'my-project')" id="defaultOpen">
                             <div class="icon-project-container">
                             <i class="fa-solid fa-folder"></i></div>
                             Dự án của tôi</span>
@@ -228,7 +233,7 @@
                               <div class="icon-project-container">
                               <i class="fa-solid fa-folder"></i></div>
                               Dự án của tôi</span> -->
-                          <span class="js-shop-grid-target" onclick="openCity(event, 'sign-up')">
+                          <span class="tool-style__group span js-shop-grid-target" onclick="openCity(event, 'sign-up')">
                             <div class="icon-project-container">
                             <i class="fa-solid fa-share"></i></div>
                             Được chia sẻ</span>
@@ -914,7 +919,6 @@
       <script src="https://example.com/fontawesome/v6.5.1/js/fontawesome.js" data-auto-replace-svg="nest"></script>
       <script src="https://example.com/fontawesome/v6.5.1/js/solid.js"></script>
       <script src="https://example.com/fontawesome/v6.5.1/js/brands.js"></script>
-      <script src="Header.js" type="module"></script>
       <script src="https://kit.fontawesome.com/b696211014.js" crossorigin="anonymous"></script>
       <div id="footer"></div>
   </body>

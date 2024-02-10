@@ -265,7 +265,7 @@ ul, li {
     display: none !important;
 }
   #header-open {
-    display: block;
+    display: none !important;
   }
 
   .search-cart-login .search-bar {

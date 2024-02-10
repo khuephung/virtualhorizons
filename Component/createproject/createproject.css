@@ -47,7 +47,7 @@
     margin-right: 36px;
     margin-left: 36px;
     background: rgb(255, 255, 255);
-    width:93%;
+    /* width:93%; */
     text-align:center;
     -webkit-font-smoothing: antialiased; 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
@@ -58,6 +58,8 @@
     border-width: 0;
     padding: 10px 30px 10px 30px;
     border-radius: 0.625rem;
+    word-wrap: break-word; /* Tự động ngắt dòng khi cần thiết */
+
   }
  
 /* Xem thêm */
@@ -103,8 +105,8 @@
     border-width: 0;
     padding: 10px 30px 30px 30px;
     border-radius: 0.625rem;
-    text-align: center;
-    justify-content:center;
+    /* text-align: center;
+    justify-content:center; */
   }
 /* Layout Chính sách giá  */
   .arproject-container {
@@ -113,69 +115,8 @@
     justify-content: center;
     flex-wrap: wrap;
   }
-/*Hộp gói dịch vụ*/
-  .armarker-box {
-     background-image: url(./imgar/ARMarker2.png);
-     background-size: cover;
-     background-position: center;
-     width: 340px;
-     height: 530px;
-      margin: 15px;
-      padding-left: 25px;
-      padding-right: 25px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      border-radius: 24px;
-     
-      overflow: hidden;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      transition: background-color 0.3s ease, color 0.3s ease;
 
-  }
-
-  .armarkerless-box {
-    background-image: url(/images/ARMarkless.png);
-    background-size: cover;
-    background-position: center;
-    width: 340px;
-    height: 530px;
-     margin: 15px;
-     padding-left: 25px;
-     padding-right: 25px;
-     padding-top: 10px;
-     padding-bottom: 10px;
-     border-radius: 24px;
-    
-     overflow: hidden;
-     position: relative;
-     display: flex;
-     flex-direction: column;
-     transition: background-color 0.3s ease, color 0.3s ease;
-
- }
-
- .arfilter-box {
-    background-image: url(/images/ARFilter.png);
-    background-size: cover;
-    background-position: center;
-     width: 340px;
-     height: 530px;
-     margin: 15px;
-     padding-left: 25px;
-     padding-right: 25px;
-     padding-top: 10px;
-     padding-bottom: 10px;
-     border-radius: 24px;
-    
-     overflow: hidden;
-     position: relative;
-     display: flex;
-     flex-direction: column;
-     transition: background-color 0.3s ease, color 0.3s ease;
-
- }
+ 
 /*Nội dung gói*/
   .pricing-box-content{
       color: #252430;

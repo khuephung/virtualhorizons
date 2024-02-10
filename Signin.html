@@ -191,7 +191,9 @@
 								<input type="password" name="password_1" id="password_1" class="input-text" required>
 								<span class="label">Mật khẩu</span>
 								<span class="border"></span>
-							
+								<div class="eye-container">
+									<i id="togglePassword2" class="fas fa-eye" onclick="togglePassword2()"></i>
+								</div>
 							</label>
 						</div>
 						<div class="form-row">
@@ -199,7 +201,9 @@
 								<input type="password" name="comfirm_password_1" id="comfirm_password_1" class="input-text" required>
 								<span class="label">Nhập lại mật khẩu</span>
 								<span class="border"></span>
-							
+								<div class="eye-container">
+									<i id="togglePassword3" class="fas fa-eye" onclick="togglePassword3()"></i>
+								</div>
 							</label>
 						</div>
 
@@ -273,6 +277,35 @@
             }
         }
 
+		function togglePassword2() {
+            var passwordField = document.getElementById("password_1");
+            var toggleIcon = document.getElementById("togglePassword2");
+
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                toggleIcon.classList.remove("fa-eye");
+                toggleIcon.classList.add("fa-eye-slash");
+            } else {
+                passwordField.type = "password";
+                toggleIcon.classList.remove("fa-eye-slash");
+                toggleIcon.classList.add("fa-eye");
+            }
+        }
+
+		function togglePassword3() {
+            var passwordField = document.getElementById("comfirm_password_1");
+            var toggleIcon = document.getElementById("togglePassword3");
+
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                toggleIcon.classList.remove("fa-eye");
+                toggleIcon.classList.add("fa-eye-slash");
+            } else {
+                passwordField.type = "password";
+                toggleIcon.classList.remove("fa-eye-slash");
+                toggleIcon.classList.add("fa-eye");
+            }
+        }
 
 	//giới hạn chọn năm sinh từ năm 1940
 		var yearSelect = document.getElementById("yearSelect");

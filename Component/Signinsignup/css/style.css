@@ -380,12 +380,19 @@ body {
     border-radius: 40px;
 }
 .eye-container{
-	margin-top: -70px;
-	padding-left: 430px;
+	position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
 	padding-right:5px;
 }
 
-
+.fa-eye{
+	font-size:15px;
+}
+.fa-eye-slash{
+	font-size:15px;
+}
 
 .comfirm-password{
 	padding-left: 430px;
@@ -481,11 +488,6 @@ body {
 		font-size:15px;
 
 	}
-	.eye-container{
-		margin-top: -70px;
-		padding-left: 360px;
-		padding-right:5px;
-	}
 	.google-login-container{
 		margin-top: -20px;
 		display: flex;
@@ -574,22 +576,11 @@ body {
 	}
 }
 
-@media screen and (max-width: 830px) {
-	.eye-container{
-		margin-top: -70px;
-		padding-left: 660px;
-		padding-right:5px;
-	}
 
-}
 
 
 @media screen and (max-width: 768px) {
-.eye-container{
-		margin-top: -70px;
-		padding-left: 620px;
-		padding-right:5px;
-	}
+
 
 }
 @media screen and (max-width: 575px) {
@@ -606,13 +597,11 @@ body {
 		margin: 5px 0 48px;	}
 	.fa-eye{
 		font-size:15px;
+	}
+	.fa-eye-slash{
+		font-size:15px;
+	}
 
-	}
-	.eye-container{
-		margin-top: -70px;
-		padding-left: 260px;
-		padding-right:5px;
-	}
 	.google-login-container{
 		margin-top: -20px;
 		display: flex;
