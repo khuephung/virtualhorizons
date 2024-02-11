@@ -47,7 +47,7 @@
 .title-share-project{
   width:100%;
   display: flex;
-  align-items: nowrap;
+  /* align-items: nowrap; */
   margin-right: 10px; 
 }
 .project-name-container
@@ -56,7 +56,7 @@
   /* margin-right: 36px;
   margin-left: 36px; */
   background: rgb(255, 255, 255);
-  width:80%;
+  width:70%;
   text-align:center;
   -webkit-font-smoothing: antialiased; 
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
@@ -75,21 +75,93 @@
   /* margin-right: 36px;
   margin-left: 36px; */
   background: rgb(255, 255, 255);
-  width:20%;
+  width:30%;
   text-align:center;
   align-items: center;
   display: flex;
   flex-wrap: nowrap;
   font-size:18px;
+  font-weight: normal;
   -webkit-font-smoothing: antialiased; 
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   color: #170E80;
   font-weight:bold;
   margin-bottom: 20px;
   border-width: 0;
-  padding: 10px 10px 10px 10px;
+  padding: 10px 20px 10px 20px;
   border-radius: 0.625rem;
 }
+  
+  /* The container */
+  .container-checkbox {
+    display: block;
+    position: relative;
+    padding-right: 30px; /* Thay đổi từ padding-left thành padding-right */
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    color:#252430;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    /* Hide the browser's default checkbox */
+    .container-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    }
+    
+    /* Create a custom checkbox */
+    .checkmark {
+    position: absolute;
+    top: 0;
+    right: 0; /* Thêm right: 0; */
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius:50%;
+    }
+    
+    /* On mouse-over, add a grey background color */
+    .container-checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+    }
+    
+    /* When the checkbox is checked, add a blue background */
+    .container-checkbox input:checked ~ .checkmark {
+    background-color: #2E1CFF;
+    }
+    
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    }
+    
+    /* Show the checkmark when checked */
+    .container-checkbox input:checked ~ .checkmark:after {
+    display: block;
+    }
+    
+    /* Style the checkmark/indicator dot circle */
+    .container-checkbox .checkmark:after {
+    top: 5px;
+    right: 5px; /* Thêm right: 5px; */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+    }
+
 .fa-share{
   font-size:30px;
   margin-right:10px;
@@ -597,16 +669,49 @@
 	box-shadow: 0 0 10px rgba(45, 11, 211, 0.2);
 	/* border: 2px solid #2E1CFF; */
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1860px){
+  .checkmark {
+    position: absolute;
+    top: 10px;
+    right: 0; /* Thêm right: 0; */
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius:50%;
+    }
+}
+@media screen and (max-width: 1210px) {
 	.banggiacolor{
         width:75%;
 }
+.title-share-project{
+  flex-wrap: wrap;
 }
-
+.checkmark {
+  position: absolute;
+  top: 0;
+  right: 0; /* Thêm right: 0; */
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius:50%;
+  }
+.project-name-container
+{
+  width:100%;
+  margin-right:-5px;
+}
+.project-share-container
+{
+  padding: 20px 10px 20px 17px;
+  width:100%;
+}
+}
 @media screen and (max-width: 991px) {
 	.banggiacolor{
         width:80%;
 }
+
 }
 @media screen and (max-width: 768px) {
 	.banggiacolor{
