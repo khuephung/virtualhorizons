@@ -2524,6 +2524,8 @@ box-shadow: 0 0 10px rgba(45, 11, 211, 0.2);
   min-height: 350px;
   height: 100%;
   max-height: 4500px;
+  /* align-items:center;
+  justify-content: center; */
 }
 /* Tạo giới hạn chiều cao cho các khối có chiều cao lớn */
 .tm-block-taller {
@@ -3408,3 +3410,54 @@ box-shadow: 0 0 10px rgba(45, 11, 211, 0.2);
 #js-product-detail-modal-thumbnail:hover .pt-prev, #js-product-detail-modal-thumbnail:hover .pt-next {
   opacity: .8;
 }
+
+
+/* Khi chưa có dự án nào */
+.no-project-container{
+  margin-top:40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.no-project-image {
+  width: 200px; 
+  height: auto; 
+}
+.no-project-text{
+  font-size:20px;
+  font-weight:500;
+  /* color:#170E80 */
+  
+}
+.create-new-project{
+  margin-right:10px;
+  font-size: 30px;
+  }
+.create-project-button-2{
+  margin-top:20px;
+  border-radius: 20px;
+  -o-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  width: 200px;
+  padding: 10px 15px;
+  border: 2px dashed #DDDDDD ;
+  cursor: pointer;
+  font-family: Montserrat, sans-serif;
+  color: #A39999;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration:none;
+  display: flex;
+  justify-content:center;
+  }
+  .create-project-button:hover {
+  background:linear-gradient(60deg,
+  rgba(255, 255, 255, 0.975) 30%,
+  rgb(196, 234, 255) 100%);
+  color: #2E1CFF;
+  box-shadow: 0 0 10px rgba(45, 11, 211, 0.2);
+  /* border: 2px solid #2E1CFF; */
+  }
+  
