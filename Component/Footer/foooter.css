@@ -76,7 +76,7 @@ footer {
     font-weight: 700;
     letter-spacing: 3px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1500px) {
     body{
         width: 100%;
         overflow-x: hidden;

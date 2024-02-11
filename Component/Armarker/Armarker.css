@@ -44,6 +44,69 @@
     display: inline-block;
   
 }
+.title-share-project{
+  width:100%;
+  display: flex;
+  align-items: nowrap;
+  margin-right: 10px; 
+}
+.project-name-container
+{
+  margin-top:5px;
+  /* margin-right: 36px;
+  margin-left: 36px; */
+  background: rgb(255, 255, 255);
+  width:80%;
+  text-align:center;
+  -webkit-font-smoothing: antialiased; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  color: #170E80;
+  font-size: 18px;
+  font-weight:bold;
+  margin-bottom: 20px;
+  border-width: 0;
+  padding: 10px 10px 10px 10px;
+  border-radius: 0.625rem;
+  margin-right: 10px;
+}
+.project-share-container
+{
+  margin-top:5px;
+  /* margin-right: 36px;
+  margin-left: 36px; */
+  background: rgb(255, 255, 255);
+  width:20%;
+  text-align:center;
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  font-size:18px;
+  -webkit-font-smoothing: antialiased; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  color: #170E80;
+  font-weight:bold;
+  margin-bottom: 20px;
+  border-width: 0;
+  padding: 10px 10px 10px 10px;
+  border-radius: 0.625rem;
+}
+.fa-share{
+  font-size:30px;
+  margin-right:10px;
+}
+/* .icon-project-container{
+  font-size: 30px;
+  margin-right: 10px;
+  color: #170E80;
+  cursor:pointer;
+  background-color:#fff
+
+}
+.icon-project-container:hover{
+  color: #948bf9; */
+
+
+
   .createproject-sub-text{
     margin-top:5px;
     /* margin-right: 36px;
