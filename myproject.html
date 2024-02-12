@@ -22,8 +22,8 @@
 
   <!-- Thư viện animate.cs  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
     // jQuerry
@@ -301,7 +301,7 @@
               
                               <!-- Dữ liệu chi tiết cho từng dự án -->
                               <tbody>
-                                <!-- <tr>
+                                <tr>
                                   <td><b>1</b></td>
                                   <td><b>AR marker hoa quả</b></td>
                                   <td>16:00, 12 THG 12, 2023</td>
@@ -311,13 +311,17 @@
                                     <a href="#" class="icon-tool-project">
                                       <i class="fa-solid fa-pen-to-square"></i></a>
                                 
-                                    <a href="#" class="icon-tool-project">
+                                    <a href="javascript:void(0);" class="icon-tool-project" id="mpopupLink">
                                     <i class="fa-solid fa-trash"></i></a>
                                    </div>
                                   </td>
                                 </tr>
               
-                                <tr>
+
+                                <!-- Modal popup box -->
+                       
+                     
+                               <!-- <tr>
                                   <td><b>2</b></td>
                                   <td><b>Con khủng long</b></td>
                                   <td>16:00, 12 THG 12, 2023</td>
@@ -929,6 +933,53 @@
       <script src="https://kit.fontawesome.com/b696211014.js" crossorigin="anonymous"></script>
       <div id="footer"></div>
   </body>
+  
+  <div id="mpopupBox" class="mpopup">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">×</span>
+           
+        </div>
+        <div class="modal-body">
+            <p>Bạn có chắc muốn xóa dự án này?</p>
+         
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="popup-btn-yes">Có</button>
+
+            <button type="button" class="popup-btn-no">Không</button>
+        </div>
+    </div>
+  </div>
+
+  <script>
+    // Select modal
+    var mpopup = document.getElementById('mpopupBox');
+    
+    // Select trigger link
+    var mpLink = document.getElementById("mpopupLink");
+    
+    // Select close action element
+    var close = document.getElementsByClassName("close")[0];
+    
+    // Open modal once the link is clicked
+    mpLink.onclick = function() {
+        mpopup.style.display = "block";
+    };
+    
+    // Close modal once close element is clicked
+    close.onclick = function() {
+        mpopup.style.display = "none";
+    };
+    
+    // Close modal when user clicks outside of the modal box
+    window.onclick = function(event) {
+        if (event.target == mpopup) {
+            mpopup.style.display = "none";
+        }
+    };
+    </script>
 </div>
 
 </html>
