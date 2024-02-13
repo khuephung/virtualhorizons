@@ -2586,7 +2586,16 @@ box-shadow: 0 0 10px rgba(45, 11, 211, 0.2);
 .icon-tool-project:hover{
   color:#2E1CFF;
 }
+.fa-eye{
+  margin-right: 5px;
+}
 
+.icon-tool-project-container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
 /* Định dạng tiêu đề thông tin sản phẩm */
 .shop-p__meta-text-1 {
   display: block;
@@ -3210,16 +3219,51 @@ box-shadow: 0 0 10px rgba(45, 11, 211, 0.2);
     
   }
   .icon-tool-project{
-    font-size: 14px;
+    font-size: 14px !important;
     color:#170E80;
   
   }
   .modal-content {
-    width: 90%;
-    max-width: 300px; 
+    width: 100%;
+    max-width: 360px; 
 }
+.watch-modal-content {
+  position: fixed !important;
+  left: 0;
+  top: 0;
+  width: 100% !important;
+  height: 100vh !important;
+  background-color: #fff;
+  padding: 0;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-duration: 0.4s;
+  border-radius: 0px !important;
+  overflow-y: hidden !important;
+}
+.watch-modal-footer {
+ height:auto;
+ font-size:15px !important;
+ border-bottom-left-radius: 0px !important;
+ border-bottom-right-radius: 0px !important;
+}
+.watch-modal-body {
+  height:400px !important;
+  padding: 2px 12px;
+  font-size:25px;
+  display: flex;
+  justify-content: center;
+}
+.watch-modal-header {
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
 }
 
+/* .watch-modal-content {
+  position: absolute;
+  left: 50%;
+  top: 80% !important;
+} */
+}
 /* Thiết lập vị trí của slider sản phẩm và slider tab là static */
 .product-slider,
 .tab-slider {
@@ -3581,4 +3625,145 @@ box-shadow: 0 0 10px rgba(45, 11, 211, 0.2);
 @keyframes animatetop {
     from {top:-300px; opacity:0}
     to {top:0; opacity:1}
+}
+
+/* Watch POPUP */
+.watchpopup {
+    
+  display: none;
+  position: absolute;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /* background-color: rgb(0,0,0); */
+  /* background-color: rgba(0,0,0,0.4); */
+}
+.watch-modal-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  margin: auto;
+  padding: 0;
+  width: 60%;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-duration: 0.4s;
+  border-radius: 10px;
+}
+.watch-modal-header {
+  padding: 10px 12px;
+  background: #e6e5f589;
+  color: #170E80;
+  border-bottom: 1px solid #e9ecef;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  text-align: right;
+  font-size:20px;
+}
+.watch-modal-header > * {
+  display: inline-block;
+}
+.modal-header h2{
+  font-size: 1.25rem;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+.watch-modal-body {
+  height:300px;
+  padding: 2px 12px;
+  font-size:25px;
+  display: flex;
+  justify-content: center;
+}
+
+.watch-modal-footer {
+  height:50%;
+  font-size:20px;
+  padding: 1rem;
+  background-color: #ffffff;
+  color: #000;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  text-align: left;
+ 
+}
+.description-title{
+  color:#170E80;
+  font-weight: bold;
+  
+}
+.scrollable-text {
+
+  height: 300px;
+  overflow-y: scroll;
+  border: 1px solid #ccc; /* Để hiển thị khung */
+  padding: 10px;
+}
+.watch-project-name{
+  float: left;
+}
+
+.editicon:hover, .editicon:focus{
+  color: #948bf9;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.closewatch:hover, .closewatch:focus {
+  color: #948bf9;
+  text-decoration: none;
+  cursor: pointer;
+}
+.popup-btn-yes{
+  color: #fff;
+  background: #170e80;
+  border-radius:5px;
+  border: 2px solid #170e80;
+  width: 100%;
+  padding: 12px 10px;
+  cursor: pointer;
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  transition: box-shadow 0.3s ease; 
+  text-decoration:none;
+  display: flex;
+  justify-content:center;
+
+}
+
+.popup-btn-no{
+color:#170e80;
+background: #fff;
+border-radius:5px;
+width: 100%;
+padding: 12px 10px;
+border: 2px solid #170e80;
+cursor: pointer;
+font-family: Montserrat, sans-serif;
+font-weight: 700;
+font-size: 18px;
+transition: box-shadow 0.3s ease; 
+text-decoration:none;
+display: flex;
+justify-content:center;
+
+}
+/* add animation effects */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
 }

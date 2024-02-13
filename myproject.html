@@ -308,11 +308,13 @@
                                   <td>xx/50</td>
                                   <td>
                                     <div class="icon-tool-project-container">
+                                    <a href="javascript:void(1);" class="icon-tool-project" onclick="watchpopup()">
+                                        <i class="fa-solid fa-eye"></i></a>
                                     <a href="#" class="icon-tool-project">
                                       <i class="fa-solid fa-pen-to-square"></i></a>
-                                
+            
                                     <a href="javascript:void(0);" class="icon-tool-project" id="mpopupLink">
-                                    <i class="fa-solid fa-trash"></i></a>
+                                      <i class="fa-solid fa-trash"></i></a>
                                    </div>
                                   </td>
                                 </tr>
@@ -321,7 +323,7 @@
                                 <!-- Modal popup box -->
                        
                      
-                               <!-- <tr>
+                              <!-- <tr>
                                   <td><b>2</b></td>
                                   <td><b>Con khủng long</b></td>
                                   <td>16:00, 12 THG 12, 2023</td>
@@ -335,9 +337,9 @@
                                     <i class="fa-solid fa-trash"></i></a>
                                    </div>
                                   </td>
-                                </tr>
+                                </tr> -->
               
-                                  <tr>
+                                   <!-- <tr>
                                     <td><b>2</b></td>
                                     <td><b>AR marker hoa quả</b></td>
                                     <td>16:00, 12 THG 12, 2023</td>
@@ -443,7 +445,7 @@
                               
                             </table>
                             <!-- Khi chưa có dự án nào -->
-                            <div class="no-project-container">
+                            <!-- <div class="no-project-container">
                               <img class="no-project-image" src="./images/no-project.png"/>
                               <div class="no-project-text">Bạn chưa có dự án nào!</div>
                               <div class="create-project-button-2">
@@ -451,7 +453,7 @@
                                 <div class="text-button-banner">Tạo dự án</div>
                              </div>
 
-                            </div>
+                            </div> -->
                           </div>
                     </div>
                   </div>
@@ -933,7 +935,7 @@
       <script src="https://kit.fontawesome.com/b696211014.js" crossorigin="anonymous"></script>
       <div id="footer"></div>
   </body>
-  
+  <!-- Delete POPUP -->
   <div id="mpopupBox" class="mpopup">
     <!-- Modal content -->
     <div class="modal-content">
@@ -980,6 +982,56 @@
         }
     };
     </script>
+
+<!-- Watch Popup -->
+<div id="watchpopupBox" class="watchpopup">
+  <!-- Modal content -->
+  <div class="watch-modal-content">
+      <div class="watch-modal-header">
+          <div class="watch-project-name">Tên dự án ABC</div>
+          <span class="editicon"> <i class="fa-solid fa-pen-to-square"></i></span>
+          <span class="closewatch" id="closewatch" onclick="closewatch()"><i class="fa-solid fa-xmark"></i></span>
+         
+      </div>
+      <div class="watch-modal-body">
+          <p>Hình và QR</p>
+       
+      </div>
+      <div class="watch-modal-footer">
+        <p class="description-title">Mô tả:</p>
+        <div class="scrollable-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus magna eu nulla commodo, sit amet volutpat felis tincidunt. Sed auctor mi et aliquet lobortis. Duis et malesuada nisl, ac feugiat neque. Integer in malesuada est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus consequat ultricies diam, non suscipit nisl consequat vel. Suspendisse potenti. Duis condimentum commodo ligula, in tincidunt nisi ullamcorper sed. Cras eget odio vel nisi fermentum iaculis. Nulla facilisi. Cras congue mi quis suscipit fermentum. Aenean consequat est ligula, eu tincidunt nisi suscipit eu.
+       </div>
+      </div>
+  </div>
+</div>
+
+<script>
+  // Select modal
+  var watchpopupui = document.getElementById('watchpopupBox');
+  
+  // Select trigger link
+  
+  // Select close action element
+  var closewatch = document.getElementsById("closewatch")[1];
+  
+  // Open modal once the link is clicked
+function watchpopup() {
+    watchpopupui.style.display = "block";
+  };
+  
+  // Close modal once close element is clicked
+function closewatch() {
+    watchpopupui.style.display = "none";
+  };
+  
+  // Close modal when user clicks outside of the modal box
+  window.onclick = function(event) {
+      if (event.target == watchpopup) {
+        watchpopupui.style.display = "none";
+      }
+  };
+  </script>
 </div>
 
 </html>
