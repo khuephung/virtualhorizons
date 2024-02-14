@@ -1,19 +1,12 @@
 
-const fileName1 = document.getElementById("file-name-1");
 const fileName2 = document.getElementById("file-name-2");
 
-const cancelBtn1 = document.getElementById("cancel-btn-1");
 const cancelBtn2 = document.getElementById("cancel-btn-2");
 
-const clickBtn1 = document.getElementById("custom-btn-1");
 const clickBtn2 = document.getElementById("custom-btn-2");
-const img1 = document.getElementById("img1");
 const img2 = document.getElementById("img2");
-const imageDiv = document.querySelector(".image");
 const image3DDiv = document.querySelector(".image-3d-file");
-const dragimage = document.getElementById("drop-file-1");
 const drag3dfile = document.getElementById("drop-file-2");
-const imagepreview = document.getElementById("image-1");
 const filepreview = document.getElementById("image-2");
 
 let regExp = /[0-9a-zA-Z\^\&\'\@\{\}\[\]\,\$\=\!\-\#\(\)\.\%\+\~\_ ]+$/;
@@ -30,39 +23,8 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-function openImage(file) {
-let done = true;
-if (file) {
-    //console.log(file.name);
-    if (file.type.match('image/png') || file.type.match('image/jpeg') || file.type.match('image/jpg')) {
-      if (file.size <= 1024 * 1024) {
-        const reader = new FileReader();
-        reader.onload = function() {
-          const result = reader.result;
-          img1.src = result;
-          imagepreview.classList.add("active");
-          imageDiv.style.display = "block";
-        }
-        cancelBtn1.addEventListener("click", function() {
-          img1.src = "";
-          imagepreview.classList.remove("active");
-          imageDiv.style.display = "none";
-        })
-        reader.readAsDataURL(file);
-      } else {
-        alert('Dung lượng file vượt quá 1MB');
-        //this.value = ""; // Reset input
-        done = false
-      }
-    } else {
-      alert('Định dạng file không hợp lệ. Chỉ chấp nhận file .jpg hoặc .jpeg');
-      //this.value = ""; // Reset input
-      done = false;
-    }
-  }
-  if (done) 
-  fileName1.textContent = file.name;
-}
+
+
 cancelBtn2.addEventListener("click", function() {
   img2.src = "";
   filepreview.classList.remove("active");
@@ -132,10 +94,7 @@ switch (format) {
   case ".gif":
     imageUrl = "https://previews.dropbox.com/p/thumb/ACK81GwtUFvX_k-3ySFmIdJuI_q8VYxrn6NQIYrChiDap5eYaD-ldl6-zqNdFfEBCF8lIrG0wZMgOsm4_0K9kLjo4gkzAzjYoewbnIsCTYI2Bt1iKs6MNGZrJKvZII5t6eqRGIsbIaCZOJIe9-P_WdwhcNht2haIfaVJ2F-6KbSwVAUqqmDI17-M1yS3gBLsrw7fzjMAZHL4L0L4lTpva9FmwZXgWwNjRomkf_9edHwSvt_RwPQN2QR5o9J4GcfDOjcZbZABDFGQ7bxkMxT1N99XXINJ2wqNnSuL4eHCpbS5CSie73ofwezAqH8VJhv1iYGpYhCPOiP4mBdWdz8QJXmw/p.png";
     break;
-  case "youtube.com":
-    // imageUrl = ".\Component\Armarker\image-file\youtube.png";
-    imageUrl ="https://previews.dropbox.com/p/thumb/ACLZ1mdCD9AlO-s5cT3Ypr_i3sGBhwMk-dYApZ3aCcXd57bcFgqsWow7XNHtM8fCUDJJtAs4rTNHRDYgGWqRq2bwtxS4KcGJ7I-bZkP-f5bwkcfr4WG8CSo_g5DZQDEJywoPqeltZt5nNic4aSLKmkBR_4RyY3lVsJlzBhZHiVMzOioiOWPZ6DZuz4TsPklCBCoFTwcQ6gya1LcDC3uyT-1MXSnMB-4ck40cDZatIx529Rzolko-lIEZmkJYpqthFN77I27mBrjvOHlm4DsWYAJACVEbLlaiz7xzSPju6_VviWF2f_2HABRvCdxETSDQl6y4E1_Xle2-hC8znMZ5MlUl/p.png";
-    break;
+ 
 //   default:
 //     imageUrl = "path/to/default_image.jpg";
 }
@@ -143,38 +102,9 @@ img2.src = imageUrl; // Set src của thẻ img với URL của ảnh minh họa
 }
 }
 
-function OpenYoutubeLink(){
-  var youtubeUrl = projectNameInput.value;
-  setPreviewImage("youtube.com", null);
-  filepreview.classList.add("active");
-          image3DDiv.style.display = "block";
-          fileName2.textContent = youtubeUrl;
-}
-
-function OpenImageInLocal(){
-    var input = document.createElement('input');
-    input.type = 'file';
-    input.accept = '.jpg, .png, .jpeg';
-    input.onchange = e => {
-        var files = e.target.files;
-        const file = files[0];
-        openImage(file);
-    }
-    input.click();
-}
 
 
 
-dragimage.addEventListener('dragover',(event) =>{
-    event.preventDefault();
-});
-dragimage.addEventListener('drop',(event) =>{
-    event.preventDefault();
-    const files = event.dataTransfer.files;
-    const file = files[0];
-    console.log(file.fileName);
-    openImage(file);
-});
 
 drag3dfile.addEventListener('dragover',(event) =>{
     event.preventDefault();
@@ -200,28 +130,3 @@ function OpenFile3DInLocal(){
 }
 
 
-
-
-
-// Nút xác nhận khi điền link youtube
-const projectNameInput = document.getElementById("youtube-link");
-const confirmBtn = document.getElementById("confirm-btn");
-
-// Thêm sự kiện "input" vào trường nhập liệu
-projectNameInput.addEventListener("input", function() {
-  // Kiểm tra xem nội dung của trường nhập liệu có phải là một liên kết YouTube không
-  if (isYouTubeLink(this.value)) {
-    // Nếu là liên kết YouTube, hiển thị nút xác nhận
-    confirmBtn.style.display = "block";
-  } else {
-    // Nếu không phải là liên kết YouTube, ẩn nút xác nhận
-    confirmBtn.style.display = "none";
-  }
-});
-
-// Hàm kiểm tra xem một chuỗi có phải là một liên kết YouTube không
-function isYouTubeLink(input) {
-  // Regex để kiểm tra xem chuỗi có phải là một liên kết YouTube không
-  const youtubeLinkRegex = /^(https?:\/\/)?(www\.)?(youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
-  return youtubeLinkRegex.test(input);
-}

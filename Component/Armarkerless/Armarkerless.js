@@ -1,19 +1,12 @@
 
-const fileName1 = document.getElementById("file-name-1");
 const fileName2 = document.getElementById("file-name-2");
 
-const cancelBtn1 = document.getElementById("cancel-btn-1");
 const cancelBtn2 = document.getElementById("cancel-btn-2");
 
-const clickBtn1 = document.getElementById("custom-btn-1");
 const clickBtn2 = document.getElementById("custom-btn-2");
-const img1 = document.getElementById("img1");
 const img2 = document.getElementById("img2");
-const imageDiv = document.querySelector(".image");
 const image3DDiv = document.querySelector(".image-3d-file");
-const dragimage = document.getElementById("drop-file-1");
 const drag3dfile = document.getElementById("drop-file-2");
-const imagepreview = document.getElementById("image-1");
 const filepreview = document.getElementById("image-2");
 
 let regExp = /[0-9a-zA-Z\^\&\'\@\{\}\[\]\,\$\=\!\-\#\(\)\.\%\+\~\_ ]+$/;
@@ -30,39 +23,8 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-function openImage(file) {
-let done = true;
-if (file) {
-    //console.log(file.name);
-    if (file.type.match('image/png') || file.type.match('image/jpeg') || file.type.match('image/jpg')) {
-      if (file.size <= 1024 * 1024) {
-        const reader = new FileReader();
-        reader.onload = function() {
-          const result = reader.result;
-          img1.src = result;
-          imagepreview.classList.add("active");
-          imageDiv.style.display = "block";
-        }
-        cancelBtn1.addEventListener("click", function() {
-          img1.src = "";
-          imagepreview.classList.remove("active");
-          imageDiv.style.display = "none";
-        })
-        reader.readAsDataURL(file);
-      } else {
-        alert('Dung lượng file vượt quá 1MB');
-        //this.value = ""; // Reset input
-        done = false
-      }
-    } else {
-      alert('Định dạng file không hợp lệ. Chỉ chấp nhận file .jpg hoặc .jpeg');
-      //this.value = ""; // Reset input
-      done = false;
-    }
-  }
-  if (done) 
-  fileName1.textContent = file.name;
-}
+
+
 cancelBtn2.addEventListener("click", function() {
   img2.src = "";
   filepreview.classList.remove("active");
@@ -151,30 +113,8 @@ function OpenYoutubeLink(){
           fileName2.textContent = youtubeUrl;
 }
 
-function OpenImageInLocal(){
-    var input = document.createElement('input');
-    input.type = 'file';
-    input.accept = '.jpg, .png, .jpeg';
-    input.onchange = e => {
-        var files = e.target.files;
-        const file = files[0];
-        openImage(file);
-    }
-    input.click();
-}
 
 
-
-dragimage.addEventListener('dragover',(event) =>{
-    event.preventDefault();
-});
-dragimage.addEventListener('drop',(event) =>{
-    event.preventDefault();
-    const files = event.dataTransfer.files;
-    const file = files[0];
-    console.log(file.fileName);
-    openImage(file);
-});
 
 drag3dfile.addEventListener('dragover',(event) =>{
     event.preventDefault();

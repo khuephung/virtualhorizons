@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AR Marker</title>
+    <title>AR Filter</title>
     <!-- favicon -->
     <link href="./HeaderFooter/logoimage/VIRTUAL HORIZONS-logo.svg" rel="shortcut icon">
     <!-- liên kết file css  -->
-    <link rel=stylesheet type="text/css" href="./Component/Armarker/Armarker.css"/>
+    <link rel=stylesheet type="text/css" href="./Component/Arfilter/Arfilter.css"/>
     <!-- Thư viện animate.cs  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Thư viện Jquerry -->
@@ -62,7 +62,7 @@
       
           <i class="fa-solid fa-arrow-left"></i> </a> </div>
         
-      <h1 class="titleproject animate__animated animate__backInDown">AR MARKER</h1>
+      <h1 class="titleproject animate__animated animate__backInDown">AR FILTER</h1>
     
 
           <!-- Chữ Xem thêm di chuyển từ trên xuống -->
@@ -105,42 +105,7 @@
                 </div>
             </div>
 
-            <div class="pjname">Hình nhận diện:</div>  
-            <div class="createproject-sub-text">
-                <div class="upload-body" id="drop-file-1">
-                    <div class="container" >
-                        <div class="wrapper" id="image-1">
-                            <div class="image">
-                              <img src="" alt="" id="img1">
-                           </div>
-                           <div class="content">
-                              <div class="icon">
-                                 <i class="fas fa-cloud-upload-alt"></i>
-                              </div>
-                              <div class="text-title">
-                                Nhấn hoặc kéo thả file vào đây để upload 
-                              </div>
-                              <div class="text-subtitle">
-                                Định dạng .png, .jpg hoặc .jpeg                               
-                            </div>
-                           </div>
-                           <div class="cancel-btn" id="cancel-btn-1">
-                              <i class="fas fa-times"></i>
-                           </div>
-                           <div class="file-name" id="file-name-1">
-                              File name here
-                           </div>
-                        </div>
-                        <button onclick="OpenImageInLocal()" class="custom-btn" id="custom-btn-1">Chọn hình nhận diện</button>
-                        
-                      </div>
-                    </div>
-                   
-            </div>
-      
-            <div class="text-description">
-                HÌNH NHẬN DIỆN SẼ ĐƯỢC NHẬN DIỆN BẰNG THIẾT BỊ CÓ CAMERA VÀ KÍCH HOẠT NỘI DUNG  ẢO. DUNG LƯỢNG TỐI ĐA 1MB.                              
-            </div>
+           
 
             <div class="pjname">Nội dung hiển thị:</div>  
             <div class="createproject-sub-text">
@@ -168,21 +133,12 @@
                            </div>
                         </div>
                         <button onclick="OpenFile3DInLocal()" class="custom-btn" id="custom-btn-2">Chọn file hiển thị</button>
-                        <div class="pjname" style="margin-top:10px">
-                            Hiển thị video?      </div>
-                            <div class="form-row">
-  
-                            <div class="form-row-inner">
-                                <input type="text" id="youtube-link" name="project-name" placeholder="Dán link Youtube">
-                                <button onclick="OpenYoutubeLink()" class="confirm-btn" id="confirm-btn" style="display: none;">Xác nhận</button>
-                          </div>
-                          </div>
-                       </div>
+                        
                     </div>
 
                     </div>
                     <div class="text-description">
-                        NỘI DUNG MÀ BẠN MUỐN HIỂN THỊ KHI QUÉT HÌNH NHẬN DIỆN. DUNG LƯỢNG TỐI ĐA 10MB.                   
+                        NỘI DUNG MÀ BẠN MUỐN HIỂN THỊ KHI QUÉT MÃ QR NHẬN DIỆN. DUNG LƯỢNG TỐI ĐA 20MB.                   
                     </div>
                     <div class="form-row-last">
                         <input type="submit" name="continue" class="register" value="Tiếp theo">
@@ -207,7 +163,7 @@
   </div>
 </body>
    <!-- JS -->
-   <script src="./Component/Armarker/Armarker.js"></script>
+   <script src="./Component/Arfilter/Arfilter.js"></script>
 
   
 </html>
