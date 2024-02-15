@@ -225,3 +225,21 @@ function isYouTubeLink(input) {
   const youtubeLinkRegex = /^(https?:\/\/)?(www\.)?(youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
   return youtubeLinkRegex.test(input);
 }
+document.getElementById('copyButton').addEventListener('click', function() {
+  var link = document.querySelector('.pjlink a').getAttribute('href');
+  
+  // Tạo một thẻ textarea tạm thời để sao chép nội dung
+  var tempInput = document.createElement('textarea');
+  tempInput.value = link;
+  document.body.appendChild(tempInput);
+  
+  // Chọn và sao chép nội dung vào clipboard
+  tempInput.select();
+  document.execCommand('copy');
+  
+  // Xóa thẻ textarea tạm thời
+  document.body.removeChild(tempInput);
+  
+  // Thông báo cho người dùng biết rằng nội dung đã được sao chép thành công
+  alert('Đã sao chép đường link vào clipboard: ' + link);
+});
