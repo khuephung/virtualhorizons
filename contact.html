@@ -29,15 +29,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         // jQuerry
-        $(function () {
-          $("#headerblue").load("Headerblue.html");
-        });
-        $(function () {
-          $("#footer").load("Footer.html");
-        });
+        $(function() {
+        $("#headerblue").load("headerblue.html");
+      });
+      $(function() {
+        $("#footer").load("Footer.html");
+      });
       </script>
       <style>
-        
+        * {
+            box-sizing: border-box;
+        } 
          .titlecheckout{
              color: blue; 
              text-align: center; 
@@ -48,7 +50,7 @@
          /*Animation xuất hiện từ dưới lên*/
          .animate__animated.animate__fadeInUp{
          --animate-duration: 1500ms;
-         --animate-delay: 1s 
+         --animate-delay: 1s }
      </style>
 </head>
 <body class="config">
