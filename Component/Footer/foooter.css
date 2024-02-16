@@ -2,6 +2,7 @@
     font-family: Montserrat, sans-serif;
     margin: 0; /* Loại bỏ margin mặc định của body */
     width: 100%;
+    overflow-x: hidden !important;
 }
 /* Style cho footer */
 footer {

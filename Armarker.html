@@ -14,7 +14,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/b696211014.js" crossorigin="anonymous"></script>
 
-    
+      <!--====== Vendor Css ======-->
+  <link rel="stylesheet" href="./Component/Sanpham/vendor.css">
+  <!--====== Utility-Spacing ======-->
+  <link rel="stylesheet" href="./Component/Sanpham/utility.css">
+  <!--====== App ======-->
+  <link rel="stylesheet" href="./Component/Sanpham/app.css">
+
     <script>
     // jQuerry //thêm Header và Footer
     $(function () {
@@ -31,7 +37,9 @@
         #footer{
           margin-top:70px;
         }
+   
         body{
+        overflow-x: hidden !important;
         background: rgb(245,245,245);
         background: linear-gradient(0deg, rgba(245,245,245,0.6) 30%, rgba(112,105,192,0.8603816526610644) 67%, rgba(26,14,158,1) 100%);
         background-repeat: repeat-x;
@@ -40,12 +48,21 @@
        -o-background-size: cover;
         background-size: cover;
         font-family: 'Montserrat', sans-serif;
-        /* margin:  0 auto; */
         width: 100%;
 	      margin:  0 auto;
         padding: 0;
         scroll-behavior: smooth;
-	      overflow-x: hidden;
+        align-items: center;
+	     justify-content: center;
+	     -o-justify-content: center;
+        -ms-justify-content: center;
+        -moz-justify-content: center;
+        -webkit-justify-content: center;
+        align-items: center;
+        -o-align-items: center;
+        -ms-align-items: center;
+        -moz-align-items: center;
+        -webkit-align-items: center;
 }
       .bodystroke{
         background-image: url('./images/stroke.png');
