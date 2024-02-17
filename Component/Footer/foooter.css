@@ -119,7 +119,9 @@ footer {
     .line {
         display: none; 
     }
-
+    #strokengang{
+        display: none;
+    }
     .logo-footer {
         padding: 0;
     }
