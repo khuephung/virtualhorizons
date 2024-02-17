@@ -275,7 +275,10 @@ ul, li {
   .carticon{
     display:none !important;
   }
-  
+  .user-info-details{
+    width:250px;
+    
+  }
 
   i {
     font-size: 25px;
