@@ -89,11 +89,14 @@
                                   <li>Dễ dàng sử dụng</li>
                                   <li>Tiết kiệm thời gian</li>
                                   <li>Tạo sự tò mò</li></ul>
-                                <a href="./Armarker.html" style="text-decoration: none; width:100%">
+                                  <div>
+                                  <a href="./Armarker.html" style="text-decoration: none; display:inline-block; width:100%">
+                                    <button name="create" class="create">Tạo ngay</button>
+                                  </a>
+                                  </div>
                               </div>
-                                <button name="create" class="create">Tạo ngay</button>
+                                <!-- <button name="create" class="create">Tạo ngay</button> -->
                             </div>
-                          </a>
                         </div>
   
                         <!-- AR MARKERLESS -->
@@ -112,12 +115,13 @@
                                     <ul>
                                       <li>Dễ dàng sử dụng</li>
                                       <li>Tiện lợi, di động</li>
-                                      <li>Tương tác với AR</li>
-                                      <a href="./Armarkerless.html" style="text-decoration: none; width:100%">
+                                      <li>Tương tác với AR</li></ul>
+                                      <a href="./Armarkerless.html" style="text-decoration: none; display:inline-block; width:100%">
+                                        <button name="create" class="create">Tạo ngay</button>
+                                      </a>
                                     </div>
-                                      <button name="create" class="create">Tạo ngay</button>
+                                      <!-- <button id="buttonCreate" onclick="openAr()" name="create" class="create">Tạo ngay</button> -->
                                   </div>
-                                </a>
                       </div>
   
                       <!-- AR FILTER -->
@@ -138,11 +142,18 @@
                                 <li>Xu hướng nổi bật</li>
                                 <li>Đa dạng loại hình</li>
                                 <li>Tính tương tác cao</li>
-                                <a href="./ARfilter.html" style="text-decoration: none; width:100%">
                                 </div>
+                              
+                                <a href="./ARfilter.html" style="text-decoration: none; display:inline-block; width:100%">
                                   <button name="create" class="create">Tạo ngay</button>
-                              </div>
-                            </a>
+                                </a>
+                                <!-- <div style="width:100%">
+                                  <button name="create" class="create" style="width:100%" onclick="window.location.href ="./ARfilter.html"">Tạo ngay</button>
+                              </div> -->
+
+                             
+                            </div>
+                           
                     </div>
   
                    <!-- AI CHAT-->
@@ -172,7 +183,7 @@
                  
                     </div>
                 </div>
-    
+               
                 <div class="swiper-button-next swiper-navBtn"></div>
                 <div class="swiper-button-prev swiper-navBtn"></div>
                 <div class="swiper-pagination"></div>
@@ -196,4 +207,13 @@
 
    <!-- JavaScript -->
    <script src="./Component/CreateARproject/script.js"></script>
+   <script>
+    function openAr() {
+      console.log("hello");
+      window.location.href = "./Armarkerless.html"
+    }
+     document.getElementById("buttonCreate").addEventListener("click", function(event) {
+      event.preventDefault();
+     });
+    </script>
 </html>
