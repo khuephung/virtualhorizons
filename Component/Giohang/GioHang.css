@@ -647,6 +647,7 @@
         /* Hộp đệm */
         border: 1px solid #eee; /* Đường biên mảnh màu xám nhạt */
         padding: 32px 22px 35px; /* Kích thước và padding cho hộp giỏ hàng */
+        height: 300px;
       }
       .f-cart__bang {
         width: 100%;
@@ -693,7 +694,7 @@
       }
 
       .f-cart .vung-van-ban {
-        height: 350px; /* Chiều cao cho ô văn bản lớn (vung-van-ban) */
+        height: 150px; /* Chiều cao cho ô văn bản lớn (vung-van-ban) */
       }
 
       .f-cart .nut {
